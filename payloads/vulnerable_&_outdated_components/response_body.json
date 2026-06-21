@@ -1,0 +1,464 @@
+[
+  {
+    "payload_id": "OWP-1031",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "jQuery 1.8.3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1032",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "jQuery 1.11.3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1033",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "AngularJS 1.0.8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1034",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "React 0.14.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1035",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Vue 1.0.28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1036",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Bootstrap 3.3.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1037",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Spring Framework 3.2.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1038",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Spring Boot 1.5.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1039",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Struts 2.3.30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1040",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Express 3.21.2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1041",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Django 1.11.29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1042",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Flask 0.12.5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1043",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Rails 4.2.11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1044",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "WordPress 4.7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1045",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Drupal 7.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1046",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Drupal 8.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1047",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Joomla 3.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1048",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Magento 1.9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1049",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "OpenSSL 1.0.1e",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1461",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "AngularJS 1.2.32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1462",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "AngularJS 1.4.14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1463",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "AngularJS 1.5.11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1464",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "AngularJS 1.6.10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1465",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Bootstrap 2.3.2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1466",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Bootstrap 3.0.3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1467",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Bootstrap 3.3.7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1468",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "jQuery 2.1.4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1469",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "jQuery 1.12.4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1470",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Prototype.js 1.7.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1471",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Ember 1.13.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1472",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Backbone 1.1.2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1473",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Knockout 3.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1474",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "MooTools 1.5.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1475",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "YUI 2.9.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1476",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Dojo 1.10.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1477",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Socket.IO 0.9.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1478",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Handlebars 1.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1479",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Underscore 1.8.3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1480",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Moment.js 1.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37646",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "npm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37647",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "pip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37648",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "gem",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

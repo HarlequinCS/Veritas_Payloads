@@ -1,0 +1,24 @@
+[
+  {
+    "payload_id": "OWP-37608",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "x8 -u \"https://example.com/\" -w <wordlist>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37609",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "x8 -u \"https://example.com/\" -X POST -w <wordlist>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

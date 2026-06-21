@@ -1,0 +1,882 @@
+[
+  {
+    "payload_id": "OWP-1077",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/coupon/redeem (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1078",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/vote/1 (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1079",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/stock/buy (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1080",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/order/fulfill (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1081",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/withdraw (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1082",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/points/redeem (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1083",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/seats/book (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1084",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/inventory/decrement (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1085",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/signup/bonus (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1086",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/mint/token (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1087",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/resource/allocate (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1088",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/limit/reset (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1089",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/funds/add (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1090",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/subscription/upgrade (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1091",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/redeem/code (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1092",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/auction/bid (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1093",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/swap/execute (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1094",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/nft/mint (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1095",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/gacha/pull (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1096",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/airdrop/claim (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1097",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/lottery/claim (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1098",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/account/create (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1099",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/referral/claim (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1100",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/deposit (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1101",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/transfer (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1102",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/approve (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1103",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/loyalty/redeem (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1104",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/cashback/claim (concurrent)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1401",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/promo/apply (multiple apply)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1402",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/cashback/claim (double claim)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1403",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/referral/bonus (referral race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1404",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/points/transfer (transfer race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1405",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/balance/add (add race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1406",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/trade/execute (trade race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1407",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/stake/claim (stake race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1408",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/farm/claim (farm race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1409",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/boost/claim (boost race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1410",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/chest/open (chest race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1411",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/levelup/claim (level race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1412",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/quest/complete (quest race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1413",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/daily/claim (daily race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1414",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/boss/defeat (boss race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1415",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/exp/grant (exp race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1416",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/skin/unlock (skin race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1417",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/pet/claim (pet race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1418",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/mount/claim (mount race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1419",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/gem/claim (gem race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1420",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/coin/claim (coin race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1421",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/energy/refill (energy race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1422",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/hp/restore (hp race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1423",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/invite/claim (invite race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1424",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/vip/claim (vip race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1425",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/mission/complete (mission race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1426",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/task/complete (task race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-1427",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/api/challenge/complete (challenge race)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success"
+    }
+  },
+  {
+    "payload_id": "OWP-37443",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "engine.queue(request, gate='race1')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37444",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "engine.openGate('race1')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37445",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "def queueRequests(target, wordlists):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37446",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "engine = RequestEngine(endpoint=target.endpoint,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37447",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "concurrentConnections=30,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37448",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "requestsPerConnection=30,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37449",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "pipeline=False",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37450",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "for i in range(30):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37451",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "engine.queue(target.req, i)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37452",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "engine.queue(target.req, target.baseInput, gate='race1')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37453",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "engine.start(timeout=5)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37454",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "engine.complete(timeout=60)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37455",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "def handleResponse(req, interesting):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37456",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "table.add(req)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37457",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "requestsPerConnection=100,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37458",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "request1 = '''",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37459",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "POST /target-URI-1 HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37460",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Host: <REDACTED>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37461",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Cookie: session=<REDACTED>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37462",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "parameterName=parameterValue",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37463",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'''",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37464",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "request2 = '''",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37465",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "GET /target-URI-2 HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37466",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "engine.queue(request1, gate='race1')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37467",
+    "vulnerability_category": "Insecure Design (Race Condition)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "engine.queue(request2, gate='race1')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

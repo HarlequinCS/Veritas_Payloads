@@ -1,0 +1,101 @@
+[
+  {
+    "payload_id": "OWP-1050",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/reset-password?token=123456",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|\"status\""
+    }
+  },
+  {
+    "payload_id": "OWP-1051",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/v1/users?page=1&limit=-1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|\"status\""
+    }
+  },
+  {
+    "payload_id": "OWP-1052",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/redeem?coupon=NEW50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|\"status\""
+    }
+  },
+  {
+    "payload_id": "OWP-1053",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/account/delete",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|\"status\""
+    }
+  },
+  {
+    "payload_id": "OWP-1054",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/orders?filter=all&export=csv",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|\"status\""
+    }
+  },
+  {
+    "payload_id": "OWP-1055",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/admin/users/1/privacy/export",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|\"status\""
+    }
+  },
+  {
+    "payload_id": "OWP-1056",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/rewards?partnerId=ext_001",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|\"status\""
+    }
+  },
+  {
+    "payload_id": "OWP-1057",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/support/tickets/export?all=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|\"status\""
+    }
+  },
+  {
+    "payload_id": "OWP-1058",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/internal/healthcheck",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|\"status\""
+    }
+  }
+]

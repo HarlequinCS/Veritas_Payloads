@@ -1,0 +1,46 @@
+[
+  {
+    "payload_id": "OWP-0669",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "header",
+    "payload_string": "Cookie: rememberme=Kryo serialized data (Consul/JMX)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-0671",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "header",
+    "payload_string": "Cookie: JSESSIONID=... (Apache Commons Collections gadget)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1485",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "header",
+    "payload_string": "Cookie: session=.... (JMXInvokerServlet deser)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1486",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "header",
+    "payload_string": "Cookie: session=.... (JBoss JMX deser)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

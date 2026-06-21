@@ -1,0 +1,464 @@
+[
+  {
+    "payload_id": "OWP-0859",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- password: P@ssw0rd123 -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-0860",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- credit card: 4111-1111-1111-1111 -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-0861",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- api_key: sk-live-ABC123DEF456 -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-0862",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<a href=\"http://example.com/login\"> (non-HTTPS)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-0863",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "var secret = \"-----BEGIN RSA PRIVATE KEY-----\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-0864",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- db_connection: mysql://root:toor@localhost:3306 -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-0865",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "{\"jwt\":\"eyJhbGciOiJub25lIn0.eyJhZG1pbiI6dHJ1ZX0.\"}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-0866",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- MD5 hash used: 5d41402abc4b2a76b9719d911017c592 -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-0867",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<form action=\"http://api.example.com/submit\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-0868",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Weak SSL: TLSv1.0 enabled",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-0869",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "http://example.com/login (no HTTPS)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "P@ssw0rd|4111|sk-live|PRIVATE KEY|JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-1200",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- TODO: ssl cert expired on 2022-01-01 -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1201",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<script src=\"http://cdn.example.com/libs.js\"></script> (mixed content script)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1202",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<link rel=\"stylesheet\" href=\"http://cdn.example.com/style.css\"> (mixed content CSS)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1203",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<iframe src=\"http://external.com/widget.html\"></iframe> (mixed content iframe)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1204",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "Referrer-Policy: unsafe-url (referrer leak)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1205",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- password hint: first pet name? -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1206",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- SSN: XXX-XX-XXXX --> (placeholder pattern leak)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1207",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<input type=\"password\" value=\"defaultP@ss123\"> (pre-filled password)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1208",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'\"> (meta CSP bypass)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1209",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "//# sourceMappingURL=/app.js.map (source map exposed)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1210",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- Stripe publishable key: pk_live_ABC123 -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "pk_live"
+    }
+  },
+  {
+    "payload_id": "OWP-1211",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- AWS access key: AKIAIOSFODNN7EXAMPLE -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "AKIA"
+    }
+  },
+  {
+    "payload_id": "OWP-1212",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<input name=\"csrf_token\" value=\"0000\"> (weak CSRF)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1213",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<form action=\"http://target.com/submit\"> (non-HTTPS form action)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1214",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_body",
+    "payload_string": "TLSv1.1 allowed",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1215",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_body",
+    "payload_string": "Weak cipher: RC4 is supported",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1216",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_body",
+    "payload_string": "Weak cipher: DES is supported",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1217",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- encryption_key: \"5T@nd@rdK3y#\" --> (hardcoded key)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1218",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<script>var apiSecret = \"sup3r$3cr3t!\"</script> (hardcoded secret)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1219",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<input type=\"hidden\" name=\"password\" value=\"clearTextPass\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1220",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- Database password file: /var/www/html/config/db.config -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1224",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_body",
+    "payload_string": "HTTP/1.0 (deprecated HTTP version)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1225",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- FIXME: use bcrypt instead of SHA1 for passwords -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1226",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<script>localStorage.setItem(\"token\",\"eyJhbGciOiJIUzI1NiJ9.eyJhZG1pbiI6dHJ1ZX0\")</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "JWT"
+    }
+  },
+  {
+    "payload_id": "OWP-1227",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<script>sessionStorage.setItem(\"ssn\",\"123-45-6789\")</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1228",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- password expiry: never -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1229",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<!-- JWT secret: \"secret\" (default HS256 key) -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "secret"
+    }
+  },
+  {
+    "payload_id": "OWP-1230",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "OAuth redirect_uri: http://evil.com/callback (open redirect in OAuth)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1231",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<a href=\"http://api.example.com/oauth/token\"> (token leak via referrer)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1232",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<script>window.postMessage(\"secretData\",\"*\")</script> (wildcard postMessage)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1233",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_body",
+    "payload_string": "<iframe src=\"http://evil.com\"></iframe> (mixed content iframe)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

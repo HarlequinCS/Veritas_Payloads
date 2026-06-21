@@ -1,0 +1,35 @@
+[
+  {
+    "payload_id": "OWP-0668",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "body_binary",
+    "payload_string": "Base64(rO0ABXNyABNjom.serial.SerializedObject)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1489",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "body_binary",
+    "payload_string": "Serialized Java object via Hessian protocol",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1490",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Java",
+    "injection_point": "body_binary",
+    "payload_string": "Serialized Java object via Burlap protocol",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

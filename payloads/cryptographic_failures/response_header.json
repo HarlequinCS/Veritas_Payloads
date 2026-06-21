@@ -1,0 +1,244 @@
+[
+  {
+    "payload_id": "OWP-0852",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_header",
+    "payload_string": "Strict-Transport-Security: max-age=0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0853",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_header",
+    "payload_string": "Set-Cookie: session=abc123; Secure=false",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0854",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_header",
+    "payload_string": "Set-Cookie: session=abc123; HttpOnly=false",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0855",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_header",
+    "payload_string": "X-Content-Type-Options: (missing)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0856",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_header",
+    "payload_string": "X-XSS-Protection: 0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0857",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_header",
+    "payload_string": "Content-Security-Policy: (missing)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0858",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Application",
+    "injection_point": "response_header",
+    "payload_string": "Access-Control-Allow-Origin: *",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1188",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1189",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1190",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1191",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1192",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1193",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1194",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1195",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1196",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1197",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1198",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1199",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Frame-Options: DENY (missing SAMEORIGIN fallback)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1221",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Set-Cookie: session=abc123; Domain=example.com (cookie over-sharing)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1222",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Set-Cookie: session=abc123; Path=/ (broad cookie scope)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1223",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Set-Cookie: session=abc123; SameSite=None (no SameSite restriction)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

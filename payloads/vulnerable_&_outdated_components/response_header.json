@@ -1,0 +1,167 @@
+[
+  {
+    "payload_id": "OWP-1024",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Server: Apache/1.3.37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1025",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Server: nginx/1.10.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1026",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Server: IIS/6.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1027",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Server: IIS/7.5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1028",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Powered-By: PHP/4.4.9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1029",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Powered-By: PHP/5.2.17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1030",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Powered-By: PHP/5.3.29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1453",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Server: Apache/2.0.65",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1454",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Server: Apache/2.2.34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1455",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Server: nginx/1.14.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1456",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Server: IIS/7.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1457",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "Server: IIS/8.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1458",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Powered-By: PHP/5.4.45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1459",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Powered-By: ASP.NET/2.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1460",
+    "vulnerability_category": "Vulnerable & Outdated Components",
+    "target_technology": "Web Server",
+    "injection_point": "response_header",
+    "payload_string": "X-Powered-By: ASP.NET/3.5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

