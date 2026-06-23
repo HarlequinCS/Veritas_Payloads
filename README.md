@@ -1,6 +1,6 @@
 # OWASP Top 10 Payload Dataset
 
-A comprehensive, structured collection of **123,918 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
+A comprehensive, structured collection of **210,845 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
 
 > **Interactive Dashboard:** Explore the dataset visually at [`index.html`](index.html) — a professional static dashboard built with HTML, CSS, and JavaScript. Served automatically via GitHub Pages from the root.
 
@@ -8,10 +8,10 @@ A comprehensive, structured collection of **123,918 unique payload strings** cov
 
 | Metric | Value |
 |--------|-------|
-| Total Payloads | 123,918 |
+| Total Payloads | 210,845 |
 | Vulnerability Categories | 65 |
-| Organized Files | 141 |
-| Total Size (JSON) | ~48 MB |
+| Organized Files | 139 |
+| Total Size (JSON) | ~70 MB |
 | OWASP Version | 2025 (all 10 categories covered) |
 
 ## Format
@@ -37,7 +37,7 @@ Each payload entry follows a consistent schema:
 The dataset is available in two forms:
 
 ### Unified JSON
-- **`owasp_top10_payloads.json`** — single file containing all 123,918 entries
+- **`owasp_top10_payloads.json`** — single file containing all 210,845 entries
 
 ### Organized Directory
 
@@ -55,81 +55,75 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 
 ## Categories
 
-### OWASP Top 10 (2025) — Primary Classes
+### Categories
 
-| OWASP 2025 | Category | Payloads |
-|------------|----------|----------|
-| A01 | Broken Access Control | 1,020 |
-| A01 | Broken Access Control (IDOR) | 1,276 |
-| A02 | Security Misconfiguration | 5,029 |
-| A02 | Web Cache Deception | 1,020 |
-| A03 | Software Supply Chain Failures | 1,020 |
-| A03 | Vulnerable & Outdated Components | 1,020 |
-| A04 | Cryptographic Failures | 1,020 |
-| A05 | Injection (LFI/RFI) | 25,873 |
-| A05 | Injection (XSS) | 12,462 |
-| A05 | Injection (Command Injection) | 9,391 |
-| A05 | Injection (SQLi) | 5,348 |
-| A05 | Injection (SSRF) | 1,354 |
-| A05 | Injection (Open Redirect) | 1,020 |
-| A05 | Injection (NoSQLi) | 1,020 |
-| A05 | Injection (LDAP) | 1,020 |
-| A05 | Injection (SSTI) | 1,020 |
-| A05 | Injection (XXE) | 1,020 |
-| A05 | Injection (Unrestricted File Upload) | 1,020 |
-| A05 | Injection (Prototype Pollution) | 1,020 |
-| A05 | Injection (GraphQL) | 1,020 |
-| A05 | Injection (SSI) | 1,020 |
-| A05 | Injection (CRLF) | 1,020 |
-| A05 | Injection (Format String) | 1,020 |
-| A05 | Injection (Request Smuggling) | 1,020 |
-| A05 | Injection (LaTeX) | 1,020 |
-| A05 | Injection (SMTP) | 1,020 |
-| A05 | Injection (DOM Clobbering) | 1,020 |
-| A05 | Injection (CSS Injection) | 1,020 |
-| A05 | Injection (CSV Injection) | 1,020 |
-| A05 | Injection (Type Juggling) | 1,020 |
-| A05 | Injection (XSLT) | 1,020 |
-| A05 | Injection (XPATH) | 1,020 |
-| A05 | HTTP Parameter Pollution | 1,020 |
-| A06 | Insecure Design | 1,020 |
-| A07 | Identification & Authentication Failures | 1,099 |
-| A08 | Software & Data Integrity Failures (Deserialization) | 3,766 |
-| A09 | Security Logging & Monitoring Failures | 1,020 |
-| A10 | Mishandling of Exceptional Conditions | 1,020 |
-
-### Sub-Categories (Secondary Classification)
-
-| Category | Payloads |
-|----------|----------|
-| Cryptographic Failures (Info Disclosure Headers) | 1,020 |
-| Cryptographic Failures (JWT None Alg) | 1,020 |
-| Cryptographic Failures (JWT Kid Injection) | 1,020 |
-| Cryptographic Failures (Weak Crypto Algos) | 1,020 |
-| Cryptographic Failures (Weak TLS Probes) | 1,020 |
-| HTTP Parameter Pollution (Duplicate Params) | 1,020 |
-| Identification & Authentication Failures (Username Enum) | 1,020 |
-| Identification & Authentication Failures (Weak Passwords) | 1,020 |
-| Identification & Authentication Failures (Weak Session IDs) | 1,020 |
-| Insecure Design (Coupon Abuse) | 1,020 |
-| Insecure Design (Price Manipulation) | 1,020 |
-| Insecure Design (Race Condition) | 1,020 |
-| Insecure Design (Race Condition Tests) | 1,020 |
-| Insecure Design (Rate Limit Bypass) | 1,020 |
-| Mishandling of Exceptional Conditions (Debug Code Disclosure) | 1,020 |
-| Mishandling of Exceptional Conditions (Error Info Disclosure) | 1,020 |
-| Mishandling of Exceptional Conditions (Failing Open / Priv Esc) | 1,020 |
-| Mishandling of Exceptional Conditions (Missing Error Page) | 1,020 |
-| Mishandling of Exceptional Conditions (Missing/Extra Parameters) | 1,020 |
-| Mishandling of Exceptional Conditions (Null/Type/Zero Errors) | 1,020 |
-| Mishandling of Exceptional Conditions (Unchecked Exceptions) | 1,020 |
-| Security Logging & Monitoring Failures (Log Injection) | 1,020 |
-| Software Supply Chain Failures (Private Package Confusion) | 2,220 |
-| Software Supply Chain Failures (Vuln Dependency Versions) | 1,020 |
-| Vulnerable & Outdated Components (CVE Paths) | 1,020 |
-| Vulnerable & Outdated Components (Vulnerable Versions) | 1,020 |
-| Web Cache Deception (Cache Poisoning) | 1,020 |
-| Web Cache Deception (Cache Poisoning Headers) | 1,020 |
+| Category | OWASP 2025 | Payloads |
+|----------|------------|----------|
+| **Injection (LFI/RFI)** | A05 | 25,873 |
+| **Injection (XSS)** | A05 | 12,462 |
+| **Injection (Command Injection)** | A05 | 9,391 |
+| **Injection (SQLi)** | A05 | 5,348 |
+| **Security Misconfiguration** | A02 | 5,029 |
+| _Insecure Design (Price Manipulation)_ | — | 4,281 |
+| **Insecure Design** | A06 | 4,018 |
+| **Injection (LDAP)** | A05 | 3,992 |
+| _Identification & Authentication Failures (Weak Session IDs)_ | — | 3,845 |
+| **Software & Data Integrity Failures (Deserialization)** | A08 | 3,766 |
+| **Cryptographic Failures** | A04 | 3,751 |
+| _Web Cache Deception (Cache Poisoning)_ | — | 3,680 |
+| **Injection (SSTI)** | A05 | 3,659 |
+| **Injection (SSI)** | A05 | 3,658 |
+| _Insecure Design (Race Condition Tests)_ | — | 3,625 |
+| _Insecure Design (Coupon Abuse)_ | — | 3,618 |
+| **Injection (XXE)** | A05 | 3,613 |
+| **HTTP Parameter Pollution** | A05 | 3,600 |
+| **Injection (CSV Injection)** | A05 | 3,585 |
+| **Software Supply Chain Failures** | A03 | 3,576 |
+| **Injection (CRLF)** | A05 | 3,562 |
+| **Vulnerable & Outdated Components** | A03 | 3,544 |
+| _Insecure Design (Race Condition)_ | — | 3,525 |
+| _Identification & Authentication Failures (Weak Passwords)_ | — | 3,519 |
+| **Security Logging & Monitoring Failures** | A09 | 3,519 |
+| _Mishandling of Exceptional Conditions (Error Info Disclosure)_ | — | 3,515 |
+| _Mishandling of Exceptional Conditions (Missing/Extra Parameters)_ | — | 3,505 |
+| _Cryptographic Failures (Weak Crypto Algos)_ | — | 3,487 |
+| **Web Cache Deception** | A02 | 3,487 |
+| _Mishandling of Exceptional Conditions (Failing Open / Priv Esc)_ | — | 3,485 |
+| _Mishandling of Exceptional Conditions (Debug Code Disclosure)_ | — | 3,481 |
+| _Mishandling of Exceptional Conditions (Null/Type/Zero Errors)_ | — | 3,481 |
+| _Mishandling of Exceptional Conditions (Unchecked Exceptions)_ | — | 3,479 |
+| **Injection (XPATH)** | A05 | 3,478 |
+| _Vulnerable & Outdated Components (Vulnerable Versions)_ | — | 3,473 |
+| _Cryptographic Failures (Weak TLS Probes)_ | — | 3,466 |
+| _Cryptographic Failures (Info Disclosure Headers)_ | — | 3,461 |
+| _Cryptographic Failures (JWT None Alg)_ | — | 3,460 |
+| _Software Supply Chain Failures (Private Package Confusion)_ | — | 2,220 |
+| **Injection (Unrestricted File Upload)** | A05 | 2,008 |
+| **Injection (NoSQLi)** | A05 | 1,612 |
+| **Injection (Open Redirect)** | A05 | 1,427 |
+| **Injection (Prototype Pollution)** | A05 | 1,427 |
+| **Injection (SSRF)** | A05 | 1,354 |
+| **Injection (Format String)** | A05 | 1,321 |
+| **Broken Access Control (IDOR)** | A01 | 1,276 |
+| **Broken Access Control** | A01 | 1,215 |
+| **Injection (GraphQL)** | A05 | 1,196 |
+| **Injection (DOM Clobbering)** | A05 | 1,192 |
+| _HTTP Parameter Pollution (Duplicate Params)_ | — | 1,172 |
+| **Injection (LaTeX)** | A05 | 1,149 |
+| _Software Supply Chain Failures (Vuln Dependency Versions)_ | — | 1,116 |
+| **Identification & Authentication Failures** | A07 | 1,099 |
+| **Injection (SMTP)** | A05 | 1,099 |
+| **Injection (CSS Injection)** | A05 | 1,098 |
+| **Injection (Request Smuggling)** | A05 | 1,087 |
+| _Insecure Design (Rate Limit Bypass)_ | — | 1,086 |
+| **Injection (Type Juggling)** | A05 | 1,077 |
+| _Identification & Authentication Failures (Username Enum)_ | — | 1,070 |
+| **Injection (XSLT)** | A05 | 1,053 |
+| _Mishandling of Exceptional Conditions (Missing Error Page)_ | — | 1,050 |
+| _Vulnerable & Outdated Components (CVE Paths)_ | — | 1,045 |
+| _Security Logging & Monitoring Failures (Log Injection)_ | — | 1,037 |
+| _Web Cache Deception (Cache Poisoning Headers)_ | — | 1,034 |
+| _Cryptographic Failures (JWT Kid Injection)_ | — | 1,028 |
 
 ## Injection Points
 
