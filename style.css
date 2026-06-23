@@ -285,6 +285,7 @@ button { font-family: inherit; }
 .badge-pink { background: rgba(244,114,182,.12); color: var(--pink); border: 1px solid rgba(244,114,182,.22); }
 .badge-violet { background: rgba(129,140,248,.12); color: var(--violet); border: 1px solid rgba(129,140,248,.22); }
 .badge-red { background: rgba(248,113,113,.12); color: var(--red); border: 1px solid rgba(248,113,113,.22); }
+.badge-yellow { background: rgba(250,204,21,.12); color: #eab308; border: 1px solid rgba(250,204,21,.22); }
 .badge-muted { background: var(--bg-code); color: var(--text-secondary); border: 1px solid var(--border); }
 .lib-card-body { padding: 0 18px 14px; flex: 1; }
 .lib-card-title { font-size: .98rem; font-weight: 700; margin-bottom: 6px; }

