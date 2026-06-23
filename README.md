@@ -143,7 +143,7 @@ This dataset was compiled from the following open-source security research repos
 - **[Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates)** — Community-contributed vulnerability templates (by ProjectDiscovery). Extracted: WAF bypass, CORS misconfig, cache poisoning, LFI fuzzing, SSRF proxying, header injection, 403 bypass, open redirect, XSS fuzz, SQL injection, CRLF injection, generic LFI, environment disclosure.
 
 ### Specialized Wordlists
-- **[OWASP PayloadBox](https://github.com/payloadbox/xss-payload-list)** — XSS vulnerability payload list
+- **[PayloadBox XSS Payload List](https://github.com/payload-box/xss-payload-list)** — Cross-site scripting payload repository
 - **[PortSwigger XSS Cheat Sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)** — Cross-site scripting evasion and filter bypass techniques
 - **[Commix](https://github.com/commixproject/commix)** — Automated command injection testing
 - **[sqlmap](https://github.com/sqlmapproject/sqlmap)** — Automatic SQL injection and database takeover

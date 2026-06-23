@@ -60,7 +60,7 @@
       name: 'OWASP PayloadBox',
       by: 'PayloadBox',
       desc: 'XSS vulnerability payload list covering a wide range of injection contexts and filter bypass techniques.',
-      url: 'https://github.com/payloadbox/xss-payload-list'
+      url: 'https://github.com/payload-box/xss-payload-list'
     },
     {
       name: 'PortSwigger XSS Cheat Sheet',
