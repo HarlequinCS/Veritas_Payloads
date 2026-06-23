@@ -365,7 +365,7 @@
     const grid = $('#statsGrid');
     const cards = [
       { ico: 'db', cls: 'ico-cyan', value: TOTAL_PAYLOADS, desc: 'Total Payloads', trend: 'OWASP' },
-      { ico: 'layers', cls: 'ico-violet', value: 36, desc: 'Vulnerability Categories', trend: 'Top 10' },
+      { ico: 'layers', cls: 'ico-violet', value: CATEGORIES.length, desc: 'Vulnerability Categories', trend: 'Top 10' },
       { ico: 'users', cls: 'ico-green', value: contributorCount(), desc: 'Contributors', trend: 'Community' },
       { ico: 'grid', cls: 'ico-amber', value: SOURCES.length, desc: 'Sources & Repositories', trend: 'Curated' },
     ];
