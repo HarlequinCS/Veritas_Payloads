@@ -417,6 +417,9 @@
     }).join(', ');
     donut.style.background = 'conic-gradient(' + stops + ')';
 
+    const center = donut.querySelector('.d-num');
+    if (center) center.textContent = (TOTAL_PAYLOADS / 1000).toFixed(1) + 'K';
+
     legend.innerHTML = segments.map(s => (
       '<div class="legend-item"><span class="legend-dot" style="background:' + s.color + '"></span>' +
       '<span>' + escHtml(shorten(s.name)) + '</span>' +
