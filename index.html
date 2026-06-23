@@ -3,262 +3,212 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Veritas Payloads — OWASP Top 10 Payload Dataset</title>
+  <meta name="description" content="Veritas Payloads — a curated cybersecurity dashboard of 65,321 OWASP Top 10 payload strings for authorized security testing." />
+  <meta name="theme-color" content="#070a10" />
+  <title>Veritas Payloads — Cybersecurity Payload Dashboard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ─── NAV ─── -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="#" class="nav-brand">
-        <span class="brand-icon">&#9670;</span>
-        <span>Veritas<span class="brand-highlight">Payloads</span></span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#dashboard" class="active">Dashboard</a></li>
-        <li><a href="#library">Library</a></li>
-        <li><a href="#sources">Sources</a></li>
-        <li><a href="#walkthrough">Walkthrough</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="app">
 
-  <!-- ─── HERO ─── -->
-  <header class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-badge">OWASP Top 10 2021</div>
-      <h1>Comprehensive Payload Dataset</h1>
-      <p class="hero-sub">
-        A curated collection of <strong>65,321 unique payload strings</strong>
-        covering all OWASP Top 10 vulnerability categories.
-      </p>
-      <div class="hero-stats" id="heroStats">
-        <div class="hero-stat"><span class="stat-num" data-target="65321">0</span><span class="stat-label">Payloads</span></div>
-        <div class="hero-stat"><span class="stat-num">36</span><span class="stat-label">Categories</span></div>
-        <div class="hero-stat"><span class="stat-num">12</span><span class="stat-label">Sources</span></div>
-        <div class="hero-stat"><span class="stat-num">84</span><span class="stat-label">Files</span></div>
+    <!-- ─── SIDEBAR ─── -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </span>
+        <span>
+          Veritas<span class="brand-highlight">Payloads</span>
+          <span class="brand-tag">Security Dataset</span>
+        </span>
       </div>
-      <div class="hero-actions">
-        <a href="https://github.com/HarlequinCS/Veritas_Payloads" class="btn btn-primary" target="_blank">View on GitHub</a>
-        <a href="#library" class="btn btn-outline">Explore Library</a>
-      </div>
-    </div>
-  </header>
 
-  <!-- ─── DASHBOARD ─── -->
-  <section class="section" id="dashboard">
-    <div class="section-inner">
-      <h2 class="section-title">Dashboard Overview</h2>
-      <p class="section-desc">Real-time summary of the Veritas Payload dataset</p>
+      <nav class="sidebar-nav" id="sidebarNav">
+        <div class="nav-section-label">Workspace</div>
+        <!-- nav items injected by JS -->
+      </nav>
 
-      <div class="stats-grid">
-        <div class="stat-card stat-card--accent1">
-          <div class="stat-icon">&#9673;</div>
-          <div class="stat-body">
-            <span class="stat-value" id="totalPayloads">65,321</span>
-            <span class="stat-desc">Total Payloads</span>
-          </div>
-        </div>
-        <div class="stat-card stat-card--accent2">
-          <div class="stat-icon">&#9632;</div>
-          <div class="stat-body">
-            <span class="stat-value">36</span>
-            <span class="stat-desc">Vulnerability Categories</span>
-          </div>
-        </div>
-        <div class="stat-card stat-card--accent3">
-          <div class="stat-icon">&#9650;</div>
-          <div class="stat-body">
-            <span class="stat-value">12</span>
-            <span class="stat-desc">Sources &amp; Repositories</span>
-          </div>
-        </div>
-        <div class="stat-card stat-card--accent4">
-          <div class="stat-icon">&#9678;</div>
-          <div class="stat-body">
-            <span class="stat-value">84</span>
-            <span class="stat-desc">Organized Files</span>
+      <div class="sidebar-foot">
+        <div class="sidebar-credit">
+          <span class="credit-avatar">MS</span>
+          <div>
+            <div class="c-by">Curated by</div>
+            <div class="c-name">Muhammad Saiful Iqbal</div>
           </div>
         </div>
       </div>
+    </aside>
 
-      <!-- Category mini-grid -->
-      <h3 class="subsection-title">Payload Distribution by Category</h3>
-      <div class="category-grid" id="categoryGrid"></div>
-    </div>
-  </section>
+    <div class="backdrop" id="backdrop"></div>
 
-  <!-- ─── LIBRARY ─── -->
-  <section class="section section-dark" id="library">
-    <div class="section-inner">
-      <h2 class="section-title">Payload Library</h2>
-      <p class="section-desc">Browse, search, and filter across all payload categories</p>
+    <!-- ─── MAIN ─── -->
+    <div class="main">
 
-      <div class="library-controls">
-        <div class="search-wrap">
-          <input type="text" id="searchInput" placeholder="Search payloads, categories, or sources…" />
+      <!-- TOPBAR -->
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="topbar-titles">
+          <h1 id="pageTitle">Overview</h1>
+          <p id="pageSubtitle">Dataset summary &amp; analytics</p>
         </div>
-        <div class="filter-group">
-          <select id="filterCategory">
-            <option value="all">All Categories</option>
-          </select>
-          <select id="filterSource">
-            <option value="all">All Sources</option>
-          </select>
-        </div>
-      </div>
+        <div class="topbar-spacer"></div>
+        <span class="status-pill"><span class="status-dot"></span> Dataset Online</span>
+        <a class="btn-github" href="https://github.com/HarlequinCS/Veritas_Payloads" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </header>
 
-      <div class="library-grid" id="libraryGrid"></div>
-      <div class="library-empty" id="libraryEmpty">
-        <p>No payloads match your search criteria.</p>
-      </div>
-    </div>
-  </section>
+      <main class="content">
 
-  <!-- ─── SOURCES ─── -->
-  <section class="section" id="sources">
-    <div class="section-inner">
-      <h2 class="section-title">Sources &amp; Contributors</h2>
-      <p class="section-desc">Data curated from the security community's most trusted repositories</p>
-
-      <div class="sources-grid" id="sourcesGrid"></div>
-
-      <div class="credit-card">
-        <div class="credit-icon">&#9733;</div>
-        <div class="credit-body">
-          <h3>Created and curated by <strong>Muhammad Saiful Iqbal</strong></h3>
-          <p>This dataset is compiled from publicly available security research and open-source wordlists. Each source repository retains its own license. Intended for authorized security testing and educational use only.</p>
-          <div class="credit-links">
-            <a href="https://github.com/HarlequinCS" target="_blank">GitHub &rarr;</a>
-            <a href="https://github.com/HarlequinCS/Veritas_Payloads" target="_blank">Project Repository &rarr;</a>
+        <!-- ═══ VIEW: OVERVIEW ═══ -->
+        <section class="view active" id="view-overview">
+          <div class="banner">
+            <span class="banner-badge">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2 4 5v6c0 5 3.4 7.7 8 9 4.6-1.3 8-4 8-9V5l-8-3z"/></svg>
+              OWASP Top 10 · 2021
+            </span>
+            <h2>Comprehensive Payload Intelligence Dataset</h2>
+            <p>A curated arsenal of <strong>65,321 unique payload strings</strong> spanning every OWASP Top 10 vulnerability class — built for authorized security testing, fuzzing, and DAST automation.</p>
+            <div class="banner-actions">
+              <button class="btn btn-primary" data-goto="library">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                Explore Library
+              </button>
+              <button class="btn btn-ghost" data-goto="walkthrough">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                Get Started
+              </button>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ─── WALKTHROUGH ─── -->
-  <section class="section section-dark" id="walkthrough">
-    <div class="section-inner">
-      <h2 class="section-title">Step-by-Step Walkthrough</h2>
-      <p class="section-desc">Learn how to use the Veritas Payload dataset effectively</p>
+          <div class="stats-grid" id="statsGrid"></div>
 
-      <div class="walkthrough-steps">
-        <div class="step">
-          <div class="step-number">01</div>
-          <div class="step-content">
-            <h3>Clone or Download</h3>
-            <p>Start by cloning the repository or downloading the latest release from GitHub.</p>
-            <div class="code-block">git clone https://github.com/HarlequinCS/Veritas_Payloads.git</div>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-number">02</div>
-          <div class="step-content">
-            <h3>Choose Your Format</h3>
-            <p>The dataset is available as a single unified JSON file or organized into category folders.</p>
-            <div class="code-block">Veritas_Payloads/
-  &#9500;&#9472;&#9472; owasp_top10_payloads.json       # Unified (65,321 entries)
-  &#9500;&#9472;&#9472; organize_payloads.py             # Splitter tool
-  &#9492;&#9472;&#9472; payloads/                         # Organized by category
-      &#9500;&#9472;&#9472; injection_(xss)/query_parameter.json
-      &#9500;&#9472;&#9472; injection_(sqli)/query_parameter.json
-      &#9492;&#9472;&#9472; injection_(lfi_rfi)/path_parameter.json</div>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-number">03</div>
-          <div class="step-content">
-            <h3>Understand the Schema</h3>
-            <p>Each payload entry follows a consistent structure for easy integration.</p>
-            <div class="code-block">{
-  "payload_id": "OWP-0001",
-  "vulnerability_category": "Injection (SQLi)",
-  "target_technology": "Generic",
-  "injection_point": "query_parameter",
-  "payload_string": "' OR '1'='1",
-  "validation": {
-    "expected_status_code": 200,
-    "success_regex": "error|sql"
-  }
-}</div>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-number">04</div>
-          <div class="step-content">
-            <h3>Load in Your Scanner</h3>
-            <p>Use the organized files to feed your DAST or fuzzing tool. Each file targets a specific category and injection point.</p>
-            <div class="code-block">import json
-
-with open("payloads/injection_(sqli)/query_parameter.json") as f:
-    payloads = json.load(f)
-
-for p in payloads:
-    print(f"{p['payload_id']}: {p['payload_string']}")</div>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-number">05</div>
-          <div class="step-content">
-            <h3>Re-organize Anytime</h3>
-            <p>Run the included Python script to re-generate the organized folders after modifications.</p>
-            <div class="code-block">python organize_payloads.py</div>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-number">06</div>
-          <div class="step-content">
-            <h3>Interpret Results</h3>
-            <p>Each payload includes validation hints — expected status codes and success regex patterns — to help verify if a vulnerability was triggered.</p>
-            <div class="tips-grid">
-              <div class="tip-card">
-                <strong>SQL Injection</strong>
-                <span>Watch for: <code>syntax error</code>, <code>SQL</code>, unexpected 200 responses</span>
+          <div class="section-label">Analytics</div>
+          <div class="grid-2">
+            <div class="panel">
+              <div class="panel-head">
+                <h3>Top Vulnerability Categories</h3>
+                <span class="hint">by payload volume</span>
               </div>
-              <div class="tip-card">
-                <strong>XSS</strong>
-                <span>Watch for: <code>&lt;script&gt;alert</code> in response, DOM modifications</span>
+              <div class="bar-row" id="barChart"></div>
+            </div>
+            <div class="panel">
+              <div class="panel-head">
+                <h3>Composition</h3>
+                <span class="hint">share of dataset</span>
               </div>
-              <div class="tip-card">
-                <strong>LFI/RFI</strong>
-                <span>Watch for: <code>root:.*:0:0</code>, <code>boot.ini</code>, file contents in response</span>
-              </div>
-              <div class="tip-card">
-                <strong>Open Redirect</strong>
-                <span>Watch for: <code>Location:</code> header with 302 status</span>
+              <div class="donut-wrap">
+                <div class="donut" id="donut">
+                  <div class="donut-center">
+                    <div class="d-num">65.3K</div>
+                    <div class="d-lab">Payloads</div>
+                  </div>
+                </div>
+                <div class="donut-legend" id="donutLegend"></div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ─── FOOTER ─── -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="brand-icon">&#9670;</span>
-        <span>Veritas<span class="brand-highlight">Payloads</span></span>
-      </div>
-      <p class="footer-credit">Created and curated by <strong>Muhammad Saiful Iqbal</strong></p>
-      <p class="footer-meta">
-        <a href="https://github.com/HarlequinCS/Veritas_Payloads" target="_blank">GitHub</a>
-        &middot;
-        OWASP Top 10 2021 &middot;
-        65,321 Payloads
-      </p>
+          <div class="section-label">All Categories</div>
+          <div class="cat-list" id="catList"></div>
+        </section>
+
+        <!-- ═══ VIEW: LIBRARY ═══ -->
+        <section class="view" id="view-library">
+          <div class="view-head">
+            <h2>Payload Library</h2>
+            <p>Search, filter and sort across all vulnerability categories. Click any card for full details and copy-ready examples.</p>
+          </div>
+
+          <div class="controls">
+            <div class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" id="searchInput" placeholder="Search categories, sources, or descriptions…" autocomplete="off" />
+            </div>
+            <div class="select-wrap">
+              <select id="filterCategory"><option value="all">All Categories</option></select>
+            </div>
+            <div class="select-wrap">
+              <select id="filterSource"><option value="all">All Sources</option></select>
+            </div>
+            <div class="select-wrap">
+              <select id="sortBy">
+                <option value="count-desc">Most Payloads</option>
+                <option value="count-asc">Fewest Payloads</option>
+                <option value="name-asc">Name (A–Z)</option>
+                <option value="name-desc">Name (Z–A)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="result-count" id="resultCount"></div>
+          <div class="library-grid" id="libraryGrid"></div>
+
+          <div class="empty-state" id="emptyState">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            <h3>No matching payloads</h3>
+            <p>Try a different keyword or reset your filters.</p>
+            <button class="btn btn-ghost" id="resetFilters">Reset Filters</button>
+          </div>
+        </section>
+
+        <!-- ═══ VIEW: SOURCES ═══ -->
+        <section class="view" id="view-sources">
+          <div class="view-head">
+            <h2>Sources &amp; Contributors</h2>
+            <p>Data curated from the security community's most trusted repositories and research projects.</p>
+          </div>
+
+          <div class="sources-grid" id="sourcesGrid"></div>
+
+          <div class="credit-banner">
+            <span class="credit-avatar">MS</span>
+            <div>
+              <h3>Created and curated by <strong>Muhammad Saiful Iqbal</strong></h3>
+              <p>This dataset is compiled from publicly available security research and open-source wordlists. Each source repository retains its own license. Intended for authorized security testing and educational use only.</p>
+              <div class="credit-links">
+                <a href="https://github.com/HarlequinCS" target="_blank" rel="noopener">GitHub Profile &rarr;</a>
+                <a href="https://github.com/HarlequinCS/Veritas_Payloads" target="_blank" rel="noopener">Project Repository &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ VIEW: WALKTHROUGH ═══ -->
+        <section class="view" id="view-walkthrough">
+          <div class="view-head">
+            <h2>Step-by-Step Walkthrough</h2>
+            <p>A beginner-friendly guide to integrating the Veritas Payload dataset into your security testing workflow.</p>
+          </div>
+          <div class="accordion" id="accordion"></div>
+        </section>
+
+      </main>
     </div>
-  </footer>
+  </div>
+
+  <!-- ─── MODAL ─── -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <div>
+          <div class="m-id" id="modalId"></div>
+          <h3 id="modalTitle"></h3>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ─── TOASTS ─── -->
+  <div class="toast-wrap" id="toastWrap"></div>
 
   <script src="script.js"></script>
 </body>
