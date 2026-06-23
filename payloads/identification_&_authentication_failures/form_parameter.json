@@ -8985,5 +8985,49 @@
       "expected_status_code": 302,
       "success_regex": "dashboard|admin"
     }
+  },
+  {
+    "payload_id": "OWP-57857",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "admin' in",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58041",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[VALIDUSER]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61887",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "admin\" /></td>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62704",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "admin\">NAME",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

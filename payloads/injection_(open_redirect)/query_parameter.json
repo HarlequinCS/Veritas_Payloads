@@ -2847,5 +2847,148 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-56480",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": ".NET",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.example.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-56481",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": ".NET",
+    "injection_point": "query_parameter",
+    "payload_string": "Applications/32x32/about.png",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-56565",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": ".NET",
+    "injection_point": "query_parameter",
+    "payload_string": "http://",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-57312",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Java",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.RedirectExample.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-57384",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Java",
+    "injection_point": "query_parameter",
+    "payload_string": "/\\example.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-57646",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.evil.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-57664",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "[REDACTED]",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-58398",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "http://google.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-60910",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "[SITE]",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-61455",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "http://example.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-61885",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "http://example1.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-62090",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "//www.netsparker.com?",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
+  },
+  {
+    "payload_id": "OWP-64883",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": ".attacker-site.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "Location:"
+    }
   }
 ]

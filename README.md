@@ -1,15 +1,15 @@
 # OWASP Top 10 Payload Dataset
 
-A comprehensive, structured collection of **51,752 unique payload strings** covering all OWASP Top 10 (2021) vulnerability categories, curated from industry-standard security testing wordlists.
+A comprehensive, structured collection of **65,321 unique payload strings** covering all OWASP Top 10 (2021) vulnerability categories, curated from industry-standard security testing wordlists and exploit databases.
 
 ## Dataset Overview
 
 | Metric | Value |
 |--------|-------|
-| Total Payloads | 51,752 |
+| Total Payloads | 65,321 |
 | Vulnerability Categories | 36 |
-| Organized Files | 58 |
-| Total Size (JSON) | ~17 MB |
+| Organized Files | 84 |
+| Total Size (JSON) | ~22 MB |
 
 ## Format
 
@@ -34,7 +34,7 @@ Each payload entry follows a consistent schema:
 The dataset is available in two forms:
 
 ### Unified JSON
-- **`owasp_top10_payloads.json`** — single file containing all 51,752 entries
+- **`owasp_top10_payloads.json`** — single file containing all 55,994 entries
 
 ### Organized Directory
 
@@ -54,29 +54,33 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 
 | Category | Payloads |
 |----------|----------|
-| Injection (LFI/RFI) | 24,572 |
-| Injection (XSS) | 10,086 |
-| Injection (Command Injection) | 8,707 |
-| Security Misconfiguration | 4,964 |
-| Identification & Authentication Failures | 824 |
-| Injection (SQLi) | 556 |
-| Injection (Open Redirect) | 259 |
+| Injection (LFI/RFI) | 25,873 |
+| Injection (XSS) | 12,462 |
+| Injection (Command Injection) | 9,391 |
+| Injection (SQLi) | 5,348 |
+| Security Misconfiguration | 5,029 |
+| Software & Data Integrity Failures (Deserialization) | 3,766 |
+| Identification & Authentication Failures | 899 |
+| Insecure Design | 473 |
+| Injection (Open Redirect) | 272 |
 | Cryptographic Failures | 166 |
 | Injection (NoSQLi) | 147 |
+| Broken Access Control (IDOR) | 138 |
+| Injection (SSRF) | 125 |
 | Injection (LDAP) | 123 |
-| Broken Access Control (IDOR) | 114 |
-| Injection (XXE) | 99 |
-| Injection (SSTI) | 79 |
-| Injection (SSRF) | 74 |
+| Injection (Unrestricted File Upload) | 114 |
+| Injection (XXE) | 110 |
+| Injection (GraphQL) | 100 |
+| Injection (SSI) | 100 |
+| Injection (SSTI) | 86 |
+| Insecure Design (Race Condition) | 80 |
 | Injection (Prototype Pollution) | 73 |
 | Vulnerable & Outdated Components | 57 |
 | Security Logging & Monitoring Failures | 56 |
 | Injection (Format String) | 55 |
-| Insecure Design | 50 |
 | Injection (Request Smuggling) | 43 |
-| Software & Data Integrity Failures (Deserialization) | 42 |
+| Injection (CRLF) | 42 |
 | Injection (LaTeX) | 36 |
-| Injection (CRLF) | 33 |
 | Injection (SMTP) | 30 |
 | Injection (DOM Clobbering) | 25 |
 | Injection (CSS Injection) | 23 |
@@ -129,16 +133,32 @@ python organize_payloads.py
 
 ## Sources
 
-This dataset was compiled from:
-- **PayloadsAllTheThings** — community-driven payload repository
-- **SecLists / Fuzzing** — by Daniel Miessler, Jason Haddix
-- **Nuclei Templates** — by ProjectDiscovery
-- **OWASP PayloadBox** — XSS payload collection
-- **PortSwigger XSS Cheat Sheet**
-- **Commix** — command injection test vectors
-- **LFISuite** — local file inclusion paths
-- **sqlmap** — SQL injection risk-classified payloads
+This dataset was compiled from the following open-source security research repositories and wordlists:
+
+### Primary Repositories
+- **[PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)** — Community-driven payload repository covering all major vulnerability categories. Extracted: XSS, SQLi, LFI, SSRF, SSTI, CMD injection, Open Redirect, SSI, XXE, CRLF, NoSQLi, LDAP, Prototype Pollution, SMTP injection, File Upload, CSV Injection, CSS Injection, DOM Clobbering, GraphQL, HTTP Parameter Pollution, LaTeX, Type Juggling, XPATH, XSLT, Request Smuggling, JWT attacks, Race Conditions, Web Cache Deception, Zip Slip, Mass Assignment.
+- **[SecLists](https://github.com/danielmiessler/SecLists)** — The ultimate collection of security testing wordlists (by Daniel Miessler and Jason Haddix). Extracted: Fuzzing strings, XSS vectors (PortSwigger Cheat Sheet, OFJAAAH, PayloadBox, Jhaddix, MarioVectors), LFI paths (Jhaddix, LFISuite, gracefulsecurity, Linux packages, Windows paths), SQLi payloads (Generic, Oracle, auth bypass, sqlmap risk-classified), Command Injection (Commix), LDAP fuzzing, format strings, template expressions, XXE, SSI, login bypass, naughty strings, full Java class paths, numeric amounts.
+- **[Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates)** — Community-contributed vulnerability templates (by ProjectDiscovery). Extracted: WAF bypass, CORS misconfig, cache poisoning, LFI fuzzing, SSRF proxying, header injection, 403 bypass, open redirect, XSS fuzz, SQL injection, CRLF injection, generic LFI, environment disclosure.
+
+### Specialized Wordlists
+- **[OWASP PayloadBox](https://github.com/payloadbox/xss-payload-list)** — XSS vulnerability payload list
+- **[PortSwigger XSS Cheat Sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)** — Cross-site scripting evasion and filter bypass techniques
+- **[Commix](https://github.com/commixproject/commix)** — Automated command injection testing
+- **[sqlmap](https://github.com/sqlmapproject/sqlmap)** — Automatic SQL injection and database takeover
+- **[LFISuite](https://github.com/D35m0nd142/LFISuite)** — Local File Inclusion exploitation toolkit
+- **[fuzzdb](https://github.com/fuzzdb-project/fuzzdb)** — Attack pattern and fuzzing resource database
+- **[Exploit Database](https://gitlab.com/exploit-database/exploitdb)** — The definitive archive of publicly disclosed exploits. Extracted: 9,327 PoC payload strings from 13,605 webapp exploit scripts covering SQLi, XSS, LFI, CMD injection, auth bypass, and more.
+- **[Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings)** — Edge case strings for input validation testing
+
+### Cloud & Container References
+- **AWS IMDS** — Instance Metadata Service endpoints (docs.aws.amazon.com)
+- **GCP Metadata** — Google Compute Engine metadata server (cloud.google.com)
+- **Azure IMDS** — Azure Instance Metadata Service (docs.microsoft.com)
+- **Alibaba Cloud ECS Metadata** — ECS instance metadata (aliyun.com)
+- **DigitalOcean Metadata** — Droplet metadata service (docs.digitalocean.com)
+- **OpenStack Metadata** — OpenStack metadata API (docs.openstack.org)
+- **Kubernetes** — Pod security context and service account secrets (kubernetes.io)
 
 ## License
 
-This dataset is compiled from publicly available security research and open-source wordlists. It is intended for authorized security testing and educational use only.
+This dataset is compiled from publicly available security research and open-source wordlists. It is intended for authorized security testing and educational use only. Each source repository retains its own license. See individual repositories for detailed licensing information.

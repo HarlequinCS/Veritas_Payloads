@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-62961",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "./../includes/pixelpost.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

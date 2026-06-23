@@ -1,19 +1,23 @@
 {
-  "total_payloads": 55994,
+  "total_payloads": 65321,
   "total_categories": 36,
-  "total_files": 58,
+  "total_files": 84,
   "categories": {
     "Broken Access Control (IDOR)": {
       "folder": "broken_access_control_(idor)",
-      "total": 114,
+      "total": 138,
       "files": {
+        "form_parameter": {
+          "file": "broken_access_control_(idor)/form_parameter.json",
+          "count": 1
+        },
         "path_parameter": {
           "file": "broken_access_control_(idor)/path_parameter.json",
           "count": 85
         },
         "query_parameter": {
           "file": "broken_access_control_(idor)/query_parameter.json",
-          "count": 29
+          "count": 52
         }
       }
     },
@@ -47,7 +51,7 @@
     },
     "Identification & Authentication Failures": {
       "folder": "identification_&_authentication_failures",
-      "total": 824,
+      "total": 899,
       "files": {
         "cookie": {
           "file": "identification_&_authentication_failures/cookie.json",
@@ -55,21 +59,29 @@
         },
         "form_parameter": {
           "file": "identification_&_authentication_failures/form_parameter.json",
-          "count": 817
+          "count": 821
         },
         "header": {
           "file": "identification_&_authentication_failures/header.json",
           "count": 4
+        },
+        "query_parameter": {
+          "file": "identification_&_authentication_failures/query_parameter.json",
+          "count": 71
         }
       }
     },
     "Injection (CRLF)": {
       "folder": "injection_(crlf)",
-      "total": 33,
+      "total": 42,
       "files": {
         "path_parameter": {
           "file": "injection_(crlf)/path_parameter.json",
           "count": 33
+        },
+        "query_parameter": {
+          "file": "injection_(crlf)/query_parameter.json",
+          "count": 9
         }
       }
     },
@@ -95,11 +107,31 @@
     },
     "Injection (Command Injection)": {
       "folder": "injection_(command_injection)",
-      "total": 8707,
+      "total": 9391,
       "files": {
+        "body_json": {
+          "file": "injection_(command_injection)/body_json.json",
+          "count": 8
+        },
+        "body_xml": {
+          "file": "injection_(command_injection)/body_xml.json",
+          "count": 6
+        },
+        "form_parameter": {
+          "file": "injection_(command_injection)/form_parameter.json",
+          "count": 17
+        },
+        "header": {
+          "file": "injection_(command_injection)/header.json",
+          "count": 7
+        },
+        "path_parameter": {
+          "file": "injection_(command_injection)/path_parameter.json",
+          "count": 7
+        },
         "query_parameter": {
           "file": "injection_(command_injection)/query_parameter.json",
-          "count": 8707
+          "count": 9346
         }
       }
     },
@@ -145,15 +177,27 @@
     },
     "Injection (LFI/RFI)": {
       "folder": "injection_(lfi_rfi)",
-      "total": 24623,
+      "total": 25873,
       "files": {
+        "body_json": {
+          "file": "injection_(lfi_rfi)/body_json.json",
+          "count": 7
+        },
+        "form_parameter": {
+          "file": "injection_(lfi_rfi)/form_parameter.json",
+          "count": 16
+        },
+        "header": {
+          "file": "injection_(lfi_rfi)/header.json",
+          "count": 4
+        },
         "path_parameter": {
           "file": "injection_(lfi_rfi)/path_parameter.json",
-          "count": 14013
+          "count": 14148
         },
         "query_parameter": {
           "file": "injection_(lfi_rfi)/query_parameter.json",
-          "count": 10610
+          "count": 11698
         }
       }
     },
@@ -183,11 +227,11 @@
     },
     "Injection (Open Redirect)": {
       "folder": "injection_(open_redirect)",
-      "total": 259,
+      "total": 272,
       "files": {
         "query_parameter": {
           "file": "injection_(open_redirect)/query_parameter.json",
-          "count": 259
+          "count": 272
         }
       }
     },
@@ -227,15 +271,31 @@
     },
     "Injection (SQLi)": {
       "folder": "injection_(sqli)",
-      "total": 556,
+      "total": 5348,
       "files": {
+        "body_json": {
+          "file": "injection_(sqli)/body_json.json",
+          "count": 23
+        },
+        "body_xml": {
+          "file": "injection_(sqli)/body_xml.json",
+          "count": 14
+        },
         "form_parameter": {
           "file": "injection_(sqli)/form_parameter.json",
-          "count": 102
+          "count": 228
+        },
+        "header": {
+          "file": "injection_(sqli)/header.json",
+          "count": 43
+        },
+        "path_parameter": {
+          "file": "injection_(sqli)/path_parameter.json",
+          "count": 39
         },
         "query_parameter": {
           "file": "injection_(sqli)/query_parameter.json",
-          "count": 454
+          "count": 5001
         }
       }
     },
@@ -251,25 +311,29 @@
     },
     "Injection (SSRF)": {
       "folder": "injection_(ssrf)",
-      "total": 118,
+      "total": 125,
       "files": {
         "body_xml": {
           "file": "injection_(ssrf)/body_xml.json",
-          "count": 1
+          "count": 2
         },
         "query_parameter": {
           "file": "injection_(ssrf)/query_parameter.json",
-          "count": 117
+          "count": 123
         }
       }
     },
     "Injection (SSTI)": {
       "folder": "injection_(ssti)",
-      "total": 79,
+      "total": 86,
       "files": {
         "form_parameter": {
           "file": "injection_(ssti)/form_parameter.json",
           "count": 79
+        },
+        "query_parameter": {
+          "file": "injection_(ssti)/query_parameter.json",
+          "count": 7
         }
       }
     },
@@ -285,11 +349,27 @@
     },
     "Injection (Unrestricted File Upload)": {
       "folder": "injection_(unrestricted_file_upload)",
-      "total": 100,
+      "total": 114,
       "files": {
+        "body_json": {
+          "file": "injection_(unrestricted_file_upload)/body_json.json",
+          "count": 2
+        },
         "file_upload": {
           "file": "injection_(unrestricted_file_upload)/file_upload.json",
           "count": 100
+        },
+        "form_parameter": {
+          "file": "injection_(unrestricted_file_upload)/form_parameter.json",
+          "count": 1
+        },
+        "path_parameter": {
+          "file": "injection_(unrestricted_file_upload)/path_parameter.json",
+          "count": 10
+        },
+        "query_parameter": {
+          "file": "injection_(unrestricted_file_upload)/query_parameter.json",
+          "count": 1
         }
       }
     },
@@ -315,29 +395,45 @@
     },
     "Injection (XSS)": {
       "folder": "injection_(xss)",
-      "total": 10086,
+      "total": 12462,
       "files": {
+        "body_json": {
+          "file": "injection_(xss)/body_json.json",
+          "count": 10
+        },
+        "body_xml": {
+          "file": "injection_(xss)/body_xml.json",
+          "count": 14
+        },
         "form_parameter": {
           "file": "injection_(xss)/form_parameter.json",
-          "count": 508
+          "count": 618
         },
         "hash_parameter": {
           "file": "injection_(xss)/hash_parameter.json",
           "count": 3
         },
+        "header": {
+          "file": "injection_(xss)/header.json",
+          "count": 17
+        },
+        "path_parameter": {
+          "file": "injection_(xss)/path_parameter.json",
+          "count": 36
+        },
         "query_parameter": {
           "file": "injection_(xss)/query_parameter.json",
-          "count": 9575
+          "count": 11764
         }
       }
     },
     "Injection (XXE)": {
       "folder": "injection_(xxe)",
-      "total": 99,
+      "total": 110,
       "files": {
         "body_xml": {
           "file": "injection_(xxe)/body_xml.json",
-          "count": 99
+          "count": 110
         }
       }
     },
@@ -377,15 +473,23 @@
     },
     "Security Misconfiguration": {
       "folder": "security_misconfiguration",
-      "total": 4964,
+      "total": 5029,
       "files": {
         "body_json": {
           "file": "security_misconfiguration/body_json.json",
           "count": 45
         },
+        "form_parameter": {
+          "file": "security_misconfiguration/form_parameter.json",
+          "count": 55
+        },
+        "header": {
+          "file": "security_misconfiguration/header.json",
+          "count": 1
+        },
         "path_parameter": {
           "file": "security_misconfiguration/path_parameter.json",
-          "count": 3
+          "count": 12
         },
         "query_parameter": {
           "file": "security_misconfiguration/query_parameter.json",

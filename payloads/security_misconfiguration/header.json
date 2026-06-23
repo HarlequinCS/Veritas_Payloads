@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-56708",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "CGI",
+    "injection_point": "header",
+    "payload_string": "[numericParam]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

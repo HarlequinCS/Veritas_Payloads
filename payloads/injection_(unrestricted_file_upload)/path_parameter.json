@@ -1,0 +1,112 @@
+[
+  {
+    "payload_id": "OWP-57308",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Java",
+    "injection_point": "path_parameter",
+    "payload_string": "#{path}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57309",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Java",
+    "injection_point": "path_parameter",
+    "payload_string": "#{formattedDate}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57310",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Java",
+    "injection_point": "path_parameter",
+    "payload_string": "#{full_path}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57822",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "https://{site}.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57826",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/home/admin/.ssh/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-58629",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "\"cmd >> \"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-59089",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "include/config.inc.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-59090",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "/dbinfo.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61618",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "http://blogger.com.evil.com/poc.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64611",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "hs-brand-logo-slider.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

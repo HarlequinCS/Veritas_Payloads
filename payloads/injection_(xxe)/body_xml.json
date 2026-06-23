@@ -1087,5 +1087,126 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-56038",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": ".NET",
+    "injection_point": "body_xml",
+    "payload_string": "%payl;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-56974",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "%%param_exfil;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57244",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "CVE-2018-12463",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57504",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "CVE-2021-37425",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-57748",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "%payload;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64432",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "%file;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-64433",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "PHP",
+    "injection_point": "body_xml",
+    "payload_string": "& echo $! > http.server.pid)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-65312",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "http://hav4zt9bu9ihxzvcg59lqfapzg5it7.burpcollaborator.net",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-65313",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "http://attackerip:8000/miau.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-65314",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "#{vid}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-65321",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "CVE-2015-3623",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

