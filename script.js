@@ -459,10 +459,10 @@
 'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (65,321 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
     { t: 'Understand the Schema', s: 'Consistent, integration-ready structure', body:
       '<p>Each payload entry follows a consistent structure for easy integration.</p>' + codeBlock(
-'{\n  "payload_id": "OWP-0001",\n  "vulnerability_category": "Injection (SQLi)",\n  "injection_point": "query_parameter",\n  "payload_string": "\\' OR \\'1\\'=\\'1",\n  "validation": { "expected_status_code": 200, "success_regex": "error|sql" }\n}') },
+'{\n  "payload_id": "OWP-0001",\n  "vulnerability_category": "Injection (SQLi)",\n  "injection_point": "query_parameter",\n  "payload_string": "\' OR \'1\'=\'1",\n  "validation": { "expected_status_code": 200, "success_regex": "error|sql" }\n}') },
     { t: 'Load in Your Scanner', s: 'Feed payloads into your DAST/fuzzer', body:
       '<p>Use the organized files to feed your DAST or fuzzing tool. Each file targets a specific category and injection point.</p>' + codeBlock(
-'import json\n\nwith open("payloads/injection_(sqli)/query_parameter.json") as f:\n    payloads = json.load(f)\n\nfor p in payloads:\n    print(f"{p[\\'payload_id\\']}: {p[\\'payload_string\\']}")') },
+'import json\n\nwith open("payloads/injection_(sqli)/query_parameter.json") as f:\n    payloads = json.load(f)\n\nfor p in payloads:\n    print(f"{p[\'payload_id\']}: {p[\'payload_string\']}")') },
     { t: 'Re-organize Anytime', s: 'Regenerate category folders', body:
       '<p>Run the included Python script to re-generate the organized folders after modifications.</p>' + codeBlock('python organize_payloads.py') },
     { t: 'Interpret Results', s: 'Validation hints per category', body:
