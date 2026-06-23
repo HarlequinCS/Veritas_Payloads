@@ -1,11 +1,11 @@
 {
-  "total_payloads": 65781,
-  "total_categories": 45,
-  "total_files": 95,
+  "total_payloads": 123918,
+  "total_categories": 65,
+  "total_files": 141,
   "categories": {
     "Broken Access Control": {
       "folder": "broken_access_control",
-      "total": 89,
+      "total": 1020,
       "files": {
         "header": {
           "file": "broken_access_control/header.json",
@@ -14,12 +14,16 @@
         "path_parameter": {
           "file": "broken_access_control/path_parameter.json",
           "count": 81
+        },
+        "query_parameter": {
+          "file": "broken_access_control/query_parameter.json",
+          "count": 931
         }
       }
     },
     "Broken Access Control (IDOR)": {
       "folder": "broken_access_control_(idor)",
-      "total": 138,
+      "total": 1276,
       "files": {
         "form_parameter": {
           "file": "broken_access_control_(idor)/form_parameter.json",
@@ -27,21 +31,25 @@
         },
         "path_parameter": {
           "file": "broken_access_control_(idor)/path_parameter.json",
-          "count": 85
+          "count": 501
         },
         "query_parameter": {
           "file": "broken_access_control_(idor)/query_parameter.json",
-          "count": 52
+          "count": 774
         }
       }
     },
     "Cryptographic Failures": {
       "folder": "cryptographic_failures",
-      "total": 166,
+      "total": 1020,
       "files": {
         "header": {
           "file": "cryptographic_failures/header.json",
           "count": 102
+        },
+        "query_parameter": {
+          "file": "cryptographic_failures/query_parameter.json",
+          "count": 854
         },
         "response_body": {
           "file": "cryptographic_failures/response_body.json",
@@ -53,19 +61,99 @@
         }
       }
     },
+    "Cryptographic Failures (Info Disclosure Headers)": {
+      "folder": "cryptographic_failures_(info_disclosure_headers)",
+      "total": 1020,
+      "files": {
+        "header": {
+          "file": "cryptographic_failures_(info_disclosure_headers)/header.json",
+          "count": 16
+        },
+        "query_parameter": {
+          "file": "cryptographic_failures_(info_disclosure_headers)/query_parameter.json",
+          "count": 1004
+        }
+      }
+    },
+    "Cryptographic Failures (JWT Kid Injection)": {
+      "folder": "cryptographic_failures_(jwt_kid_injection)",
+      "total": 1020,
+      "files": {
+        "header": {
+          "file": "cryptographic_failures_(jwt_kid_injection)/header.json",
+          "count": 2
+        },
+        "query_parameter": {
+          "file": "cryptographic_failures_(jwt_kid_injection)/query_parameter.json",
+          "count": 1018
+        }
+      }
+    },
+    "Cryptographic Failures (JWT None Alg)": {
+      "folder": "cryptographic_failures_(jwt_none_alg)",
+      "total": 1020,
+      "files": {
+        "header": {
+          "file": "cryptographic_failures_(jwt_none_alg)/header.json",
+          "count": 15
+        },
+        "query_parameter": {
+          "file": "cryptographic_failures_(jwt_none_alg)/query_parameter.json",
+          "count": 1005
+        }
+      }
+    },
+    "Cryptographic Failures (Weak Crypto Algos)": {
+      "folder": "cryptographic_failures_(weak_crypto_algos)",
+      "total": 1020,
+      "files": {
+        "header": {
+          "file": "cryptographic_failures_(weak_crypto_algos)/header.json",
+          "count": 42
+        },
+        "query_parameter": {
+          "file": "cryptographic_failures_(weak_crypto_algos)/query_parameter.json",
+          "count": 978
+        }
+      }
+    },
+    "Cryptographic Failures (Weak TLS Probes)": {
+      "folder": "cryptographic_failures_(weak_tls_probes)",
+      "total": 1020,
+      "files": {
+        "header": {
+          "file": "cryptographic_failures_(weak_tls_probes)/header.json",
+          "count": 21
+        },
+        "query_parameter": {
+          "file": "cryptographic_failures_(weak_tls_probes)/query_parameter.json",
+          "count": 999
+        }
+      }
+    },
     "HTTP Parameter Pollution": {
       "folder": "http_parameter_pollution",
-      "total": 11,
+      "total": 1020,
       "files": {
         "query_parameter": {
           "file": "http_parameter_pollution/query_parameter.json",
-          "count": 11
+          "count": 1020
+        }
+      }
+    },
+    "HTTP Parameter Pollution (Duplicate Params)": {
+      "folder": "http_parameter_pollution_(duplicate_params)",
+      "total": 1020,
+      "files": {
+        "query_parameter": {
+          "file": "http_parameter_pollution_(duplicate_params)/query_parameter.json",
+          "count": 1020
         }
       }
     },
     "Identification & Authentication Failures": {
       "folder": "identification_&_authentication_failures",
-      "total": 899,
+      "total": 1099,
       "files": {
         "cookie": {
           "file": "identification_&_authentication_failures/cookie.json",
@@ -81,41 +169,95 @@
         },
         "query_parameter": {
           "file": "identification_&_authentication_failures/query_parameter.json",
-          "count": 71
+          "count": 271
+        }
+      }
+    },
+    "Identification & Authentication Failures (Username Enum)": {
+      "folder": "identification_&_authentication_failures_(username_enum)",
+      "total": 1020,
+      "files": {
+        "form_parameter": {
+          "file": "identification_&_authentication_failures_(username_enum)/form_parameter.json",
+          "count": 44
+        },
+        "query_parameter": {
+          "file": "identification_&_authentication_failures_(username_enum)/query_parameter.json",
+          "count": 976
+        }
+      }
+    },
+    "Identification & Authentication Failures (Weak Passwords)": {
+      "folder": "identification_&_authentication_failures_(weak_passwords)",
+      "total": 1020,
+      "files": {
+        "form_parameter": {
+          "file": "identification_&_authentication_failures_(weak_passwords)/form_parameter.json",
+          "count": 74
+        },
+        "query_parameter": {
+          "file": "identification_&_authentication_failures_(weak_passwords)/query_parameter.json",
+          "count": 946
+        }
+      }
+    },
+    "Identification & Authentication Failures (Weak Session IDs)": {
+      "folder": "identification_&_authentication_failures_(weak_session_ids)",
+      "total": 1020,
+      "files": {
+        "cookie": {
+          "file": "identification_&_authentication_failures_(weak_session_ids)/cookie.json",
+          "count": 400
+        },
+        "query_parameter": {
+          "file": "identification_&_authentication_failures_(weak_session_ids)/query_parameter.json",
+          "count": 620
         }
       }
     },
     "Injection (CRLF)": {
       "folder": "injection_(crlf)",
-      "total": 42,
+      "total": 1020,
       "files": {
+        "header": {
+          "file": "injection_(crlf)/header.json",
+          "count": 917
+        },
         "path_parameter": {
           "file": "injection_(crlf)/path_parameter.json",
           "count": 33
         },
         "query_parameter": {
           "file": "injection_(crlf)/query_parameter.json",
-          "count": 9
+          "count": 70
         }
       }
     },
     "Injection (CSS Injection)": {
       "folder": "injection_(css_injection)",
-      "total": 23,
+      "total": 1020,
       "files": {
+        "body_html": {
+          "file": "injection_(css_injection)/body_html.json",
+          "count": 954
+        },
         "form_parameter": {
           "file": "injection_(css_injection)/form_parameter.json",
-          "count": 23
+          "count": 66
         }
       }
     },
     "Injection (CSV Injection)": {
       "folder": "injection_(csv_injection)",
-      "total": 12,
+      "total": 1020,
       "files": {
+        "body_html": {
+          "file": "injection_(csv_injection)/body_html.json",
+          "count": 888
+        },
         "form_parameter": {
           "file": "injection_(csv_injection)/form_parameter.json",
-          "count": 12
+          "count": 132
         }
       }
     },
@@ -151,41 +293,49 @@
     },
     "Injection (DOM Clobbering)": {
       "folder": "injection_(dom_clobbering)",
-      "total": 25,
+      "total": 1020,
       "files": {
+        "body_html": {
+          "file": "injection_(dom_clobbering)/body_html.json",
+          "count": 871
+        },
         "form_parameter": {
           "file": "injection_(dom_clobbering)/form_parameter.json",
-          "count": 25
+          "count": 149
         }
       }
     },
     "Injection (Format String)": {
       "folder": "injection_(format_string)",
-      "total": 55,
+      "total": 1020,
       "files": {
+        "form_parameter": {
+          "file": "injection_(format_string)/form_parameter.json",
+          "count": 725
+        },
         "query_parameter": {
           "file": "injection_(format_string)/query_parameter.json",
-          "count": 55
+          "count": 295
         }
       }
     },
     "Injection (GraphQL)": {
       "folder": "injection_(graphql)",
-      "total": 100,
+      "total": 1020,
       "files": {
         "body_json": {
           "file": "injection_(graphql)/body_json.json",
-          "count": 100
+          "count": 1020
         }
       }
     },
     "Injection (LDAP)": {
       "folder": "injection_(ldap)",
-      "total": 123,
+      "total": 1020,
       "files": {
         "form_parameter": {
           "file": "injection_(ldap)/form_parameter.json",
-          "count": 123
+          "count": 1020
         }
       }
     },
@@ -217,21 +367,21 @@
     },
     "Injection (LaTeX)": {
       "folder": "injection_(latex)",
-      "total": 36,
+      "total": 1020,
       "files": {
         "form_parameter": {
           "file": "injection_(latex)/form_parameter.json",
-          "count": 36
+          "count": 1020
         }
       }
     },
     "Injection (NoSQLi)": {
       "folder": "injection_(nosqli)",
-      "total": 147,
+      "total": 1020,
       "files": {
         "body_json": {
           "file": "injection_(nosqli)/body_json.json",
-          "count": 136
+          "count": 1009
         },
         "query_parameter": {
           "file": "injection_(nosqli)/query_parameter.json",
@@ -241,21 +391,21 @@
     },
     "Injection (Open Redirect)": {
       "folder": "injection_(open_redirect)",
-      "total": 272,
+      "total": 1020,
       "files": {
         "query_parameter": {
           "file": "injection_(open_redirect)/query_parameter.json",
-          "count": 272
+          "count": 1020
         }
       }
     },
     "Injection (Prototype Pollution)": {
       "folder": "injection_(prototype_pollution)",
-      "total": 73,
+      "total": 1020,
       "files": {
         "body_json": {
           "file": "injection_(prototype_pollution)/body_json.json",
-          "count": 69
+          "count": 1016
         },
         "query_parameter": {
           "file": "injection_(prototype_pollution)/query_parameter.json",
@@ -265,21 +415,21 @@
     },
     "Injection (Request Smuggling)": {
       "folder": "injection_(request_smuggling)",
-      "total": 43,
+      "total": 1020,
       "files": {
         "header": {
           "file": "injection_(request_smuggling)/header.json",
-          "count": 43
+          "count": 1020
         }
       }
     },
     "Injection (SMTP)": {
       "folder": "injection_(smtp)",
-      "total": 30,
+      "total": 1020,
       "files": {
         "form_parameter": {
           "file": "injection_(smtp)/form_parameter.json",
-          "count": 30
+          "count": 1020
         }
       }
     },
@@ -315,17 +465,17 @@
     },
     "Injection (SSI)": {
       "folder": "injection_(ssi)",
-      "total": 100,
+      "total": 1020,
       "files": {
         "body_html": {
           "file": "injection_(ssi)/body_html.json",
-          "count": 100
+          "count": 1020
         }
       }
     },
     "Injection (SSRF)": {
       "folder": "injection_(ssrf)",
-      "total": 125,
+      "total": 1354,
       "files": {
         "body_xml": {
           "file": "injection_(ssrf)/body_xml.json",
@@ -333,17 +483,17 @@
         },
         "query_parameter": {
           "file": "injection_(ssrf)/query_parameter.json",
-          "count": 123
+          "count": 1352
         }
       }
     },
     "Injection (SSTI)": {
       "folder": "injection_(ssti)",
-      "total": 86,
+      "total": 1020,
       "files": {
         "form_parameter": {
           "file": "injection_(ssti)/form_parameter.json",
-          "count": 79
+          "count": 1013
         },
         "query_parameter": {
           "file": "injection_(ssti)/query_parameter.json",
@@ -353,17 +503,17 @@
     },
     "Injection (Type Juggling)": {
       "folder": "injection_(type_juggling)",
-      "total": 19,
+      "total": 1020,
       "files": {
         "form_parameter": {
           "file": "injection_(type_juggling)/form_parameter.json",
-          "count": 19
+          "count": 1020
         }
       }
     },
     "Injection (Unrestricted File Upload)": {
       "folder": "injection_(unrestricted_file_upload)",
-      "total": 114,
+      "total": 1020,
       "files": {
         "body_json": {
           "file": "injection_(unrestricted_file_upload)/body_json.json",
@@ -371,7 +521,7 @@
         },
         "file_upload": {
           "file": "injection_(unrestricted_file_upload)/file_upload.json",
-          "count": 100
+          "count": 1006
         },
         "form_parameter": {
           "file": "injection_(unrestricted_file_upload)/form_parameter.json",
@@ -389,21 +539,21 @@
     },
     "Injection (XPATH)": {
       "folder": "injection_(xpath)",
-      "total": 11,
+      "total": 1020,
       "files": {
         "form_parameter": {
           "file": "injection_(xpath)/form_parameter.json",
-          "count": 11
+          "count": 1020
         }
       }
     },
     "Injection (XSLT)": {
       "folder": "injection_(xslt)",
-      "total": 12,
+      "total": 1020,
       "files": {
         "body_xml": {
           "file": "injection_(xslt)/body_xml.json",
-          "count": 12
+          "count": 1020
         }
       }
     },
@@ -443,17 +593,17 @@
     },
     "Injection (XXE)": {
       "folder": "injection_(xxe)",
-      "total": 110,
+      "total": 1020,
       "files": {
         "body_xml": {
           "file": "injection_(xxe)/body_xml.json",
-          "count": 110
+          "count": 1020
         }
       }
     },
     "Insecure Design": {
       "folder": "insecure_design",
-      "total": 473,
+      "total": 1020,
       "files": {
         "body_json": {
           "file": "insecure_design/body_json.json",
@@ -461,97 +611,163 @@
         },
         "query_parameter": {
           "file": "insecure_design/query_parameter.json",
-          "count": 432
+          "count": 979
+        }
+      }
+    },
+    "Insecure Design (Coupon Abuse)": {
+      "folder": "insecure_design_(coupon_abuse)",
+      "total": 1020,
+      "files": {
+        "query_parameter": {
+          "file": "insecure_design_(coupon_abuse)/query_parameter.json",
+          "count": 1020
+        }
+      }
+    },
+    "Insecure Design (Price Manipulation)": {
+      "folder": "insecure_design_(price_manipulation)",
+      "total": 1020,
+      "files": {
+        "query_parameter": {
+          "file": "insecure_design_(price_manipulation)/query_parameter.json",
+          "count": 1020
+        }
+      }
+    },
+    "Insecure Design (Race Condition Tests)": {
+      "folder": "insecure_design_(race_condition_tests)",
+      "total": 1020,
+      "files": {
+        "query_parameter": {
+          "file": "insecure_design_(race_condition_tests)/query_parameter.json",
+          "count": 1020
         }
       }
     },
     "Insecure Design (Race Condition)": {
       "folder": "insecure_design_(race_condition)",
-      "total": 80,
+      "total": 1020,
       "files": {
         "query_parameter": {
           "file": "insecure_design_(race_condition)/query_parameter.json",
-          "count": 80
+          "count": 1020
+        }
+      }
+    },
+    "Insecure Design (Rate Limit Bypass)": {
+      "folder": "insecure_design_(rate_limit_bypass)",
+      "total": 1020,
+      "files": {
+        "header": {
+          "file": "insecure_design_(rate_limit_bypass)/header.json",
+          "count": 60
+        },
+        "query_parameter": {
+          "file": "insecure_design_(rate_limit_bypass)/query_parameter.json",
+          "count": 960
         }
       }
     },
     "Mishandling of Exceptional Conditions (Debug Code Disclosure)": {
       "folder": "mishandling_of_exceptional_conditions_(debug_code_disclosure)",
-      "total": 36,
+      "total": 1020,
       "files": {
         "query_parameter": {
           "file": "mishandling_of_exceptional_conditions_(debug_code_disclosure)/query_parameter.json",
-          "count": 36
+          "count": 1020
         }
       }
     },
     "Mishandling of Exceptional Conditions (Error Info Disclosure)": {
       "folder": "mishandling_of_exceptional_conditions_(error_info_disclosure)",
-      "total": 10,
+      "total": 1020,
       "files": {
         "query_parameter": {
           "file": "mishandling_of_exceptional_conditions_(error_info_disclosure)/query_parameter.json",
-          "count": 10
+          "count": 1020
         }
       }
     },
     "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)": {
       "folder": "mishandling_of_exceptional_conditions_(failing_open_priv_esc)",
-      "total": 40,
+      "total": 1020,
       "files": {
         "query_parameter": {
           "file": "mishandling_of_exceptional_conditions_(failing_open_priv_esc)/query_parameter.json",
-          "count": 40
+          "count": 1020
         }
       }
     },
     "Mishandling of Exceptional Conditions (Missing Error Page)": {
       "folder": "mishandling_of_exceptional_conditions_(missing_error_page)",
-      "total": 24,
+      "total": 1020,
       "files": {
         "path_parameter": {
           "file": "mishandling_of_exceptional_conditions_(missing_error_page)/path_parameter.json",
           "count": 24
+        },
+        "query_parameter": {
+          "file": "mishandling_of_exceptional_conditions_(missing_error_page)/query_parameter.json",
+          "count": 996
         }
       }
     },
     "Mishandling of Exceptional Conditions (Missing/Extra Parameters)": {
       "folder": "mishandling_of_exceptional_conditions_(missing_extra_parameters)",
-      "total": 60,
+      "total": 1020,
       "files": {
         "query_parameter": {
           "file": "mishandling_of_exceptional_conditions_(missing_extra_parameters)/query_parameter.json",
-          "count": 60
+          "count": 1020
         }
       }
     },
     "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)": {
       "folder": "mishandling_of_exceptional_conditions_(null_type_zero_errors)",
-      "total": 36,
+      "total": 1020,
       "files": {
         "query_parameter": {
           "file": "mishandling_of_exceptional_conditions_(null_type_zero_errors)/query_parameter.json",
-          "count": 36
+          "count": 1020
         }
       }
     },
     "Mishandling of Exceptional Conditions (Unchecked Exceptions)": {
       "folder": "mishandling_of_exceptional_conditions_(unchecked_exceptions)",
-      "total": 34,
+      "total": 1020,
       "files": {
         "query_parameter": {
           "file": "mishandling_of_exceptional_conditions_(unchecked_exceptions)/query_parameter.json",
-          "count": 34
+          "count": 1020
         }
       }
     },
     "Security Logging & Monitoring Failures": {
       "folder": "security_logging_&_monitoring_failures",
-      "total": 56,
+      "total": 1020,
       "files": {
+        "header": {
+          "file": "security_logging_&_monitoring_failures/header.json",
+          "count": 964
+        },
         "path_parameter": {
           "file": "security_logging_&_monitoring_failures/path_parameter.json",
           "count": 56
+        }
+      }
+    },
+    "Security Logging & Monitoring Failures (Log Injection)": {
+      "folder": "security_logging_&_monitoring_failures_(log_injection)",
+      "total": 1020,
+      "files": {
+        "header": {
+          "file": "security_logging_&_monitoring_failures_(log_injection)/header.json",
+          "count": 1009
+        },
+        "query_parameter": {
+          "file": "security_logging_&_monitoring_failures_(log_injection)/query_parameter.json",
+          "count": 11
         }
       }
     },
@@ -617,7 +833,7 @@
     },
     "Software Supply Chain Failures": {
       "folder": "software_supply_chain_failures",
-      "total": 131,
+      "total": 1020,
       "files": {
         "body_json": {
           "file": "software_supply_chain_failures/body_json.json",
@@ -626,13 +842,45 @@
         "path_parameter": {
           "file": "software_supply_chain_failures/path_parameter.json",
           "count": 31
+        },
+        "query_parameter": {
+          "file": "software_supply_chain_failures/query_parameter.json",
+          "count": 889
+        }
+      }
+    },
+    "Software Supply Chain Failures (Private Package Confusion)": {
+      "folder": "software_supply_chain_failures_(private_package_confusion)",
+      "total": 2220,
+      "files": {
+        "body_json": {
+          "file": "software_supply_chain_failures_(private_package_confusion)/body_json.json",
+          "count": 2220
+        }
+      }
+    },
+    "Software Supply Chain Failures (Vuln Dependency Versions)": {
+      "folder": "software_supply_chain_failures_(vuln_dependency_versions)",
+      "total": 1020,
+      "files": {
+        "query_parameter": {
+          "file": "software_supply_chain_failures_(vuln_dependency_versions)/query_parameter.json",
+          "count": 930
+        },
+        "response_body": {
+          "file": "software_supply_chain_failures_(vuln_dependency_versions)/response_body.json",
+          "count": 90
         }
       }
     },
     "Vulnerable & Outdated Components": {
       "folder": "vulnerable_&_outdated_components",
-      "total": 57,
+      "total": 1020,
       "files": {
+        "query_parameter": {
+          "file": "vulnerable_&_outdated_components/query_parameter.json",
+          "count": 963
+        },
         "response_body": {
           "file": "vulnerable_&_outdated_components/response_body.json",
           "count": 42
@@ -643,13 +891,69 @@
         }
       }
     },
+    "Vulnerable & Outdated Components (CVE Paths)": {
+      "folder": "vulnerable_&_outdated_components_(cve_paths)",
+      "total": 1020,
+      "files": {
+        "path_parameter": {
+          "file": "vulnerable_&_outdated_components_(cve_paths)/path_parameter.json",
+          "count": 19
+        },
+        "query_parameter": {
+          "file": "vulnerable_&_outdated_components_(cve_paths)/query_parameter.json",
+          "count": 1001
+        }
+      }
+    },
+    "Vulnerable & Outdated Components (Vulnerable Versions)": {
+      "folder": "vulnerable_&_outdated_components_(vulnerable_versions)",
+      "total": 1020,
+      "files": {
+        "header": {
+          "file": "vulnerable_&_outdated_components_(vulnerable_versions)/header.json",
+          "count": 28
+        },
+        "query_parameter": {
+          "file": "vulnerable_&_outdated_components_(vulnerable_versions)/query_parameter.json",
+          "count": 992
+        }
+      }
+    },
     "Web Cache Deception": {
       "folder": "web_cache_deception",
-      "total": 14,
+      "total": 1020,
       "files": {
+        "header": {
+          "file": "web_cache_deception/header.json",
+          "count": 1006
+        },
         "path_parameter": {
           "file": "web_cache_deception/path_parameter.json",
           "count": 14
+        }
+      }
+    },
+    "Web Cache Deception (Cache Poisoning Headers)": {
+      "folder": "web_cache_deception_(cache_poisoning_headers)",
+      "total": 1020,
+      "files": {
+        "header": {
+          "file": "web_cache_deception_(cache_poisoning_headers)/header.json",
+          "count": 1020
+        }
+      }
+    },
+    "Web Cache Deception (Cache Poisoning)": {
+      "folder": "web_cache_deception_(cache_poisoning)",
+      "total": 1020,
+      "files": {
+        "header": {
+          "file": "web_cache_deception_(cache_poisoning)/header.json",
+          "count": 785
+        },
+        "path_parameter": {
+          "file": "web_cache_deception_(cache_poisoning)/path_parameter.json",
+          "count": 235
         }
       }
     }

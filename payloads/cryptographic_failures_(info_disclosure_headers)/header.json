@@ -1,0 +1,178 @@
+[
+  {
+    "payload_id": "OWP-67000",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Debug-Token:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67001",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Debug-Token-Link:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67002",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Stacktrace:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67003",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Error-Detail:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67004",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Api-Version:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67005",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Framework:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67006",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Generator:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67007",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Powered-By:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67008",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67009",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-AspNet-Version:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67010",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-AspNetMvc-Version:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67011",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Runtime:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67012",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Version:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67013",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Build:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67014",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Commit:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  },
+  {
+    "payload_id": "OWP-67015",
+    "vulnerability_category": "Cryptographic Failures (Info Disclosure Headers)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Git-Commit:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "token|version|server|runtime"
+    }
+  }
+]

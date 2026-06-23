@@ -1,0 +1,486 @@
+[
+  {
+    "payload_id": "OWP-70649",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "support",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70650",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "contact",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70651",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "noreply",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70652",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "help",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70653",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "sales",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70654",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "security",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70655",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "postmaster",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70656",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "hostmaster",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70657",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "system",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70658",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "events",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70659",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "news",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70660",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "office",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70661",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "service",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70662",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "careers",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70663",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "team",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70664",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "hr",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70665",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "legal",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70666",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "marketing",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70667",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "privacy",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70668",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "feedback",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70669",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "developer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70670",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "trial",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70671",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "subscriber",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70672",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "client",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70673",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "customer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70674",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "partner",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70675",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "vendor",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70676",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "staff",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70677",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "owner",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70678",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "supervisor",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70679",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "analyst",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70680",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "tech",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70681",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "operator",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70682",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "director",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70683",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "coordinator",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70684",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "assistant",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70685",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "agent",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70686",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "representative",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70687",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "specialist",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70688",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "consultant",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70689",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "advisor",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70690",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "associate",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70691",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "intern",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  },
+  {
+    "payload_id": "OWP-70692",
+    "vulnerability_category": "Identification & Authentication Failures (Username Enum)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "lead",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "invalid|not found|incorrect"
+    }
+  }
+]

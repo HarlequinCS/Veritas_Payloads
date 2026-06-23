@@ -1,0 +1,464 @@
+[
+  {
+    "payload_id": "OWP-66958",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: MD5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66959",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: MD5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66960",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: MD5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66961",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: SHA1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66962",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: SHA1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66963",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: SHA1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66964",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: SHA224",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66965",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: SHA224",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66966",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: SHA224",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66967",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: DES",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66968",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: DES",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66969",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: DES",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66970",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: 3DES",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66971",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: 3DES",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66972",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: 3DES",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66973",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: RC2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66974",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: RC2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66975",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: RC2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66976",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: RC4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66977",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: RC4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66978",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: RC4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66979",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: MD2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66980",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: MD2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66981",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: MD2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66982",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: MD4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66983",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: MD4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66984",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: MD4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66985",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: SHA-1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66986",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: SHA-1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66987",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: SHA-1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66988",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: Blowfish",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66989",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: Blowfish",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66990",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: Blowfish",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66991",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: ROT13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66992",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: ROT13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66993",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: ROT13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66994",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: BASE64",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66995",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: BASE64",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66996",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: BASE64",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66997",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Crypto-Algorithm: XXTEA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66998",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "CSP-Algorithm: XXTEA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  },
+  {
+    "payload_id": "OWP-66999",
+    "vulnerability_category": "Cryptographic Failures (Weak Crypto Algos)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Hash: XXTEA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MD5|SHA1|DES|RC"
+    }
+  }
+]

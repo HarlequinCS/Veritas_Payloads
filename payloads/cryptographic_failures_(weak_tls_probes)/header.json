@@ -1,0 +1,233 @@
+[
+  {
+    "payload_id": "OWP-66937",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "SSL-Version: TLSv1.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66938",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "TLS-Version: TLSv1.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66939",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cipher: TLSv1.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66940",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "SSL-Version: TLSv1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66941",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "TLS-Version: TLSv1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66942",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cipher: TLSv1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66943",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "SSL-Version: SSLv2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66944",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "TLS-Version: SSLv2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66945",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cipher: SSLv2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66946",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "SSL-Version: SSLv3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66947",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "TLS-Version: SSLv3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66948",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cipher: SSLv3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66949",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "SSL-Version: TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66950",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "TLS-Version: TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66951",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cipher: TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66952",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "SSL-Version: TLS_NULL_WITH_NULL_NULL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66953",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "TLS-Version: TLS_NULL_WITH_NULL_NULL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66954",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cipher: TLS_NULL_WITH_NULL_NULL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66955",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "SSL-Version: SSL_NULL_WITH_NULL_NULL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66956",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "TLS-Version: SSL_NULL_WITH_NULL_NULL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  },
+  {
+    "payload_id": "OWP-66957",
+    "vulnerability_category": "Cryptographic Failures (Weak TLS Probes)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cipher: SSL_NULL_WITH_NULL_NULL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "TLS|SSL|cipher"
+    }
+  }
+]

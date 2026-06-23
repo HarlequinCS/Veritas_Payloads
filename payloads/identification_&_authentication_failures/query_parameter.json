@@ -779,5 +779,2205 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-76266",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user1:password1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76267",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user2:password2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76268",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user3:password3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76269",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user4:password4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76270",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user5:password5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76271",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user6:password6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76272",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user7:password7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76273",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user8:password8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76274",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user9:password9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76275",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user10:password10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76276",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user11:password11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76277",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user12:password12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76278",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user13:password13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76279",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user14:password14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76280",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user15:password15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76281",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user16:password16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76282",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user17:password17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76283",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user18:password18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76284",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user19:password19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76285",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user20:password20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76286",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user21:password21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76287",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user22:password22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76288",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user23:password23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76289",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user24:password24",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76290",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user25:password25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76291",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user26:password26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76292",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user27:password27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76293",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user28:password28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76294",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user29:password29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76295",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user30:password30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76296",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user31:password31",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76297",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user32:password32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76298",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user33:password33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76299",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user34:password34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76300",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user35:password35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76301",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user36:password36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76302",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user37:password37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76303",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user38:password38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76304",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user39:password39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76305",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user40:password40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76306",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user41:password41",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76307",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user42:password42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76308",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user43:password43",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76309",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user44:password44",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76310",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user45:password45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76311",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user46:password46",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76312",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user47:password47",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76313",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user48:password48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76314",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user49:password49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76315",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user50:password50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76316",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user51:password51",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76317",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user52:password52",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76318",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user53:password53",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76319",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user54:password54",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76320",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user55:password55",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76321",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user56:password56",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76322",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user57:password57",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76323",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user58:password58",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76324",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user59:password59",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76325",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user60:password60",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76326",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user61:password61",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76327",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user62:password62",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76328",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user63:password63",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76329",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user64:password64",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76330",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user65:password65",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76331",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user66:password66",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76332",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user67:password67",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76333",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user68:password68",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76334",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user69:password69",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76335",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user70:password70",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76336",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user71:password71",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76337",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user72:password72",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76338",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user73:password73",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76339",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user74:password74",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76340",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user75:password75",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76341",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user76:password76",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76342",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user77:password77",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76343",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user78:password78",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76344",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user79:password79",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76345",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user80:password80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76346",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user81:password81",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76347",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user82:password82",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76348",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user83:password83",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76349",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user84:password84",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76350",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user85:password85",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76351",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user86:password86",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76352",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user87:password87",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76353",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user88:password88",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76354",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user89:password89",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76355",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user90:password90",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76356",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user91:password91",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76357",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user92:password92",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76358",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user93:password93",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76359",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user94:password94",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76360",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user95:password95",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76361",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user96:password96",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76362",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user97:password97",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76363",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user98:password98",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76364",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user99:password99",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76365",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "user100:password100",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76366",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin1:admin1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76367",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin2:admin2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76368",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin3:admin3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76369",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin4:admin4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76370",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin5:admin5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76371",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin6:admin6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76372",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin7:admin7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76373",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin8:admin8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76374",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin9:admin9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76375",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin10:admin10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76376",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin11:admin11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76377",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin12:admin12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76378",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin13:admin13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76379",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin14:admin14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76380",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin15:admin15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76381",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin16:admin16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76382",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin17:admin17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76383",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin18:admin18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76384",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin19:admin19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76385",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin20:admin20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76386",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin21:admin21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76387",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin22:admin22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76388",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin23:admin23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76389",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin24:admin24",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76390",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin25:admin25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76391",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin26:admin26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76392",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin27:admin27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76393",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin28:admin28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76394",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin29:admin29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76395",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin30:admin30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76396",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin31:admin31",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76397",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin32:admin32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76398",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin33:admin33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76399",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin34:admin34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76400",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin35:admin35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76401",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin36:admin36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76402",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin37:admin37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76403",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin38:admin38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76404",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin39:admin39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76405",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin40:admin40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76406",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin41:admin41",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76407",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin42:admin42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76408",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin43:admin43",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76409",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin44:admin44",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76410",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin45:admin45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76411",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin46:admin46",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76412",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin47:admin47",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76413",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin48:admin48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76414",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin49:admin49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76415",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin50:admin50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76416",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin51:admin51",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76417",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin52:admin52",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76418",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin53:admin53",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76419",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin54:admin54",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76420",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin55:admin55",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76421",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin56:admin56",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76422",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin57:admin57",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76423",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin58:admin58",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76424",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin59:admin59",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76425",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin60:admin60",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76426",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin61:admin61",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76427",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin62:admin62",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76428",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin63:admin63",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76429",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin64:admin64",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76430",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin65:admin65",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76431",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin66:admin66",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76432",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin67:admin67",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76433",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin68:admin68",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76434",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin69:admin69",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76435",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin70:admin70",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76436",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin71:admin71",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76437",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin72:admin72",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76438",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin73:admin73",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76439",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin74:admin74",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76440",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin75:admin75",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76441",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin76:admin76",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76442",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin77:admin77",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76443",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin78:admin78",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76444",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin79:admin79",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76445",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin80:admin80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76446",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin81:admin81",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76447",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin82:admin82",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76448",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin83:admin83",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76449",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin84:admin84",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76450",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin85:admin85",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76451",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin86:admin86",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76452",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin87:admin87",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76453",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin88:admin88",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76454",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin89:admin89",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76455",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin90:admin90",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76456",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin91:admin91",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76457",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin92:admin92",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76458",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin93:admin93",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76459",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin94:admin94",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76460",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin95:admin95",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76461",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin96:admin96",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76462",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin97:admin97",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76463",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin98:admin98",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76464",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin99:admin99",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-76465",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Application",
+    "injection_point": "query_parameter",
+    "payload_string": "admin100:admin100",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

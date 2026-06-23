@@ -1,0 +1,4402 @@
+[
+  {
+    "payload_id": "OWP-70693",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70694",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70695",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70696",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70697",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70698",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70699",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70700",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70701",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70702",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70703",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70704",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70705",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70706",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70707",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70708",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70709",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70710",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70711",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70712",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70713",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70714",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70715",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70716",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70717",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70718",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70719",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70720",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70721",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70722",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70723",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70724",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70725",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70726",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70727",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70728",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70729",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70730",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70731",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70732",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70733",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70734",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70735",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70736",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70737",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70738",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70739",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70740",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70741",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70742",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70743",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70744",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70745",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70746",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70747",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70748",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70749",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70750",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70751",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70752",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70753",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70754",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70755",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70756",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70757",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70758",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70759",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70760",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70761",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70762",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70763",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70764",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=9",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70765",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70766",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70767",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70768",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70769",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70770",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70771",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70772",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=10",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70773",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70774",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70775",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70776",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70777",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70778",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70779",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70780",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=11",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70781",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70782",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70783",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70784",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70785",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70786",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70787",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70788",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=12",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70789",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70790",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70791",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70792",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70793",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70794",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70795",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70796",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=13",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70797",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70798",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70799",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70800",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70801",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70802",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70803",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70804",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=14",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70805",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70806",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70807",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70808",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70809",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70810",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70811",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70812",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70813",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70814",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70815",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70816",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70817",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70818",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70819",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70820",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=16",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70821",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70822",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70823",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70824",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70825",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70826",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70827",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70828",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=17",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70829",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70830",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70831",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70832",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70833",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70834",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70835",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70836",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=18",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70837",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70838",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70839",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70840",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70841",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70842",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70843",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70844",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=19",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70845",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70846",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70847",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70848",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70849",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70850",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70851",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70852",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70853",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70854",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70855",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70856",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70857",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70858",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70859",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70860",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70861",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70862",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70863",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70864",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70865",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70866",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70867",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70868",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70869",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70870",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70871",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70872",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70873",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70874",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70875",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70876",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70877",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=24",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70878",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=24",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70879",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=24",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70880",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=24",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70881",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=24",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70882",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=24",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70883",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=24",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70884",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=24",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70885",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70886",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70887",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70888",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70889",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70890",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70891",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70892",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70893",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70894",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70895",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70896",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70897",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70898",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70899",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70900",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70901",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70902",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70903",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70904",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70905",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70906",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70907",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70908",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70909",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70910",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70911",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70912",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70913",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70914",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70915",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70916",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70917",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70918",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70919",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70920",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70921",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70922",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70923",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70924",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=29",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70925",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70926",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70927",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70928",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70929",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70930",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70931",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70932",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=30",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70933",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=31",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70934",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=31",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70935",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=31",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70936",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=31",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70937",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=31",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70938",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=31",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70939",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=31",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70940",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=31",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70941",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70942",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70943",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70944",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70945",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70946",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70947",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70948",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=32",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70949",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70950",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70951",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70952",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70953",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70954",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70955",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70956",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70957",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70958",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70959",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70960",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70961",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70962",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70963",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70964",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70965",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70966",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70967",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70968",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70969",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70970",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70971",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70972",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70973",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70974",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70975",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70976",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70977",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70978",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70979",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70980",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70981",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70982",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70983",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70984",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70985",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70986",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70987",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70988",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70989",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70990",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70991",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70992",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70993",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70994",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70995",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70996",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70997",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70998",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-70999",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71000",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71001",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71002",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71003",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71004",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71005",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71006",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71007",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71008",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71009",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71010",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71011",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71012",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71013",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=41",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71014",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=41",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71015",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=41",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71016",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=41",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71017",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=41",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71018",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=41",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71019",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=41",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71020",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=41",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71021",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71022",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71023",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71024",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71025",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71026",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71027",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71028",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=42",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71029",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=43",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71030",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=43",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71031",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=43",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71032",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=43",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71033",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=43",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71034",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=43",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71035",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=43",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71036",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=43",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71037",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=44",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71038",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=44",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71039",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=44",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71040",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=44",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71041",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=44",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71042",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=44",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71043",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=44",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71044",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=44",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71045",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71046",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71047",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71048",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71049",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71050",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71051",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71052",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=45",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71053",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=46",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71054",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=46",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71055",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=46",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71056",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=46",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71057",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=46",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71058",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=46",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71059",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=46",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71060",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=46",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71061",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=47",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71062",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=47",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71063",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=47",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71064",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=47",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71065",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=47",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71066",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=47",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71067",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=47",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71068",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=47",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71069",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71070",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71071",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71072",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71073",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71074",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71075",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71076",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71077",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71078",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71079",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71080",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71081",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71082",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71083",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71084",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71085",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session=50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71086",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "token=50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71087",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "auth=50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71088",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "session_id=50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71089",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "PHPSESSID=50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71090",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "JSESSIONID=50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71091",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "ASP.NET_SessionId=50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-71092",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Session IDs)",
+    "target_technology": "Generic",
+    "injection_point": "cookie",
+    "payload_string": "connect.sid=50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

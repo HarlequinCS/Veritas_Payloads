@@ -1,0 +1,211 @@
+[
+  {
+    "payload_id": "OWP-74781",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/actuator",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74782",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/actuator/trace",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74783",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/actuator/dump",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74784",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/actuator/loggers",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74785",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/actuator/threaddump",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74786",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/actuator/metrics",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74787",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/actuator/prometheus",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74788",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/actuator",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74789",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/actuator",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74790",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/console/login",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74791",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/h2-console",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74792",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/druid/websession.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74793",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/druid/datasource.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74794",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/druid/sql.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74795",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/v1/swagger.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74796",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/v3/api-docs",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74797",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/swagger-ui.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74798",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/.well-known/assetlinks.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  },
+  {
+    "payload_id": "OWP-74799",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/.well-known/apple-app-site-association",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "actuator|swagger|console|docs"
+    }
+  }
+]

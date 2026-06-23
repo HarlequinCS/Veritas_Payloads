@@ -1,0 +1,310 @@
+[
+  {
+    "payload_id": "OWP-74753",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Apache/2.4.49",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74754",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Apache/2.4.50",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74755",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: nginx/0.8.55",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74756",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: nginx/1.0.15",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74757",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: nginx/1.4.7",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74758",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: IIS/5.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74759",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Tomcat/4.1.40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74760",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Tomcat/5.5.36",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74761",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Tomcat/6.0.53",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74762",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Tomcat/7.0.109",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74763",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Tomcat/8.0.53",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74764",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Tomcat/8.5.82",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74765",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Tomcat/9.0.62",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74766",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Jetty/6.1.26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74767",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Jetty/7.6.21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74768",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Jetty/8.1.21",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74769",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Server: Jetty/9.4.48",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74770",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Powered-By: PHP/5.5.38",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74771",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Powered-By: PHP/5.6.40",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74772",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Powered-By: PHP/7.0.33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74773",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Powered-By: PHP/7.1.33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74774",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Powered-By: PHP/7.2.34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74775",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Powered-By: PHP/7.3.33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74776",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Powered-By: PHP/7.4.33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74777",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Powered-By: PHP/8.0.25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74778",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-AspNet-Version: 2.0.50727",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74779",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-AspNet-Version: 3.5.30729",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  },
+  {
+    "payload_id": "OWP-74780",
+    "vulnerability_category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-AspNet-Version: 4.0.30319",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Apache|IIS|nginx|Tomcat|Jetty|PHP"
+    }
+  }
+]

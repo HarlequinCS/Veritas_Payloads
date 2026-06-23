@@ -1,0 +1,2587 @@
+[
+  {
+    "payload_id": "OWP-74499",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.css",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74500",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.css",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74501",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.css",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74502",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.css",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74503",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.css",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74504",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74505",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74506",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74507",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74508",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74509",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74510",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74511",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74512",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74513",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74514",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.png",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74515",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.png",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74516",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.png",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74517",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.png",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74518",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.png",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74519",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.gif",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74520",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.gif",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74521",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.gif",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74522",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.gif",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74523",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.gif",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74524",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.svg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74525",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.svg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74526",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.svg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74527",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.svg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74528",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.svg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74529",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.ico",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74530",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.ico",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74531",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.ico",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74532",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.ico",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74533",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.ico",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74534",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.woff",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74535",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.woff",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74536",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.woff",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74537",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.woff",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74538",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.woff",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74539",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.woff2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74540",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.woff2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74541",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.woff2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74542",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.woff2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74543",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.woff2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74544",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.ttf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74545",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.ttf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74546",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.ttf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74547",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.ttf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74548",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.ttf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74549",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.eot",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74550",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.eot",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74551",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.eot",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74552",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.eot",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74553",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.eot",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74554",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.pdf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74555",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.pdf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74556",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.pdf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74557",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.pdf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74558",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.pdf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74559",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74560",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74561",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74562",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74563",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74564",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.xml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74565",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.xml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74566",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.xml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74567",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.xml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74568",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.xml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74569",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74570",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74571",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74572",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74573",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74574",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74575",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74576",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74577",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74578",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74579",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.htm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74580",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.htm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74581",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.htm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74582",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.htm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74583",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.htm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74584",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.xhtml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74585",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.xhtml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74586",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.xhtml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74587",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.xhtml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74588",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.xhtml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74589",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.jsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74590",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.jsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74591",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.jsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74592",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.jsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74593",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.jsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74594",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.ts",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74595",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.ts",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74596",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.ts",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74597",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.ts",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74598",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.ts",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74599",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.map",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74600",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.map",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74601",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.map",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74602",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.map",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74603",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.map",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74604",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.webp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74605",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.webp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74606",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.webp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74607",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.webp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74608",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.webp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74609",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.avif",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74610",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.avif",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74611",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.avif",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74612",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.avif",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74613",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.avif",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74614",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.mp4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74615",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.mp4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74616",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.mp4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74617",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.mp4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74618",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.mp4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74619",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.webm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74620",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.webm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74621",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.webm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74622",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.webm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74623",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.webm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74624",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.ogg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74625",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.ogg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74626",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.ogg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74627",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.ogg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74628",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.ogg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74629",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.mp3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74630",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.mp3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74631",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.mp3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74632",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.mp3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74633",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.mp3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74634",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.wav",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74635",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.wav",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74636",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.wav",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74637",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.wav",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74638",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.wav",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74639",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.flac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74640",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.flac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74641",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.flac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74642",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.flac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74643",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.flac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74644",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.aac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74645",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.aac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74646",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.aac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74647",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.aac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74648",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.aac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74649",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.csv",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74650",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.csv",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74651",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.csv",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74652",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.csv",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74653",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.csv",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74654",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.xls",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74655",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.xls",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74656",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.xls",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74657",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.xls",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74658",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.xls",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74659",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.xlsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74660",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.xlsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74661",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.xlsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74662",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.xlsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74663",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.xlsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74664",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74665",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74666",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74667",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74668",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74669",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.docx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74670",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.docx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74671",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.docx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74672",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.docx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74673",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.docx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74674",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.ppt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74675",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.ppt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74676",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.ppt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74677",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.ppt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74678",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.ppt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74679",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.pptx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74680",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.pptx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74681",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.pptx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74682",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.pptx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74683",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.pptx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74684",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.zip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74685",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.zip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74686",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.zip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74687",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.zip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74688",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.zip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74689",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.tar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74690",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.tar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74691",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.tar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74692",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.tar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74693",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.tar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74694",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.gz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74695",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.gz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74696",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.gz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74697",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.gz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74698",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.gz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74699",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.rar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74700",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.rar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74701",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.rar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74702",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.rar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74703",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.rar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74704",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.7z",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74705",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.7z",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74706",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.7z",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74707",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.7z",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74708",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.7z",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74709",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.exe",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74710",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.exe",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74711",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.exe",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74712",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.exe",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74713",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.exe",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74714",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.msi",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74715",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.msi",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74716",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.msi",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74717",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.msi",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74718",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.msi",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74719",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.dmg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74720",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.dmg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74721",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.dmg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74722",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.dmg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74723",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.dmg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74724",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.apk",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74725",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.apk",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74726",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.apk",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74727",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.apk",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74728",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.apk",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74729",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/user/profile.ipa",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74730",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/account/settings.ipa",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74731",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/config.ipa",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74732",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dashboard.ipa",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-74733",
+    "vulnerability_category": "Web Cache Deception (Cache Poisoning)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private.ipa",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

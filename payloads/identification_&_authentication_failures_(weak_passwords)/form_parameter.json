@@ -1,0 +1,816 @@
+[
+  {
+    "payload_id": "OWP-70575",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "12345678",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70576",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "qwerty",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70577",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "abc123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70578",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "monkey",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70579",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "dragon",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70580",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "111111",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70581",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "baseball",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70582",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "iloveyou",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70583",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "trustno1",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70584",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "sunshine",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70585",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "master",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70586",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "123123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70587",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "welcome",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70588",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "shadow",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70589",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "ashley",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70590",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "football",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70591",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "jesus",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70592",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "michael",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70593",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "ninja",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70594",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "mustang",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70595",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "password1",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70596",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "admin123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70597",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "admin1234",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70598",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "passw0rd",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70599",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "p@ssword",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70600",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "p@ssw0rd",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70601",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Pa$$w0rd",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70602",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "password!",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70603",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Password123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70604",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Password123!",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70605",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "admin123!",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70606",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "P@$$w0rd",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70607",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Test123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70608",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "qwerty123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70609",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "qwerty1",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70610",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "1q2w3e4r",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70611",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "123qwe",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70612",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "qwertyuiop",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70613",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "asdfghjkl",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70614",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "zxcvbnm",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70615",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "pass123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70616",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "pass1234",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70617",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "pass1",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70618",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "P@ss123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70619",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "p@ss1234",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70620",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Secret123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70621",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "changeme",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70622",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "default",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70623",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "temp",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70624",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "temporary",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70625",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "newuser",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70626",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "letmein123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70627",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "welcome1",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70628",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "welcome123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70629",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "12",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70630",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "123",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70631",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "12345",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70632",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "1234567",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70633",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "123456789",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70634",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "1234567890",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70635",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "jordan",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70636",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "hunter",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70637",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "ranger",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70638",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "charlie",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70639",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "thomas",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70640",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "george",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70641",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "andrew",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70642",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "joshua",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70643",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "aaaaaa",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70644",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "bbbbbb",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70645",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "cccccc",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70646",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "abcdef",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70647",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "abc123!",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  },
+  {
+    "payload_id": "OWP-70648",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "abcd1234",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "dashboard|welcome|admin"
+    }
+  }
+]

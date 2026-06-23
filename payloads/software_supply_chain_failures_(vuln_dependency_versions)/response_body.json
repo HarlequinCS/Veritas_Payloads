@@ -1,0 +1,992 @@
+[
+  {
+    "payload_id": "OWP-70485",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "lodash@4.17.20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70486",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "lodash==4.17.20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70487",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "lodash-4.17.20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70488",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "axios@0.21.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70489",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "axios==0.21.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70490",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "axios-0.21.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70491",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "express@4.17.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70492",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "express==4.17.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70493",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "express-4.17.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70494",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "jquery@3.4.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70495",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "jquery==3.4.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70496",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "jquery-3.4.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70497",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "angular@1.6.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70498",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "angular==1.6.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70499",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "angular-1.6.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70500",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "react@16.8.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70501",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "react==16.8.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70502",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "react-16.8.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70503",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "vue@2.6.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70504",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "vue==2.6.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70505",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "vue-2.6.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70506",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "moment@2.24.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70507",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "moment==2.24.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70508",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "moment-2.24.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70509",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "minimist@1.2.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70510",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "minimist==1.2.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70511",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "minimist-1.2.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70512",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "node-fetch@2.6.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70513",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "node-fetch==2.6.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70514",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "node-fetch-2.6.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70515",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "undici@5.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70516",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "undici==5.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70517",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "undici-5.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70518",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "got@11.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70519",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "got==11.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70520",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "got-11.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70521",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "request@2.88.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70522",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "request==2.88.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70523",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "request-2.88.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70524",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "follow-redirects@1.14.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70525",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "follow-redirects==1.14.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70526",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "follow-redirects-1.14.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70527",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "simple-get@4.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70528",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "simple-get==4.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70529",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "simple-get-4.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70530",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "ua-parser-js@0.7.28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70531",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "ua-parser-js==0.7.28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70532",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "ua-parser-js-0.7.28",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70533",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "socket.io@2.4.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70534",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "socket.io==2.4.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70535",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "socket.io-2.4.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70536",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "fresh@0.5.2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70537",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "fresh==0.5.2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70538",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "fresh-0.5.2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70539",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "debug@4.3.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70540",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "debug==4.3.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70541",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "debug-4.3.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70542",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "path-parse@1.0.6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70543",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "path-parse==1.0.6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70544",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "path-parse-1.0.6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70545",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "glob-parent@5.1.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70546",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "glob-parent==5.1.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70547",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "glob-parent-5.1.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70548",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "normalize-url@6.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70549",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "normalize-url==6.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70550",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "normalize-url-6.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70551",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "trim-newlines@3.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70552",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "trim-newlines==3.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70553",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "trim-newlines-3.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70554",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "nth-check@2.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70555",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "nth-check==2.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70556",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "nth-check-2.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70557",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "set-value@4.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70558",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "set-value==4.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70559",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "set-value-4.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70560",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "ini@1.3.8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70561",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "ini==1.3.8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70562",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "ini-1.3.8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70563",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "node-notifier@8.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70564",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "node-notifier==8.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70565",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "node-notifier-8.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70566",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "axios@0.21.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70567",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "axios==0.21.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70568",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "axios-0.21.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70569",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "ejs@3.1.6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70570",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "ejs==3.1.6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70571",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "ejs-3.1.6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70572",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "pug@3.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70573",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "pug==3.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-70574",
+    "vulnerability_category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+    "target_technology": "Generic",
+    "injection_point": "response_body",
+    "payload_string": "pug-3.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "CVE|vulnerable"
+    }
+  }
+]
