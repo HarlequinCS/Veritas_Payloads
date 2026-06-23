@@ -2,7 +2,7 @@
 
 A comprehensive, structured collection of **65,321 unique payload strings** covering all OWASP Top 10 (2021) vulnerability categories, curated from industry-standard security testing wordlists and exploit databases.
 
-> **Interactive Dashboard:** Explore the dataset visually at [`website/index.html`](website/index.html) — a professional static dashboard built with HTML, CSS, and JavaScript.
+> **Interactive Dashboard:** Explore the dataset visually at [`index.html`](index.html) — a professional static dashboard built with HTML, CSS, and JavaScript. Served automatically via GitHub Pages from the root.
 
 ## Dataset Overview
 
