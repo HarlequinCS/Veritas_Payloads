@@ -1,8 +1,22 @@
 {
-  "total_payloads": 65321,
-  "total_categories": 36,
-  "total_files": 84,
+  "total_payloads": 65781,
+  "total_categories": 45,
+  "total_files": 95,
   "categories": {
+    "Broken Access Control": {
+      "folder": "broken_access_control",
+      "total": 89,
+      "files": {
+        "header": {
+          "file": "broken_access_control/header.json",
+          "count": 8
+        },
+        "path_parameter": {
+          "file": "broken_access_control/path_parameter.json",
+          "count": 81
+        }
+      }
+    },
     "Broken Access Control (IDOR)": {
       "folder": "broken_access_control_(idor)",
       "total": 138,
@@ -461,6 +475,76 @@
         }
       }
     },
+    "Mishandling of Exceptional Conditions (Debug Code Disclosure)": {
+      "folder": "mishandling_of_exceptional_conditions_(debug_code_disclosure)",
+      "total": 36,
+      "files": {
+        "query_parameter": {
+          "file": "mishandling_of_exceptional_conditions_(debug_code_disclosure)/query_parameter.json",
+          "count": 36
+        }
+      }
+    },
+    "Mishandling of Exceptional Conditions (Error Info Disclosure)": {
+      "folder": "mishandling_of_exceptional_conditions_(error_info_disclosure)",
+      "total": 10,
+      "files": {
+        "query_parameter": {
+          "file": "mishandling_of_exceptional_conditions_(error_info_disclosure)/query_parameter.json",
+          "count": 10
+        }
+      }
+    },
+    "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)": {
+      "folder": "mishandling_of_exceptional_conditions_(failing_open_priv_esc)",
+      "total": 40,
+      "files": {
+        "query_parameter": {
+          "file": "mishandling_of_exceptional_conditions_(failing_open_priv_esc)/query_parameter.json",
+          "count": 40
+        }
+      }
+    },
+    "Mishandling of Exceptional Conditions (Missing Error Page)": {
+      "folder": "mishandling_of_exceptional_conditions_(missing_error_page)",
+      "total": 24,
+      "files": {
+        "path_parameter": {
+          "file": "mishandling_of_exceptional_conditions_(missing_error_page)/path_parameter.json",
+          "count": 24
+        }
+      }
+    },
+    "Mishandling of Exceptional Conditions (Missing/Extra Parameters)": {
+      "folder": "mishandling_of_exceptional_conditions_(missing_extra_parameters)",
+      "total": 60,
+      "files": {
+        "query_parameter": {
+          "file": "mishandling_of_exceptional_conditions_(missing_extra_parameters)/query_parameter.json",
+          "count": 60
+        }
+      }
+    },
+    "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)": {
+      "folder": "mishandling_of_exceptional_conditions_(null_type_zero_errors)",
+      "total": 36,
+      "files": {
+        "query_parameter": {
+          "file": "mishandling_of_exceptional_conditions_(null_type_zero_errors)/query_parameter.json",
+          "count": 36
+        }
+      }
+    },
+    "Mishandling of Exceptional Conditions (Unchecked Exceptions)": {
+      "folder": "mishandling_of_exceptional_conditions_(unchecked_exceptions)",
+      "total": 34,
+      "files": {
+        "query_parameter": {
+          "file": "mishandling_of_exceptional_conditions_(unchecked_exceptions)/query_parameter.json",
+          "count": 34
+        }
+      }
+    },
     "Security Logging & Monitoring Failures": {
       "folder": "security_logging_&_monitoring_failures",
       "total": 56,
@@ -528,6 +612,20 @@
         "header": {
           "file": "software_&_data_integrity_failures_(deserialization)/header.json",
           "count": 4
+        }
+      }
+    },
+    "Software Supply Chain Failures": {
+      "folder": "software_supply_chain_failures",
+      "total": 131,
+      "files": {
+        "body_json": {
+          "file": "software_supply_chain_failures/body_json.json",
+          "count": 100
+        },
+        "path_parameter": {
+          "file": "software_supply_chain_failures/path_parameter.json",
+          "count": 31
         }
       }
     },

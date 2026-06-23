@@ -1,0 +1,266 @@
+[
+  {
+    "payload_id": "OWP-65504",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/doesnotexist",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65505",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/nonexistent",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65506",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/404",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65507",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/error",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65508",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/error/",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65509",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/error_test",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65510",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/throw_error",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65511",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/throw",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65512",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/exception",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65513",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/crash",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65514",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/crash_test",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65515",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/missing",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65516",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/missing_page",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65517",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/test_error",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65518",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/err",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65519",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/err!",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65520",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/../../../doesnotexist",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65521",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/v1/nonexistent",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65522",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/rest/nonexistent",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65523",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/graphql?query={nonexistent}",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65524",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-admin/nonexistent",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65525",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/nonexistent",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65526",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "META-INF/MANIFEST.MF",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-65527",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "server-status",
+    "validation": {
+      "expected_status_code": 404,
+      "success_regex": "404|not found|missing|error|exception"
+    }
+  }
+]

@@ -1,0 +1,398 @@
+[
+  {
+    "payload_id": "OWP-65332",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?debug=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65333",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?debug=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65334",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?debug=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65335",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?debug=on",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65336",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?debug=1&",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65337",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?debug=false",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65338",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?debug=0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65339",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?XDEBUG_SESSION_START=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65340",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?__debug=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65341",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&__debug__=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65342",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&__class__=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65343",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&__proto__=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65344",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&__proto__[test]=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65345",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?env=development",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65346",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?env=dev",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65347",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?env=debug",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65348",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?app_env=dev",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65349",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?app_env=debug",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65350",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?APP_ENV=development",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65351",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?mode=debug",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65352",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?mode=test",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65353",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?profile=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65354",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?profiling=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65355",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/debug/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65356",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/_debug/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65357",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/debug.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65358",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/debug/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65359",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/health",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65360",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/info",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65361",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/actuator/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65362",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/status",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65363",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/health",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65364",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/info",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65365",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/metrics",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65366",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/swagger.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  },
+  {
+    "payload_id": "OWP-65367",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/api/docs",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "debug|env|app_env|mode|profile|actuator"
+    }
+  }
+]

@@ -1,0 +1,1102 @@
+[
+  {
+    "payload_id": "OWP-65562",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "express",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65563",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "expresss",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65564",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "exprss",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65565",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "epxress",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65566",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "expreess",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65567",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "lodash",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65568",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "lodashh",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65569",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "loadash",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65570",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "lo-dash",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65571",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "lodahsh",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65572",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "axios",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65573",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "axois",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65574",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "axioz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65575",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "axios-",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65576",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "axious",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65577",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "react",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65578",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "reactt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65579",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "reacct",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65580",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "reaact",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65581",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "rract",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65582",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "raect",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65583",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "moment",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65584",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "momemt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65585",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "momnet",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65586",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "mooment",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65587",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "request",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65588",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "requesst",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65589",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "reqwest",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65590",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "requrest",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65591",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "requests",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65592",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "requestz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65593",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "requets",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65594",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "reqests",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65595",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "flask",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65596",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "flaskk",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65597",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "flaks",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65598",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "flasck",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65599",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "django",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65600",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "djanog",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65601",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "djanho",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65602",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "djagno",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65603",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "urllib3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65604",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "urlllib3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65605",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "urllib",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65606",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "urllib33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65607",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "pillow",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65608",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "pilllow",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65609",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "pilow",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65610",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "pill0w",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65611",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "rails",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65612",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "railz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65613",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "raills",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65614",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "rayls",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65615",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "devise",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65616",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "devisse",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65617",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "devvise",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65618",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "sinatra",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65619",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "sinatraa",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65620",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "sinatrra",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65621",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "monolog",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65622",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "monologg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65623",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "monnolog",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65624",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "symfony",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65625",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "symffony",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65626",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "simfony",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65627",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "guzzlehttp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65628",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "guzllehttp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65629",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "guzzllehttp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65630",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "log4j",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65631",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "log4jj",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65632",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "log4js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65633",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "log4j-core",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65634",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "logback",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65635",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "logbak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65636",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "jackson",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65637",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "jacks0n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65638",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "jacksonn",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65639",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "spring-boot",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65640",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "springboot",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65641",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "spring-b0ot",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65642",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "internal-sdk",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65643",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "private-sdk",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65644",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "company-auth",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65645",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "corp-lib",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65646",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "enterprise-auth",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65647",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "org-core",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65648",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "custom-logger",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65649",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "shared-utils",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65650",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "common-lib",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65651",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "internal-api",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65652",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "private-api",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65653",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "core-lib",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65654",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "my-company-auth",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65655",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "my-org-utils",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65656",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "npm-internal",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65657",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "npm-private",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65658",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "company-internal",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65659",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "org-internal",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65660",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "internal-logger",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  },
+  {
+    "payload_id": "OWP-65661",
+    "vulnerability_category": "Software Supply Chain Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "internal-metrics",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "dependency|package|malicious"
+    }
+  }
+]

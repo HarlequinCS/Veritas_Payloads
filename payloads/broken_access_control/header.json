@@ -1,0 +1,90 @@
+[
+  {
+    "payload_id": "OWP-65774",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Origin: http://127.0.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Access-Control-Allow-Origin"
+    }
+  },
+  {
+    "payload_id": "OWP-65775",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Origin: https://malicious.com https://trusted.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Access-Control-Allow-Origin"
+    }
+  },
+  {
+    "payload_id": "OWP-65776",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Origin: https://trusted.com.evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Access-Control-Allow-Origin"
+    }
+  },
+  {
+    "payload_id": "OWP-65777",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Origin: https://evil-trusted.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Access-Control-Allow-Origin"
+    }
+  },
+  {
+    "payload_id": "OWP-65778",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Access-Control-Request-Method: DELETE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Access-Control-Allow-Origin"
+    }
+  },
+  {
+    "payload_id": "OWP-65779",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Access-Control-Request-Method: PATCH",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Access-Control-Allow-Origin"
+    }
+  },
+  {
+    "payload_id": "OWP-65780",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Access-Control-Request-Headers: Authorization",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Access-Control-Allow-Origin"
+    }
+  },
+  {
+    "payload_id": "OWP-65781",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Access-Control-Request-Headers: X-Custom-Header",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Access-Control-Allow-Origin"
+    }
+  }
+]

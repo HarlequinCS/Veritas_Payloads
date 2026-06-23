@@ -180,6 +180,24 @@ button { font-family: inherit; }
 .banner p { color: var(--text-secondary); font-size: 1rem; max-width: 620px; margin-top: 12px; }
 .banner p strong { color: var(--text-primary); }
 .banner-actions { display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+.banner-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; align-items: center; }
+.banner-text { min-width: 0; }
+
+/* ─── 3D GLOBE VISUAL ─── */
+.banner-visual { position: relative; width: 100%; aspect-ratio: 1 / 1; max-width: 340px; margin-left: auto; display: grid; place-items: center; }
+.banner-visual #globeCanvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.globe-glow { position: absolute; inset: 8%; border-radius: 50%; background: radial-gradient(circle at 50% 45%, rgba(34,211,238,.22), rgba(129,140,248,.08) 55%, transparent 72%); filter: blur(6px); pointer-events: none; animation: glowPulse 5s ease-in-out infinite; }
+@keyframes glowPulse { 0%,100% { opacity: .7; } 50% { opacity: 1; } }
+.globe-ring { position: absolute; inset: 2%; border-radius: 50%; border: 1px solid rgba(34,211,238,.18); pointer-events: none; animation: ringSpin 26s linear infinite; }
+.globe-ring::before { content: ''; position: absolute; top: -3px; left: 50%; width: 6px; height: 6px; margin-left: -3px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 10px var(--cyan); }
+.globe-ring-2 { inset: 11%; border-color: rgba(129,140,248,.16); border-style: dashed; animation: ringSpin 34s linear infinite reverse; }
+.globe-ring-2::before { background: var(--violet); box-shadow: 0 0 10px var(--violet); }
+@keyframes ringSpin { to { transform: rotate(360deg); } }
+.globe-hud { position: absolute; z-index: 2; font-family: var(--mono); font-size: .58rem; letter-spacing: .12em; color: var(--cyan); text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; border: 1px solid var(--accent-border); border-radius: 6px; background: rgba(10,14,21,.5); backdrop-filter: blur(4px); pointer-events: none; white-space: nowrap; }
+.globe-hud strong { color: var(--text-primary); font-weight: 700; }
+.globe-hud-tl { top: 4px; left: 4px; }
+.globe-hud-br { bottom: 4px; right: 4px; color: var(--violet); border-color: rgba(129,140,248,.3); }
+.globe-hud .hud-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px var(--green); animation: pulse 2s infinite; }
 
 /* ─── BUTTONS ─── */
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px; border-radius: var(--radius-sm); font-size: .86rem; font-weight: 700; cursor: pointer; border: 1px solid transparent; transition: all .22s; }
@@ -270,7 +288,7 @@ button { font-family: inherit; }
 .badge-muted { background: var(--bg-code); color: var(--text-secondary); border: 1px solid var(--border); }
 .lib-card-body { padding: 0 18px 14px; flex: 1; }
 .lib-card-title { font-size: .98rem; font-weight: 700; margin-bottom: 6px; }
-.lib-card-desc { font-size: .82rem; color: var(--text-secondary); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.lib-card-desc { font-size: .82rem; color: var(--text-secondary); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .lib-card-example { margin: 12px 18px 0; }
 .example-label { font-size: .66rem; text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); margin-bottom: 5px; }
 .code-inline { display: flex; align-items: center; gap: 8px; background: var(--bg-code); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 9px 10px; }
@@ -373,6 +391,18 @@ button { font-family: inherit; }
 @media (max-width: 1100px) {
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .grid-2 { grid-template-columns: 1fr; }
+  .banner-grid { grid-template-columns: 1fr; gap: 8px; }
+  .banner-visual { order: -1; max-width: 240px; margin: 0 auto 8px; }
+  .globe-hud { font-size: .54rem; }
+}
+@media (max-width: 620px) {
+  .banner-visual { max-width: 200px; }
+}
+
+/* ─── REDUCED MOTION / FALLBACK ─── */
+@media (prefers-reduced-motion: reduce) {
+  .globe-ring, .globe-glow, .status-dot, .globe-hud .hud-dot { animation: none !important; }
+  .view { animation: none !important; }
 }
 @media (max-width: 860px) {
   .sidebar { transform: translateX(-100%); box-shadow: var(--shadow-lg); }

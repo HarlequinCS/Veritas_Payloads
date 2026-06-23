@@ -1,6 +1,6 @@
 # OWASP Top 10 Payload Dataset
 
-A comprehensive, structured collection of **65,321 unique payload strings** covering all OWASP Top 10 (2021) vulnerability categories, curated from industry-standard security testing wordlists and exploit databases.
+A comprehensive, structured collection of **65,781 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
 
 > **Interactive Dashboard:** Explore the dataset visually at [`index.html`](index.html) — a professional static dashboard built with HTML, CSS, and JavaScript. Served automatically via GitHub Pages from the root.
 
@@ -8,10 +8,11 @@ A comprehensive, structured collection of **65,321 unique payload strings** cove
 
 | Metric | Value |
 |--------|-------|
-| Total Payloads | 65,321 |
-| Vulnerability Categories | 36 |
-| Organized Files | 84 |
-| Total Size (JSON) | ~22 MB |
+| Total Payloads | 65,781 |
+| Vulnerability Categories | 45 |
+| Organized Files | 95 |
+| Total Size (JSON) | ~24 MB |
+| OWASP Version | 2025 (all 10 categories covered) |
 
 ## Format
 
@@ -54,44 +55,47 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 
 ## Categories
 
-| Category | Payloads |
-|----------|----------|
-| Injection (LFI/RFI) | 25,873 |
-| Injection (XSS) | 12,462 |
-| Injection (Command Injection) | 9,391 |
-| Injection (SQLi) | 5,348 |
-| Security Misconfiguration | 5,029 |
-| Software & Data Integrity Failures (Deserialization) | 3,766 |
-| Identification & Authentication Failures | 899 |
-| Insecure Design | 473 |
-| Injection (Open Redirect) | 272 |
-| Cryptographic Failures | 166 |
-| Injection (NoSQLi) | 147 |
-| Broken Access Control (IDOR) | 138 |
-| Injection (SSRF) | 125 |
-| Injection (LDAP) | 123 |
-| Injection (Unrestricted File Upload) | 114 |
-| Injection (XXE) | 110 |
-| Injection (GraphQL) | 100 |
-| Injection (SSI) | 100 |
-| Injection (SSTI) | 86 |
-| Insecure Design (Race Condition) | 80 |
-| Injection (Prototype Pollution) | 73 |
-| Vulnerable & Outdated Components | 57 |
-| Security Logging & Monitoring Failures | 56 |
-| Injection (Format String) | 55 |
-| Injection (Request Smuggling) | 43 |
-| Injection (CRLF) | 42 |
-| Injection (LaTeX) | 36 |
-| Injection (SMTP) | 30 |
-| Injection (DOM Clobbering) | 25 |
-| Injection (CSS Injection) | 23 |
-| Injection (Type Juggling) | 19 |
-| Web Cache Deception | 14 |
-| Injection (CSV Injection) | 12 |
-| Injection (XSLT) | 12 |
-| HTTP Parameter Pollution | 11 |
-| Injection (XPATH) | 11 |
+| Category | OWASP 2025 Map | Payloads |
+|----------|-|----------|
+| Injection (LFI/RFI) | A05 | 25,873 |
+| Injection (XSS) | A05 | 12,462 |
+| Injection (Command Injection) | A05 | 9,391 |
+| Injection (SQLi) | A05 | 5,348 |
+| Security Misconfiguration | A02 | 5,029 |
+| Software & Data Integrity Failures (Deserialization) | A08 | 3,766 |
+| Identification & Authentication Failures | A07 | 899 |
+| Insecure Design | A06 | 473 |
+| Injection (Open Redirect) | A05 | 272 |
+| Cryptographic Failures | A04 | 166 |
+| Injection (NoSQLi) | A05 | 147 |
+| Broken Access Control (IDOR) | A01 | 138 |
+| Software Supply Chain Failures | **A03** | 131 |
+| Injection (SSRF) | A01 | 125 |
+| Injection (LDAP) | A05 | 123 |
+| Injection (Unrestricted File Upload) | A05 | 114 |
+| Injection (XXE) | A05 | 110 |
+| Injection (GraphQL) | A05 | 100 |
+| Injection (SSI) | A05 | 100 |
+| Broken Access Control | **A01** | 89 |
+| Injection (SSTI) | A05 | 86 |
+| Insecure Design (Race Condition) | A06 | 80 |
+| Injection (Prototype Pollution) | A05 | 73 |
+| Mishandling of Exceptional Conditions | **A10** | 240 |
+| Vulnerable & Outdated Components | A03 | 57 |
+| Security Logging & Alerting Failures | A09 | 56 |
+| Injection (Format String) | A05 | 55 |
+| Injection (Request Smuggling) | A05 | 43 |
+| Injection (CRLF) | A05 | 42 |
+| Injection (LaTeX) | A05 | 36 |
+| Injection (SMTP) | A05 | 30 |
+| Injection (DOM Clobbering) | A05 | 25 |
+| Injection (CSS Injection) | A05 | 23 |
+| Injection (Type Juggling) | A05 | 19 |
+| Web Cache Deception | A02 | 14 |
+| Injection (CSV Injection) | A05 | 12 |
+| Injection (XSLT) | A05 | 12 |
+| HTTP Parameter Pollution | A05 | 11 |
+| Injection (XPATH) | A05 | 11 |
 
 ## Injection Points
 

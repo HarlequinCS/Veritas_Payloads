@@ -7,7 +7,7 @@
   'use strict';
 
   /* ─── DATA ─── */
-  const TOTAL_PAYLOADS = 65321;
+  const TOTAL_PAYLOADS = 65781;
 
   const CATEGORIES = [
     { name: 'Injection (LFI/RFI)', count: 25873 },
@@ -19,15 +19,18 @@
     { name: 'Identification & Authentication Failures', count: 899 },
     { name: 'Insecure Design', count: 473 },
     { name: 'Injection (Open Redirect)', count: 272 },
+    { name: 'Mishandling of Exceptional Conditions', count: 240 },
     { name: 'Cryptographic Failures', count: 166 },
     { name: 'Injection (NoSQLi)', count: 147 },
     { name: 'Broken Access Control (IDOR)', count: 138 },
+    { name: 'Software Supply Chain Failures', count: 131 },
     { name: 'Injection (SSRF)', count: 125 },
     { name: 'Injection (LDAP)', count: 123 },
     { name: 'Injection (Unrestricted File Upload)', count: 114 },
     { name: 'Injection (XXE)', count: 110 },
     { name: 'Injection (GraphQL)', count: 100 },
     { name: 'Injection (SSI)', count: 100 },
+    { name: 'Broken Access Control', count: 89 },
     { name: 'Injection (SSTI)', count: 86 },
     { name: 'Insecure Design (Race Condition)', count: 80 },
     { name: 'Injection (Prototype Pollution)', count: 73 },
@@ -77,6 +80,11 @@
   function escHtml(s) { return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
   function escAttr(s) { return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
   function colorFor(i) { return PALETTE[i % PALETTE.length]; }
+
+  /* shared runtime state */
+  let globe = null;
+  let activeView = 'overview';
+  let lastIsMobile = window.innerWidth <= 620;
 
   /* ─── DERIVED DATA ─── */
   function severityFor(cat) {
@@ -512,7 +520,9 @@
     if (history.replaceState) history.replaceState(null, '', '#' + view.id);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     closeSidebar();
-    if (view.id === 'overview') { setTimeout(animateBars, 80); animateCounters(); }
+    activeView = view.id;
+    if (view.id === 'overview') { setTimeout(animateBars, 80); animateCounters(); if (globe) globe.start(); }
+    else if (globe) globe.stop();
     if (view.id === 'walkthrough') requestAnimationFrame(refreshAccordion);
   }
 
@@ -521,6 +531,205 @@
       const body = $('.acc-body', o);
       body.style.maxHeight = o.classList.contains('open') ? body.scrollHeight + 'px' : '0px';
     });
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     3D CYBER GLOBE — lightweight vanilla-canvas renderer (no libs)
+     Orthographic wireframe sphere + glowing threat nodes + arc links
+     + radar scan band + mouse parallax. Front-hemisphere culling for
+     a true 3D read. Auto-pauses when hidden/off-screen; respects
+     prefers-reduced-motion and downscales on mobile.
+     ═══════════════════════════════════════════════════════════════ */
+  function createGlobe() {
+    const wrap = $('#globeVisual');
+    const canvas = $('#globeCanvas');
+    if (!wrap || !canvas) return null;
+    const ctx = canvas.getContext('2d');
+    const PI = Math.PI;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const NODE_HEX = ['#22d3ee', '#818cf8', '#34d399', '#f472b6'];
+
+    let W = 0, H = 0, cx = 0, cy = 0, R = 0, dpr = 1;
+    let raf = null, running = false, t = 0;
+    let autoYaw = 0, yawOff = 0, yawTarget = 0;
+    const basePitch = -0.34;
+    let pitch = basePitch, pitchTarget = 0;
+
+    let latLines = [], lonLines = [], nodes = [], arcs = [];
+
+    const isMobile = () => window.innerWidth <= 620;
+    const sph = (phi, th) => [Math.cos(phi) * Math.cos(th), Math.sin(phi), Math.cos(phi) * Math.sin(th)];
+
+    function slerpPts(a, b, seg) {
+      let dot = a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+      dot = Math.max(-1, Math.min(1, dot));
+      const om = Math.acos(dot), so = Math.sin(om), out = [];
+      for (let i = 0; i <= seg; i++) {
+        const tt = i / seg;
+        let w1, w2;
+        if (so < 1e-4) { w1 = 1 - tt; w2 = tt; }
+        else { w1 = Math.sin((1 - tt) * om) / so; w2 = Math.sin(tt * om) / so; }
+        const alt = 1 + 0.22 * Math.sin(tt * PI);
+        out.push([(a[0] * w1 + b[0] * w2) * alt, (a[1] * w1 + b[1] * w2) * alt, (a[2] * w1 + b[2] * w2) * alt]);
+      }
+      return out;
+    }
+
+    function buildGeometry() {
+      latLines = []; lonLines = [];
+      const samp = isMobile() ? 36 : 54;
+      for (let lat = -60; lat <= 60; lat += 20) {
+        const phi = lat * PI / 180, pts = [];
+        for (let i = 0; i <= samp; i++) pts.push(sph(phi, i / samp * 2 * PI));
+        latLines.push(pts);
+      }
+      for (let lon = 0; lon < 180; lon += 20) {
+        const th = lon * PI / 180, pts = [];
+        for (let i = 0; i <= samp; i++) pts.push(sph((-90 + i / samp * 180) * PI / 180, th));
+        lonLines.push(pts);
+      }
+      const n = isMobile() ? 16 : 28;
+      nodes = [];
+      for (let i = 0; i < n; i++) {
+        nodes.push({
+          v: sph((Math.random() * 150 - 75) * PI / 180, Math.random() * 2 * PI),
+          ph: Math.random() * 6.28,
+          r: 1.6 + Math.random() * 1.4,
+          c: NODE_HEX[i % NODE_HEX.length],
+        });
+      }
+      const na = isMobile() ? 5 : 10;
+      arcs = [];
+      for (let i = 0; i < na; i++) {
+        const a = nodes[(Math.random() * nodes.length) | 0];
+        const b = nodes[(Math.random() * nodes.length) | 0];
+        if (a === b) continue;
+        arcs.push({ pts: slerpPts(a.v, b.v, 26), t: Math.random(), sp: 0.0035 + Math.random() * 0.004, c: a.c });
+      }
+      const counter = $('#globeNodeCount');
+      if (counter) counter.textContent = nodes.length * 4 + 24;
+    }
+
+    function project(v) {
+      const cyw = Math.cos(autoYaw + yawOff), syw = Math.sin(autoYaw + yawOff);
+      const x1 = v[0] * cyw + v[2] * syw, z1 = -v[0] * syw + v[2] * cyw, y1 = v[1];
+      const cp = Math.cos(pitch), sp = Math.sin(pitch);
+      const y2 = y1 * cp - z1 * sp, z2 = y1 * sp + z1 * cp;
+      return { x: cx + x1 * R, y: cy - y2 * R, z: z2 };
+    }
+
+    /* front-hemisphere-only stroke for a real 3D wireframe look */
+    function strokeFront(pts, color, alpha, width) {
+      ctx.beginPath();
+      let pen = false;
+      for (let i = 0; i < pts.length; i++) {
+        const p = project(pts[i]);
+        if (p.z >= -0.02) {
+          if (!pen) { ctx.moveTo(p.x, p.y); pen = true; }
+          else ctx.lineTo(p.x, p.y);
+        } else pen = false;
+      }
+      ctx.strokeStyle = color.replace('ALPHA', alpha.toFixed(3));
+      ctx.lineWidth = width;
+      ctx.stroke();
+    }
+
+    function dot(x, y, r, hex, a) {
+      ctx.globalAlpha = a * 0.22; ctx.fillStyle = hex;
+      ctx.beginPath(); ctx.arc(x, y, r * 3.4, 0, 6.283); ctx.fill();
+      ctx.globalAlpha = a; ctx.beginPath(); ctx.arc(x, y, r, 0, 6.283); ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      if (R <= 0) return;
+
+      // soft inner sphere shading
+      const grad = ctx.createRadialGradient(cx - R * 0.3, cy - R * 0.3, R * 0.1, cx, cy, R);
+      grad.addColorStop(0, 'rgba(34,211,238,0.06)');
+      grad.addColorStop(1, 'rgba(8,12,20,0.0)');
+      ctx.fillStyle = grad;
+      ctx.beginPath(); ctx.arc(cx, cy, R, 0, 6.283); ctx.fill();
+
+      // radar scan band (oscillating latitude)
+      const scanY = Math.sin(t * 0.012);
+
+      // grid wireframe
+      for (const ln of lonLines) strokeFront(ln, 'rgba(34,211,238,ALPHA)', 0.16, 1);
+      for (const ln of latLines) {
+        const near = Math.abs(ln[0][1] - scanY) < 0.16;
+        strokeFront(ln, near ? 'rgba(52,211,153,ALPHA)' : 'rgba(34,211,238,ALPHA)', near ? 0.5 : 0.16, near ? 1.4 : 1);
+      }
+
+      // arc connections + travelling pulse
+      for (const arc of arcs) {
+        strokeFront(arc.pts, 'rgba(129,140,248,ALPHA)', 0.28, 1);
+        if (!reduce) { arc.t += arc.sp; if (arc.t > 1) arc.t -= 1; }
+        const idx = Math.min(arc.pts.length - 1, Math.floor(arc.t * arc.pts.length));
+        const p = project(arc.pts[idx]);
+        if (p.z >= 0) dot(p.x, p.y, 1.8, arc.c, 0.9);
+      }
+
+      // threat nodes (front only) with pulse + scan highlight
+      for (const nd of nodes) {
+        const p = project(nd.v);
+        if (p.z < 0) continue;
+        const depth = 0.5 + 0.5 * (p.z / R);
+        const pulse = reduce ? 0.8 : 0.55 + 0.45 * Math.sin(t * 0.05 + nd.ph);
+        const hot = Math.abs(nd.v[1] - scanY) < 0.14;
+        dot(p.x, p.y, (nd.r + (hot ? 1 : 0)) * (0.7 + depth * 0.6), hot ? '#34d399' : nd.c, pulse * (0.6 + depth * 0.4));
+      }
+    }
+
+    function frame() {
+      if (!running) return;
+      t++;
+      if (!reduce) autoYaw += 0.0024;
+      yawOff += (yawTarget - yawOff) * 0.06;
+      pitch += (basePitch + pitchTarget - pitch) * 0.06;
+      draw();
+      raf = requestAnimationFrame(frame);
+    }
+
+    function resize() {
+      const rect = wrap.getBoundingClientRect();
+      const w = rect.width, h = rect.height;
+      if (w < 2 || h < 2) return;
+      dpr = Math.min(window.devicePixelRatio || 1, isMobile() ? 1.25 : 1.75);
+      W = w; H = h;
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      cx = w / 2; cy = h / 2; R = Math.min(w, h) * 0.37;
+      if (!running) draw();
+    }
+
+    function start() {
+      resize();
+      if (reduce) { draw(); return; }       // static frame fallback
+      if (running) return;
+      running = true; raf = requestAnimationFrame(frame);
+    }
+    function stop() {
+      running = false;
+      if (raf) { cancelAnimationFrame(raf); raf = null; }
+    }
+
+    // mouse parallax (pointer devices only)
+    if (!reduce && window.matchMedia('(pointer: fine)').matches) {
+      wrap.addEventListener('pointermove', e => {
+        const rect = wrap.getBoundingClientRect();
+        const nx = (e.clientX - rect.left) / rect.width - 0.5;
+        const ny = (e.clientY - rect.top) / rect.height - 0.5;
+        yawTarget = nx * 0.6;
+        pitchTarget = ny * 0.5;
+      });
+      wrap.addEventListener('pointerleave', () => { yawTarget = 0; pitchTarget = 0; });
+    }
+
+    buildGeometry();
+    return { start, stop, resize, rebuild() { buildGeometry(); resize(); } };
   }
 
   /* ─── COUNTER ANIMATION ─── */
@@ -572,6 +781,23 @@
       e.stopPropagation();
       copyText(btn.getAttribute('data-copy'));
     });
+
+    // globe: resize (debounced) + rebuild on breakpoint change + pause when tab hidden
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (!globe) return;
+        const nowMobile = window.innerWidth <= 620;
+        if (nowMobile !== lastIsMobile) { lastIsMobile = nowMobile; globe.rebuild(); }
+        else globe.resize();
+      }, 160);
+    });
+    document.addEventListener('visibilitychange', () => {
+      if (!globe) return;
+      if (document.hidden) globe.stop();
+      else if (activeView === 'overview') globe.start();
+    });
   }
 
   /* ─── INIT ─── */
@@ -585,12 +811,13 @@
     applyFilters();
     renderSources();
     renderAccordion();
+    globe = createGlobe();
     bindEvents();
 
     // initial view from hash
     const hash = (location.hash || '').replace('#', '');
     if (VIEWS.some(v => v.id === hash)) setView(hash);
-    else { animateCounters(); setTimeout(animateBars, 200); }
+    else { activeView = 'overview'; animateCounters(); setTimeout(animateBars, 200); if (globe) globe.start(); }
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

