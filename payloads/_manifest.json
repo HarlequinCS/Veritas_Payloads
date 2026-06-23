@@ -1,5 +1,5 @@
 {
-  "total_payloads": 51752,
+  "total_payloads": 55994,
   "total_categories": 36,
   "total_files": 58,
   "categories": {
@@ -145,11 +145,11 @@
     },
     "Injection (LFI/RFI)": {
       "folder": "injection_(lfi_rfi)",
-      "total": 24572,
+      "total": 24623,
       "files": {
         "path_parameter": {
           "file": "injection_(lfi_rfi)/path_parameter.json",
-          "count": 13962
+          "count": 14013
         },
         "query_parameter": {
           "file": "injection_(lfi_rfi)/query_parameter.json",
@@ -251,7 +251,7 @@
     },
     "Injection (SSRF)": {
       "folder": "injection_(ssrf)",
-      "total": 74,
+      "total": 118,
       "files": {
         "body_xml": {
           "file": "injection_(ssrf)/body_xml.json",
@@ -259,7 +259,7 @@
         },
         "query_parameter": {
           "file": "injection_(ssrf)/query_parameter.json",
-          "count": 73
+          "count": 117
         }
       }
     },
@@ -343,7 +343,7 @@
     },
     "Insecure Design": {
       "folder": "insecure_design",
-      "total": 50,
+      "total": 473,
       "files": {
         "body_json": {
           "file": "insecure_design/body_json.json",
@@ -351,7 +351,7 @@
         },
         "query_parameter": {
           "file": "insecure_design/query_parameter.json",
-          "count": 9
+          "count": 432
         }
       }
     },
@@ -399,7 +399,7 @@
     },
     "Software & Data Integrity Failures (Deserialization)": {
       "folder": "software_&_data_integrity_failures_(deserialization)",
-      "total": 42,
+      "total": 3766,
       "files": {
         "body_binary": {
           "file": "software_&_data_integrity_failures_(deserialization)/body_binary.json",
@@ -407,7 +407,7 @@
         },
         "body_json": {
           "file": "software_&_data_integrity_failures_(deserialization)/body_json.json",
-          "count": 4
+          "count": 3728
         },
         "body_yaml": {
           "file": "software_&_data_integrity_failures_(deserialization)/body_yaml.json",

