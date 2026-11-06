@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-396728",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  }
+]

@@ -9,5 +9,49 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-215059",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cookie: sessionid=...",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-215091",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Origin: https://evilexample.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-215094",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Origin: https://apiiexample.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-242630",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Forwarded-For: 2.21.213.225, 104.16.148.244, 184.25.37.3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
   }
 ]

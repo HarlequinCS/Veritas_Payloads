@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-263987",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "%2e%2e",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  }
+]

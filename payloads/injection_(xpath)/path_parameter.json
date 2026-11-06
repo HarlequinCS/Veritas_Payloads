@@ -1,0 +1,79 @@
+[
+  {
+    "payload_id": "OWP-406942",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/cucm-uds/servers",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-406943",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/servers/server",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-406946",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/cucm-uds/users",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-406947",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/users/user/userName",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-406948",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/users/user/email",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-406949",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/users/user/phoneNumber",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-406950",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/users/user/mobileNumber",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
+  }
+]

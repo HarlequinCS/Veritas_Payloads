@@ -1,0 +1,14 @@
+{
+  "category": "Injection (LaTeX)",
+  "slug": "injection_latex",
+  "count": 1149,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "form_parameter",
+      "count": 1149
+    }
+  ],
+  "first_page": "categories/injection_latex/page/1.json"
+}

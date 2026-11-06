@@ -1,0 +1,30 @@
+{
+  "category": "Injection (LFI/RFI)",
+  "slug": "injection_lfi_rfi",
+  "count": 54180,
+  "pages": 55,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 23
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 18
+    },
+    {
+      "injection_point": "header",
+      "count": 5
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 24298
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 29836
+    }
+  ],
+  "first_page": "categories/injection_lfi_rfi/page/1.json"
+}

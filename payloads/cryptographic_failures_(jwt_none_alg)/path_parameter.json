@@ -1,0 +1,79 @@
+[
+  {
+    "payload_id": "OWP-405704",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/.well-known/jwks.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  },
+  {
+    "payload_id": "OWP-405705",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/.well-known/jwks",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  },
+  {
+    "payload_id": "OWP-405706",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/.well-known/openid-configuration/jwks.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  },
+  {
+    "payload_id": "OWP-405707",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/.well-known/openid-configuration/jwks",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  },
+  {
+    "payload_id": "OWP-405708",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/jwks.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  },
+  {
+    "payload_id": "OWP-405709",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/jwks",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  },
+  {
+    "payload_id": "OWP-407170",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/hedwig.cgi",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  }
+]

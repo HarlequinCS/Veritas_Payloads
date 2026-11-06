@@ -1,0 +1,14 @@
+{
+  "category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+  "slug": "mishandling_of_exceptional_conditions_failing_open_priv_esc",
+  "count": 3485,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "query_parameter",
+      "count": 3485
+    }
+  ],
+  "first_page": "categories/mishandling_of_exceptional_conditions_failing_open_priv_esc/page/1.json"
+}

@@ -1,0 +1,18 @@
+{
+  "category": "Injection (NoSQLi)",
+  "slug": "injection_nosqli",
+  "count": 1616,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 1602
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 14
+    }
+  ],
+  "first_page": "categories/injection_nosqli/page/1.json"
+}

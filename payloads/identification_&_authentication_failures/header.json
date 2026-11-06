@@ -42,5 +42,27 @@
       "expected_status_code": 200,
       "success_regex": "admin|welcome"
     }
+  },
+  {
+    "payload_id": "OWP-210855",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Accept: */*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210871",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "User-Agent: Smuggler/v1.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
   }
 ]

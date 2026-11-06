@@ -1,0 +1,46 @@
+[
+  {
+    "payload_id": "OWP-408357",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{csrf_token}\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408376",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[?] Remote Privilege Escalation\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408377",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[?] Usage: php mic.php localhost:80 cms [username] [password] [privilege]\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408378",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[?] Example: php mic.php localhost:80 cms anarchy mypasswordz privilege\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

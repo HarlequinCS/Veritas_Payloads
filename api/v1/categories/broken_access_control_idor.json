@@ -1,0 +1,22 @@
+{
+  "category": "Broken Access Control (IDOR)",
+  "slug": "broken_access_control_idor",
+  "count": 1281,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "form_parameter",
+      "count": 1
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 503
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 777
+    }
+  ],
+  "first_page": "categories/broken_access_control_idor/page/1.json"
+}

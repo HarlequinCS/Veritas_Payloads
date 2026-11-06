@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-408107",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Type: multipart/form-data; boundary=----------lNnHj26YsSTIS0qSMhw5MK\\r\\n\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|7777777"
+    }
+  }
+]

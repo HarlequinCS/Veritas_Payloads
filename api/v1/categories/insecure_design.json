@@ -1,0 +1,22 @@
+{
+  "category": "Insecure Design",
+  "slug": "insecure_design",
+  "count": 4144,
+  "pages": 5,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 41
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 40
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 4063
+    }
+  ],
+  "first_page": "categories/insecure_design/page/1.json"
+}

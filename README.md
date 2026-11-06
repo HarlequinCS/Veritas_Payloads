@@ -1,6 +1,6 @@
 # OWASP Top 10 Payload Dataset
 
-A comprehensive, structured collection of **210,845 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
+A comprehensive, structured collection of **345,994 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
 
 > **Interactive Dashboard:** Explore the dataset visually at [`index.html`](index.html) — a professional static dashboard built with HTML, CSS, and JavaScript. Served automatically via GitHub Pages from the root.
 
@@ -8,10 +8,10 @@ A comprehensive, structured collection of **210,845 unique payload strings** cov
 
 | Metric | Value |
 |--------|-------|
-| Total Payloads | 210,845 |
+| Total Payloads | 345,994 |
 | Vulnerability Categories | 65 |
-| Organized Files | 139 |
-| Total Size (JSON) | ~70 MB |
+| Organized Files | 187 |
+| Total Size (JSON) | ~119 MB |
 | OWASP Version | 2025 (all 10 categories covered) |
 
 ## Format
@@ -37,7 +37,7 @@ Each payload entry follows a consistent schema:
 The dataset is available in two forms:
 
 ### Unified JSON
-- **`owasp_top10_payloads.json`** — single file containing all 210,845 entries
+- **`owasp_top10_payloads.json`** — single file containing all 345,994 entries
 
 ### Organized Directory
 
@@ -59,72 +59,71 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 
 | Category | OWASP 2025 | Payloads |
 |----------|------------|----------|
-| **Injection (LFI/RFI)** | A05 | 25,873 |
-| **Injection (XSS)** | A05 | 12,462 |
-| **Injection (Command Injection)** | A05 | 9,391 |
-| **Injection (SQLi)** | A05 | 5,348 |
-| **Security Misconfiguration** | A02 | 5,029 |
-| _Insecure Design (Price Manipulation)_ | — | 4,281 |
-| **Insecure Design** | A06 | 4,018 |
-| **Injection (LDAP)** | A05 | 3,992 |
-| _Identification & Authentication Failures (Weak Session IDs)_ | — | 3,845 |
-| **Software & Data Integrity Failures (Deserialization)** | A08 | 3,766 |
-| **Cryptographic Failures** | A04 | 3,751 |
+| _Identification & Authentication Failures (Weak Passwords)_ | — | 78,776 |
+| **Injection (LFI/RFI)** | A05 | 54,180 |
+| **Injection (XSS)** | A05 | 15,899 |
+| **Security Misconfiguration** | A02 | 12,353 |
+| **Injection (Command Injection)** | A05 | 11,985 |
+| **Injection (SQLi)** | A05 | 7,885 |
+| **Injection (Unrestricted File Upload)** | A05 | 6,131 |
+| **Injection (LDAP)** | A05 | 5,949 |
+| _Mishandling of Exceptional Conditions (Null/Type/Zero Errors)_ | — | 5,071 |
+| **Web Cache Deception** | A02 | 4,583 |
+| _Identification & Authentication Failures (Weak Session IDs)_ | — | 4,465 |
+| _Insecure Design (Price Manipulation)_ | — | 4,282 |
+| **Insecure Design** | A06 | 4,144 |
+| **Injection (SSTI)** | A05 | 4,062 |
+| **Software & Data Integrity Failures (Deserialization)** | A08 | 4,026 |
+| **Injection (CRLF)** | A05 | 3,915 |
+| **Injection (XXE)** | A05 | 3,850 |
+| **Cryptographic Failures** | A04 | 3,804 |
+| **Vulnerable & Outdated Components** | A03 | 3,721 |
+| **Injection (SSI)** | A05 | 3,696 |
+| _Vulnerable & Outdated Components (CVE Paths)_ | — | 3,693 |
 | _Web Cache Deception (Cache Poisoning)_ | — | 3,680 |
-| **Injection (SSTI)** | A05 | 3,659 |
-| **Injection (SSI)** | A05 | 3,658 |
 | _Insecure Design (Race Condition Tests)_ | — | 3,625 |
 | _Insecure Design (Coupon Abuse)_ | — | 3,618 |
-| **Injection (XXE)** | A05 | 3,613 |
 | **HTTP Parameter Pollution** | A05 | 3,600 |
-| **Injection (CSV Injection)** | A05 | 3,585 |
+| **Injection (CSV Injection)** | A05 | 3,593 |
 | **Software Supply Chain Failures** | A03 | 3,576 |
-| **Injection (CRLF)** | A05 | 3,562 |
-| **Vulnerable & Outdated Components** | A03 | 3,544 |
 | _Insecure Design (Race Condition)_ | — | 3,525 |
-| _Identification & Authentication Failures (Weak Passwords)_ | — | 3,519 |
 | **Security Logging & Monitoring Failures** | A09 | 3,519 |
 | _Mishandling of Exceptional Conditions (Error Info Disclosure)_ | — | 3,515 |
 | _Mishandling of Exceptional Conditions (Missing/Extra Parameters)_ | — | 3,505 |
 | _Cryptographic Failures (Weak Crypto Algos)_ | — | 3,487 |
-| **Web Cache Deception** | A02 | 3,487 |
+| **Injection (XPATH)** | A05 | 3,487 |
 | _Mishandling of Exceptional Conditions (Failing Open / Priv Esc)_ | — | 3,485 |
 | _Mishandling of Exceptional Conditions (Debug Code Disclosure)_ | — | 3,481 |
-| _Mishandling of Exceptional Conditions (Null/Type/Zero Errors)_ | — | 3,481 |
 | _Mishandling of Exceptional Conditions (Unchecked Exceptions)_ | — | 3,479 |
-| **Injection (XPATH)** | A05 | 3,478 |
 | _Vulnerable & Outdated Components (Vulnerable Versions)_ | — | 3,473 |
+| _Cryptographic Failures (JWT None Alg)_ | — | 3,472 |
 | _Cryptographic Failures (Weak TLS Probes)_ | — | 3,466 |
 | _Cryptographic Failures (Info Disclosure Headers)_ | — | 3,461 |
-| _Cryptographic Failures (JWT None Alg)_ | — | 3,460 |
 | _Software Supply Chain Failures (Private Package Confusion)_ | — | 2,220 |
-| **Injection (Unrestricted File Upload)** | A05 | 2,008 |
-| **Injection (NoSQLi)** | A05 | 1,612 |
-| **Injection (Open Redirect)** | A05 | 1,427 |
+| _Identification & Authentication Failures (Username Enum)_ | — | 2,046 |
+| **Injection (Open Redirect)** | A05 | 1,635 |
+| **Injection (SSRF)** | A05 | 1,618 |
+| **Injection (NoSQLi)** | A05 | 1,616 |
 | **Injection (Prototype Pollution)** | A05 | 1,427 |
-| **Injection (SSRF)** | A05 | 1,354 |
-| **Injection (Format String)** | A05 | 1,321 |
-| **Broken Access Control (IDOR)** | A01 | 1,276 |
-| **Broken Access Control** | A01 | 1,215 |
-| **Injection (GraphQL)** | A05 | 1,196 |
+| **Identification & Authentication Failures** | A07 | 1,371 |
+| **Injection (Format String)** | A05 | 1,356 |
+| **Broken Access Control** | A01 | 1,298 |
+| **Broken Access Control (IDOR)** | A01 | 1,281 |
+| **Injection (GraphQL)** | A05 | 1,205 |
 | **Injection (DOM Clobbering)** | A05 | 1,192 |
 | _HTTP Parameter Pollution (Duplicate Params)_ | — | 1,172 |
 | **Injection (LaTeX)** | A05 | 1,149 |
+| **Injection (XSLT)** | A05 | 1,133 |
 | _Software Supply Chain Failures (Vuln Dependency Versions)_ | — | 1,116 |
-| **Identification & Authentication Failures** | A07 | 1,099 |
-| **Injection (SMTP)** | A05 | 1,099 |
-| **Injection (CSS Injection)** | A05 | 1,098 |
-| **Injection (Request Smuggling)** | A05 | 1,087 |
-| _Insecure Design (Rate Limit Bypass)_ | — | 1,086 |
-| **Injection (Type Juggling)** | A05 | 1,077 |
-| _Identification & Authentication Failures (Username Enum)_ | — | 1,070 |
-| **Injection (XSLT)** | A05 | 1,053 |
+| _Insecure Design (Rate Limit Bypass)_ | — | 1,115 |
+| **Injection (SMTP)** | A05 | 1,104 |
+| **Injection (CSS Injection)** | A05 | 1,099 |
+| **Injection (Request Smuggling)** | A05 | 1,088 |
+| **Injection (Type Juggling)** | A05 | 1,087 |
 | _Mishandling of Exceptional Conditions (Missing Error Page)_ | — | 1,050 |
-| _Vulnerable & Outdated Components (CVE Paths)_ | — | 1,045 |
 | _Security Logging & Monitoring Failures (Log Injection)_ | — | 1,037 |
 | _Web Cache Deception (Cache Poisoning Headers)_ | — | 1,034 |
 | _Cryptographic Failures (JWT Kid Injection)_ | — | 1,028 |
-
 ## Injection Points
 
 Payloads are classified by where they are injected:
@@ -156,6 +155,44 @@ with open("payloads/injection_(sqli)/query_parameter.json") as f:
 for p in payloads:
     print(p["payload_string"])
 ```
+
+## HTTP API
+
+GitHub hosts the files, so the API is a set of JSON documents other systems fetch with GET. There is no query-string search: pick a category, then follow `next` until the pages run out. Rebuild the files with `python build_api.py` after the dataset changes.
+
+Base URL after this repo is on GitHub:
+
+```text
+https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1
+```
+
+GitHub Pages, if enabled for the repository, serves the same tree at `https://harlequincs.github.io/Veritas_Payloads/api/v1`.
+
+| Endpoint | What it returns |
+|---|---|
+| `index.json` | Dataset totals and the endpoint map |
+| `categories.json` | All 65 categories, counts, and the first page link |
+| `categories/{slug}.json` | One category, its injection points, and its page count |
+| `categories/{slug}/page/{n}.json` | Up to 1,000 payloads, plus `next` and `prev` |
+| `id-map/{bucket}.json` | Payload id to `[slug, page]`. `bucket` is the id number divided by 100000 |
+
+```bash
+curl https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1/categories/injection_sqli/page/1.json
+```
+
+```python
+import requests
+
+base = "https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1"
+page = requests.get(f"{base}/categories/injection_xss/page/1.json", timeout=60).json()
+for item in page["results"]:
+    print(item["payload_id"], item["payload_string"])
+
+# Look up one id: OWP-0055 is bucket 0
+slug, page_no = requests.get(f"{base}/id-map/0.json", timeout=60).json()["OWP-0055"]
+```
+
+Slugs drop spaces and parentheses, so `Injection (SQLi)` is `injection_sqli`. Each result still carries `vulnerability_category`, `injection_point`, and `payload_string`.
 
 ## Tool
 

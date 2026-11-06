@@ -1,0 +1,34 @@
+{
+  "category": "Injection (Command Injection)",
+  "slug": "injection_command_injection",
+  "count": 11985,
+  "pages": 12,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 27
+    },
+    {
+      "injection_point": "body_xml",
+      "count": 6
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 29
+    },
+    {
+      "injection_point": "header",
+      "count": 7
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 415
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 11501
+    }
+  ],
+  "first_page": "categories/injection_command_injection/page/1.json"
+}

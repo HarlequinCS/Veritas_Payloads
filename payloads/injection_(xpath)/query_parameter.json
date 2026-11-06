@@ -1,0 +1,24 @@
+[
+  {
+    "payload_id": "OWP-408258",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "javascript: xpath();",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-408298",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Outputs USER(), DATABASE() and VERSION() on XPATH Error!\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
+  }
+]

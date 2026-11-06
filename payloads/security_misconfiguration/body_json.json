@@ -493,5 +493,192 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-210890",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] ViewState is not encrypted",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-210891",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] Signature algorithm: SHA1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-215062",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"[private API key]\"}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241061",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[!] Target : http://127.0.0.1:5000/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241062",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] Start.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241063",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] GET repository/pack-names",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241064",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] GET README",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241065",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] GET checkout/dirstate",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241066",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] GET checkout/views",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241067",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] GET branch/branch.conf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241068",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] GET branch/format",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241069",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] GET branch/last-revision",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241070",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] GET branch/tag",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241071",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] GET b'154411f0f33adc3ff8cfb3d34209cbd1'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-241072",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] Finish",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-404732",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{{filepath}}{{bakext}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-406431",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{{jolokia_paths}}{{mbean_paths}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
   }
 ]

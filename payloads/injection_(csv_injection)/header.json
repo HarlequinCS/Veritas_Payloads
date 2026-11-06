@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-408174",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Type: text/csv\\r\\n\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "^[=+\\-@]"
+    }
+  }
+]

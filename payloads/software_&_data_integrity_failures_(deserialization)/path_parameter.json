@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-407670",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/service/~baseapp/UploadServlet",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  }
+]

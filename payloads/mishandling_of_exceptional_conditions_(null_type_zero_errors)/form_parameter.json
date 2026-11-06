@@ -1,0 +1,937 @@
+[
+  {
+    "payload_id": "OWP-399957",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "bnVsbA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399958",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "TlVMTA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399962",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "dHJ1ZQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399964",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "VHJ1ZQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399966",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "VFJVRQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399968",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Tm9uZQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399970",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "dGhlbg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399971",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "XA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399973",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399974",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MS4wMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399978",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MUUwMg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399983",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "LTEvMg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399984",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "LTFFMg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399992",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "LTAuMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399994",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "KzAuMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399995",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MC4wMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399996",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MC4uMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399997",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Lg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-399999",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MCwwMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400000",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MCwsMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400001",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "LA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400004",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MS4wLzAuMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400005",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MC4wLzAuMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400006",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MSwwLzAsMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400007",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MCwwLzAsMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400009",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "LQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400024",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MHhmZmZmZmZmZg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400026",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MHhhYmFkMWRlYQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400044",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "LC4vOydbXVwtPQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400066",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "xZPiiJHCtMKu4oCgwqXCqMuGw7jPgOKAnOKAmA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400095",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Jw==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400096",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Ig==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400101",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "IiciJyInJycnIg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400109",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "7IKs7ZqM6rO87ZWZ7JuQIOyWtO2VmeyXsOq1rOyGjA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400131",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "6KGo44Od44GCQem3l8WSw6nvvKLpgI3DnMOfwqrEhcOx5LiC45CA8KCAgA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400143",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "4pSs4pSA4pSs44OOKCDCuiBfIMK644OOKQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400178",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "4oCq4oCqdGVzdOKAqg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400179",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "4oCrdGVzdOKAqw==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400180",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "4oCpdGVzdOKAqQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400182",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "4oGmdGVzdOKBpw==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400217",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "8J2QniDwnZCl8J2QmvCdkLPwnZCyIPCdkJ3wnZCo8J2QoA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400223",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "8J2ShiDwnZKN8J2SgvCdkpvwnZKaIPCdkoXwnZKQ8J2SiA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400226",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "8J2TriDwnZO18J2TqvCdlIPwnZSCIPCdk63wnZO48J2TsA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400229",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "8J2VliDwnZWd8J2VkvCdlavwnZWqIPCdlZXwnZWg8J2VmA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400232",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "8J2ajiDwnZqV8J2aivCdmqPwnZqiIPCdmo3wnZqY8J2akA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400250",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "IjthbGVydCgxMjMpO3Q9Ig==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400251",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "JzthbGVydCgxMjMpO3Q9Jw==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400270",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "QUJDPGRpdiBzdHlsZT0ieFx4M0FleHByZXNzaW9uKGphdmFzY3JpcHQ6YWxlcnQoMSkiPkRFRg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400278",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "MSkiPkRFRg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400306",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "ZnV6emVsZW1lbnQxIj50ZXN0PC9hPg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400406",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "PGltZyBceDAwc3JjPXggb25lcnJvcj0iYWxlcnQoMSkiPg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400431",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "PGltZ1thXVtiXVtjXXNyY1tkXT14W2Vdb25lcnJvcj1bZl0iYWxlcnQoMSkiPg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400440",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "PGltZyBzcmM9InhgIGA8c2NyaXB0PmphdmFzY3JpcHQ6YWxlcnQoMSk8L3NjcmlwdD4iYCBgPg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400448",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "PHNjcmlwdCBzcmM9Ii9cJShqc2NyaXB0KXMiPjwvc2NyaXB0Pg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400449",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "PHNjcmlwdCBzcmM9IlxcJShqc2NyaXB0KXMiPjwvc2NyaXB0Pg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400453",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "PElNRyBTUkM9IG9ubW91c2VvdmVyPSJhbGVydCgneHhzJykiPg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400457",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "OyYjODM7JiM4MzsmIzM5OyYjNDE7Pg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400461",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "JiMwMDAwMDg4JiMwMDAwMDgzJiMwMDAwMDgzJiMwMDAwMDM5JiMwMDAwMDQxPg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400478",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "PElNRyBTUkM9ImphdmFzY3JpcHQ6YWxlcnQoJ1hTUycpIg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400482",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "PGkgb253aGVlbD1hbGVydCgxKT4gU2Nyb2xsIG92ZXIgbWUgPC9pPg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400484",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "aHR0cDovL2EvJSUzMCUzMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400488",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "JyBPUiAxPTEgLS0gMQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400490",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "JQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400491",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Xw==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400497",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "YHRvdWNoIC90bXAvYmxucy5mYWlsYA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400499",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "QHtbc3lzdGVtICJ0b3VjaCAvdG1wL2JsbnMuZmFpbCJdfQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400502",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "YGxzIC1hbCAvYA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400512",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "JXMlcyVzJXMlcw==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400521",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "fQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400523",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "KysrQVRIMA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400531",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Q09NMQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400532",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "TFBUMQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400533",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "TFBUMg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400534",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "TFBUMw==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400535",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Q09NMg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400536",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Q09NMw==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400537",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Q09NNA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400549",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "RHIuIEhlcm1hbiBJLiBMaWJzaGl0eg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400555",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "ZXhwcmVzc2lvbg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400556",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "QXJzZW5hbCBjYW5hbA==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400557",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "Y2xhc3NpYw==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400559",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "RGljayBWYW4gRHlrZQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400564",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "ZSBpdCB3b3Jrcy4gUGxlYXNlIHdha2UgdXAsIHdlIG1pc3MgeW91Lg==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400567",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "QnV0IG5vdy4uLhtbMjBDZm9yIG15IGdyZWF0ZXN0IHRyaWNrLi4uG1s4bQ==",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  },
+  {
+    "payload_id": "OWP-400609",
+    "vulnerability_category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "src=JaVaSCript:prompt(19)",
+    "validation": {
+      "expected_status_code": 500,
+      "success_regex": "exception|error|type"
+    }
+  }
+]

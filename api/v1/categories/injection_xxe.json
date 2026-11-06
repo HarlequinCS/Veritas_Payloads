@@ -1,0 +1,22 @@
+{
+  "category": "Injection (XXE)",
+  "slug": "injection_xxe",
+  "count": 3850,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_xml",
+      "count": 3782
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 7
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 61
+    }
+  ],
+  "first_page": "categories/injection_xxe/page/1.json"
+}

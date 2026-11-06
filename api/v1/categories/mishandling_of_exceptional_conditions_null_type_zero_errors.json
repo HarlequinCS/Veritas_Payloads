@@ -1,0 +1,26 @@
+{
+  "category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+  "slug": "mishandling_of_exceptional_conditions_null_type_zero_errors",
+  "count": 5071,
+  "pages": 6,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 7
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 85
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 1
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 4978
+    }
+  ],
+  "first_page": "categories/mishandling_of_exceptional_conditions_null_type_zero_errors/page/1.json"
+}

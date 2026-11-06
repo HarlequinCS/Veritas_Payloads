@@ -1,0 +1,26 @@
+{
+  "category": "Broken Access Control",
+  "slug": "broken_access_control",
+  "count": 1298,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 4
+    },
+    {
+      "injection_point": "header",
+      "count": 8
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 82
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 1204
+    }
+  ],
+  "first_page": "categories/broken_access_control/page/1.json"
+}

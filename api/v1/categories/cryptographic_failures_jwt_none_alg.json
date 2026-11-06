@@ -1,0 +1,22 @@
+{
+  "category": "Cryptographic Failures (JWT None Alg)",
+  "slug": "cryptographic_failures_jwt_none_alg",
+  "count": 3472,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "header",
+      "count": 15
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 7
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 3450
+    }
+  ],
+  "first_page": "categories/cryptographic_failures_jwt_none_alg/page/1.json"
+}

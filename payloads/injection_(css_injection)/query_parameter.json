@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-215140",
+    "vulnerability_category": "Injection (CSS Injection)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "#sensitive-information{ font-family:poc; }",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "category": "Identification & Authentication Failures",
+  "slug": "identification_&_authentication_failures",
+  "count": 1371,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 2
+    },
+    {
+      "injection_point": "body_xml",
+      "count": 9
+    },
+    {
+      "injection_point": "cookie",
+      "count": 3
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 832
+    },
+    {
+      "injection_point": "header",
+      "count": 6
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 152
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 367
+    }
+  ],
+  "first_page": "categories/identification_&_authentication_failures/page/1.json"
+}

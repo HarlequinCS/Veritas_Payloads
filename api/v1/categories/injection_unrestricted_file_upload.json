@@ -1,0 +1,34 @@
+{
+  "category": "Injection (Unrestricted File Upload)",
+  "slug": "injection_unrestricted_file_upload",
+  "count": 6131,
+  "pages": 7,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 76
+    },
+    {
+      "injection_point": "file_upload",
+      "count": 5984
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 1
+    },
+    {
+      "injection_point": "header",
+      "count": 9
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 60
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 1
+    }
+  ],
+  "first_page": "categories/injection_unrestricted_file_upload/page/1.json"
+}

@@ -1,0 +1,22 @@
+{
+  "category": "Injection (XSLT)",
+  "slug": "injection_xslt",
+  "count": 1133,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_xml",
+      "count": 1106
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 2
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 25
+    }
+  ],
+  "first_page": "categories/injection_xslt/page/1.json"
+}

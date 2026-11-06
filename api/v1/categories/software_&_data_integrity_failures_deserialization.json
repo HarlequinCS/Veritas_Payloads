@@ -1,0 +1,46 @@
+{
+  "category": "Software & Data Integrity Failures (Deserialization)",
+  "slug": "software_&_data_integrity_failures_deserialization",
+  "count": 4026,
+  "pages": 5,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_binary",
+      "count": 3
+    },
+    {
+      "injection_point": "body_json",
+      "count": 3746
+    },
+    {
+      "injection_point": "body_xml",
+      "count": 1
+    },
+    {
+      "injection_point": "body_yaml",
+      "count": 1
+    },
+    {
+      "injection_point": "cookie",
+      "count": 15
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 15
+    },
+    {
+      "injection_point": "header",
+      "count": 4
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 1
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 240
+    }
+  ],
+  "first_page": "categories/software_&_data_integrity_failures_deserialization/page/1.json"
+}

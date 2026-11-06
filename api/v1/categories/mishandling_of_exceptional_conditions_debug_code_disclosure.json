@@ -1,0 +1,14 @@
+{
+  "category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+  "slug": "mishandling_of_exceptional_conditions_debug_code_disclosure",
+  "count": 3481,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "query_parameter",
+      "count": 3481
+    }
+  ],
+  "first_page": "categories/mishandling_of_exceptional_conditions_debug_code_disclosure/page/1.json"
+}

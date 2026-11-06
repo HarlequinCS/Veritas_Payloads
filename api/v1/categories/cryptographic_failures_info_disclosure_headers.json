@@ -1,0 +1,18 @@
+{
+  "category": "Cryptographic Failures (Info Disclosure Headers)",
+  "slug": "cryptographic_failures_info_disclosure_headers",
+  "count": 3461,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "header",
+      "count": 16
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 3445
+    }
+  ],
+  "first_page": "categories/cryptographic_failures_info_disclosure_headers/page/1.json"
+}

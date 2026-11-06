@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-240794",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  }
+]

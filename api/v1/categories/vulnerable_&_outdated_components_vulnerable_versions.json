@@ -1,0 +1,18 @@
+{
+  "category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+  "slug": "vulnerable_&_outdated_components_vulnerable_versions",
+  "count": 3473,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "header",
+      "count": 28
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 3445
+    }
+  ],
+  "first_page": "categories/vulnerable_&_outdated_components_vulnerable_versions/page/1.json"
+}

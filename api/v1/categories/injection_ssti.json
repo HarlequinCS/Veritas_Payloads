@@ -1,0 +1,30 @@
+{
+  "category": "Injection (SSTI)",
+  "slug": "injection_ssti",
+  "count": 4062,
+  "pages": 5,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 55
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 3654
+    },
+    {
+      "injection_point": "header",
+      "count": 1
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 3
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 349
+    }
+  ],
+  "first_page": "categories/injection_ssti/page/1.json"
+}

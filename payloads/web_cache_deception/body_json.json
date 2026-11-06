@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-245028",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[..]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

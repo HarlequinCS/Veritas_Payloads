@@ -1,0 +1,46 @@
+[
+  {
+    "payload_id": "OWP-406843",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/plugins/wp-mail-smtp/src/WPMailSMTP.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-406844",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/plugins/wp-mail-smtp/vendor/autoload.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-406845",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/plugins/wp-mail-smtp/src/Core.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407588",
+    "vulnerability_category": "Injection (SMTP)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/plugins/easy-wp-smtp/logs/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

@@ -24,3 +24,6 @@ __pycache__/
 *.pyc
 *.pyo
 *.egg-info/
+
+# Local checkouts used to refresh the dataset
+_sources/

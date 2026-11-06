@@ -1,0 +1,14 @@
+{
+  "category": "HTTP Parameter Pollution",
+  "slug": "http_parameter_pollution",
+  "count": 3600,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "query_parameter",
+      "count": 3600
+    }
+  ],
+  "first_page": "categories/http_parameter_pollution/page/1.json"
+}

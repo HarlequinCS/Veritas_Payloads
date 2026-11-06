@@ -1,0 +1,101 @@
+[
+  {
+    "payload_id": "OWP-406308",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/graphql",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "errors|data"
+    }
+  },
+  {
+    "payload_id": "OWP-406309",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/v1/graphql",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "errors|data"
+    }
+  },
+  {
+    "payload_id": "OWP-406310",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/graphiql.css",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "errors|data"
+    }
+  },
+  {
+    "payload_id": "OWP-406311",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/graphql?query={__typename}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "errors|data"
+    }
+  },
+  {
+    "payload_id": "OWP-406312",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/graphql?query={__typename}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "errors|data"
+    }
+  },
+  {
+    "payload_id": "OWP-406313",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/voyager",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "errors|data"
+    }
+  },
+  {
+    "payload_id": "OWP-406314",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/voyager/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "errors|data"
+    }
+  },
+  {
+    "payload_id": "OWP-406315",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/ui/voyager",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "errors|data"
+    }
+  },
+  {
+    "payload_id": "OWP-406316",
+    "vulnerability_category": "Injection (GraphQL)",
+    "target_technology": "GraphQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/graphql/voyager",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "errors|data"
+    }
+  }
+]

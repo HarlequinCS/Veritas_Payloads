@@ -1,0 +1,18 @@
+{
+  "category": "Identification & Authentication Failures (Username Enum)",
+  "slug": "identification_&_authentication_failures_username_enum",
+  "count": 2046,
+  "pages": 3,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "form_parameter",
+      "count": 1070
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 976
+    }
+  ],
+  "first_page": "categories/identification_&_authentication_failures_username_enum/page/1.json"
+}

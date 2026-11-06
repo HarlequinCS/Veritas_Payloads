@@ -17609,5 +17609,16 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-242579",
+    "vulnerability_category": "Injection (NoSQLi)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"&exists\":false}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "MongoError|bson|\\$where|\\$gt"
+    }
   }
 ]

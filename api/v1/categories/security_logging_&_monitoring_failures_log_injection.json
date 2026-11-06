@@ -1,0 +1,18 @@
+{
+  "category": "Security Logging & Monitoring Failures (Log Injection)",
+  "slug": "security_logging_&_monitoring_failures_log_injection",
+  "count": 1037,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "header",
+      "count": 1026
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 11
+    }
+  ],
+  "first_page": "categories/security_logging_&_monitoring_failures_log_injection/page/1.json"
+}

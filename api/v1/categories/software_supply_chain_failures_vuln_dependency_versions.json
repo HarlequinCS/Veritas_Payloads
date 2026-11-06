@@ -1,0 +1,18 @@
+{
+  "category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+  "slug": "software_supply_chain_failures_vuln_dependency_versions",
+  "count": 1116,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "query_parameter",
+      "count": 1026
+    },
+    {
+      "injection_point": "response_body",
+      "count": 90
+    }
+  ],
+  "first_page": "categories/software_supply_chain_failures_vuln_dependency_versions/page/1.json"
+}

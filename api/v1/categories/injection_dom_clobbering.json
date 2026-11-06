@@ -1,0 +1,18 @@
+{
+  "category": "Injection (DOM Clobbering)",
+  "slug": "injection_dom_clobbering",
+  "count": 1192,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_html",
+      "count": 1043
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 149
+    }
+  ],
+  "first_page": "categories/injection_dom_clobbering/page/1.json"
+}

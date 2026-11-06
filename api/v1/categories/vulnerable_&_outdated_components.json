@@ -1,0 +1,26 @@
+{
+  "category": "Vulnerable & Outdated Components",
+  "slug": "vulnerable_&_outdated_components",
+  "count": 3721,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "path_parameter",
+      "count": 177
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 3487
+    },
+    {
+      "injection_point": "response_body",
+      "count": 42
+    },
+    {
+      "injection_point": "response_header",
+      "count": 15
+    }
+  ],
+  "first_page": "categories/vulnerable_&_outdated_components/page/1.json"
+}

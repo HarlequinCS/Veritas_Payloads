@@ -185,5 +185,16 @@
       "expected_status_code": 200,
       "success_regex": "<script>alert|prompt|confirm"
     }
+  },
+  {
+    "payload_id": "OWP-408111",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Content-Type: multipart/form-data; boundary=xSsT0rm\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
   }
 ]

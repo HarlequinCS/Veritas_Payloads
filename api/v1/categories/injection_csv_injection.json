@@ -1,0 +1,30 @@
+{
+  "category": "Injection (CSV Injection)",
+  "slug": "injection_csv_injection",
+  "count": 3593,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_html",
+      "count": 3453
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 132
+    },
+    {
+      "injection_point": "header",
+      "count": 1
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 3
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 4
+    }
+  ],
+  "first_page": "categories/injection_csv_injection/page/1.json"
+}

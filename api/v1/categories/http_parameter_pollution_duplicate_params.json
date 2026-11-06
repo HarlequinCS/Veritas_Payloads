@@ -1,0 +1,14 @@
+{
+  "category": "HTTP Parameter Pollution (Duplicate Params)",
+  "slug": "http_parameter_pollution_duplicate_params",
+  "count": 1172,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "query_parameter",
+      "count": 1172
+    }
+  ],
+  "first_page": "categories/http_parameter_pollution_duplicate_params/page/1.json"
+}

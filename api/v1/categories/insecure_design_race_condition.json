@@ -1,0 +1,14 @@
+{
+  "category": "Insecure Design (Race Condition)",
+  "slug": "insecure_design_race_condition",
+  "count": 3525,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "query_parameter",
+      "count": 3525
+    }
+  ],
+  "first_page": "categories/insecure_design_race_condition/page/1.json"
+}

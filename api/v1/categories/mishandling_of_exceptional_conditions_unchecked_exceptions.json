@@ -1,0 +1,14 @@
+{
+  "category": "Mishandling of Exceptional Conditions (Unchecked Exceptions)",
+  "slug": "mishandling_of_exceptional_conditions_unchecked_exceptions",
+  "count": 3479,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "query_parameter",
+      "count": 3479
+    }
+  ],
+  "first_page": "categories/mishandling_of_exceptional_conditions_unchecked_exceptions/page/1.json"
+}

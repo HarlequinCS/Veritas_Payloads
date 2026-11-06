@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-242626",
+    "vulnerability_category": "Injection (Request Smuggling)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "G",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

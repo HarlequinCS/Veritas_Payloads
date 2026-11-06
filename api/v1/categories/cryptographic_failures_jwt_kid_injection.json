@@ -1,0 +1,18 @@
+{
+  "category": "Cryptographic Failures (JWT Kid Injection)",
+  "slug": "cryptographic_failures_jwt_kid_injection",
+  "count": 1028,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "header",
+      "count": 2
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 1026
+    }
+  ],
+  "first_page": "categories/cryptographic_failures_jwt_kid_injection/page/1.json"
+}

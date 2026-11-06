@@ -1,0 +1,18 @@
+{
+  "category": "Injection (Type Juggling)",
+  "slug": "injection_type_juggling",
+  "count": 1087,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "form_parameter",
+      "count": 1077
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 10
+    }
+  ],
+  "first_page": "categories/injection_type_juggling/page/1.json"
+}

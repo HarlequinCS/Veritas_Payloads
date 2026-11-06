@@ -1,0 +1,35 @@
+[
+  {
+    "payload_id": "OWP-407546",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/affwp-debug.log",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "^[=+\\-@]"
+    }
+  },
+  {
+    "payload_id": "OWP-408291",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../csvfiles/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "^[=+\\-@]"
+    }
+  },
+  {
+    "payload_id": "OWP-408396",
+    "vulnerability_category": "Injection (CSV Injection)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../menu.csv",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "^[=+\\-@]"
+    }
+  }
+]

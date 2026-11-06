@@ -1,0 +1,22 @@
+{
+  "category": "Identification & Authentication Failures (Weak Session IDs)",
+  "slug": "identification_&_authentication_failures_weak_session_ids",
+  "count": 4465,
+  "pages": 5,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "cookie",
+      "count": 400
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 3445
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 620
+    }
+  ],
+  "first_page": "categories/identification_&_authentication_failures_weak_session_ids/page/1.json"
+}

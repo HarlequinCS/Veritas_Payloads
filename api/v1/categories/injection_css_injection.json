@@ -1,0 +1,22 @@
+{
+  "category": "Injection (CSS Injection)",
+  "slug": "injection_css_injection",
+  "count": 1099,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_html",
+      "count": 1032
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 66
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 1
+    }
+  ],
+  "first_page": "categories/injection_css_injection/page/1.json"
+}

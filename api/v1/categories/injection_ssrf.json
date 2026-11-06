@@ -1,0 +1,26 @@
+{
+  "category": "Injection (SSRF)",
+  "slug": "injection_ssrf",
+  "count": 1618,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_xml",
+      "count": 2
+    },
+    {
+      "injection_point": "header",
+      "count": 3
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 23
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 1590
+    }
+  ],
+  "first_page": "categories/injection_ssrf/page/1.json"
+}

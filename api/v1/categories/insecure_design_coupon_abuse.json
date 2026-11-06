@@ -1,0 +1,14 @@
+{
+  "category": "Insecure Design (Coupon Abuse)",
+  "slug": "insecure_design_coupon_abuse",
+  "count": 3618,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "query_parameter",
+      "count": 3618
+    }
+  ],
+  "first_page": "categories/insecure_design_coupon_abuse/page/1.json"
+}

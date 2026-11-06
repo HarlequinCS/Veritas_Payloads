@@ -1,0 +1,14 @@
+{
+  "category": "Insecure Design (Price Manipulation)",
+  "slug": "insecure_design_price_manipulation",
+  "count": 4282,
+  "pages": 5,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "query_parameter",
+      "count": 4282
+    }
+  ],
+  "first_page": "categories/insecure_design_price_manipulation/page/1.json"
+}

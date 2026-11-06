@@ -8512,5 +8512,38 @@
       "expected_status_code": 200,
       "success_regex": "admin|role|level|super"
     }
+  },
+  {
+    "payload_id": "OWP-240983",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$user_id = $_GET['user_id'];",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "id|user"
+    }
+  },
+  {
+    "payload_id": "OWP-240984",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$user_info = get_user_info($user_id);",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "id|user"
+    }
+  },
+  {
+    "payload_id": "OWP-240985",
+    "vulnerability_category": "Broken Access Control (IDOR)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "https://example.com/profile?user_id=124",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "id|user"
+    }
   }
 ]

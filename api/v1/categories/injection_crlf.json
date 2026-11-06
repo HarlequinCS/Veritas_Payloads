@@ -1,0 +1,22 @@
+{
+  "category": "Injection (CRLF)",
+  "slug": "injection_crlf",
+  "count": 3915,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "header",
+      "count": 3479
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 42
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 394
+    }
+  ],
+  "first_page": "categories/injection_crlf/page/1.json"
+}

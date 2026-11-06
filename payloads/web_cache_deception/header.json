@@ -38201,5 +38201,3382 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-245808",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245809",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-aastra-expmod1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245810",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-aastra-expmod2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245811",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-aastra-expmod3",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245812",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-accel-mapping",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245813",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-access-token",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245814",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-advertiser-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245815",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-ajax-real-method",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245816",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-alto-ajax-keyz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245817",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-amz-date",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245818",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-amzn-remapped-host",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245819",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-amz-website-redirect-location",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245820",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-api-key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245821",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-api-signature",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245822",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-api-timestamp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245823",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-apitoken",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245824",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-apple-client-application",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245825",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-apple-store-front",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245826",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-arr-log-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245827",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-arr-ssl",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245828",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-att-deviceid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245829",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-authentication",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245830",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-authentication-key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245831",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-auth-key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245832",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-auth-mode",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245833",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-authorization",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245835",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-auth-password",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245836",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-auth-service-provider",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245837",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-auth-token",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245838",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-auth-user",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245839",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-auth-userid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245840",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-auth-username",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245841",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-avantgo-screensize",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245842",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-azc-remote-addr",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245843",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-bear-ajax-request",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245844",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-bluecoat-via",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245845",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-bolt-phone-ua",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245846",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-browser-height",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245847",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-browser-width",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245848",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-cascade",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245849",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-cept-encoding",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245850",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-cf-url",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245851",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-chrome-extension",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245852",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-cisco-bbsm-clientip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245853",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-client-host",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245854",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-client-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245855",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-client-ip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245856",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-clientip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245857",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-client-key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245858",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-client-os",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245859",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-client-os-ver",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245860",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-cluster-client-ip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245861",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-codeception-codecoverage",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245862",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-codeception-codecoverage-config",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245863",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-codeception-codecoverage-debug",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245864",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-codeception-codecoverage-suite",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245865",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-collect-coverage",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245866",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-coming-from",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245867",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-confirm-delete",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245868",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-content-type",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245869",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-content-type-options",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245870",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-credentials-request",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245871",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-csrf-crumb",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245872",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-csrf-token",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245873",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-csrftoken",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245874",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-cuid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245875",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-custom",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245876",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-dagd-proxy",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245877",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-davical-testcase",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245878",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-dcmguid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245879",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-debug-test",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245880",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-device-user-agent",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245881",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-dialog",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245882",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-dns-prefetch-control",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245883",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-dokuwiki-do",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245884",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-do-not-track",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245885",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-drestcg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245886",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-dsid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245887",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-elgg-apikey",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245888",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-elgg-hmac",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245889",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-elgg-hmac-algo",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245890",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-elgg-nonce",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245891",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-elgg-posthash",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245892",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-elgg-posthash-algo",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245893",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-elgg-time",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245894",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-em-uid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245895",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-enable-coverage",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245896",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-environment-override",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245897",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-expected-entity-length",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245898",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-experience-api-version",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245899",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-fb-user-remote-addr",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245900",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-file-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245901",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-file-name",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245902",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-filename",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245903",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-file-resume",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245904",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-file-size",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245905",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-file-type",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245906",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-firelogger",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245907",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-fireloggerauth",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245908",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-firephp-version",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245909",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-flash-version",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245910",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-flx-consumer-key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245911",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-flx-consumer-secret",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245912",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-flx-redirect-url",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245913",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-foo",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245914",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-foo-bar",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245915",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245916",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-by",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245917",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-for",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245918",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-for-original",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245919",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-host",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245920",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-host~%s.%h",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245921",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-port",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245922",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-proto",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245923",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-protocol",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245924",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-scheme",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245925",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-server",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245926",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-server~%s.%h",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245927",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarded-ssl",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245928",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forwarder-for",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245929",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forward-for",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245930",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-forward-proto",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245931",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-from",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245932",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-gb-shared-secret",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245933",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-geoip-country",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245934",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-get-checksum",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245935",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-helpscout-event",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245936",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-helpscout-signature",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245937",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-hgarg-",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245938",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-host",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245939",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-http-destinationurl",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245940",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-http-host-override",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245941",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-http-method",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245942",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-http-method-override",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245943",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-http-path-override",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245944",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-https",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245945",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-http-status-code-override",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245946",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-htx-agent",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245947",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-huawei-userid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245948",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-hub-signature",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245949",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-if-unmodified-since",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245950",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-imbo-test-config",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245951",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-insight",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245952",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-ip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245953",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-ip-trail",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245954",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-iwproxy-nesting",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245955",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-jphone-color",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245956",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-jphone-display",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245957",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-jphone-geocode",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245958",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-jphone-msname",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245959",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-jphone-uid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245960",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245961",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-kaltura-remote-addr",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245962",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-known-signature",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245963",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-known-username",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245964",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-litmus",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245965",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-litmus-second",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245966",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-locking",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245967",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-machine",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245968",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-mandrill-signature",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245969",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-method-override",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245970",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-mobile-gateway",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245971",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-mobile-ua",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245972",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-mosso-dt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245973",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-moz",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245974",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-msisdn",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245975",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-ms-policykey",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245976",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-myqee-system-debug",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245977",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-myqee-system-hash",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245978",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-myqee-system-isadmin",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245979",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-myqee-system-isrest",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245980",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-myqee-system-pathinfo",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245981",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-myqee-system-project",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245982",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-myqee-system-rstr",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245983",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-myqee-system-time",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245984",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-network-info",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245985",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-nfsn-https",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245986",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-ning-request-uri",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245987",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-nokia-bearer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245988",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-nokia-connection-mode",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245989",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-nokia-gateway-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245990",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-nokia-ipaddress",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245991",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-nokia-msisdn",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245992",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-nokia-wia-accept-original",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245993",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-nokia-wtls",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245994",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-nuget-apikey",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245995",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-oc-mtime",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245997",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-opera-info",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245998",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-operamini-features",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-245999",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-operamini-phone",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246000",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-operamini-phone-ua",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246001",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-options",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246002",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-orange-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246003",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-orchestra-scheme",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246004",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-orig-client",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246005",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-original-host",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246006",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-original-http-command",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246007",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-originally-forwarded-for",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246008",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-originally-forwarded-proto",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246009",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-original-remote-addr",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246010",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-original-url",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246011",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-original-url~/%s",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246012",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-original-user-agent",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246013",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-originating-ip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246014",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-os-prefs",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246015",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-overlay",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246016",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-pagelet-fragment",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246017",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-password",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246019",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-phabricator-csrf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246020",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-phpbb-using-plupload",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246021",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-pjax",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246022",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-pjax-container",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246023",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-prototype-version",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246025",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-proxy-url",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246026",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-pswd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246027",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-purpose",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246028",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-qafoo-profiler",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246029",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-real-ip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246030",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-remote-addr",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246031",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-remote-protocol",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246032",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-render-partial",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246033",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-request",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246034",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-requested-with",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246035",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-request-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246036",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-request-signature",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246037",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-request-start",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246038",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-request-timestamp",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246039",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-response-format",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246040",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-rest-cors",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246041",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-rest-password",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246042",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-rest-username",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246043",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-rewrite-url",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246044",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-rewrite-url~/%s",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246046",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-sakura-forwarded-for",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246047",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-scalr-auth-key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246048",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-scalr-auth-token",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246049",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-scalr-env-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246050",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-scheme",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246051",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-screen-height",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246052",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-screen-width",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246053",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-sendfile-type",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246054",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-serialize",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246055",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-serial-number",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246056",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-server-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246057",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-server-name",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246058",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-server-port",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246059",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-signature",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246060",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-sina-proxyuser",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246061",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-skyfire-phone",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246062",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-skyfire-screen",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246063",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-ssl",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246064",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-subdomain",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246065",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-te",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246066",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-teamsite-preremap",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246067",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-test-session-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246068",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-tine20-jsonkey",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246069",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-tine20-request-type",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246070",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-tomboy-client",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246071",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-tor",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246072",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-twilio-signature",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246073",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-ua-device",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246074",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-ucbrowser-device-ua",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246075",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-uidh",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246076",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-unique-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246077",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-uniquewcid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246078",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-up-calling-line-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246079",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-update",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246080",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-update-range",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246081",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-up-devcap-iscolor",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246082",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-up-devcap-post-charset",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246083",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-up-devcap-screendepth",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246084",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-up-devcap-screenpixels",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246085",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-upload-maxresolution",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246086",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-upload-name",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246087",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-upload-size",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246088",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-upload-type",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246089",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-up-subno",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246090",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-url-scheme",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246091",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-user",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246092",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-user-agent",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246093",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-username",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246094",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-varnish",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246095",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-verify-credentials-authorization",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246096",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-vodafone-3gpdpcontext",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246097",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wap-clientid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246098",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wap-client-sdu-size",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246099",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wap-gateway",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246100",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wap-network-client-ip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246101",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wap-network-client-msisdn",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246102",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wap-profile",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246103",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wap-proxy-cookie",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246104",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wap-session-id",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246105",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wap-tod",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246106",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wap-tod-coded",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246107",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-whatever",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246108",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wikimedia-debug",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246109",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wp-nonce",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246110",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-wp-pjax-prefetch",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246111",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-ws-api-key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246112",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-xc-schema-version",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246113",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-xhprof-debug",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246114",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-xhr-referer",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246115",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-xmlhttprequest",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246116",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-xpid",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246119",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-zikula-ajax-token",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246120",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-zotero-version",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-246121",
+    "vulnerability_category": "Web Cache Deception",
+    "target_technology": "Generic",
+    "injection_point": "header",
+    "payload_string": "x-ztgo-bearerinfo",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

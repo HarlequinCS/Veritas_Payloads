@@ -1,0 +1,38 @@
+{
+  "category": "Injection (XSS)",
+  "slug": "injection_xss",
+  "count": 15899,
+  "pages": 16,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 50
+    },
+    {
+      "injection_point": "body_xml",
+      "count": 25
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 654
+    },
+    {
+      "injection_point": "hash_parameter",
+      "count": 3
+    },
+    {
+      "injection_point": "header",
+      "count": 18
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 213
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 14936
+    }
+  ],
+  "first_page": "categories/injection_xss/page/1.json"
+}

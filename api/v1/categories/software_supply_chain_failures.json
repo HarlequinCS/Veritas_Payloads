@@ -1,0 +1,22 @@
+{
+  "category": "Software Supply Chain Failures",
+  "slug": "software_supply_chain_failures",
+  "count": 3576,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 100
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 31
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 3445
+    }
+  ],
+  "first_page": "categories/software_supply_chain_failures/page/1.json"
+}

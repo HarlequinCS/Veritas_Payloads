@@ -47089,5 +47089,16 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-318021",
+    "vulnerability_category": "Insecure Design (Price Manipulation)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "inf",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

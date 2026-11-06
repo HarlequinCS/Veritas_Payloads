@@ -1,0 +1,26 @@
+{
+  "category": "Web Cache Deception",
+  "slug": "web_cache_deception",
+  "count": 4583,
+  "pages": 5,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 1
+    },
+    {
+      "injection_point": "header",
+      "count": 3780
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 14
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 788
+    }
+  ],
+  "first_page": "categories/web_cache_deception/page/1.json"
+}

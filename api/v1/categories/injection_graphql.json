@@ -1,0 +1,18 @@
+{
+  "category": "Injection (GraphQL)",
+  "slug": "injection_graphql",
+  "count": 1205,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 1196
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 9
+    }
+  ],
+  "first_page": "categories/injection_graphql/page/1.json"
+}

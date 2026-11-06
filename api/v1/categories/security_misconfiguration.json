@@ -1,0 +1,34 @@
+{
+  "category": "Security Misconfiguration",
+  "slug": "security_misconfiguration",
+  "count": 12353,
+  "pages": 13,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "body_json",
+      "count": 62
+    },
+    {
+      "injection_point": "form_parameter",
+      "count": 58
+    },
+    {
+      "injection_point": "header",
+      "count": 5
+    },
+    {
+      "injection_point": "path_parameter",
+      "count": 2075
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 5239
+    },
+    {
+      "injection_point": "response_body",
+      "count": 4914
+    }
+  ],
+  "first_page": "categories/security_misconfiguration/page/1.json"
+}

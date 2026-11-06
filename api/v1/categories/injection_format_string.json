@@ -1,0 +1,18 @@
+{
+  "category": "Injection (Format String)",
+  "slug": "injection_format_string",
+  "count": 1356,
+  "pages": 2,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "form_parameter",
+      "count": 1026
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 330
+    }
+  ],
+  "first_page": "categories/injection_format_string/page/1.json"
+}

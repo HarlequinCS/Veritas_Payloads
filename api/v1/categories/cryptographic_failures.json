@@ -1,0 +1,26 @@
+{
+  "category": "Cryptographic Failures",
+  "slug": "cryptographic_failures",
+  "count": 3804,
+  "pages": 4,
+  "page_size": 1000,
+  "injection_points": [
+    {
+      "injection_point": "header",
+      "count": 102
+    },
+    {
+      "injection_point": "query_parameter",
+      "count": 3638
+    },
+    {
+      "injection_point": "response_body",
+      "count": 42
+    },
+    {
+      "injection_point": "response_header",
+      "count": 22
+    }
+  ],
+  "first_page": "categories/cryptographic_failures/page/1.json"
+}
