@@ -176,14 +176,21 @@ def classify(path: str) -> str | None:
         "denial of service", "denial-of-service",
         "regular expression", "user-agents", "user-agent",
         "methodology and resources",
+        # Not web-application inputs: native bugs, protocol fuzzing, and generic string dumps.
+        "naughty", "blns",
+        "format-string", "format string", "formatstring",
+        "integer-overflow", "control-char", "special-char", "metacharacter",
+        "fuzz-bo0om", "fuzzingstrings",
+        "/snmp", "snmp-", "bluetooth", "/scada", "/iot/",
+        "shellcode", "buffer-overflow", "buffer overflow",
+        "privilege-escalation", "local-privilege",
+        "/wireless", "wifi-default",
     )):
         return None
     if any(x in p for x in ("/passwords/", "common-credentials", "default-credentials", "default_credentials")):
         if "username" in p and "password" not in p and "credential" not in p:
             return "Identification & Authentication Failures (Username Enum)"
         return "Identification & Authentication Failures (Weak Passwords)"
-    if "naughty" in p or "blns" in p:
-        return "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)"
 
     rules: list[tuple] = [
         (lambda s: "nosql" in s or "no-sql" in s or "no_sql" in s, "Injection (NoSQLi)"),
@@ -210,7 +217,6 @@ def classify(path: str) -> str | None:
         (lambda s: "type-juggl" in s or "type juggl" in s or "magic-hash" in s or "magic_hash" in s or "typejuggl" in s, "Injection (Type Juggling)"),
         (lambda s: "smuggling" in s, "Injection (Request Smuggling)"),
         (lambda s: bounded(s, "smtp") or "smtp-injection" in s or "smtp injection" in s, "Injection (SMTP)"),
-        (lambda s: "format-string" in s or "format string" in s or "formatstring" in s, "Injection (Format String)"),
         (lambda s: "deserial" in s or "pickle" in s or "ysoserial" in s or "unserialize" in s or "java-class" in s or "java rmi" in s or "magic-method" in s or "magic_method" in s, "Software & Data Integrity Failures (Deserialization)"),
         (lambda s: "jwt" in s or "/jwk" in s or "json web token" in s or "json-web-token" in s, "Cryptographic Failures (JWT None Alg)"),
         (lambda s: "idor" in s or "insecure-direct" in s or "insecure direct" in s, "Broken Access Control (IDOR)"),
@@ -226,7 +232,7 @@ def classify(path: str) -> str | None:
         (lambda s: "file-upload" in s or "file upload" in s or "unrestricted-upload" in s or "/upload" in s or "mimetype" in s or "file-extension" in s or "extensions-" in s, "Injection (Unrestricted File Upload)"),
         (lambda s: "log-injection" in s or "log injection" in s or "log-forging" in s, "Security Logging & Monitoring Failures (Log Injection)"),
         (lambda s: "account-takeover" in s or "account takeover" in s or "oauth" in s or "default-login" in s or "auth-bypass" in s or "authentication" in s or "login_bypass" in s or "login-bypass" in s or "saml" in s, "Identification & Authentication Failures"),
-        (lambda s: "integer-overflow" in s or "control-char" in s or "special-char" in s or "metacharacter" in s or "fuzz-bo0om" in s or "fuzzingstrings" in s or "json.fuzz" in s or bounded(s, "unicode"), "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)"),
+        (lambda s: "json.fuzz" in s, "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)"),
         (lambda s: "/cves/" in s or "cve-" in s or "cve exploits" in s, "Vulnerable & Outdated Components (CVE Paths)"),
         (lambda s: "misconfig" in s or "/exposures/" in s or "hidden-parameter" in s or "hidden parameter" in s or "clickjacking" in s or "api key" in s or "management interface" in s or "source code management" in s or "virtual host" in s or "reverse proxy" in s or "environment-identifier" in s or "xs-leak" in s or "xs leak" in s, "Security Misconfiguration"),
         (lambda s: "access-control" in s or "access control" in s or "privilege" in s or "/403/" in s or "\\403\\" in s, "Broken Access Control"),
@@ -302,6 +308,38 @@ def is_doc_url(s: str) -> bool:
         return False
     low = stripped.lower()
     return any(host in low for host in DOC_HOSTS)
+
+
+def canonical_payload(value: str) -> str:
+    """One form for duplicate checks. Case stays, because '<ScRiPt>' and '<script>' are different tests."""
+    return value.replace("\x00", "").replace("\r\n", "\n").replace("\r", "\n").strip()
+
+
+SHELLCODE_RE = re.compile(r"(?:\\x[0-9a-fA-F]{2}){4,}")
+SOURCE_LINE_RE = re.compile(
+    r"^(?:import |from \S+ import |def |class |public |private |protected |"
+    r"function |var |let |const |echo |print\(|System\.|console\.|require\()",
+    re.I,
+)
+WEB_SIGNAL_RE = re.compile(
+    r"(<\s*script|</[a-z]|union\s+select|\.\./|%2e%2e|/etc/passwd|"
+    r"sleep\s*\(|on\w+\s*=|javascript:|vbscript:|file://|gopher://|php://|data:|"
+    r"<\?xml|<!DOCTYPE|\$\{|__proto__|alert\s*\(|\bor\b\s+['\"]?\d|"
+    r"%0d%0a|\\r\\n|waitfor\s+delay|information_schema|benchmark\s*\(|"
+    r"\{\{|\}\}|<svg|<img|<iframe|<xss|eyJ[A-Za-z0-9_\-]{8})",
+    re.I,
+)
+
+
+def rejects_non_web(payload: str) -> bool:
+    text = payload.strip()
+    if not text or SHELLCODE_RE.search(text):
+        return True
+    if SOURCE_LINE_RE.match(text):
+        return True
+    if re.search(r"\.(?:exe|dll|so|bin|pcap|sys)\b", text, re.I) and ".." not in text and "passwd" not in text.lower():
+        return True
+    return False
 
 
 def usable(s: str) -> bool:
@@ -404,6 +442,7 @@ class Builder:
                 raw = entry.get("payload_string")
                 if isinstance(raw, str):
                     self.seen.add(raw)
+                    self.seen.add(canonical_payload(raw))
                 pid = str(entry.get("payload_id", ""))
                 match = re.search(r"(\d+)$", pid)
                 if match:
@@ -425,7 +464,8 @@ class Builder:
     def add(self, category: str, payload: str) -> bool:
         if category is None or not usable(payload):
             return False
-        if payload in self.seen:
+        payload = canonical_payload(payload)
+        if not payload or rejects_non_web(payload) or payload in self.seen:
             return False
         point = injection_point(payload, category)
         key = (category, point)
@@ -541,7 +581,8 @@ def _skip_dir(name: str) -> bool:
     return low in {
         "denial of service", "prompt injection", "regular expression",
         "user-agents", "methodology and resources", "_learning_and_socials",
-        "_template_vuln",
+        "_template_vuln", "snmp", "bluetooth", "scada", "iot", "shellcode",
+        "buffer overflow", "wireless",
     }
 
 
@@ -821,7 +862,7 @@ def walk_exploits(builder: Builder, root: Path) -> None:
                 if taken >= EXPLOIT_PER_FILE:
                     break
                 raw = raw.replace("\x00", "").strip()
-                if not ATTACK_HINT.search(raw):
+                if not WEB_SIGNAL_RE.search(raw) or rejects_non_web(raw):
                     continue
                 category = path_cat or classify_text(raw)
                 if category and builder.add(category, raw):
