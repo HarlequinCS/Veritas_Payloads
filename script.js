@@ -7,18 +7,18 @@
   'use strict';
 
   /* ─── DATA ─── */
-  const TOTAL_PAYLOADS = 411630;
+  const TOTAL_PAYLOADS = 346081;
 
   const CATEGORIES = [
-    { name: "Identification & Authentication Failures (Weak Passwords)", count: 78784 },
-    { name: "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)", count: 70610 },
+    { name: "Identification & Authentication Failures (Weak Passwords)", count: 78776 },
     { name: "Injection (LFI/RFI)", count: 54205 },
     { name: "Injection (XSS)", count: 15899 },
     { name: "Security Misconfiguration", count: 12399 },
-    { name: "Injection (Command Injection)", count: 11987 },
+    { name: "Injection (Command Injection)", count: 11985 },
     { name: "Injection (SQLi)", count: 7885 },
     { name: "Injection (Unrestricted File Upload)", count: 6131 },
     { name: "Injection (LDAP)", count: 5949 },
+    { name: "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)", count: 5071 },
     { name: "Web Cache Deception", count: 4583 },
     { name: "Identification & Authentication Failures (Weak Session IDs)", count: 4465 },
     { name: "Insecure Design (Price Manipulation)", count: 4282 },
@@ -589,7 +589,7 @@
       '<p>Start by cloning the repository or downloading the latest release from GitHub.</p>' + codeBlock('git clone https://github.com/HarlequinCS/Veritas_Payloads.git') },
     { t: 'Choose Your Format', s: 'Unified JSON or organized folders', body:
       '<p>The dataset is available as a single unified JSON file or split into category folders.</p>' + codeBlock(
-'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (411,630 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
+'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (346,081 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
     { t: 'Understand the Schema', s: 'Consistent, integration-ready structure', body:
       '<p>Each payload entry follows a consistent structure for easy integration.</p>' + codeBlock(
 '{\n  "payload_id": "OWP-0001",\n  "vulnerability_category": "Injection (SQLi)",\n  "injection_point": "query_parameter",\n  "payload_string": "\' OR \'1\'=\'1",\n  "validation": { "expected_status_code": 200, "success_regex": "error|sql" }\n}') },
@@ -686,10 +686,11 @@
 
     const rows = runs.map(run => {
       const sources = (run.sources || []).filter(source => source.added).map(source => escHtml(source.name) + ' +' + fmt(source.added)).join(', ') || '—';
+      const skipped = run.skipped_non_web ? (sources === '—' ? '' : ' · ') + 'skipped ' + fmt(run.skipped_non_web) + ' non-web' : '';
       const addedClass = run.added ? 'log-added' : 'log-added zero';
       const link = run.run_url ? ' · <a href="' + escAttr(run.run_url) + '" target="_blank" rel="noopener">Actions run</a>' : '';
       const totalAfter = run.total_after == null ? '—' : fmt(run.total_after);
-      return '<tr><td class="log-when">' + escHtml(formatWhen(run.ran_at)) + '</td><td>' + escHtml(run.trigger || '—') + link + '</td><td class="' + addedClass + '">+' + fmt(Number(run.added) || 0) + '</td><td class="num">' + totalAfter + '</td><td class="log-sources">' + sources + '</td></tr>';
+      return '<tr><td class="log-when">' + escHtml(formatWhen(run.ran_at)) + '</td><td>' + escHtml(run.trigger || '—') + link + '</td><td class="' + addedClass + '">+' + fmt(Number(run.added) || 0) + '</td><td class="num">' + totalAfter + '</td><td class="log-sources">' + sources + skipped + '</td></tr>';
     }).join('');
     $('#syncLogBody').innerHTML = '<div class="table-wrap"><table class="guide-table"><thead><tr><th>When</th><th>Trigger</th><th class="num">Added</th><th class="num">Total after</th><th>Sources</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
   }

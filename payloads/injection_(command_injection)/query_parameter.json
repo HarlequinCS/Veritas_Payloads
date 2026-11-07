@@ -126509,27 +126509,5 @@
       "expected_status_code": 200,
       "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
     }
-  },
-  {
-    "payload_id": "OWP-474547",
-    "vulnerability_category": "Injection (Command Injection)",
-    "target_technology": "Generic",
-    "injection_point": "query_parameter",
-    "payload_string": "]+|[\\w.]+\\.\\w{2,3}[/\\w+]*\\?[^\\s",
-    "validation": {
-      "expected_status_code": 200,
-      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
-    }
-  },
-  {
-    "payload_id": "OWP-474548",
-    "vulnerability_category": "Injection (Command Injection)",
-    "target_technology": "Oracle",
-    "injection_point": "query_parameter",
-    "payload_string": "No oracle could be calibrated; trying time-based extraction.",
-    "validation": {
-      "expected_status_code": 200,
-      "success_regex": "uid=|gid=|Microsoft Windows|Volume Serial"
-    }
   }
 ]

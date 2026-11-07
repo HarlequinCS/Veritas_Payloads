@@ -5724,7 +5724,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/certificates/{{Host}}.pfx",
+    "payload_string": "/certificates/example.com.pfx",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -5735,7 +5735,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/certificates/{{Host}}.p12",
+    "payload_string": "/certificates/example.com.p12",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -5746,7 +5746,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/ssl/{{Host}}.pem",
+    "payload_string": "/ssl/example.com.pem",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -5757,7 +5757,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/ssl/{{Host}}_key.txt",
+    "payload_string": "/ssl/example.com_key.txt",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -5768,7 +5768,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/cert/{{Host}}_key.txt",
+    "payload_string": "/cert/example.com_key.txt",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -5790,7 +5790,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/cert/{{Host}}.txt",
+    "payload_string": "/cert/example.com.txt",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -5801,7 +5801,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/ssl/private/{{Host}}_key.pem",
+    "payload_string": "/ssl/private/example.com_key.pem",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -23049,7 +23049,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/certs/{{Host}}_private.key",
+    "payload_string": "/certs/example.com_private.key",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -23060,7 +23060,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/certs/{{Host}}.key",
+    "payload_string": "/certs/example.com.key",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -23071,7 +23071,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/certificates/{{Host}}_priv.pem",
+    "payload_string": "/certificates/example.com_priv.pem",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -23082,7 +23082,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/certificates/{{Host}}_privkey.pem",
+    "payload_string": "/certificates/example.com_privkey.pem",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -23093,7 +23093,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/certs/{{Host}}.pem",
+    "payload_string": "/certs/example.com.pem",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -23104,7 +23104,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/private/{{Host}}.key",
+    "payload_string": "/private/example.com.key",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
@@ -23115,7 +23115,7 @@
     "vulnerability_category": "Security Misconfiguration",
     "target_technology": "Generic",
     "injection_point": "path_parameter",
-    "payload_string": "/keys/{{Host}}.pem",
+    "payload_string": "/keys/example.com.pem",
     "validation": {
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"

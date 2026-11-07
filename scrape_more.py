@@ -335,9 +335,21 @@ def rejects_non_web(payload: str) -> bool:
     text = payload.strip()
     if not text or SHELLCODE_RE.search(text):
         return True
+    if re.fullmatch(r"(?:%[0-9A-Fa-f]{2}){2,}", text):
+        return True
+    if "{{" in text or "}}" in text:
+        return True
+    low = text.lower()
+    if any(bit in low for bit in (
+        "printed on the", "created during", "same as ", "stored base-64",
+        "stored base64", "this secret is stored", "no oracle",
+    )):
+        return True
+    if text.startswith("]+|") or "\\w" in text or "\\s" in text:
+        return True
     if SOURCE_LINE_RE.match(text):
         return True
-    if re.search(r"\.(?:exe|dll|so|bin|pcap|sys)\b", text, re.I) and ".." not in text and "passwd" not in text.lower():
+    if re.search(r"\.(?:exe|dll|so|bin|pcap|sys)\b", text, re.I) and ".." not in text and "passwd" not in low:
         return True
     return False
 
@@ -373,7 +385,9 @@ def normalize_nuclei(s: str) -> str:
         "{{rand_int}}": "1337",
         "{{rand_base(6)}}": "abc123",
         "{{interactsh-url}}": "example.invalid",
-        "{{Hostname}}": "localhost",
+        "{{Hostname}}": "example.com",
+        "{{Host}}": "example.com",
+        "{{hostname}}": "example.com",
         "{{BaseURL}}": "",
         "{{RootURL}}": "",
         "{{url}}": "",

@@ -1,31 +1,18 @@
 {
   "updated_at": "2026-11-07T01:32:08Z",
-  "dataset_total": 411630,
+  "dataset_total": 346081,
   "runs": [
     {
       "run_id": "42324440983",
       "ran_at": "2026-11-07T01:32:08Z",
       "trigger": "workflow_dispatch",
-      "added": 65636,
-      "total_after": 411630,
+      "added": 87,
+      "skipped_non_web": 65549,
+      "total_after": 346081,
       "elapsed_seconds": 10,
       "sources": [
-        {
-          "name": "SecLists",
-          "added": 65539
-        },
-        {
-          "name": "nuclei-templates",
-          "added": 87
-        },
-        {
-          "name": "fuzzdb",
-          "added": 8
-        },
-        {
-          "name": "commix",
-          "added": 2
-        }
+        {"name": "nuclei-templates", "added": 85},
+        {"name": "commix", "added": 2}
       ],
       "run_url": "https://github.com/HarlequinCS/Veritas_Payloads/actions/runs/42324440983"
     }
