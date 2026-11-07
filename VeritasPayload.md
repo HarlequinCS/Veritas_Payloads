@@ -1,8 +1,8 @@
 # Veritas Payloads API
 
-Use this API to pull OWASP Top 10 payload strings into another scanner, fuzzer, or test harness. The dataset has **345,994** payloads in **65** categories.
+Another system can call this API now. Use it to pull OWASP Top 10 payload strings into a scanner, fuzzer, or test harness. Every call is an HTTP GET. There is no API key and no `?q=` search. Choose a category, then follow `next` until the pages end. Filter `injection_point` in your own code.
 
-GitHub serves the API as JSON files. Every call is an HTTP GET. There is no API key and no `?q=` search. Choose a category, then follow `next` until the pages end. Filter `injection_point` in your own code.
+The live paged files currently serve **345,994** payloads in **65** categories. That is the number in `index.json`. The dataset and `sync-log.json` are at **346,081**. The extra **87** are web paths kept from the 7 November 2026 sync (traversal, Swagger and key paths, and authentication-file paths). They are not in the category pages yet, so a client that only walks `categories/.../page/` does not receive those 87 until the pages are rebuilt.
 
 ## Base URL
 
@@ -27,7 +27,7 @@ The examples below use the raw GitHub URL.
 | `/categories/{slug}.json` | One category and its injection-point counts |
 | `/categories/{slug}/page/{n}.json` | Up to 1,000 payloads, plus `next` and `prev` |
 | `/id-map/{bucket}.json` | Payload id mapped to `[slug, page]` |
-| `/sync-log.json` | Every upstream sync, newest first, with the number of payloads added |
+| `/sync-log.json` | Every upstream sync, newest first. `runs[0].added` is how many web payloads that run kept |
 
 Pages are numbered from 1. `next` and `prev` are paths relative to the base URL. When `next` is `null`, you are on the last page.
 
@@ -305,15 +305,49 @@ Counts are the full category, across every injection point.
 | Web Cache Deception (Cache Poisoning Headers) | `web_cache_deception_cache_poisoning_headers` | 1,034 | 2 |
 | Cryptographic Failures (JWT Kid Injection) | `cryptographic_failures_jwt_kid_injection` | 1,028 | 2 |
 
+The table matches the live category pages. In the dataset files, three of those counts are already higher: LFI/RFI **54,205**, Security Misconfiguration **12,399**, and Identification & Authentication Failures **1,387**. Page counts do not change. Read `categories.json` at request time instead of copying this table into the other system.
+
 ## Daily updates
 
-This repository checks the upstream wordlists every day at **02:00 Asia/Kuala_Lumpur** (18:00 UTC). The job is GitHub Actions workflow `Sync upstream payloads`. GitHub Pages cannot run that job itself. Actions runs it, and a push to `master` is what publishes the new JSON.
+This repository checks the upstream wordlists every day at **02:00 Malaysia time** (18:00 UTC). The site clock counts down to that time. The job is GitHub Actions workflow `Sync upstream payloads`. GitHub may start it a little later than 02:00. GitHub Pages cannot run the job. Actions runs it, and a push to `master` is what publishes the new JSON.
 
-Every run writes a row to `sync-log.json`, including a run that adds nothing. When new strings are found, the job appends them, rebuilds `api/v1`, and pushes. The site page **Sync Log** (`#sync`) reads that file. You can also start a run by hand from the Actions tab with **Run workflow**.
+A new string is kept only when it is a web-application payload and it is not already in the dataset. Percent-encoding dumps, shellcode, sticker notes, unresolved `{{placeholders}}`, and an exact copy of a stored string are skipped. Case is kept, so `<ScRiPt>` and `<script>` are different payloads.
+
+Every run writes a row to `sync-log.json`, including a run that adds nothing. `runs[0]` is the newest run.
 
 ```text
 https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1/sync-log.json
 ```
+
+```json
+{
+  "dataset_total": 346081,
+  "runs": [
+    {
+      "ran_at": "2026-11-07T01:32:08Z",
+      "trigger": "workflow_dispatch",
+      "added": 87,
+      "skipped_non_web": 65549,
+      "total_after": 346081,
+      "sources": [
+        {"name": "nuclei-templates", "added": 85},
+        {"name": "commix", "added": 2}
+      ]
+    }
+  ]
+}
+```
+
+| Field | Meaning |
+|---|---|
+| `added` | Web payloads kept on that run |
+| `skipped_non_web` | Strings seen and dropped because they were not web payloads |
+| `total_after` | Dataset total after that run |
+| `sources` | Which upstream project the kept strings came from |
+
+The site page **Sync Log** (`#sync`) reads the same file. You can also start a run from the Actions tab with **Run workflow**.
+
+The 7 November run kept 87 web payloads and skipped 65,549 non-web strings. Those 87 are in the dataset and in this log. They are not in the paged category files yet.
 
 ### Cron on the other system
 
@@ -323,7 +357,19 @@ Run that job later than 02:00, after this repository has had time to push. **04:
 0 20 * * * cd /opt/veritas-consumer && git fetch origin master && git diff --quiet HEAD origin/master || git pull --ff-only origin master
 ```
 
-If that system does not keep a git clone and only calls the HTTP API, it does not need a cron. The next GET to the raw URL returns whatever is on `master`. Use the raw base URL, not only the `github.io` address, because Pages can cache a previous copy for a few minutes after a push.
+If that system does not keep a git clone and only calls the HTTP API, it does not need a cron. The next GET to the raw URL returns whatever is on `master`. Use the raw base URL. The `github.io` copy can keep a previous file for a few minutes after a push.
+
+To see whether a sync kept anything, without downloading the category pages:
+
+```python
+import requests
+
+base = "https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1"
+latest = requests.get(f"{base}/sync-log.json", timeout=60).json()["runs"][0]
+print(latest["ran_at"], "kept", latest["added"])
+```
+
+Download the category pages again only when `added` is greater than 0, or when `index.json` `total_payloads` has changed.
 
 To refresh a saved copy of the API without cloning the whole repository:
 
