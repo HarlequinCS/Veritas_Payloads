@@ -9150,5 +9150,27 @@
       "expected_status_code": 200,
       "success_regex": "welcome|dashboard|invalid|login"
     }
+  },
+  {
+    "payload_id": "OWP-474654",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "controller=authentication",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-474681",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "AuthenticationMethod=MemberAuthenticator&Email=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
   }
 ]

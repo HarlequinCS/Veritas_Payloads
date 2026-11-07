@@ -1,7 +1,26 @@
 {
-  "updated_at": "2026-11-07T01:32:08Z",
-  "dataset_total": 346081,
+  "updated_at": "2026-11-07T21:32:49Z",
+  "dataset_total": 346132,
   "runs": [
+    {
+      "run_id": "42416245468",
+      "ran_at": "2026-11-07T21:32:49Z",
+      "trigger": "schedule",
+      "added": 51,
+      "total_after": 346132,
+      "elapsed_seconds": 9,
+      "sources": [
+        {
+          "name": "exploitdb",
+          "added": 34
+        },
+        {
+          "name": "nuclei-templates",
+          "added": 17
+        }
+      ],
+      "run_url": "https://github.com/HarlequinCS/Veritas_Payloads/actions/runs/42416245468"
+    },
     {
       "run_id": "42324440983",
       "ran_at": "2026-11-07T01:32:08Z",
@@ -11,8 +30,14 @@
       "total_after": 346081,
       "elapsed_seconds": 10,
       "sources": [
-        {"name": "nuclei-templates", "added": 85},
-        {"name": "commix", "added": 2}
+        {
+          "name": "nuclei-templates",
+          "added": 85
+        },
+        {
+          "name": "commix",
+          "added": 2
+        }
       ],
       "run_url": "https://github.com/HarlequinCS/Veritas_Payloads/actions/runs/42324440983"
     }

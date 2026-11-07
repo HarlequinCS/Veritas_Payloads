@@ -7,16 +7,16 @@
   'use strict';
 
   /* ─── DATA ─── */
-  const TOTAL_PAYLOADS = 346081;
+  const TOTAL_PAYLOADS = 346132;
 
   const CATEGORIES = [
     { name: "Identification & Authentication Failures (Weak Passwords)", count: 78776 },
-    { name: "Injection (LFI/RFI)", count: 54205 },
-    { name: "Injection (XSS)", count: 15899 },
-    { name: "Security Misconfiguration", count: 12399 },
+    { name: "Injection (LFI/RFI)", count: 54212 },
+    { name: "Injection (XSS)", count: 15904 },
+    { name: "Security Misconfiguration", count: 12410 },
     { name: "Injection (Command Injection)", count: 11985 },
-    { name: "Injection (SQLi)", count: 7885 },
-    { name: "Injection (Unrestricted File Upload)", count: 6131 },
+    { name: "Injection (SQLi)", count: 7897 },
+    { name: "Injection (Unrestricted File Upload)", count: 6133 },
     { name: "Injection (LDAP)", count: 5949 },
     { name: "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)", count: 5071 },
     { name: "Web Cache Deception", count: 4583 },
@@ -30,7 +30,7 @@
     { name: "Cryptographic Failures", count: 3804 },
     { name: "Vulnerable & Outdated Components", count: 3721 },
     { name: "Injection (SSI)", count: 3696 },
-    { name: "Vulnerable & Outdated Components (CVE Paths)", count: 3693 },
+    { name: "Vulnerable & Outdated Components (CVE Paths)", count: 3696 },
     { name: "Web Cache Deception (Cache Poisoning)", count: 3680 },
     { name: "Insecure Design (Race Condition Tests)", count: 3625 },
     { name: "Insecure Design (Coupon Abuse)", count: 3618 },
@@ -41,8 +41,8 @@
     { name: "Security Logging & Monitoring Failures", count: 3519 },
     { name: "Mishandling of Exceptional Conditions (Error Info Disclosure)", count: 3515 },
     { name: "Mishandling of Exceptional Conditions (Missing/Extra Parameters)", count: 3505 },
+    { name: "Injection (XPATH)", count: 3489 },
     { name: "Cryptographic Failures (Weak Crypto Algos)", count: 3487 },
-    { name: "Injection (XPATH)", count: 3487 },
     { name: "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)", count: 3485 },
     { name: "Mishandling of Exceptional Conditions (Debug Code Disclosure)", count: 3481 },
     { name: "Mishandling of Exceptional Conditions (Unchecked Exceptions)", count: 3479 },
@@ -52,13 +52,13 @@
     { name: "Cryptographic Failures (Info Disclosure Headers)", count: 3461 },
     { name: "Software Supply Chain Failures (Private Package Confusion)", count: 2220 },
     { name: "Identification & Authentication Failures (Username Enum)", count: 2046 },
-    { name: "Injection (Open Redirect)", count: 1635 },
+    { name: "Injection (Open Redirect)", count: 1637 },
     { name: "Injection (SSRF)", count: 1618 },
     { name: "Injection (NoSQLi)", count: 1616 },
     { name: "Injection (Prototype Pollution)", count: 1427 },
-    { name: "Identification & Authentication Failures", count: 1387 },
+    { name: "Identification & Authentication Failures", count: 1390 },
     { name: "Injection (Format String)", count: 1356 },
-    { name: "Broken Access Control", count: 1298 },
+    { name: "Broken Access Control", count: 1302 },
     { name: "Broken Access Control (IDOR)", count: 1281 },
     { name: "Injection (GraphQL)", count: 1205 },
     { name: "Injection (DOM Clobbering)", count: 1192 },
@@ -589,7 +589,7 @@
       '<p>Start by cloning the repository or downloading the latest release from GitHub.</p>' + codeBlock('git clone https://github.com/HarlequinCS/Veritas_Payloads.git') },
     { t: 'Choose Your Format', s: 'Unified JSON or organized folders', body:
       '<p>The dataset is available as a single unified JSON file or split into category folders.</p>' + codeBlock(
-'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (346,081 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
+'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (346,132 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
     { t: 'Understand the Schema', s: 'Consistent, integration-ready structure', body:
       '<p>Each payload entry follows a consistent structure for easy integration.</p>' + codeBlock(
 '{\n  "payload_id": "OWP-0001",\n  "vulnerability_category": "Injection (SQLi)",\n  "injection_point": "query_parameter",\n  "payload_string": "\' OR \'1\'=\'1",\n  "validation": { "expected_status_code": 200, "success_regex": "error|sql" }\n}') },

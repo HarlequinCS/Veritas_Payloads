@@ -65822,5 +65822,27 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-474658",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "file_upload",
+    "payload_string": "http://${hostname}${path}/psm/upload_file.php?submit=banane",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  },
+  {
+    "payload_id": "OWP-474672",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "file_upload",
+    "payload_string": "http://${host}${path}/user/upload/shell.php",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

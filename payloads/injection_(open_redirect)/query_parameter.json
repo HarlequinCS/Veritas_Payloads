@@ -16333,5 +16333,16 @@
       "expected_status_code": 302,
       "success_regex": "^https?://"
     }
+  },
+  {
+    "payload_id": "OWP-474685",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://www.example.com/mybloggie213beta/index.php?mode=delcom&comment_id=1&redirect=adm&confirm=yes",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
   }
 ]

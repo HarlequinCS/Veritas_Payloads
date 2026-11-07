@@ -1,15 +1,19 @@
 {
-  "total_payloads": 346081,
+  "total_payloads": 346132,
   "total_categories": 65,
-  "total_files": 187,
+  "total_files": 188,
   "categories": {
     "Broken Access Control": {
       "folder": "broken_access_control",
-      "total": 1298,
+      "total": 1302,
       "files": {
         "body_json": {
           "file": "broken_access_control/body_json.json",
           "count": 4
+        },
+        "form_parameter": {
+          "file": "broken_access_control/form_parameter.json",
+          "count": 1
         },
         "header": {
           "file": "broken_access_control/header.json",
@@ -21,7 +25,7 @@
         },
         "query_parameter": {
           "file": "broken_access_control/query_parameter.json",
-          "count": 1204
+          "count": 1207
         }
       }
     },
@@ -161,7 +165,7 @@
     },
     "Identification & Authentication Failures": {
       "folder": "identification_&_authentication_failures",
-      "total": 1387,
+      "total": 1390,
       "files": {
         "body_json": {
           "file": "identification_&_authentication_failures/body_json.json",
@@ -177,7 +181,7 @@
         },
         "form_parameter": {
           "file": "identification_&_authentication_failures/form_parameter.json",
-          "count": 832
+          "count": 834
         },
         "header": {
           "file": "identification_&_authentication_failures/header.json",
@@ -185,7 +189,7 @@
         },
         "path_parameter": {
           "file": "identification_&_authentication_failures/path_parameter.json",
-          "count": 168
+          "count": 169
         },
         "query_parameter": {
           "file": "identification_&_authentication_failures/query_parameter.json",
@@ -405,7 +409,7 @@
     },
     "Injection (LFI/RFI)": {
       "folder": "injection_(lfi_rfi)",
-      "total": 54205,
+      "total": 54212,
       "files": {
         "body_json": {
           "file": "injection_(lfi_rfi)/body_json.json",
@@ -425,7 +429,7 @@
         },
         "query_parameter": {
           "file": "injection_(lfi_rfi)/query_parameter.json",
-          "count": 29836
+          "count": 29843
         }
       }
     },
@@ -455,7 +459,7 @@
     },
     "Injection (Open Redirect)": {
       "folder": "injection_(open_redirect)",
-      "total": 1635,
+      "total": 1637,
       "files": {
         "body_json": {
           "file": "injection_(open_redirect)/body_json.json",
@@ -463,11 +467,11 @@
         },
         "path_parameter": {
           "file": "injection_(open_redirect)/path_parameter.json",
-          "count": 149
+          "count": 150
         },
         "query_parameter": {
           "file": "injection_(open_redirect)/query_parameter.json",
-          "count": 1485
+          "count": 1486
         }
       }
     },
@@ -519,7 +523,7 @@
     },
     "Injection (SQLi)": {
       "folder": "injection_(sqli)",
-      "total": 7885,
+      "total": 7897,
       "files": {
         "body_json": {
           "file": "injection_(sqli)/body_json.json",
@@ -531,7 +535,7 @@
         },
         "form_parameter": {
           "file": "injection_(sqli)/form_parameter.json",
-          "count": 235
+          "count": 237
         },
         "header": {
           "file": "injection_(sqli)/header.json",
@@ -539,11 +543,11 @@
         },
         "path_parameter": {
           "file": "injection_(sqli)/path_parameter.json",
-          "count": 114
+          "count": 116
         },
         "query_parameter": {
           "file": "injection_(sqli)/query_parameter.json",
-          "count": 7426
+          "count": 7434
         }
       }
     },
@@ -625,7 +629,7 @@
     },
     "Injection (Unrestricted File Upload)": {
       "folder": "injection_(unrestricted_file_upload)",
-      "total": 6131,
+      "total": 6133,
       "files": {
         "body_json": {
           "file": "injection_(unrestricted_file_upload)/body_json.json",
@@ -633,7 +637,7 @@
         },
         "file_upload": {
           "file": "injection_(unrestricted_file_upload)/file_upload.json",
-          "count": 5984
+          "count": 5986
         },
         "form_parameter": {
           "file": "injection_(unrestricted_file_upload)/form_parameter.json",
@@ -655,7 +659,7 @@
     },
     "Injection (XPATH)": {
       "folder": "injection_(xpath)",
-      "total": 3487,
+      "total": 3489,
       "files": {
         "form_parameter": {
           "file": "injection_(xpath)/form_parameter.json",
@@ -667,7 +671,7 @@
         },
         "query_parameter": {
           "file": "injection_(xpath)/query_parameter.json",
-          "count": 2
+          "count": 4
         }
       }
     },
@@ -691,7 +695,7 @@
     },
     "Injection (XSS)": {
       "folder": "injection_(xss)",
-      "total": 15899,
+      "total": 15904,
       "files": {
         "body_json": {
           "file": "injection_(xss)/body_json.json",
@@ -703,7 +707,7 @@
         },
         "form_parameter": {
           "file": "injection_(xss)/form_parameter.json",
-          "count": 654
+          "count": 656
         },
         "hash_parameter": {
           "file": "injection_(xss)/hash_parameter.json",
@@ -719,7 +723,7 @@
         },
         "query_parameter": {
           "file": "injection_(xss)/query_parameter.json",
-          "count": 14936
+          "count": 14939
         }
       }
     },
@@ -929,7 +933,7 @@
     },
     "Security Misconfiguration": {
       "folder": "security_misconfiguration",
-      "total": 12399,
+      "total": 12410,
       "files": {
         "body_json": {
           "file": "security_misconfiguration/body_json.json",
@@ -945,7 +949,7 @@
         },
         "path_parameter": {
           "file": "security_misconfiguration/path_parameter.json",
-          "count": 2121
+          "count": 2132
         },
         "query_parameter": {
           "file": "security_misconfiguration/query_parameter.json",
@@ -1065,7 +1069,7 @@
     },
     "Vulnerable & Outdated Components (CVE Paths)": {
       "folder": "vulnerable_&_outdated_components_(cve_paths)",
-      "total": 3693,
+      "total": 3696,
       "files": {
         "body_json": {
           "file": "vulnerable_&_outdated_components_(cve_paths)/body_json.json",
@@ -1073,7 +1077,7 @@
         },
         "path_parameter": {
           "file": "vulnerable_&_outdated_components_(cve_paths)/path_parameter.json",
-          "count": 2601
+          "count": 2604
         },
         "query_parameter": {
           "file": "vulnerable_&_outdated_components_(cve_paths)/query_parameter.json",

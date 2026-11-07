@@ -1,6 +1,6 @@
 # OWASP Top 10 Payload Dataset
 
-A comprehensive, structured collection of **346,081 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
+A comprehensive, structured collection of **346,132 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
 
 > **Interactive Dashboard:** Explore the dataset visually at [`index.html`](index.html) — a professional static dashboard built with HTML, CSS, and JavaScript. Served automatically via GitHub Pages from the root.
 
@@ -8,10 +8,10 @@ A comprehensive, structured collection of **346,081 unique payload strings** cov
 
 | Metric | Value |
 |--------|-------|
-| Total Payloads | 346,081 |
+| Total Payloads | 346,132 |
 | Vulnerability Categories | 65 |
-| Organized Files | 187 |
-| Total Size (JSON) | ~119 MB |
+| Organized Files | 188 |
+| Total Size (JSON) | ~115 MB |
 | OWASP Version | 2025 (all 10 categories covered) |
 
 ## Format
@@ -37,7 +37,7 @@ Each payload entry follows a consistent schema:
 The dataset is available in two forms:
 
 ### Unified JSON
-- **`owasp_top10_payloads.json`** — single file containing all 346,081 entries
+- **`owasp_top10_payloads.json`** — single file containing all 346,132 entries
 
 ### Organized Directory
 
@@ -60,12 +60,12 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 | Category | OWASP 2025 | Payloads |
 |----------|------------|----------|
 | _Identification & Authentication Failures (Weak Passwords)_ | — | 78,776 |
-| **Injection (LFI/RFI)** | A05 | 54,205 |
-| **Injection (XSS)** | A05 | 15,899 |
-| **Security Misconfiguration** | A02 | 12,399 |
+| **Injection (LFI/RFI)** | A05 | 54,212 |
+| **Injection (XSS)** | A05 | 15,904 |
+| **Security Misconfiguration** | A02 | 12,410 |
 | **Injection (Command Injection)** | A05 | 11,985 |
-| **Injection (SQLi)** | A05 | 7,885 |
-| **Injection (Unrestricted File Upload)** | A05 | 6,131 |
+| **Injection (SQLi)** | A05 | 7,897 |
+| **Injection (Unrestricted File Upload)** | A05 | 6,133 |
 | **Injection (LDAP)** | A05 | 5,949 |
 | _Mishandling of Exceptional Conditions (Null/Type/Zero Errors)_ | — | 5,071 |
 | **Web Cache Deception** | A02 | 4,583 |
@@ -79,7 +79,7 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 | **Cryptographic Failures** | A04 | 3,804 |
 | **Vulnerable & Outdated Components** | A03 | 3,721 |
 | **Injection (SSI)** | A05 | 3,696 |
-| _Vulnerable & Outdated Components (CVE Paths)_ | — | 3,693 |
+| _Vulnerable & Outdated Components (CVE Paths)_ | — | 3,696 |
 | _Web Cache Deception (Cache Poisoning)_ | — | 3,680 |
 | _Insecure Design (Race Condition Tests)_ | — | 3,625 |
 | _Insecure Design (Coupon Abuse)_ | — | 3,618 |
@@ -90,8 +90,8 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 | **Security Logging & Monitoring Failures** | A09 | 3,519 |
 | _Mishandling of Exceptional Conditions (Error Info Disclosure)_ | — | 3,515 |
 | _Mishandling of Exceptional Conditions (Missing/Extra Parameters)_ | — | 3,505 |
+| **Injection (XPATH)** | A05 | 3,489 |
 | _Cryptographic Failures (Weak Crypto Algos)_ | — | 3,487 |
-| **Injection (XPATH)** | A05 | 3,487 |
 | _Mishandling of Exceptional Conditions (Failing Open / Priv Esc)_ | — | 3,485 |
 | _Mishandling of Exceptional Conditions (Debug Code Disclosure)_ | — | 3,481 |
 | _Mishandling of Exceptional Conditions (Unchecked Exceptions)_ | — | 3,479 |
@@ -101,13 +101,13 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 | _Cryptographic Failures (Info Disclosure Headers)_ | — | 3,461 |
 | _Software Supply Chain Failures (Private Package Confusion)_ | — | 2,220 |
 | _Identification & Authentication Failures (Username Enum)_ | — | 2,046 |
-| **Injection (Open Redirect)** | A05 | 1,635 |
+| **Injection (Open Redirect)** | A05 | 1,637 |
 | **Injection (SSRF)** | A05 | 1,618 |
 | **Injection (NoSQLi)** | A05 | 1,616 |
 | **Injection (Prototype Pollution)** | A05 | 1,427 |
-| **Identification & Authentication Failures** | A07 | 1,387 |
+| **Identification & Authentication Failures** | A07 | 1,390 |
 | **Injection (Format String)** | A05 | 1,356 |
-| **Broken Access Control** | A01 | 1,298 |
+| **Broken Access Control** | A01 | 1,302 |
 | **Broken Access Control (IDOR)** | A01 | 1,281 |
 | **Injection (GraphQL)** | A05 | 1,205 |
 | **Injection (DOM Clobbering)** | A05 | 1,192 |

