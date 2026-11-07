@@ -1020,6 +1020,70 @@
     });
   }
 
+  /* ─── MALAYSIA CLOCK + NEXT PULL ─── */
+  const MYT = 'Asia/Kuala_Lumpur';
+  const mytTimeFmt = new Intl.DateTimeFormat('en-GB', {
+    timeZone: MYT, hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23',
+  });
+  const mytDateFmt = new Intl.DateTimeFormat('en-GB', {
+    timeZone: MYT, weekday: 'short', day: '2-digit', month: 'short',
+  });
+  const mytPartsFmt = new Intl.DateTimeFormat('en-GB', {
+    timeZone: MYT, year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23',
+  });
+
+  function mytParts(date) {
+    const parts = {};
+    mytPartsFmt.formatToParts(date).forEach(part => { parts[part.type] = part.value; });
+    return parts;
+  }
+
+  function nextPullAt(now) {
+    const parts = mytParts(now);
+    let year = Number(parts.year);
+    let month = Number(parts.month);
+    let day = Number(parts.day);
+    const hour = Number(parts.hour);
+    const minute = Number(parts.minute);
+    const second = Number(parts.second);
+    const afterToday = hour > 2 || (hour === 2 && (minute > 0 || second > 0));
+    if (afterToday) {
+      const tomorrow = new Date(Date.UTC(year, month - 1, day) + 86400000);
+      year = tomorrow.getUTCFullYear();
+      month = tomorrow.getUTCMonth() + 1;
+      day = tomorrow.getUTCDate();
+    }
+    // 02:00 Malaysia is 18:00 UTC on the previous UTC date. Malaysia stays at UTC+8.
+    return new Date(Date.UTC(year, month - 1, day, 2, 0, 0) - 8 * 3600000);
+  }
+
+  function formatRemain(ms) {
+    const total = Math.max(0, Math.floor(ms / 1000));
+    const hours = Math.floor(total / 3600);
+    const minutes = Math.floor((total % 3600) / 60);
+    const seconds = total % 60;
+    const pad = n => String(n).padStart(2, '0');
+    return hours + 'h ' + pad(minutes) + 'm ' + pad(seconds) + 's';
+  }
+
+  function tickMalaysiaClock() {
+    const now = new Date();
+    const timeEl = $('#mytTime');
+    const dateEl = $('#mytDate');
+    const countEl = $('#mytCountdown');
+    if (!timeEl || !dateEl || !countEl) return;
+    timeEl.textContent = mytTimeFmt.format(now);
+    timeEl.setAttribute('datetime', now.toISOString());
+    dateEl.textContent = mytDateFmt.format(now);
+    countEl.textContent = formatRemain(nextPullAt(now) - now);
+  }
+
+  function startMalaysiaClock() {
+    tickMalaysiaClock();
+    setInterval(tickMalaysiaClock, 1000);
+  }
+
   /* ─── INIT ─── */
   function init() {
     renderNav();
@@ -1033,6 +1097,7 @@
     renderAccordion();
     globe = createGlobe();
     bindEvents();
+    startMalaysiaClock();
 
     // initial view from hash
     const hash = (location.hash || '').replace('#', '');

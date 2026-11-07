@@ -6,7 +6,7 @@
   <meta name="description" content="Veritas Payloads — a curated cybersecurity dashboard of 345,994 OWASP Top 10 payload strings for authorized security testing." />
   <meta name="theme-color" content="#070a10" />
   <title>Veritas Payloads — Cybersecurity Payload Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20261107" />
 </head>
 <body>
 
@@ -55,6 +55,10 @@
           <p id="pageSubtitle">Dataset summary &amp; analytics</p>
         </div>
         <div class="topbar-spacer"></div>
+        <button class="myt-clock" type="button" data-goto="sync" title="Malaysia time. The upstream pull is scheduled for 02:00 MYT. GitHub may start the job a little later.">
+          <span class="myt-time"><span class="myt-zone">MYT</span><time id="mytTime">--:--:--</time></span>
+          <span class="myt-next"><span id="mytDate">—</span> · Next pull <strong id="mytCountdown">--h --m --s</strong></span>
+        </button>
         <span class="status-pill"><span class="status-dot"></span> Dataset Online</span>
         <a class="btn-github" href="https://github.com/HarlequinCS/Veritas_Payloads" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
@@ -420,6 +424,6 @@ class VeritasPayloads:
   <!-- ─── TOASTS ─── -->
   <div class="toast-wrap" id="toastWrap"></div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20261107"></script>
 </body>
 </html>

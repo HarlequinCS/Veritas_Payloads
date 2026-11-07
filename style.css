@@ -141,6 +141,16 @@ button { font-family: inherit; }
 .topbar-titles h1 { font-size: 1.15rem; font-weight: 800; letter-spacing: -.01em; }
 .topbar-titles p { font-size: .8rem; color: var(--text-muted); }
 .topbar-spacer { flex: 1; }
+.myt-clock {
+  display: flex; flex-direction: column; align-items: flex-end; gap: 1px; flex-shrink: 0;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 6px 12px; cursor: pointer; color: inherit; line-height: 1.25; white-space: nowrap;
+}
+.myt-clock:hover { border-color: var(--accent-border); }
+.myt-time { font-family: var(--mono); font-weight: 800; font-size: .92rem; font-variant-numeric: tabular-nums; letter-spacing: .02em; }
+.myt-zone { font-size: .62rem; font-weight: 800; letter-spacing: .12em; color: var(--cyan); margin-right: 8px; }
+.myt-next { font-size: .68rem; color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.myt-next strong { color: var(--amber); font-weight: 700; }
 .status-pill {
   display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 50px;
   background: rgba(52,211,153,.1); border: 1px solid rgba(52,211,153,.28); color: var(--green);
@@ -432,11 +442,18 @@ button { font-family: inherit; }
   .sidebar.open { transform: translateX(0); }
   .main { margin-left: 0; }
   .menu-btn { display: grid; }
+  .topbar { flex-wrap: wrap; row-gap: 8px; }
+  .topbar-spacer { display: none; }
+  .myt-clock { order: 5; flex: 1 0 100%; flex-direction: row; justify-content: space-between; align-items: center; }
 }
 @media (max-width: 620px) {
   .content { padding: 18px; }
   .topbar { padding: 12px 16px; }
   .topbar-titles p { display: none; }
+  .myt-clock { padding: 5px 8px; }
+  .myt-time { font-size: .8rem; }
+  .myt-next { font-size: .62rem; }
+  .status-pill { display: none; }
   .stats-grid { grid-template-columns: 1fr; }
   .banner { padding: 24px 20px; }
   .controls { flex-direction: column; align-items: stretch; }
