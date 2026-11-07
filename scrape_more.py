@@ -481,7 +481,8 @@ class Builder:
                 path.write_text(text, encoding="utf-8", newline="\n")
             total += len(entries)
             print(f"  +{len(entries):>6}  {rel}", flush=True)
-        self._write_manifest()
+        if total:
+            self._write_manifest()
         return total
 
     def _write_manifest(self) -> None:
@@ -1018,6 +1019,10 @@ def main() -> None:
     print(f"\nAdded {added:,} payloads in {time.time() - started:.0f}s", flush=True)
     for name, count in builder.added_by_source.items():
         print(f"  {name}: {count:,}", flush=True)
+
+    if added == 0:
+        print("No new payloads. Leaving the published files unchanged.", flush=True)
+        return
 
     if builder.skipped_files:
         builder.skipped_files.sort(key=lambda item: item[1], reverse=True)

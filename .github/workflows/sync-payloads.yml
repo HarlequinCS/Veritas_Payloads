@@ -1,0 +1,62 @@
+name: Sync upstream payloads
+
+on:
+  schedule:
+    # 18:00 UTC = 02:00 Asia/Kuala_Lumpur. GitHub may start the job later than the clock time.
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-payloads
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout dataset
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch source repositories
+        run: bash scripts/fetch_sources.sh
+
+      - name: Import payloads that are not already in the dataset
+        run: python scrape_more.py
+
+      - name: Detect new payloads
+        id: changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No new payloads from the source repositories."
+          fi
+
+      - name: Rebuild the API and unified file
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          python build_api.py
+          python scripts/rebuild_unified.py
+
+      - name: Publish the update
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing to publish."
+            exit 0
+          fi
+          git commit -m "Add payloads published upstream since the last sync."
+          git push
