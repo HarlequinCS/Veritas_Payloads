@@ -127,9 +127,14 @@ def main() -> None:
             "category": "categories/{slug}.json",
             "page": "categories/{slug}/page/{page}.json",
             "id_map": "id-map/{bucket}.json",
+            "sync_log": "sync-log.json",
         },
         "id_lookup": "bucket = int(payload_id number) // 100000, then id-map/{bucket}.json maps the id to [slug, page]",
     }, pretty=True)
+
+    log_path = ROOT / "sync-log.json"
+    if log_path.exists():
+        (API / "sync-log.json").write_text(log_path.read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
 
     print(f"API built: {seen:,} payloads, {len(categories_out)} categories, {written_pages} pages")
 

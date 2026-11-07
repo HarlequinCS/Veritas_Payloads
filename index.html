@@ -84,6 +84,10 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
                     Get Started
                   </button>
+                  <button class="btn btn-ghost" data-goto="api">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    API Guide
+                  </button>
                 </div>
               </div>
 
@@ -198,6 +202,199 @@
             <p>A beginner-friendly guide to integrating the Veritas Payload dataset into your security testing workflow.</p>
           </div>
           <div class="accordion" id="accordion"></div>
+        </section>
+
+        <!-- ═══ VIEW: SYNC LOG ═══ -->
+        <section class="view" id="view-sync">
+          <div class="view-head">
+            <h2>Sync Log</h2>
+            <p>Every check of the upstream wordlists is recorded here. The daily job runs at 02:00 Asia/Kuala_Lumpur and writes a row even when it adds nothing.</p>
+          </div>
+          <div class="stats-grid sync-stats" id="syncStats"></div>
+          <div class="panel sync-panel">
+            <div class="panel-head">
+              <h3>Runs</h3>
+              <a class="hint" href="api/v1/sync-log.json">sync-log.json</a>
+            </div>
+            <div id="syncLogBody">
+              <p class="guide-muted">Loading the sync log…</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ VIEW: API GUIDE ═══ -->
+        <section class="view" id="view-api">
+          <div class="view-head">
+            <h2>API Guide</h2>
+            <p>Pull payload strings into another scanner or test harness. Every call is an HTTP GET. There is no API key and no search parameter.</p>
+          </div>
+
+          <div class="guide">
+            <div class="panel">
+              <div class="panel-head"><h3>Base URL</h3></div>
+              <p class="guide-copy">Use the raw GitHub URL. GitHub Pages serves the same files, and it can keep a previous copy for a few minutes after a push.</p>
+              <div class="code-block" id="apiBase">https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1</div>
+              <button class="btn btn-ghost guide-copy-btn" data-copy-block="apiBase">Copy base URL</button>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head"><h3>Endpoints</h3><span class="hint">page size 1,000</span></div>
+              <div class="table-wrap">
+                <table class="guide-table">
+                  <thead><tr><th>GET</th><th>Returns</th></tr></thead>
+                  <tbody>
+                    <tr><td><code>index.json</code></td><td>Totals, page size, and the endpoint map</td></tr>
+                    <tr><td><code>categories.json</code></td><td>Every category, its slug, count, page count, and first page</td></tr>
+                    <tr><td><code>categories/{slug}.json</code></td><td>One category and its injection-point counts</td></tr>
+                    <tr><td><code>categories/{slug}/page/{n}.json</code></td><td>Up to 1,000 payloads, plus <code>next</code> and <code>prev</code></td></tr>
+                    <tr><td><code>id-map/{bucket}.json</code></td><td>Payload id mapped to <code>[slug, page]</code></td></tr>
+                    <tr><td><code>sync-log.json</code></td><td>Each upstream sync and how many payloads it added</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="guide-copy">Pages start at 1. <code>next</code> and <code>prev</code> are paths relative to the base URL. A missing slug or page returns HTTP 404.</p>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head"><h3>Payload object</h3></div>
+              <pre class="code-block" id="apiObject">{
+  "payload_id": "OWP-0055",
+  "vulnerability_category": "Injection (SQLi)",
+  "target_technology": "MySQL",
+  "injection_point": "query_parameter",
+  "payload_string": "' UNION SELECT 1,2,3--",
+  "validation": {
+    "expected_status_code": 200,
+    "success_regex": "2.*3"
+  }
+}</pre>
+              <button class="btn btn-ghost guide-copy-btn" data-copy-block="apiObject">Copy example</button>
+              <div class="tips-grid">
+                <div class="tip-card"><strong>payload_id</strong><span>Stable id, <code>OWP-</code> plus a number.</span></div>
+                <div class="tip-card"><strong>injection_point</strong><span>Where to place the string: query, form, header, cookie, body, path, or file upload.</span></div>
+                <div class="tip-card"><strong>validation</strong><span>Status and optional response pattern that suggest the check fired.</span></div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head"><h3>Slugs</h3></div>
+              <p class="guide-copy">A slug is the category name in lowercase, with spaces changed to <code>_</code> and parentheses removed. An ampersand stays in the slug, so encode it as <code>%26</code> in the URL. Read <code>categories.json</code> and encode the <code>slug</code> field. Do not build the long names by hand.</p>
+              <div class="table-wrap">
+                <table class="guide-table">
+                  <thead><tr><th>Category</th><th>Slug</th></tr></thead>
+                  <tbody>
+                    <tr><td>Injection (SQLi)</td><td><code>injection_sqli</code></td></tr>
+                    <tr><td>Injection (XSS)</td><td><code>injection_xss</code></td></tr>
+                    <tr><td>Injection (LFI/RFI)</td><td><code>injection_lfi_rfi</code></td></tr>
+                    <tr><td>Weak passwords</td><td><code>identification_%26_authentication_failures_weak_passwords</code></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head"><h3>1. List categories</h3></div>
+              <pre class="code-block" id="apiList">import requests
+
+base = "https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1"
+catalog = requests.get(f"{base}/categories.json", timeout=60).json()
+
+for category in catalog["categories"]:
+    print(category["count"], category["slug"], category["category"])</pre>
+              <button class="btn btn-ghost guide-copy-btn" data-copy-block="apiList">Copy Python</button>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head"><h3>2. Read one category, page by page</h3></div>
+              <p class="guide-copy">Stop when <code>next</code> is <code>null</code>. Encode <code>&amp;</code> inside <code>next</code> before the next request.</p>
+              <pre class="code-block" id="apiPage">import requests
+from urllib.parse import quote
+
+base = "https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1"
+
+def api_url(path):
+    return f"{base}/{quote(path, safe='/')}"
+
+url = api_url("categories/injection_sqli/page/1.json")
+while url:
+    page = requests.get(url, timeout=60).json()
+    for item in page["results"]:
+        if item["injection_point"] != "query_parameter":
+            continue
+        print(item["payload_id"], item["payload_string"])
+    url = api_url(page["next"]) if page["next"] else None</pre>
+              <button class="btn btn-ghost guide-copy-btn" data-copy-block="apiPage">Copy Python</button>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head"><h3>3. Look up one payload id</h3></div>
+              <p class="guide-copy">Divide the number in the id by 100000. That integer is the bucket file. <code>OWP-0055</code> is in <code>id-map/0.json</code>. <code>OWP-210845</code> is in <code>id-map/2.json</code>.</p>
+              <pre class="code-block" id="apiId">import requests
+
+base = "https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1"
+payload_id = "OWP-0055"
+bucket = int(payload_id.split("-")[1]) // 100000
+
+slug, page_no = requests.get(f"{base}/id-map/{bucket}.json", timeout=60).json()[payload_id]
+page = requests.get(f"{base}/categories/{slug}/page/{page_no}.json", timeout=60).json()
+record = next(item for item in page["results"] if item["payload_id"] == payload_id)
+print(record["payload_string"])</pre>
+              <button class="btn btn-ghost guide-copy-btn" data-copy-block="apiId">Copy Python</button>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head"><h3>4. Call it from another service</h3></div>
+              <pre class="code-block" id="apiClient">import requests
+from urllib.parse import quote
+
+class VeritasPayloads:
+    def __init__(self):
+        self.base = "https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1"
+        self.session = requests.Session()
+
+    def url(self, path):
+        return f"{self.base}/{quote(path, safe='/')}"
+
+    def categories(self):
+        return self.session.get(self.url("categories.json"), timeout=60).json()["categories"]
+
+    def pages(self, slug):
+        url = self.url(f"categories/{slug}/page/1.json")
+        while url:
+            page = self.session.get(url, timeout=60).json()
+            yield from page["results"]
+            url = self.url(page["next"]) if page["next"] else None</pre>
+              <button class="btn btn-ghost guide-copy-btn" data-copy-block="apiClient">Copy client</button>
+              <p class="guide-copy">Send <code>payload_string</code> in the location named by <code>injection_point</code>. Compare the HTTP status with <code>validation.expected_status_code</code>. Use a timeout of at least 60 seconds.</p>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head"><h3>5. Daily updates</h3></div>
+              <p class="guide-copy">This repository checks the upstream wordlists at 02:00 Asia/Kuala_Lumpur. The <button class="text-link" data-goto="sync">Sync Log</button> shows how many payloads each run added. A system that caches the files can pull later, at 04:00:</p>
+              <pre class="code-block" id="apiCron">0 20 * * * cd /opt/veritas-consumer &amp;&amp; git fetch origin master &amp;&amp; git diff --quiet HEAD origin/master || git pull --ff-only origin master</pre>
+              <p class="guide-copy">A caller that does not keep a local copy needs no cron. The next GET returns the files on <code>master</code>. To see whether a sync added anything without downloading the dataset, GET <code>sync-log.json</code> and read <code>runs[0].added</code>.</p>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head"><h3>Limits</h3></div>
+              <div class="tips-grid">
+                <div class="tip-card"><strong>No authentication</strong><span>Anyone who can reach the repository can read the files.</span></div>
+                <div class="tip-card"><strong>No search parameter</strong><span>Page through a category, or resolve one id through the id map.</span></div>
+                <div class="tip-card"><strong>JSON pages</strong><span>Responses are JSON, not NDJSON. Page size is fixed at 1,000.</span></div>
+                <div class="tip-card"><strong>Authorized use</strong><span>Use the payloads only against systems you are allowed to test.</span></div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head">
+                <h3>Category index</h3>
+                <span class="hint" id="apiCatalogHint">Loading live counts…</span>
+              </div>
+              <div class="table-wrap" id="apiCatalog">
+                <p class="guide-muted">Loading categories…</p>
+              </div>
+            </div>
+          </div>
         </section>
 
       </main>

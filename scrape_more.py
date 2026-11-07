@@ -986,6 +986,30 @@ def prune() -> None:
     print(f"pruned dataset total: {total:,}", flush=True)
 
 
+def _current_total() -> int:
+    manifest = PAYLOADS / "_manifest.json"
+    if not manifest.exists():
+        return 0
+    data = json.loads(manifest.read_text(encoding="utf-8"))
+    return int(data.get("total_payloads") or 0)
+
+
+def write_sync_result(added: int, by_source: dict[str, int], total_after: int, elapsed: int) -> None:
+    """Machine-readable summary for the sync log. Not published on its own."""
+    payload = {
+        "added": added,
+        "total_after": total_after,
+        "elapsed_seconds": elapsed,
+        "sources": [
+            {"name": name, "added": count}
+            for name, count in sorted(by_source.items(), key=lambda item: (-item[1], item[0]))
+            if count
+        ],
+    }
+    path = ROOT / "_sync_result.json"
+    path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8", newline="\n")
+
+
 def main() -> None:
     started = time.time()
     builder = Builder()
@@ -1016,11 +1040,13 @@ def main() -> None:
 
     print("\nWriting payload files...", flush=True)
     added = builder.flush()
-    print(f"\nAdded {added:,} payloads in {time.time() - started:.0f}s", flush=True)
+    elapsed = int(time.time() - started)
+    print(f"\nAdded {added:,} payloads in {elapsed}s", flush=True)
     for name, count in builder.added_by_source.items():
         print(f"  {name}: {count:,}", flush=True)
 
     if added == 0:
+        write_sync_result(0, {}, _current_total(), elapsed)
         print("No new payloads. Leaving the published files unchanged.", flush=True)
         return
 
@@ -1036,6 +1062,7 @@ def main() -> None:
     ranked = sorted(totals.items(), key=lambda item: (-item[1], item[0]))
     grand = sum(totals.values())
     update_dashboard(grand, ranked)
+    write_sync_result(added, dict(builder.added_by_source), grand, elapsed)
 
 
 if __name__ == "__main__":

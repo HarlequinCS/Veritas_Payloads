@@ -35,7 +35,7 @@ jobs:
       - name: Detect new payloads
         id: changes
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
+          if [ -n "$(git status --porcelain --untracked-files=all -- . ':!_sources' ':!_sync_result.json')" ]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -48,8 +48,15 @@ jobs:
           python build_api.py
           python scripts/rebuild_unified.py
 
+      - name: Record this sync in the action log
+        env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/record_sync.py
+
       - name: Publish the update
-        if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -58,5 +65,10 @@ jobs:
             echo "Nothing to publish."
             exit 0
           fi
-          git commit -m "Add payloads published upstream since the last sync."
+          added=$(python -c "import json; print(json.load(open('_sync_result.json')).get('added', 0))")
+          if [ "$added" = "0" ]; then
+            git commit -m "Record a sync that found no new payloads."
+          else
+            git commit -m "Add ${added} payloads published upstream since the last sync."
+          fi
           git push

@@ -27,3 +27,4 @@ __pycache__/
 
 # Local checkouts used to refresh the dataset
 _sources/
+_sync_result.json

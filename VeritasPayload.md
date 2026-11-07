@@ -27,6 +27,7 @@ The examples below use the raw GitHub URL.
 | `/categories/{slug}.json` | One category and its injection-point counts |
 | `/categories/{slug}/page/{n}.json` | Up to 1,000 payloads, plus `next` and `prev` |
 | `/id-map/{bucket}.json` | Payload id mapped to `[slug, page]` |
+| `/sync-log.json` | Every upstream sync, newest first, with the number of payloads added |
 
 Pages are numbered from 1. `next` and `prev` are paths relative to the base URL. When `next` is `null`, you are on the last page.
 
@@ -308,7 +309,11 @@ Counts are the full category, across every injection point.
 
 This repository checks the upstream wordlists every day at **02:00 Asia/Kuala_Lumpur** (18:00 UTC). The job is GitHub Actions workflow `Sync upstream payloads`. GitHub Pages cannot run that job itself. Actions runs it, and a push to `master` is what publishes the new JSON.
 
-If the sources have no new strings, the job commits nothing. If they do, it appends those strings, rebuilds `api/v1`, and pushes. Pages then serves the new files. You can also start a run by hand from the Actions tab with **Run workflow**.
+Every run writes a row to `sync-log.json`, including a run that adds nothing. When new strings are found, the job appends them, rebuilds `api/v1`, and pushes. The site page **Sync Log** (`#sync`) reads that file. You can also start a run by hand from the Actions tab with **Run workflow**.
+
+```text
+https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1/sync-log.json
+```
 
 ### Cron on the other system
 

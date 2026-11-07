@@ -175,6 +175,7 @@ GitHub Pages, if enabled for the repository, serves the same tree at `https://ha
 | `categories/{slug}.json` | One category, its injection points, and its page count |
 | `categories/{slug}/page/{n}.json` | Up to 1,000 payloads, plus `next` and `prev` |
 | `id-map/{bucket}.json` | Payload id to `[slug, page]`. `bucket` is the id number divided by 100000 |
+| `sync-log.json` | Each upstream sync: when it ran, how many new payloads it added, and which source they came from |
 
 ```bash
 curl https://raw.githubusercontent.com/HarlequinCS/Veritas_Payloads/master/api/v1/categories/injection_sqli/page/1.json

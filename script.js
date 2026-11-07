@@ -102,6 +102,8 @@
     library: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
     sources: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/></svg>',
     walkthrough: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>',
+    sync: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>',
+    api: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
     copy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
     check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
     chevron: '<svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>',
@@ -343,6 +345,8 @@
     { id: 'library', label: 'Payload Library', title: 'Payload Library', sub: 'Browse & filter payloads', count: fmt(CATEGORIES.length) },
     { id: 'sources', label: 'Sources', title: 'Sources & Contributors', sub: 'Trusted security repositories', count: fmt(SOURCES.length) },
     { id: 'walkthrough', label: 'Walkthrough', title: 'Walkthrough', sub: 'How to use the dataset', count: '' },
+    { id: 'sync', label: 'Sync Log', title: 'Sync Log', sub: 'Payloads added on each run', count: '' },
+    { id: 'api', label: 'API Guide', title: 'API Guide', sub: 'Use the dataset from another system', count: '' },
   ];
 
   function renderNav() {
@@ -645,6 +649,95 @@
     if (view.id === 'overview') { setTimeout(animateBars, 80); animateCounters(); if (globe) globe.start(); }
     else if (globe) globe.stop();
     if (view.id === 'walkthrough') requestAnimationFrame(refreshAccordion);
+    if (view.id === 'sync') loadSyncLog();
+    if (view.id === 'api') loadApiCatalog();
+  }
+
+  let syncState = 'idle';
+  let catalogState = 'idle';
+
+  function formatWhen(iso) {
+    if (!iso) return '—';
+    const date = new Date(iso);
+    if (Number.isNaN(date.getTime())) return iso;
+    return date.toLocaleString(undefined, { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  }
+
+  function renderSyncLog(data) {
+    const runs = data.runs || [];
+    const last = runs[0];
+    const addedSum = runs.reduce((sum, run) => sum + (Number(run.added) || 0), 0);
+    const total = data.dataset_total || TOTAL_PAYLOADS;
+    const cards = [
+      { cls: 'ico-green', value: last ? fmt(Number(last.added) || 0) : '—', desc: 'Last run added' },
+      { cls: 'ico-cyan', value: fmt(total), desc: 'Dataset total' },
+      { cls: 'ico-violet', value: fmt(runs.length), desc: 'Runs recorded' },
+      { cls: 'ico-amber', value: fmt(addedSum), desc: 'Added across runs' },
+    ];
+    $('#syncStats').innerHTML = cards.map(card => (
+      '<div class="stat-card"><div class="stat-card-top"><div class="stat-ico ' + card.cls + '">' + ICON.db + '</div></div>' +
+      '<div class="stat-value">' + card.value + '</div><div class="stat-desc">' + card.desc + '</div></div>'
+    )).join('');
+
+    if (!runs.length) {
+      $('#syncLogBody').innerHTML = '<p class="log-empty">No sync has run yet. The daily job checks the upstream wordlists at 02:00 Asia/Kuala Lumpur and writes a row here, including a run that adds nothing.</p>';
+      return;
+    }
+
+    const rows = runs.map(run => {
+      const sources = (run.sources || []).filter(source => source.added).map(source => escHtml(source.name) + ' +' + fmt(source.added)).join(', ') || '—';
+      const addedClass = run.added ? 'log-added' : 'log-added zero';
+      const link = run.run_url ? ' · <a href="' + escAttr(run.run_url) + '" target="_blank" rel="noopener">Actions run</a>' : '';
+      const totalAfter = run.total_after == null ? '—' : fmt(run.total_after);
+      return '<tr><td class="log-when">' + escHtml(formatWhen(run.ran_at)) + '</td><td>' + escHtml(run.trigger || '—') + link + '</td><td class="' + addedClass + '">+' + fmt(Number(run.added) || 0) + '</td><td class="num">' + totalAfter + '</td><td class="log-sources">' + sources + '</td></tr>';
+    }).join('');
+    $('#syncLogBody').innerHTML = '<div class="table-wrap"><table class="guide-table"><thead><tr><th>When</th><th>Trigger</th><th class="num">Added</th><th class="num">Total after</th><th>Sources</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+  }
+
+  function loadSyncLog() {
+    if (syncState === 'ready' || syncState === 'loading') return;
+    syncState = 'loading';
+    fetch('sync-log.json', { cache: 'no-store' })
+      .then(response => {
+        if (!response.ok) throw new Error(String(response.status));
+        return response.json();
+      })
+      .then(data => {
+        syncState = 'ready';
+        renderSyncLog(data);
+      })
+      .catch(() => {
+        syncState = 'idle';
+        $('#syncLogBody').innerHTML = '<p class="log-empty">The sync log could not be loaded. Open this page from the published site, or serve the repository folder over HTTP.</p>';
+      });
+  }
+
+  function renderApiCatalog(data) {
+    const categories = data.categories || [];
+    $('#apiCatalogHint').textContent = fmt(categories.length) + ' categories · ' + fmt(data.total_payloads || 0) + ' payloads';
+    const rows = categories.map(category => (
+      '<tr><td>' + escHtml(category.category) + '</td><td><code>' + escHtml(category.slug) + '</code></td><td class="num">' + fmt(category.count) + '</td><td class="num">' + fmt(category.pages) + '</td></tr>'
+    )).join('');
+    $('#apiCatalog').innerHTML = '<table class="guide-table"><thead><tr><th>Category</th><th>Slug</th><th class="num">Payloads</th><th class="num">Pages</th></tr></thead><tbody>' + rows + '</tbody></table>';
+  }
+
+  function loadApiCatalog() {
+    if (catalogState === 'ready' || catalogState === 'loading') return;
+    catalogState = 'loading';
+    fetch('api/v1/categories.json', { cache: 'no-store' })
+      .then(response => {
+        if (!response.ok) throw new Error(String(response.status));
+        return response.json();
+      })
+      .then(data => {
+        catalogState = 'ready';
+        renderApiCatalog(data);
+      })
+      .catch(() => {
+        catalogState = 'idle';
+        $('#apiCatalogHint').textContent = 'Unavailable';
+        $('#apiCatalog').innerHTML = '<p class="log-empty">The category index could not be loaded from api/v1/categories.json.</p>';
+      });
   }
 
   function refreshAccordion() {
@@ -897,6 +990,12 @@
 
     // delegated copy handler
     document.addEventListener('click', e => {
+      const blockBtn = e.target.closest('[data-copy-block]');
+      if (blockBtn) {
+        const node = document.getElementById(blockBtn.getAttribute('data-copy-block'));
+        if (node) copyText(node.innerText);
+        return;
+      }
       const btn = e.target.closest('.copy-mini');
       if (!btn) return;
       e.stopPropagation();

@@ -15,7 +15,8 @@
     "categories": "categories.json",
     "category": "categories/{slug}.json",
     "page": "categories/{slug}/page/{page}.json",
-    "id_map": "id-map/{bucket}.json"
+    "id_map": "id-map/{bucket}.json",
+    "sync_log": "sync-log.json"
   },
   "id_lookup": "bucket = int(payload_id number) // 100000, then id-map/{bucket}.json maps the id to [slug, page]"
 }

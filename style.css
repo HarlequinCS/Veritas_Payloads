@@ -355,6 +355,28 @@ button { font-family: inherit; }
 .tip-card span { font-size: .78rem; color: var(--text-muted); line-height: 1.5; }
 .tip-card code { color: var(--cyan); font-size: .76rem; }
 
+/* ─── SYNC LOG + API GUIDE ─── */
+.sync-stats { margin-bottom: 16px; }
+.sync-panel { margin-top: 0; }
+.guide { display: flex; flex-direction: column; gap: 16px; }
+.guide-copy { color: var(--text-secondary); font-size: .9rem; margin-bottom: 14px; }
+.guide-copy code, .guide-table code { color: var(--cyan); font-size: .82rem; }
+.guide-muted { color: var(--text-muted); font-size: .88rem; }
+.guide-copy-btn { margin-top: 12px; }
+.text-link { background: none; border: none; color: var(--cyan); font: inherit; font-weight: 700; cursor: pointer; padding: 0; }
+.text-link:hover { text-decoration: underline; }
+.table-wrap { overflow-x: auto; }
+.guide-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+.guide-table th, .guide-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.guide-table th { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--text-muted); font-weight: 700; }
+.guide-table td.num, .guide-table th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.guide-table a { color: var(--cyan); }
+.log-added { font-weight: 800; color: var(--green); font-variant-numeric: tabular-nums; }
+.log-added.zero { color: var(--text-muted); font-weight: 600; }
+.log-when { white-space: nowrap; }
+.log-sources { color: var(--text-secondary); font-size: .8rem; }
+.log-empty { padding: 28px 8px 12px; color: var(--text-secondary); }
+
 /* ─── MODAL ─── */
 .modal-overlay { position: fixed; inset: 0; z-index: 200; background: rgba(3,6,12,.78); backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center; padding: 24px; }
 .modal-overlay.open { display: flex; animation: fade .2s ease; }
