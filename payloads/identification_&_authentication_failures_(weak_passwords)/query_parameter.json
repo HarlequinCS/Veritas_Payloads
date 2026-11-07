@@ -826956,5 +826956,93 @@
       "expected_status_code": 200,
       "success_regex": "welcome|dashboard|success"
     }
+  },
+  {
+    "payload_id": "OWP-409000",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "This secret is stored base-64 encoded on the proxy hos",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
+  },
+  {
+    "payload_id": "OWP-409001",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "same as webui pwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
+  },
+  {
+    "payload_id": "OWP-409002",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "Solwise,root,same as webui pwd,",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
+  },
+  {
+    "payload_id": "OWP-409003",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "same as default wifi, printed on router",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
+  },
+  {
+    "payload_id": "OWP-409004",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "same as wireless, printed on router",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
+  },
+  {
+    "payload_id": "OWP-409005",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "same as default WPA key, printed on router",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
+  },
+  {
+    "payload_id": "OWP-409006",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "same as WiFi password, created during initial setup",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
+  },
+  {
+    "payload_id": "OWP-409007",
+    "vulnerability_category": "Identification & Authentication Failures (Weak Passwords)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "wireless key printed on the back of the device",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|success"
+    }
   }
 ]

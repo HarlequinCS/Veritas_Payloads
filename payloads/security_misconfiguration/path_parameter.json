@@ -22823,5 +22823,511 @@
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
     }
+  },
+  {
+    "payload_id": "OWP-474574",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/etc.children.json/FNZ.png",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474575",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/etc.children.json/FNZ.ico",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474576",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474577",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.1.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474578",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc....4.2.1....json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474579",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.json?FNZ.css",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474580",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.json?FNZ.ico",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474581",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.json/FNZ.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474582",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.json/FNZ.png",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474583",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.json/FNZ.ico",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474584",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.children.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474585",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.children.1.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474586",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.children....4.2.1....json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474587",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.children.json?FNZ.css",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474588",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.children.json?FNZ.ico",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474589",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.children.json?FNZ.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474590",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.children.json/FNZ.css",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474591",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.children.json/FNZ.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474592",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.children.json/FNZ.png",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474593",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "///etc.children.json/FNZ.ico",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474594",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/certs/{{Host}}_private.key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474595",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/certs/{{Host}}.key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474596",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/certificates/{{Host}}_priv.pem",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474597",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/certificates/{{Host}}_privkey.pem",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474598",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/certs/{{Host}}.pem",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474599",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/private/{{Host}}.key",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474600",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/keys/{{Host}}.pem",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474601",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/spec/swagger.yaml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474602",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/swagger/ui/index",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474603",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/__swagger__/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474604",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/_swagger_/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474605",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/v1/swagger-ui/swagger.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474606",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/v1/swagger-ui/swagger.yaml",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474607",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/swagger-resources/restservices/v2/api-docs",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474608",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/swagger_doc.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474609",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/docu",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474610",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/docs/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474611",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/swagger",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474612",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api-doc",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474613",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/doc/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474614",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/swagger-ui/springfox.js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474615",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/swagger-ui/swagger-ui-standalone-preset.js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474616",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/swagger-ui/swagger-ui/swagger-ui-bundle.js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474617",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/webjars/swagger-ui/swagger-ui-bundle.js",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474618",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/webjars/swagger-ui/index.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474619",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/developers/documentation",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
   }
 ]

@@ -7,18 +7,18 @@
   'use strict';
 
   /* ─── DATA ─── */
-  const TOTAL_PAYLOADS = 345994;
+  const TOTAL_PAYLOADS = 411630;
 
   const CATEGORIES = [
-    { name: "Identification & Authentication Failures (Weak Passwords)", count: 78776 },
-    { name: "Injection (LFI/RFI)", count: 54180 },
+    { name: "Identification & Authentication Failures (Weak Passwords)", count: 78784 },
+    { name: "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)", count: 70610 },
+    { name: "Injection (LFI/RFI)", count: 54205 },
     { name: "Injection (XSS)", count: 15899 },
-    { name: "Security Misconfiguration", count: 12353 },
-    { name: "Injection (Command Injection)", count: 11985 },
+    { name: "Security Misconfiguration", count: 12399 },
+    { name: "Injection (Command Injection)", count: 11987 },
     { name: "Injection (SQLi)", count: 7885 },
     { name: "Injection (Unrestricted File Upload)", count: 6131 },
     { name: "Injection (LDAP)", count: 5949 },
-    { name: "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)", count: 5071 },
     { name: "Web Cache Deception", count: 4583 },
     { name: "Identification & Authentication Failures (Weak Session IDs)", count: 4465 },
     { name: "Insecure Design (Price Manipulation)", count: 4282 },
@@ -56,7 +56,7 @@
     { name: "Injection (SSRF)", count: 1618 },
     { name: "Injection (NoSQLi)", count: 1616 },
     { name: "Injection (Prototype Pollution)", count: 1427 },
-    { name: "Identification & Authentication Failures", count: 1371 },
+    { name: "Identification & Authentication Failures", count: 1387 },
     { name: "Injection (Format String)", count: 1356 },
     { name: "Broken Access Control", count: 1298 },
     { name: "Broken Access Control (IDOR)", count: 1281 },
@@ -589,7 +589,7 @@
       '<p>Start by cloning the repository or downloading the latest release from GitHub.</p>' + codeBlock('git clone https://github.com/HarlequinCS/Veritas_Payloads.git') },
     { t: 'Choose Your Format', s: 'Unified JSON or organized folders', body:
       '<p>The dataset is available as a single unified JSON file or split into category folders.</p>' + codeBlock(
-'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (345,994 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
+'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (411,630 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
     { t: 'Understand the Schema', s: 'Consistent, integration-ready structure', body:
       '<p>Each payload entry follows a consistent structure for easy integration.</p>' + codeBlock(
 '{\n  "payload_id": "OWP-0001",\n  "vulnerability_category": "Injection (SQLi)",\n  "injection_point": "query_parameter",\n  "payload_string": "\' OR \'1\'=\'1",\n  "validation": { "expected_status_code": 200, "success_regex": "error|sql" }\n}') },

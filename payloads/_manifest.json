@@ -1,5 +1,5 @@
 {
-  "total_payloads": 345994,
+  "total_payloads": 411630,
   "total_categories": 65,
   "total_files": 187,
   "categories": {
@@ -161,7 +161,7 @@
     },
     "Identification & Authentication Failures": {
       "folder": "identification_&_authentication_failures",
-      "total": 1371,
+      "total": 1387,
       "files": {
         "body_json": {
           "file": "identification_&_authentication_failures/body_json.json",
@@ -185,7 +185,7 @@
         },
         "path_parameter": {
           "file": "identification_&_authentication_failures/path_parameter.json",
-          "count": 152
+          "count": 168
         },
         "query_parameter": {
           "file": "identification_&_authentication_failures/query_parameter.json",
@@ -209,7 +209,7 @@
     },
     "Identification & Authentication Failures (Weak Passwords)": {
       "folder": "identification_&_authentication_failures_(weak_passwords)",
-      "total": 78776,
+      "total": 78784,
       "files": {
         "body_json": {
           "file": "identification_&_authentication_failures_(weak_passwords)/body_json.json",
@@ -229,7 +229,7 @@
         },
         "query_parameter": {
           "file": "identification_&_authentication_failures_(weak_passwords)/query_parameter.json",
-          "count": 75178
+          "count": 75186
         }
       }
     },
@@ -315,7 +315,7 @@
     },
     "Injection (Command Injection)": {
       "folder": "injection_(command_injection)",
-      "total": 11985,
+      "total": 11987,
       "files": {
         "body_json": {
           "file": "injection_(command_injection)/body_json.json",
@@ -339,7 +339,7 @@
         },
         "query_parameter": {
           "file": "injection_(command_injection)/query_parameter.json",
-          "count": 11501
+          "count": 11503
         }
       }
     },
@@ -405,7 +405,7 @@
     },
     "Injection (LFI/RFI)": {
       "folder": "injection_(lfi_rfi)",
-      "total": 54180,
+      "total": 54205,
       "files": {
         "body_json": {
           "file": "injection_(lfi_rfi)/body_json.json",
@@ -421,7 +421,7 @@
         },
         "path_parameter": {
           "file": "injection_(lfi_rfi)/path_parameter.json",
-          "count": 24298
+          "count": 24323
         },
         "query_parameter": {
           "file": "injection_(lfi_rfi)/query_parameter.json",
@@ -869,7 +869,7 @@
     },
     "Mishandling of Exceptional Conditions (Null/Type/Zero Errors)": {
       "folder": "mishandling_of_exceptional_conditions_(null_type_zero_errors)",
-      "total": 5071,
+      "total": 70610,
       "files": {
         "body_json": {
           "file": "mishandling_of_exceptional_conditions_(null_type_zero_errors)/body_json.json",
@@ -885,7 +885,7 @@
         },
         "query_parameter": {
           "file": "mishandling_of_exceptional_conditions_(null_type_zero_errors)/query_parameter.json",
-          "count": 4978
+          "count": 70517
         }
       }
     },
@@ -929,7 +929,7 @@
     },
     "Security Misconfiguration": {
       "folder": "security_misconfiguration",
-      "total": 12353,
+      "total": 12399,
       "files": {
         "body_json": {
           "file": "security_misconfiguration/body_json.json",
@@ -945,7 +945,7 @@
         },
         "path_parameter": {
           "file": "security_misconfiguration/path_parameter.json",
-          "count": 2075
+          "count": 2121
         },
         "query_parameter": {
           "file": "security_misconfiguration/query_parameter.json",
