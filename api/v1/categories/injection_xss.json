@@ -1,7 +1,7 @@
 {
   "category": "Injection (XSS)",
   "slug": "injection_xss",
-  "count": 15899,
+  "count": 15904,
   "pages": 16,
   "page_size": 1000,
   "injection_points": [
@@ -15,7 +15,7 @@
     },
     {
       "injection_point": "form_parameter",
-      "count": 654
+      "count": 656
     },
     {
       "injection_point": "hash_parameter",
@@ -31,7 +31,7 @@
     },
     {
       "injection_point": "query_parameter",
-      "count": 14936
+      "count": 14939
     }
   ],
   "first_page": "categories/injection_xss/page/1.json"

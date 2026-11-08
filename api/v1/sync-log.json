@@ -1,7 +1,17 @@
 {
-  "updated_at": "2026-11-07T21:32:49Z",
+  "updated_at": "2026-11-08T13:17:43Z",
   "dataset_total": 346132,
   "runs": [
+    {
+      "run_id": "42484126607",
+      "ran_at": "2026-11-08T13:17:43Z",
+      "trigger": "workflow_dispatch",
+      "added": 0,
+      "total_after": 346132,
+      "elapsed_seconds": 12,
+      "sources": [],
+      "run_url": "https://github.com/HarlequinCS/Veritas_Payloads/actions/runs/42484126607"
+    },
     {
       "run_id": "42416245468",
       "ran_at": "2026-11-07T21:32:49Z",

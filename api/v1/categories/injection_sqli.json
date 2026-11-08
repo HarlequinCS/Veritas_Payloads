@@ -1,7 +1,7 @@
 {
   "category": "Injection (SQLi)",
   "slug": "injection_sqli",
-  "count": 7885,
+  "count": 7897,
   "pages": 8,
   "page_size": 1000,
   "injection_points": [
@@ -15,7 +15,7 @@
     },
     {
       "injection_point": "form_parameter",
-      "count": 235
+      "count": 237
     },
     {
       "injection_point": "header",
@@ -23,11 +23,11 @@
     },
     {
       "injection_point": "path_parameter",
-      "count": 114
+      "count": 116
     },
     {
       "injection_point": "query_parameter",
-      "count": 7426
+      "count": 7434
     }
   ],
   "first_page": "categories/injection_sqli/page/1.json"

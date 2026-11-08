@@ -1,7 +1,7 @@
 {
   "category": "Injection (XPATH)",
   "slug": "injection_xpath",
-  "count": 3487,
+  "count": 3489,
   "pages": 4,
   "page_size": 1000,
   "injection_points": [
@@ -15,7 +15,7 @@
     },
     {
       "injection_point": "query_parameter",
-      "count": 2
+      "count": 4
     }
   ],
   "first_page": "categories/injection_xpath/page/1.json"

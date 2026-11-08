@@ -1,6 +1,6 @@
 {
   "total_categories": 65,
-  "total_payloads": 345994,
+  "total_payloads": 346132,
   "categories": [
     {
       "category": "Identification & Authentication Failures (Weak Passwords)",
@@ -35,7 +35,7 @@
     {
       "category": "Injection (LFI/RFI)",
       "slug": "injection_lfi_rfi",
-      "count": 54180,
+      "count": 54212,
       "pages": 55,
       "page_size": 1000,
       "injection_points": [
@@ -53,11 +53,11 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 24298
+          "count": 24323
         },
         {
           "injection_point": "query_parameter",
-          "count": 29836
+          "count": 29843
         }
       ],
       "first_page": "categories/injection_lfi_rfi/page/1.json"
@@ -65,7 +65,7 @@
     {
       "category": "Injection (XSS)",
       "slug": "injection_xss",
-      "count": 15899,
+      "count": 15904,
       "pages": 16,
       "page_size": 1000,
       "injection_points": [
@@ -79,7 +79,7 @@
         },
         {
           "injection_point": "form_parameter",
-          "count": 654
+          "count": 656
         },
         {
           "injection_point": "hash_parameter",
@@ -95,7 +95,7 @@
         },
         {
           "injection_point": "query_parameter",
-          "count": 14936
+          "count": 14939
         }
       ],
       "first_page": "categories/injection_xss/page/1.json"
@@ -103,7 +103,7 @@
     {
       "category": "Security Misconfiguration",
       "slug": "security_misconfiguration",
-      "count": 12353,
+      "count": 12410,
       "pages": 13,
       "page_size": 1000,
       "injection_points": [
@@ -121,7 +121,7 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 2075
+          "count": 2132
         },
         {
           "injection_point": "query_parameter",
@@ -171,7 +171,7 @@
     {
       "category": "Injection (SQLi)",
       "slug": "injection_sqli",
-      "count": 7885,
+      "count": 7897,
       "pages": 8,
       "page_size": 1000,
       "injection_points": [
@@ -185,7 +185,7 @@
         },
         {
           "injection_point": "form_parameter",
-          "count": 235
+          "count": 237
         },
         {
           "injection_point": "header",
@@ -193,11 +193,11 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 114
+          "count": 116
         },
         {
           "injection_point": "query_parameter",
-          "count": 7426
+          "count": 7434
         }
       ],
       "first_page": "categories/injection_sqli/page/1.json"
@@ -205,7 +205,7 @@
     {
       "category": "Injection (Unrestricted File Upload)",
       "slug": "injection_unrestricted_file_upload",
-      "count": 6131,
+      "count": 6133,
       "pages": 7,
       "page_size": 1000,
       "injection_points": [
@@ -215,7 +215,7 @@
         },
         {
           "injection_point": "file_upload",
-          "count": 5984
+          "count": 5986
         },
         {
           "injection_point": "form_parameter",
@@ -561,7 +561,7 @@
     {
       "category": "Vulnerable & Outdated Components (CVE Paths)",
       "slug": "vulnerable_&_outdated_components_cve_paths",
-      "count": 3693,
+      "count": 3696,
       "pages": 4,
       "page_size": 1000,
       "injection_points": [
@@ -571,7 +571,7 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 2601
+          "count": 2604
         },
         {
           "injection_point": "query_parameter",
@@ -753,6 +753,28 @@
       "first_page": "categories/mishandling_of_exceptional_conditions_missing_extra_parameters/page/1.json"
     },
     {
+      "category": "Injection (XPATH)",
+      "slug": "injection_xpath",
+      "count": 3489,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "form_parameter",
+          "count": 3478
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 7
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 4
+        }
+      ],
+      "first_page": "categories/injection_xpath/page/1.json"
+    },
+    {
       "category": "Cryptographic Failures (Weak Crypto Algos)",
       "slug": "cryptographic_failures_weak_crypto_algos",
       "count": 3487,
@@ -769,28 +791,6 @@
         }
       ],
       "first_page": "categories/cryptographic_failures_weak_crypto_algos/page/1.json"
-    },
-    {
-      "category": "Injection (XPATH)",
-      "slug": "injection_xpath",
-      "count": 3487,
-      "pages": 4,
-      "page_size": 1000,
-      "injection_points": [
-        {
-          "injection_point": "form_parameter",
-          "count": 3478
-        },
-        {
-          "injection_point": "path_parameter",
-          "count": 7
-        },
-        {
-          "injection_point": "query_parameter",
-          "count": 2
-        }
-      ],
-      "first_page": "categories/injection_xpath/page/1.json"
     },
     {
       "category": "Mishandling of Exceptional Conditions (Failing Open / Priv Esc)",
@@ -945,7 +945,7 @@
     {
       "category": "Injection (Open Redirect)",
       "slug": "injection_open_redirect",
-      "count": 1635,
+      "count": 1637,
       "pages": 2,
       "page_size": 1000,
       "injection_points": [
@@ -955,11 +955,11 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 149
+          "count": 150
         },
         {
           "injection_point": "query_parameter",
-          "count": 1485
+          "count": 1486
         }
       ],
       "first_page": "categories/injection_open_redirect/page/1.json"
@@ -1029,7 +1029,7 @@
     {
       "category": "Identification & Authentication Failures",
       "slug": "identification_&_authentication_failures",
-      "count": 1371,
+      "count": 1390,
       "pages": 2,
       "page_size": 1000,
       "injection_points": [
@@ -1047,7 +1047,7 @@
         },
         {
           "injection_point": "form_parameter",
-          "count": 832
+          "count": 834
         },
         {
           "injection_point": "header",
@@ -1055,7 +1055,7 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 152
+          "count": 169
         },
         {
           "injection_point": "query_parameter",
@@ -1085,13 +1085,17 @@
     {
       "category": "Broken Access Control",
       "slug": "broken_access_control",
-      "count": 1298,
+      "count": 1302,
       "pages": 2,
       "page_size": 1000,
       "injection_points": [
         {
           "injection_point": "body_json",
           "count": 4
+        },
+        {
+          "injection_point": "form_parameter",
+          "count": 1
         },
         {
           "injection_point": "header",
@@ -1103,7 +1107,7 @@
         },
         {
           "injection_point": "query_parameter",
-          "count": 1204
+          "count": 1207
         }
       ],
       "first_page": "categories/broken_access_control/page/1.json"
