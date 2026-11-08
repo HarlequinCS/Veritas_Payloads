@@ -35,8 +35,18 @@ jobs:
       - name: Detect new payloads
         id: changes
         run: |
-          if [ -n "$(git status --porcelain --untracked-files=all -- . ':!_sources' ':!_sync_result.json')" ]; then
+          set -euo pipefail
+          # Long-form pathspec: the short form ':!_sources' is rejected by git
+          # ("Unimplemented pathspec magic '_'"), which silently read as "no changes".
+          # Capturing first makes a git error fail this step instead of skipping the rebuild.
+          status=$(git status --porcelain --untracked-files=all -- . ':(exclude)_sources' ':(exclude)_sync_result.json')
+          # Also rebuild when the published API has drifted from payloads/ (repairs earlier skipped rebuilds).
+          drift=$(python scripts/api_drift.py)
+          if [ -n "$status" ] || [ "$drift" = "drift" ]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
+            if [ "$drift" = "drift" ]; then
+              echo "api/v1 is out of date with payloads/; rebuilding."
+            fi
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No new payloads from the source repositories."
