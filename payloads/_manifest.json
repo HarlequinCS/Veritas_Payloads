@@ -1,5 +1,5 @@
 {
-  "total_payloads": 346137,
+  "total_payloads": 346138,
   "total_categories": 65,
   "total_files": 188,
   "categories": {
@@ -1069,7 +1069,7 @@
     },
     "Vulnerable & Outdated Components (CVE Paths)": {
       "folder": "vulnerable_&_outdated_components_(cve_paths)",
-      "total": 3700,
+      "total": 3701,
       "files": {
         "body_json": {
           "file": "vulnerable_&_outdated_components_(cve_paths)/body_json.json",
@@ -1077,7 +1077,7 @@
         },
         "path_parameter": {
           "file": "vulnerable_&_outdated_components_(cve_paths)/path_parameter.json",
-          "count": 2608
+          "count": 2609
         },
         "query_parameter": {
           "file": "vulnerable_&_outdated_components_(cve_paths)/query_parameter.json",

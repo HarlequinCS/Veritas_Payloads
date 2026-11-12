@@ -1,6 +1,6 @@
 # OWASP Top 10 Payload Dataset
 
-A comprehensive, structured collection of **346,137 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
+A comprehensive, structured collection of **346,138 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
 
 > **Interactive Dashboard:** Explore the dataset visually at [`index.html`](index.html) — a professional static dashboard built with HTML, CSS, and JavaScript. Served automatically via GitHub Pages from the root.
 
@@ -8,7 +8,7 @@ A comprehensive, structured collection of **346,137 unique payload strings** cov
 
 | Metric | Value |
 |--------|-------|
-| Total Payloads | 346,137 |
+| Total Payloads | 346,138 |
 | Vulnerability Categories | 65 |
 | Organized Files | 188 |
 | Total Size (JSON) | ~115 MB |
@@ -37,7 +37,7 @@ Each payload entry follows a consistent schema:
 The dataset is available in two forms:
 
 ### Unified JSON
-- **`owasp_top10_payloads.json`** — single file containing all 346,137 entries
+- **`owasp_top10_payloads.json`** — single file containing all 346,138 entries
 
 ### Organized Directory
 
@@ -78,7 +78,7 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 | **Injection (XXE)** | A05 | 3,850 |
 | **Cryptographic Failures** | A04 | 3,804 |
 | **Vulnerable & Outdated Components** | A03 | 3,721 |
-| _Vulnerable & Outdated Components (CVE Paths)_ | — | 3,700 |
+| _Vulnerable & Outdated Components (CVE Paths)_ | — | 3,701 |
 | **Injection (SSI)** | A05 | 3,696 |
 | _Web Cache Deception (Cache Poisoning)_ | — | 3,680 |
 | _Insecure Design (Race Condition Tests)_ | — | 3,625 |
