@@ -2,7 +2,7 @@
   "name": "Veritas Payloads API",
   "version": "1",
   "description": "Static JSON API for the OWASP Top 10 payload dataset. Each path is a file. Fetch it with HTTP GET.",
-  "total_payloads": 346133,
+  "total_payloads": 346137,
   "total_categories": 65,
   "page_size": 1000,
   "id_bucket_size": 100000,
