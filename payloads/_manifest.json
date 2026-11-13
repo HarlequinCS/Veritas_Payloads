@@ -1,5 +1,5 @@
 {
-  "total_payloads": 346138,
+  "total_payloads": 346146,
   "total_categories": 65,
   "total_files": 188,
   "categories": {
@@ -933,7 +933,7 @@
     },
     "Security Misconfiguration": {
       "folder": "security_misconfiguration",
-      "total": 12411,
+      "total": 12412,
       "files": {
         "body_json": {
           "file": "security_misconfiguration/body_json.json",
@@ -949,7 +949,7 @@
         },
         "path_parameter": {
           "file": "security_misconfiguration/path_parameter.json",
-          "count": 2133
+          "count": 2134
         },
         "query_parameter": {
           "file": "security_misconfiguration/query_parameter.json",
@@ -1069,7 +1069,7 @@
     },
     "Vulnerable & Outdated Components (CVE Paths)": {
       "folder": "vulnerable_&_outdated_components_(cve_paths)",
-      "total": 3701,
+      "total": 3708,
       "files": {
         "body_json": {
           "file": "vulnerable_&_outdated_components_(cve_paths)/body_json.json",
@@ -1077,7 +1077,7 @@
         },
         "path_parameter": {
           "file": "vulnerable_&_outdated_components_(cve_paths)/path_parameter.json",
-          "count": 2609
+          "count": 2616
         },
         "query_parameter": {
           "file": "vulnerable_&_outdated_components_(cve_paths)/query_parameter.json",

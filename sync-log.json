@@ -1,7 +1,22 @@
 {
-  "updated_at": "2026-11-12T23:18:10Z",
-  "dataset_total": 346138,
+  "updated_at": "2026-11-13T23:21:12Z",
+  "dataset_total": 346146,
   "runs": [
+    {
+      "run_id": "43526209784",
+      "ran_at": "2026-11-13T23:21:12Z",
+      "trigger": "schedule",
+      "added": 8,
+      "total_after": 346146,
+      "elapsed_seconds": 12,
+      "sources": [
+        {
+          "name": "nuclei-templates",
+          "added": 8
+        }
+      ],
+      "run_url": "https://github.com/HarlequinCS/Veritas_Payloads/actions/runs/43526209784"
+    },
     {
       "run_id": "43327387640",
       "ran_at": "2026-11-12T23:18:10Z",

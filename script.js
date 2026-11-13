@@ -7,13 +7,13 @@
   'use strict';
 
   /* ─── DATA ─── */
-  const TOTAL_PAYLOADS = 346138;
+  const TOTAL_PAYLOADS = 346146;
 
   const CATEGORIES = [
     { name: "Identification & Authentication Failures (Weak Passwords)", count: 78776 },
     { name: "Injection (LFI/RFI)", count: 54212 },
     { name: "Injection (XSS)", count: 15904 },
-    { name: "Security Misconfiguration", count: 12411 },
+    { name: "Security Misconfiguration", count: 12412 },
     { name: "Injection (Command Injection)", count: 11985 },
     { name: "Injection (SQLi)", count: 7897 },
     { name: "Injection (Unrestricted File Upload)", count: 6133 },
@@ -29,7 +29,7 @@
     { name: "Injection (XXE)", count: 3850 },
     { name: "Cryptographic Failures", count: 3804 },
     { name: "Vulnerable & Outdated Components", count: 3721 },
-    { name: "Vulnerable & Outdated Components (CVE Paths)", count: 3701 },
+    { name: "Vulnerable & Outdated Components (CVE Paths)", count: 3708 },
     { name: "Injection (SSI)", count: 3696 },
     { name: "Web Cache Deception (Cache Poisoning)", count: 3680 },
     { name: "Insecure Design (Race Condition Tests)", count: 3625 },
@@ -589,7 +589,7 @@
       '<p>Start by cloning the repository or downloading the latest release from GitHub.</p>' + codeBlock('git clone https://github.com/HarlequinCS/Veritas_Payloads.git') },
     { t: 'Choose Your Format', s: 'Unified JSON or organized folders', body:
       '<p>The dataset is available as a single unified JSON file or split into category folders.</p>' + codeBlock(
-'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (346,138 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
+'Veritas_Payloads/\n  owasp_top10_payloads.json   # Unified (346,146 entries)\n  organize_payloads.py        # Splitter tool\n  payloads/                   # Organized by category\n    injection_(xss)/query_parameter.json\n    injection_(sqli)/query_parameter.json') },
     { t: 'Understand the Schema', s: 'Consistent, integration-ready structure', body:
       '<p>Each payload entry follows a consistent structure for easy integration.</p>' + codeBlock(
 '{\n  "payload_id": "OWP-0001",\n  "vulnerability_category": "Injection (SQLi)",\n  "injection_point": "query_parameter",\n  "payload_string": "\' OR \'1\'=\'1",\n  "validation": { "expected_status_code": 200, "success_regex": "error|sql" }\n}') },
