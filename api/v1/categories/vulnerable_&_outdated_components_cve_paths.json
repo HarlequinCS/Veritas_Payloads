@@ -1,7 +1,7 @@
 {
   "category": "Vulnerable & Outdated Components (CVE Paths)",
   "slug": "vulnerable_&_outdated_components_cve_paths",
-  "count": 3708,
+  "count": 3710,
   "pages": 4,
   "page_size": 1000,
   "injection_points": [
@@ -11,11 +11,11 @@
     },
     {
       "injection_point": "path_parameter",
-      "count": 2616
+      "count": 2617
     },
     {
       "injection_point": "query_parameter",
-      "count": 1088
+      "count": 1089
     }
   ],
   "first_page": "categories/vulnerable_&_outdated_components_cve_paths/page/1.json"

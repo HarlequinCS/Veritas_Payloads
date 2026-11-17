@@ -1,6 +1,6 @@
 # OWASP Top 10 Payload Dataset
 
-A comprehensive, structured collection of **346,146 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
+A comprehensive, structured collection of **346,153 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
 
 > **Interactive Dashboard:** Explore the dataset visually at [`index.html`](index.html) — a professional static dashboard built with HTML, CSS, and JavaScript. Served automatically via GitHub Pages from the root.
 
@@ -8,7 +8,7 @@ A comprehensive, structured collection of **346,146 unique payload strings** cov
 
 | Metric | Value |
 |--------|-------|
-| Total Payloads | 346,146 |
+| Total Payloads | 346,153 |
 | Vulnerability Categories | 65 |
 | Organized Files | 188 |
 | Total Size (JSON) | ~115 MB |
@@ -37,7 +37,7 @@ Each payload entry follows a consistent schema:
 The dataset is available in two forms:
 
 ### Unified JSON
-- **`owasp_top10_payloads.json`** — single file containing all 346,146 entries
+- **`owasp_top10_payloads.json`** — single file containing all 346,153 entries
 
 ### Organized Directory
 
@@ -62,8 +62,8 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 | _Identification & Authentication Failures (Weak Passwords)_ | — | 78,776 |
 | **Injection (LFI/RFI)** | A05 | 54,212 |
 | **Injection (XSS)** | A05 | 15,904 |
-| **Security Misconfiguration** | A02 | 12,412 |
-| **Injection (Command Injection)** | A05 | 11,985 |
+| **Security Misconfiguration** | A02 | 12,415 |
+| **Injection (Command Injection)** | A05 | 11,987 |
 | **Injection (SQLi)** | A05 | 7,897 |
 | **Injection (Unrestricted File Upload)** | A05 | 6,133 |
 | **Injection (LDAP)** | A05 | 5,949 |
@@ -78,7 +78,7 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 | **Injection (XXE)** | A05 | 3,850 |
 | **Cryptographic Failures** | A04 | 3,804 |
 | **Vulnerable & Outdated Components** | A03 | 3,721 |
-| _Vulnerable & Outdated Components (CVE Paths)_ | — | 3,708 |
+| _Vulnerable & Outdated Components (CVE Paths)_ | — | 3,710 |
 | **Injection (SSI)** | A05 | 3,696 |
 | _Web Cache Deception (Cache Poisoning)_ | — | 3,680 |
 | _Insecure Design (Race Condition Tests)_ | — | 3,625 |

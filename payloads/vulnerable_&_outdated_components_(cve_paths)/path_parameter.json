@@ -28774,5 +28774,16 @@
       "expected_status_code": 200,
       "success_regex": "version|vulnerable"
     }
+  },
+  {
+    "payload_id": "OWP-474703",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/config/runtime",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
   }
 ]

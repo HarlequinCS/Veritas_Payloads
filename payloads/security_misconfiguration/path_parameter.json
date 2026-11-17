@@ -23472,5 +23472,38 @@
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
     }
+  },
+  {
+    "payload_id": "OWP-474705",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/v2/trees",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474706",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/apis/registry/v3/system/uiConfig",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
+  },
+  {
+    "payload_id": "OWP-474707",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/apis/registry/v3/search/artifacts",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
   }
 ]

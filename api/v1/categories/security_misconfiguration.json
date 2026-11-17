@@ -1,7 +1,7 @@
 {
   "category": "Security Misconfiguration",
   "slug": "security_misconfiguration",
-  "count": 12412,
+  "count": 12415,
   "pages": 13,
   "page_size": 1000,
   "injection_points": [
@@ -19,7 +19,7 @@
     },
     {
       "injection_point": "path_parameter",
-      "count": 2134
+      "count": 2137
     },
     {
       "injection_point": "query_parameter",
