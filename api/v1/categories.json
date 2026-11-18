@@ -1,6 +1,6 @@
 {
   "total_categories": 65,
-  "total_payloads": 346159,
+  "total_payloads": 346171,
   "categories": [
     {
       "category": "Identification & Authentication Failures (Weak Passwords)",
@@ -103,7 +103,7 @@
     {
       "category": "Security Misconfiguration",
       "slug": "security_misconfiguration",
-      "count": 12415,
+      "count": 12416,
       "pages": 13,
       "page_size": 1000,
       "injection_points": [
@@ -121,7 +121,7 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 2137
+          "count": 2138
         },
         {
           "injection_point": "query_parameter",
@@ -137,7 +137,7 @@
     {
       "category": "Injection (Command Injection)",
       "slug": "injection_command_injection",
-      "count": 11988,
+      "count": 11991,
       "pages": 12,
       "page_size": 1000,
       "injection_points": [
@@ -163,7 +163,7 @@
         },
         {
           "injection_point": "query_parameter",
-          "count": 11504
+          "count": 11507
         }
       ],
       "first_page": "categories/injection_command_injection/page/1.json"
@@ -543,7 +543,7 @@
     {
       "category": "Vulnerable & Outdated Components (CVE Paths)",
       "slug": "vulnerable_&_outdated_components_cve_paths",
-      "count": 3713,
+      "count": 3721,
       "pages": 4,
       "page_size": 1000,
       "injection_points": [
@@ -553,7 +553,7 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 2620
+          "count": 2628
         },
         {
           "injection_point": "query_parameter",

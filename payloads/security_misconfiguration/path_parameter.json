@@ -23505,5 +23505,16 @@
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
     }
+  },
+  {
+    "payload_id": "OWP-474725",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/2.1/unity-catalog/catalogs",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
   }
 ]

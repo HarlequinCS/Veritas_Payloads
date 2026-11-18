@@ -1,7 +1,7 @@
 {
   "category": "Injection (Command Injection)",
   "slug": "injection_command_injection",
-  "count": 11988,
+  "count": 11991,
   "pages": 12,
   "page_size": 1000,
   "injection_points": [
@@ -27,7 +27,7 @@
     },
     {
       "injection_point": "query_parameter",
-      "count": 11504
+      "count": 11507
     }
   ],
   "first_page": "categories/injection_command_injection/page/1.json"
