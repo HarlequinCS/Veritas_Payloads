@@ -1857,5 +1857,27 @@
       "expected_status_code": 200,
       "success_regex": "welcome|dashboard|invalid|login"
     }
+  },
+  {
+    "payload_id": "OWP-474712",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/login_pass.html",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-474713",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/NMC/([^/]+)/logon\\.htm",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
   }
 ]

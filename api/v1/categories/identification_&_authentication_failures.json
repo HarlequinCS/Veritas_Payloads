@@ -1,7 +1,7 @@
 {
   "category": "Identification & Authentication Failures",
   "slug": "identification_&_authentication_failures",
-  "count": 1390,
+  "count": 1392,
   "pages": 2,
   "page_size": 1000,
   "injection_points": [
@@ -27,7 +27,7 @@
     },
     {
       "injection_point": "path_parameter",
-      "count": 169
+      "count": 171
     },
     {
       "injection_point": "query_parameter",
