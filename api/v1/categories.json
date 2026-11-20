@@ -1,6 +1,6 @@
 {
   "total_categories": 65,
-  "total_payloads": 346171,
+  "total_payloads": 346174,
   "categories": [
     {
       "category": "Identification & Authentication Failures (Weak Passwords)",
@@ -515,6 +515,28 @@
       "first_page": "categories/cryptographic_failures/page/1.json"
     },
     {
+      "category": "Vulnerable & Outdated Components (CVE Paths)",
+      "slug": "vulnerable_&_outdated_components_cve_paths",
+      "count": 3724,
+      "pages": 4,
+      "page_size": 1000,
+      "injection_points": [
+        {
+          "injection_point": "body_json",
+          "count": 4
+        },
+        {
+          "injection_point": "path_parameter",
+          "count": 2631
+        },
+        {
+          "injection_point": "query_parameter",
+          "count": 1089
+        }
+      ],
+      "first_page": "categories/vulnerable_&_outdated_components_cve_paths/page/1.json"
+    },
+    {
       "category": "Vulnerable & Outdated Components",
       "slug": "vulnerable_&_outdated_components",
       "count": 3721,
@@ -539,28 +561,6 @@
         }
       ],
       "first_page": "categories/vulnerable_&_outdated_components/page/1.json"
-    },
-    {
-      "category": "Vulnerable & Outdated Components (CVE Paths)",
-      "slug": "vulnerable_&_outdated_components_cve_paths",
-      "count": 3721,
-      "pages": 4,
-      "page_size": 1000,
-      "injection_points": [
-        {
-          "injection_point": "body_json",
-          "count": 4
-        },
-        {
-          "injection_point": "path_parameter",
-          "count": 2628
-        },
-        {
-          "injection_point": "query_parameter",
-          "count": 1089
-        }
-      ],
-      "first_page": "categories/vulnerable_&_outdated_components_cve_paths/page/1.json"
     },
     {
       "category": "Injection (SSI)",
