@@ -1,6 +1,6 @@
 {
   "total_categories": 65,
-  "total_payloads": 346177,
+  "total_payloads": 346194,
   "categories": [
     {
       "category": "Identification & Authentication Failures (Weak Passwords)",
@@ -517,7 +517,7 @@
     {
       "category": "Vulnerable & Outdated Components (CVE Paths)",
       "slug": "vulnerable_&_outdated_components_cve_paths",
-      "count": 3727,
+      "count": 3744,
       "pages": 4,
       "page_size": 1000,
       "injection_points": [
@@ -527,7 +527,7 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 2634
+          "count": 2651
         },
         {
           "injection_point": "query_parameter",
