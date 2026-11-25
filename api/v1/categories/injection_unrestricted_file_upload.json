@@ -1,7 +1,7 @@
 {
   "category": "Injection (Unrestricted File Upload)",
   "slug": "injection_unrestricted_file_upload",
-  "count": 6133,
+  "count": 6134,
   "pages": 7,
   "page_size": 1000,
   "injection_points": [
@@ -23,7 +23,7 @@
     },
     {
       "injection_point": "path_parameter",
-      "count": 60
+      "count": 61
     },
     {
       "injection_point": "query_parameter",

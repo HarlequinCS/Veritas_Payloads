@@ -1,7 +1,22 @@
 {
-  "updated_at": "2026-11-24T03:54:05Z",
-  "dataset_total": 346194,
+  "updated_at": "2026-11-25T01:59:11Z",
+  "dataset_total": 346199,
   "runs": [
+    {
+      "run_id": "45529478880",
+      "ran_at": "2026-11-25T01:59:11Z",
+      "trigger": "schedule",
+      "added": 5,
+      "total_after": 346199,
+      "elapsed_seconds": 7,
+      "sources": [
+        {
+          "name": "exploitdb",
+          "added": 5
+        }
+      ],
+      "run_url": "https://github.com/HarlequinCS/Veritas_Payloads/actions/runs/45529478880"
+    },
     {
       "run_id": "45322439655",
       "ran_at": "2026-11-24T03:54:05Z",

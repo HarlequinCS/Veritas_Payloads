@@ -1,6 +1,6 @@
 # OWASP Top 10 Payload Dataset
 
-A comprehensive, structured collection of **346,194 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
+A comprehensive, structured collection of **346,199 unique payload strings** covering all OWASP Top 10 (2025) vulnerability categories, curated from industry-standard security testing wordlists, exploit databases, and CWE mappings.
 
 > **Interactive Dashboard:** Explore the dataset visually at [`index.html`](index.html) — a professional static dashboard built with HTML, CSS, and JavaScript. Served automatically via GitHub Pages from the root.
 
@@ -8,7 +8,7 @@ A comprehensive, structured collection of **346,194 unique payload strings** cov
 
 | Metric | Value |
 |--------|-------|
-| Total Payloads | 346,194 |
+| Total Payloads | 346,199 |
 | Vulnerability Categories | 65 |
 | Organized Files | 188 |
 | Total Size (JSON) | ~115 MB |
@@ -37,7 +37,7 @@ Each payload entry follows a consistent schema:
 The dataset is available in two forms:
 
 ### Unified JSON
-- **`owasp_top10_payloads.json`** — single file containing all 346,194 entries
+- **`owasp_top10_payloads.json`** — single file containing all 346,199 entries
 
 ### Organized Directory
 
@@ -61,11 +61,11 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 |----------|------------|----------|
 | _Identification & Authentication Failures (Weak Passwords)_ | — | 78,776 |
 | **Injection (LFI/RFI)** | A05 | 54,212 |
-| **Injection (XSS)** | A05 | 15,904 |
+| **Injection (XSS)** | A05 | 15,906 |
 | **Security Misconfiguration** | A02 | 12,416 |
 | **Injection (Command Injection)** | A05 | 11,991 |
 | **Injection (SQLi)** | A05 | 7,897 |
-| **Injection (Unrestricted File Upload)** | A05 | 6,133 |
+| **Injection (Unrestricted File Upload)** | A05 | 6,134 |
 | **Injection (LDAP)** | A05 | 5,949 |
 | _Mishandling of Exceptional Conditions (Null/Type/Zero Errors)_ | — | 5,071 |
 | **Web Cache Deception** | A02 | 4,583 |
@@ -75,7 +75,7 @@ Example: `payloads/injection_(sqli)/query_parameter.json` contains SQL injection
 | **Injection (SSTI)** | A05 | 4,062 |
 | **Software & Data Integrity Failures (Deserialization)** | A08 | 4,026 |
 | **Injection (CRLF)** | A05 | 3,915 |
-| **Injection (XXE)** | A05 | 3,850 |
+| **Injection (XXE)** | A05 | 3,852 |
 | **Cryptographic Failures** | A04 | 3,804 |
 | _Vulnerable & Outdated Components (CVE Paths)_ | — | 3,744 |
 | **Vulnerable & Outdated Components** | A03 | 3,721 |

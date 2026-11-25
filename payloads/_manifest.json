@@ -1,5 +1,5 @@
 {
-  "total_payloads": 346194,
+  "total_payloads": 346199,
   "total_categories": 65,
   "total_files": 188,
   "categories": {
@@ -629,7 +629,7 @@
     },
     "Injection (Unrestricted File Upload)": {
       "folder": "injection_(unrestricted_file_upload)",
-      "total": 6133,
+      "total": 6134,
       "files": {
         "body_json": {
           "file": "injection_(unrestricted_file_upload)/body_json.json",
@@ -649,7 +649,7 @@
         },
         "path_parameter": {
           "file": "injection_(unrestricted_file_upload)/path_parameter.json",
-          "count": 60
+          "count": 61
         },
         "query_parameter": {
           "file": "injection_(unrestricted_file_upload)/query_parameter.json",
@@ -695,7 +695,7 @@
     },
     "Injection (XSS)": {
       "folder": "injection_(xss)",
-      "total": 15904,
+      "total": 15906,
       "files": {
         "body_json": {
           "file": "injection_(xss)/body_json.json",
@@ -723,13 +723,13 @@
         },
         "query_parameter": {
           "file": "injection_(xss)/query_parameter.json",
-          "count": 14939
+          "count": 14941
         }
       }
     },
     "Injection (XXE)": {
       "folder": "injection_(xxe)",
-      "total": 3850,
+      "total": 3852,
       "files": {
         "body_xml": {
           "file": "injection_(xxe)/body_xml.json",
@@ -741,7 +741,7 @@
         },
         "query_parameter": {
           "file": "injection_(xxe)/query_parameter.json",
-          "count": 61
+          "count": 63
         }
       }
     },

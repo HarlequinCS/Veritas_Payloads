@@ -1,6 +1,6 @@
 {
   "total_categories": 65,
-  "total_payloads": 346194,
+  "total_payloads": 346199,
   "categories": [
     {
       "category": "Identification & Authentication Failures (Weak Passwords)",
@@ -65,7 +65,7 @@
     {
       "category": "Injection (XSS)",
       "slug": "injection_xss",
-      "count": 15904,
+      "count": 15906,
       "pages": 16,
       "page_size": 1000,
       "injection_points": [
@@ -95,7 +95,7 @@
         },
         {
           "injection_point": "query_parameter",
-          "count": 14939
+          "count": 14941
         }
       ],
       "first_page": "categories/injection_xss/page/1.json"
@@ -205,7 +205,7 @@
     {
       "category": "Injection (Unrestricted File Upload)",
       "slug": "injection_unrestricted_file_upload",
-      "count": 6133,
+      "count": 6134,
       "pages": 7,
       "page_size": 1000,
       "injection_points": [
@@ -227,7 +227,7 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 60
+          "count": 61
         },
         {
           "injection_point": "query_parameter",
@@ -469,7 +469,7 @@
     {
       "category": "Injection (XXE)",
       "slug": "injection_xxe",
-      "count": 3850,
+      "count": 3852,
       "pages": 4,
       "page_size": 1000,
       "injection_points": [
@@ -483,7 +483,7 @@
         },
         {
           "injection_point": "query_parameter",
-          "count": 61
+          "count": 63
         }
       ],
       "first_page": "categories/injection_xxe/page/1.json"

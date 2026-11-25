@@ -658,5 +658,16 @@
       "expected_status_code": 200,
       "success_regex": ""
     }
+  },
+  {
+    "payload_id": "OWP-474749",
+    "vulnerability_category": "Injection (Unrestricted File Upload)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "../uploads",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": ""
+    }
   }
 ]

