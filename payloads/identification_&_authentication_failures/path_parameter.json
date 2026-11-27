@@ -1879,5 +1879,27 @@
       "expected_status_code": 200,
       "success_regex": "welcome|dashboard|invalid|login"
     }
+  },
+  {
+    "payload_id": "OWP-474776",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/app/about/startup-info",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
+  },
+  {
+    "payload_id": "OWP-474777",
+    "vulnerability_category": "Identification & Authentication Failures",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/login_check",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "welcome|dashboard|invalid|login"
+    }
   }
 ]

@@ -1,6 +1,6 @@
 {
   "total_categories": 65,
-  "total_payloads": 346221,
+  "total_payloads": 346224,
   "categories": [
     {
       "category": "Identification & Authentication Failures (Weak Passwords)",
@@ -103,7 +103,7 @@
     {
       "category": "Security Misconfiguration",
       "slug": "security_misconfiguration",
-      "count": 12417,
+      "count": 12418,
       "pages": 13,
       "page_size": 1000,
       "injection_points": [
@@ -121,7 +121,7 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 2139
+          "count": 2140
         },
         {
           "injection_point": "query_parameter",
@@ -1029,7 +1029,7 @@
     {
       "category": "Identification & Authentication Failures",
       "slug": "identification_&_authentication_failures",
-      "count": 1392,
+      "count": 1394,
       "pages": 2,
       "page_size": 1000,
       "injection_points": [
@@ -1055,7 +1055,7 @@
         },
         {
           "injection_point": "path_parameter",
-          "count": 171
+          "count": 173
         },
         {
           "injection_point": "query_parameter",

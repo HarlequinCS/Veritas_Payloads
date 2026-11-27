@@ -23527,5 +23527,16 @@
       "expected_status_code": 200,
       "success_regex": "Index of|exception|debug|server"
     }
+  },
+  {
+    "payload_id": "OWP-474778",
+    "vulnerability_category": "Security Misconfiguration",
+    "target_technology": "Generic",
+    "injection_point": "path_parameter",
+    "payload_string": "/api/sonicos/is-sslvpn-enabled",
+    "validation": {
+      "expected_status_code": 200,
+      "success_regex": "Index of|exception|debug|server"
+    }
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "total_payloads": 346221,
+  "total_payloads": 346224,
   "total_categories": 65,
   "total_files": 188,
   "categories": {
@@ -165,7 +165,7 @@
     },
     "Identification & Authentication Failures": {
       "folder": "identification_&_authentication_failures",
-      "total": 1392,
+      "total": 1394,
       "files": {
         "body_json": {
           "file": "identification_&_authentication_failures/body_json.json",
@@ -189,7 +189,7 @@
         },
         "path_parameter": {
           "file": "identification_&_authentication_failures/path_parameter.json",
-          "count": 171
+          "count": 173
         },
         "query_parameter": {
           "file": "identification_&_authentication_failures/query_parameter.json",
@@ -933,7 +933,7 @@
     },
     "Security Misconfiguration": {
       "folder": "security_misconfiguration",
-      "total": 12417,
+      "total": 12418,
       "files": {
         "body_json": {
           "file": "security_misconfiguration/body_json.json",
@@ -949,7 +949,7 @@
         },
         "path_parameter": {
           "file": "security_misconfiguration/path_parameter.json",
-          "count": 2139
+          "count": 2140
         },
         "query_parameter": {
           "file": "security_misconfiguration/query_parameter.json",
